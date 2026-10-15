@@ -1,0 +1,31 @@
+		<script src="scroll-animacion.js"></script>
+		<header class="header2" id="header12" data-animation="top-opacity" data-animation-group="1">
+			<h1 class="h12" data-animation="top" data-animation-group="1">Donaciones</h1>
+		</header>
+
+		<main class="main8">
+			<h4 class="h46">Cancelar donación mensual</h4>
+			<form id="form3" action="/cancel" method="post">
+				<label class="label7">
+					Nombre y apellidos: *
+					<input type="text" class="input9">
+				</label>
+				<label class="label7">
+					Email: *
+					<input type="text" class="input9">
+				</label>
+				<label class="label7">
+					Cuota a la que estaba suscrito: *
+					<select name="price" class="select1">
+						<option name="price" value="price_1UIAVNCNOpaMFlfClH2H7yDW">5 € al mes</option>
+						<option name="price" value="price_1UIAVcCNOpaMFlfCEJBXf5Nm">10 € al mes</option>
+						<option name="price" value="price_1UIAVjCNOpaMFlfCQSfl4hIu">15 € al mes</option>
+						<option name="price" value="price_1UIAVtCNOpaMFlfC4XbWQNce">20 € al mes</option>
+						<option name="price" value="price_1UIAW2CNOpaMFlfCVPGV87Wp">30 € al mes</option>
+						<option name="price" value="price_1UIAW8CNOpaMFlfCKONEzJvi">50 € al mes</option>
+						<option name="price" value="price_1UIAWFCNOpaMFlfCxp2lOYd1">100 € al mes</option>
+					</select>
+				</label>
+				<input class="input8" type="submit" value="Cancelar suscripción">
+			</form>
+		</main>

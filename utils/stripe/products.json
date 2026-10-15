@@ -1,0 +1,55 @@
+{
+  "object": "list",
+  "data": [
+    {
+      "id": "prod_VIjfzBMJ9b6kKd",
+      "object": "product",
+      "active": true,
+      "attributes": [],
+      "created": 1790000893,
+      "default_price": null,
+      "description": null,
+      "images": [],
+      "livemode": false,
+      "marketing_features": [],
+      "metadata": {},
+      "name": "suscripsion",
+      "package_dimensions": null,
+      "shippable": null,
+      "statement_descriptor": null,
+      "tax_code": null,
+      "tax_details": null,
+      "type": "service",
+      "unit_label": null,
+      "updated": 1790000893,
+      "url": null
+    },
+    {
+      "id": "prod_VI12kBwpDIEyfk",
+      "object": "product",
+      "active": true,
+      "attributes": [],
+      "created": 1789834828,
+      "default_price": "price_1UHR05CNOpaMFlfCZyJASRDT",
+      "description": "Ayuda a Nuestra Señora de la Cristiandad - España con una donación mensual.",
+      "images": [
+        "https://files.stripe.com/links/MDB8YWNjdF8xVUV3OHdDTk9wYU1GbGZDfGZsX3Rlc3RfTWJOUkQ1Mm5QcWE2aWRTYjZHN1ZUcmlX00lHRHMeaQ"
+      ],
+      "livemode": false,
+      "marketing_features": [],
+      "metadata": {},
+      "name": "Donación",
+      "package_dimensions": null,
+      "shippable": null,
+      "statement_descriptor": null,
+      "tax_code": null,
+      "tax_details": null,
+      "type": "service",
+      "unit_label": null,
+      "updated": 1789834829,
+      "url": null
+    }
+  ],
+  "has_more": false,
+  "url": "/v1/products"
+}
