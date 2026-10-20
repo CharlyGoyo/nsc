@@ -1,3 +1,3 @@
 export function onRequest(context) {
-	return new Response(env.ASSETS.fetch("/peregrinacion"));
+	return new Response.redirect('/peregrinacion', 301);
 }
