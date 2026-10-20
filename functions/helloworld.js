@@ -1,3 +1,3 @@
 export function onRequest(context) {
-	return new Response.redirect('/peregrinacion', 301);
+	return new Response.redirect('https://nscristiandad.es/peregrinacion', 301);
 }
