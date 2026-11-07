@@ -48,9 +48,10 @@ OPCIONES:
 	esac
 done
 
+# prepara y compila /pages/boletin.html
 if ! $B; then
-	# reorganiza para que haya n boletines por sección
 	boletines=($(printf '%s\n' pages/boletines/*/laudate*.cfg | sort -t '-' -k2Vr))
+	# reorganiza para que haya n boletines por sección
 	d=0
 	for ((i=0; i<${#boletines[@]}; i+=$n)); do
 		((d++))
@@ -77,6 +78,8 @@ if ! $B; then
 
 	# compila pages/boletin.html
 	cat pages/boletines/header.html $(ls -v pages/boletines/*/seccion.html) pages/boletines/footer.html > pages/boletin.html
+
+	# chapucilla
 	sed -i 's/"${num_paginas}"/'"$d"'/' pages/boletin.html
 fi
 

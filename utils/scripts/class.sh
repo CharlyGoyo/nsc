@@ -1,7 +1,7 @@
 #!/bin/sh
 
 c=false
-f='pages/*.html templates/page/*.html' 
+f='pages/*.html templates/page/*.html template-boletin/seccion.html/*.html utils/html/*.html'
 i=class
 I=false
 l=false
@@ -24,6 +24,7 @@ OPCIONES:
 \tpages/*.html
 \ttemplates/page/*.html 
 \ttemplate-boletin/seccion.html/*.html
+\tutils/html/*.html
 \t-h: muestra este mensaje.
 \t-i: interpreta como id lo que se interpretaba como clase
 \t-l: devuelve todas las clases (o ids si es usa -i) en uso del elemento argumento
