@@ -7,7 +7,7 @@ export async function onRequestPost(context) {
 		success_url:					`${url}/donaciones?success=true`,
 		cancel_url:						`${url}/donaciones?success=false`,
 		locale:							'auto',
-		'adaptative_pricing[enabled]':	true,
+		'adaptive_pricing[enabled]':	true,
 		'line_items[0][quantity]':		1,
 		'line_items[0][price]':			formData.get("price")
 	});
