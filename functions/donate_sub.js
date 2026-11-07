@@ -21,6 +21,7 @@ export async function onRequestPost(context) {
 	});
 
 	const session = await res.json();
+	console.log(session);
 
 	return Response.redirect(session.url, 303);
 }
