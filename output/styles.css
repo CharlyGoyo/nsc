@@ -7,7 +7,7 @@
 	font-family: 	'Cinzel';
 	font-style: 	normal;
 	font-weight: 	400;
-	src: 			url('/bucket/wp-content/extra/fonts/cinzel-v26-latin-regular.woff2') format('woff2');
+	src: 			url('/pages-content/extra/fonts/cinzel-v26-latin-regular.woff2') format('woff2');
 }
 
 @font-face {
@@ -15,7 +15,7 @@
 	font-family: 	'Cinzel';
 	font-style: 	normal;
 	font-weight: 	500;
-	src: 			url('/bucket/wp-content/extra/fonts/cinzel-v26-latin-500.woff2') format('woff2'); 
+	src: 			url('/pages-content/extra/fonts/cinzel-v26-latin-500.woff2') format('woff2'); 
 }
 
 @font-face {
@@ -23,7 +23,7 @@
 	font-family: 	'Montserrat';
 	font-style: 	normal;
 	font-weight: 	400;
-	src: 			url('/bucket/wp-content/extra/fonts/montserrat-v31-latin-regular.woff2') format('woff2');
+	src: 			url('/pages-content/extra/fonts/montserrat-v31-latin-regular.woff2') format('woff2');
 }
 
 @font-face {
@@ -31,7 +31,7 @@
 	font-family: 	'Montserrat';
 	font-style: 	normal;
 	font-weight: 	500;
-	src: 			url('/bucket/wp-content/extra/fonts/montserrat-v31-latin-500.woff2') format('woff2');
+	src: 			url('/pages-content/extra/fonts/montserrat-v31-latin-500.woff2') format('woff2');
 }
 
 @font-face {
@@ -39,7 +39,7 @@
 	font-family: 	'Montserrat';
 	font-style: 	normal;
 	font-weight: 	600;
-	src: 			url('/bucket/wp-content/extra/fonts/montserrat-v31-latin-600.woff2') format('woff2');
+	src: 			url('/pages-content/extra/fonts/montserrat-v31-latin-600.woff2') format('woff2');
 }
 
 @font-face {
@@ -47,7 +47,7 @@
 	font-family: 	'Montserrat';
 	font-style: 	normal;
 	font-weight: 	700;
-	src: 			url('/bucket/wp-content/extra/fonts/montserrat-v31-latin-700.woff2') format('woff2'); 
+	src: 			url('/pages-content/extra/fonts/montserrat-v31-latin-700.woff2') format('woff2'); 
 }
 
 @font-face {
@@ -55,7 +55,7 @@
 	font-family: 	'Roboto';
 	font-style: 	normal;
 	font-weight: 	300;
-	src: 			url('/bucket/wp-content/extra/fonts/roboto-v51-latin-300.woff2') format('woff2'); 
+	src: 			url('/pages-content/extra/fonts/roboto-v51-latin-300.woff2') format('woff2'); 
 }
 
 @font-face {
@@ -63,7 +63,7 @@
 	font-family: 	'Rochester';
 	font-style: 	normal;
 	font-weight: 	400;
-	src: 			url('/bucket/wp-content/extra/fonts/rochester-v24-latin-regular.woff2') format('woff2'); 
+	src: 			url('/pages-content/extra/fonts/rochester-v24-latin-regular.woff2') format('woff2'); 
 }
 
 :root {
@@ -220,7 +220,7 @@ div {
 }
 
 footer {
-	background-image:		url('/bucket/wp-content/extra/lunes29-7.png');
+	background-image:		url('/pages-content/extra/lunes29-7.png');
 	background-size:		cover;
 	background-position:	center;
 	display:				grid;
@@ -285,7 +285,7 @@ h4 {
 }
 
 header {
-	background-image: 		url("/bucket/wp-content/uploads/2025/03/portadawebex.jpg");
+	background-image: 		url("/pages-content/uploads/2025/03/portadawebex.jpg");
 	background-position: 	50% 52%;
 	background-repeat: 		no-repeat;
 	background-size: 		cover;
@@ -1522,7 +1522,7 @@ ul {
 
 .img2 {
 	/*se suele combinar con span4*/
-	-webkit-mask-image:		url('/bucket/wp-content/extra/circle.svg');
+	-webkit-mask-image:		url('/pages-content/extra/circle.svg');
 	-webkit-mask-size:		contain;
 	-webkit-mask-position:	center;
 	-webkit-mask-repeat:	no-repeat;
@@ -2747,16 +2747,16 @@ ul {
 \*------------------------------------*/
 
 #a1 {
-	background-image:	url('/bucket/wp-content/extra/DSCF2620-copia-scaled-dark.png');
+	background-image:	url('/pages-content/extra/DSCF2620-copia-scaled-dark.png');
 	grid-column:			1 / 3;
 }
 
 #a2 {
-	background-image:	url('/bucket/wp-content/extra/IIIENC11.jpeg-scaled-dark.png');
+	background-image:	url('/pages-content/extra/IIIENC11.jpeg-scaled-dark.png');
 }
 
 #a3 {
-	background-image:	url('/bucket/wp-content/extra/coro1-scaled-dark.png');
+	background-image:	url('/pages-content/extra/coro1-scaled-dark.png');
 }
 
 #a4 {
@@ -2775,7 +2775,7 @@ ul {
 
 #article1 {
 	background-size:		contain;
-	background-image:		url('/bucket/wp-content/extra/domingo28-71.png');
+	background-image:		url('/pages-content/extra/domingo28-71.png');
 	grid-template-columns:	minmax(0, 309px) minmax(0, 675px);
 	max-height:				604px;
 	padding:				70px 0 97px 0;
@@ -2910,19 +2910,19 @@ ul {
 }
 
 #div14 {
-	background-image:	url('/bucket/wp-content/extra/ETR5238-dark.jpg');
+	background-image:	url('/pages-content/extra/ETR5238-dark.jpg');
 }
 
 #div15 {
-	background-image:	url('/bucket/wp-content/extra/IMG_3538-scaled-dark.jpg');
+	background-image:	url('/pages-content/extra/IMG_3538-scaled-dark.jpg');
 }
 
 #div16 {
-	background-image:	url('/bucket/wp-content/extra/IMG_3437-scaled-dark.jpg');
+	background-image:	url('/pages-content/extra/IMG_3437-scaled-dark.jpg');
 }
 
 #div17 {
-	background-image:	url('/bucket/wp-content/extra/marcha2-dark.png');
+	background-image:	url('/pages-content/extra/marcha2-dark.png');
 }
 
 #div18 {
@@ -3044,68 +3044,68 @@ ul {
 }
 
 #header1 {
-	background-image:	url('/bucket/wp-content/extra/Lunes-28-566-scaled-dark.jpg');
+	background-image:	url('/pages-content/extra/Lunes-28-566-scaled-dark.jpg');
 }
 #header2 {
-	background-image:	url('/bucket/wp-content/extra/DSC_0120-scaled-dark.jpg')
+	background-image:	url('/pages-content/extra/DSC_0120-scaled-dark.jpg')
 }
 #header3 {
-	background-image:	url('/bucket/wp-content/extra/ETR4846-dark.jpg')
+	background-image:	url('/pages-content/extra/ETR4846-dark.jpg')
 }
 #header4 {
-	background-image:	url('/bucket/wp-content/extra/sabado27-52-dark.jpg')
+	background-image:	url('/pages-content/extra/sabado27-52-dark.jpg')
 }
 #header5 {
-	background-image:	url('/bucket/wp-content/extra/Domingo-27-116-scaled-dark.jpg')
+	background-image:	url('/pages-content/extra/Domingo-27-116-scaled-dark.jpg')
 }
 #header6 {
-	background-image:	url('/bucket/wp-content/extra/ETR4915-dark.jpg');
+	background-image:	url('/pages-content/extra/ETR4915-dark.jpg');
 }
 #header7 {
-	background-image:	url('/bucket/wp-content/extra/ETR5061-dark.jpg');
+	background-image:	url('/pages-content/extra/ETR5061-dark.jpg');
 }
 #header8 {
-	background-image:	url('/bucket/wp-content/extra/sabado27-29-dark.jpg');
+	background-image:	url('/pages-content/extra/sabado27-29-dark.jpg');
 }
 #header9 {
-	background-image:	url('/bucket/wp-content/extra/ETR5457-dark.jpg');
+	background-image:	url('/pages-content/extra/ETR5457-dark.jpg');
 }
 #header10 {
-	background-image:	url('/bucket/wp-content/extra/domingo28-41-dark.jpg');
+	background-image:	url('/pages-content/extra/domingo28-41-dark.jpg');
 	margin-bottom:		65px;
 }
 #header11 {
-	background-image:	url('/bucket/wp-content/extra/Lunes-28-961-scaled-dark.jpg');
+	background-image:	url('/pages-content/extra/Lunes-28-961-scaled-dark.jpg');
 }
 #header12 {
-	background-image:	url('/bucket/wp-content/extra/lunes29-11-dark.jpg');
+	background-image:	url('/pages-content/extra/lunes29-11-dark.jpg');
 }
 #header13 {
-	background-image:	url('/bucket/wp-content/extra/DSCF2143-copia-scaled-dark.jpg');
+	background-image:	url('/pages-content/extra/DSCF2143-copia-scaled-dark.jpg');
 }
 #header14 {
-	background-image:	url('/bucket/wp-content/extra/IIIENC11.jpeg-scaled-dark.jpg');
+	background-image:	url('/pages-content/extra/IIIENC11.jpeg-scaled-dark.jpg');
 }
 #header15 {
-	background-image:	url('/bucket/wp-content/extra/organ-4355592_1920-dark.jpg');
+	background-image:	url('/pages-content/extra/organ-4355592_1920-dark.jpg');
 }
 #header16 {
-	background-image:	url('/bucket/wp-content/extra/ETR5198-dark.jpg');
+	background-image:	url('/pages-content/extra/ETR5198-dark.jpg');
 }
 #header17 {
-	background-image:	url('/bucket/wp-content/extra/IMG-20220726-WA0053-dark.jpg');
+	background-image:	url('/pages-content/extra/IMG-20220726-WA0053-dark.jpg');
 }
 #header18 {
-	background-image:	url('/bucket/wp-content/extra/DSC_0919-scaled-dark.jpg');
+	background-image:	url('/pages-content/extra/DSC_0919-scaled-dark.jpg');
 }
 #header19 {
-	background-image:	url('/bucket/wp-content/extra/domingo28-86-dark.jpg');
+	background-image:	url('/pages-content/extra/domingo28-86-dark.jpg');
 }
 #header20 {
-	background-image:	url('/bucket/wp-content/extra/domingo28-34-dark.jpg');
+	background-image:	url('/pages-content/extra/domingo28-34-dark.jpg');
 }
 #header21 {
-	background-image:	url('/bucket/wp-content/extra/ETR4494-dark.jpg');
+	background-image:	url('/pages-content/extra/ETR4494-dark.jpg');
 }
 
 #img1 {
@@ -3305,7 +3305,7 @@ ul {
 #main1 {
 	gap:				20px;
 	height:				875px;
-	background:			url('/bucket/wp-content/extra/DSC_0619-scaled-dark.jpg') top;
+	background:			url('/pages-content/extra/DSC_0619-scaled-dark.jpg') top;
 	background-size:	cover;
 	justify-content:	center;
 	margin-bottom:		-60px; /*iisshhh*/
@@ -3399,11 +3399,11 @@ ul {
 }
 
 #section2 {
-	background-image:	url('/bucket/wp-content/extra/ETR4494-dark.png');
+	background-image:	url('/pages-content/extra/ETR4494-dark.png');
 }
 
 #section3 {
-	background-image:	url('/bucket/wp-content/extra/lunes29-41-dark.png');
+	background-image:	url('/pages-content/extra/lunes29-41-dark.png');
 }
 
 #section4 {}
@@ -3435,7 +3435,7 @@ ul {
 	gap:				24px;
 	padding:			60px 130px 84px 130px;
 	align-items:		center;
-	background-image:	url('/bucket/wp-content/extra/lunes29-49-dark.jpg');
+	background-image:	url('/pages-content/extra/lunes29-49-dark.jpg');
 }
 
 #section12 {
@@ -3493,7 +3493,7 @@ ul {
 }
 
 #section22 {
-	background-image:	url('/bucket/wp-content/extra/sabado27-43-dark.jpg');
+	background-image:	url('/pages-content/extra/sabado27-43-dark.jpg');
 }
 
 #section23 {
@@ -3527,15 +3527,15 @@ ul {
 }
 
 .section9#familias { /*#section26*/
-	background-image:	url('/bucket/wp-content/extra/sabado27-28-dark.jpg');
+	background-image:	url('/pages-content/extra/sabado27-28-dark.jpg');
 }
 
 .section9#minirruta { /*#section27*/
-	background-image:	url('/bucket/wp-content/extra/Sabado-26-480-scaled-dark.jpg');
+	background-image:	url('/pages-content/extra/Sabado-26-480-scaled-dark.jpg');
 }
 
 #section28 {
-	background-image:		url('/bucket/wp-content/extra/ETR4824-dark.jpg');
+	background-image:		url('/pages-content/extra/ETR4824-dark.jpg');
 	background-position:	center;
 	background-size:		cover;
 	gap:					44px;
@@ -3566,7 +3566,7 @@ ul {
 }
 
 #section34 {
-	background-image:	url('/bucket/wp-content/extra/Domingo-27-645-scaled-dark.jpg');
+	background-image:	url('/pages-content/extra/Domingo-27-645-scaled-dark.jpg');
 }
 
 #section35 {
