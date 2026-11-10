@@ -1,12 +1,12 @@
 #!/bin/sh
 
 c=false
-f='pages/*.html templates/page/*.html template-boletin/seccion.html/*.html utils/html/*.html'
+f='pages/*.html pages/articulos/*.html templates/page/*.html template-boletin/seccion.html/*.html utils/html/*.html'
 i=class
 I=false
 l=false
 
-while getopts "cf:hiIl" opt; do
+while getopts "cf:hiil" opt; do
 	case "$opt" in 
 		c)
 			c=true
@@ -22,6 +22,7 @@ OPCIONES:
 \t-c: devuelve el número de veces que se usa la clase argumento.
 \t-f: archivo en el que buscar. Por defecto en todos estos:
 \tpages/*.html
+\tpages/articulos/*.html
 \ttemplates/page/*.html 
 \ttemplate-boletin/seccion.html/*.html
 \tutils/html/*.html

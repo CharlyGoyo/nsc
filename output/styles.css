@@ -20,6 +20,14 @@
 
 @font-face {
 	font-display: 	swap; 
+	font-family: 	'Montez';
+	font-style: 	normal;
+	font-weight: 	400;
+	src: 			url('/pages-content/extra/fonts/montez-v25-latin-regular.woff2') format('woff2');
+}
+
+@font-face {
+	font-display: 	swap; 
 	font-family: 	'Montserrat';
 	font-style: 	normal;
 	font-weight: 	400;
@@ -71,6 +79,7 @@
 	--amarillo2:	#e6b264;
 	--amarillo3:	#fc0;
 	--azul:			#243888;
+	--azul2:		#000751;
 	--blanco:		#fefefe;
 	--blanco2:		#d5d5d5;
 	--blanco3:		#ededede5;
@@ -1266,18 +1275,20 @@ ul {
 }
 
 .h11 {}
+
 .h12 {
 	color:			var(--blanco4);
 	font-size:		3.125rem;
 	letter-spacing:	1.4px;
 	text-shadow:	#000000fc 0px 0px 10px;
 }
+
 .h13 {
 	color:			var(--blanco4);
 	font-size:		1.5rem;
 	font-weight:	500;
 	letter-spacing:	1.4px;
-	line-height:	1.65rem;
+	line-height:	2.65rem;
 	text-shadow:	#0000004d 0px 0px 11px;
 }
 
@@ -1442,6 +1453,32 @@ ul {
 	text-align:		right;
 }
 
+.h315 {
+	color:			var(--blanco4);
+	font-size:		1.1875rem;
+	letter-spacing:	1.4px;
+	line-height:	1.30625rem;
+}
+
+.h316 {
+	color:			var(--blanco4);
+	font-size:		1.5rem;
+	font-weight:	500;
+	letter-spacing:	1.4px;
+	line-height:	3rem;
+	text-align:		left;
+}
+
+.h317 {
+	color:			var(--blanco4);
+	font-family:	'Montez', sans-serif;
+	font-size:		1.5rem;
+	font-weight:	500;
+	letter-spacing:	1.4px;
+	line-height:	1.65rem;
+	text-align:		left;
+}
+
 .h41 {
 	color:			var(--blanco4);
 	font-size:		1.125rem;
@@ -1494,9 +1531,19 @@ ul {
 .header3 {
 	background-color:	var(--azul);
 	background-image:	none;
-	height:				256.4px;
-	padding-top:		180px;
+	height:				auto;
+	padding:			180px 0 20px;
 	margin-bottom:		40px;
+	transition:			var(--animacion);
+}
+
+.header4 {
+	background-color:	var(--azul2);
+	background-image:	none;
+	height:				auto;
+	margin-bottom:		40px;
+	padding:			180px 0 20px 70px;
+	transition:			var(--animacion);
 }
 
 .i1 {
@@ -2104,6 +2151,14 @@ ul {
 	font-size:		0.875rem;
 	line-height:	1.3125rem;
 	text-align:		left;
+}
+
+.p21 {
+	color:			var(--negro);
+	font-size:		1rem;
+	line-height:	1.65rem;
+	text-align:		justify;
+	text-indent:	30px;
 }
 
 .section1 {
