@@ -1,13 +1,17 @@
 #!/bin/sh
 
+a='pages/articulos/*.html'
 c=false
-f='pages/*.html pages/articulos/*.html templates/page/*.html template-boletin/seccion.html/*.html utils/html/*.html'
+f='pages/*.html templates/page/*.html template-boletin/seccion.html/*.html utils/html/*.html'
 i=class
 I=false
 l=false
 
-while getopts "cf:hiil" opt; do
+while getopts "acf:hiil" opt; do
 	case "$opt" in 
+		a)
+			a=
+			;;
 		c)
 			c=true
 			;;
@@ -19,10 +23,10 @@ while getopts "cf:hiil" opt; do
 POR DEFECTO: Muestra los archivos que contienen la clase argumento
 
 OPCIONES:
+\t-a: no busca en pages/articulos/*.html
 \t-c: devuelve el número de veces que se usa la clase argumento.
 \t-f: archivo en el que buscar. Por defecto en todos estos:
 \tpages/*.html
-\tpages/articulos/*.html
 \ttemplates/page/*.html 
 \ttemplate-boletin/seccion.html/*.html
 \tutils/html/*.html
@@ -51,15 +55,15 @@ shift $((OPTIND - 1))
 for arg in "$@"
 do
 	if $l; then
-		grep -Eoh "$i=\"${arg}[0-9]+\"" $f | cut -d '"' -f 2 | sort -Vu
+		grep -Eoh "$i=\"${arg}[0-9]+\"" $f $a | cut -d '"' -f 2 | sort -Vu
 	elif $c; then
 		$masdeuno && printf '%s:\t' $arg
-		grep -ch "$i=\"${arg}\"" $f | awk '{s+=$0} END {print s}'
+		grep -ch "$i=\"${arg}\"" $f $a | awk '{s+=$0} END {print s}'
 	elif $I; then
 		$masdeuno && printf 'n\t%s:\n' $arg 
-		grep -Eh "$i=\"${arg}\"" $f | grep -Eo 'id=".*"' | cut -d '"' -f 2 | sort -Vu
+		grep -Eh "$i=\"${arg}\"" $f $a | grep -Eo 'id=".*"' | cut -d '"' -f 2 | sort -Vu
 	else
 		$masdeuno && printf '\t%s:\n' $arg
-		grep -ln "$i=\"${arg}\"" $f 
+		grep -ln "$i=\"${arg}\"" $f $a
 	fi
 done
