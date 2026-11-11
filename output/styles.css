@@ -14,6 +14,14 @@
 	font-display: 	swap; 
 	font-family: 	'Cinzel';
 	font-style: 	normal;
+	font-weight: 	400;
+	src: 			url('/pages-content/extra/fonts/cinzel-v26-latin-regular.woff2') format('woff2'); 
+}
+
+@font-face {
+	font-display: 	swap; 
+	font-family: 	'Cinzel';
+	font-style: 	normal;
 	font-weight: 	500;
 	src: 			url('/pages-content/extra/fonts/cinzel-v26-latin-500.woff2') format('woff2'); 
 }
@@ -109,6 +117,7 @@
 	--rojo2:		#9f1315;
 	--rojo3:		#b80000;
 	--rojo4:		#d11313;
+	--rojo5:		#f00;
 
 	--animacion:	translate 1.5s, opacity 1.5s, scale 1.5s;
 	--animacion2:	translate 0.6s, opacity 0.6s;
@@ -842,7 +851,7 @@ ul {
 }
 
 .b7 {
-	color:	red;
+	color:	var(--rojo5);
 }
 
 .b8 {
@@ -1537,7 +1546,7 @@ ul {
 	align-items:		center;
 	text-align:			center;
 	width:				100%;
-	border-right:		solid 6px red;
+	border-right:		solid 6px var(--rojo5);
 }
 
 .h313 {
@@ -1619,7 +1628,8 @@ ul {
 }
 
 .header1 { 
-	gap:	12px;
+	gap:			12px;
+	margin-bottom:	50px;
 }
 
 .header2 {
@@ -1655,6 +1665,15 @@ ul {
 	line-height:	1.65rem;
 	/*ajusta esto cuando te aburras*/
 	margin-top:		-1.2rem;
+}
+
+.i2 {
+	color:	var(--rojo5);
+}
+
+.i3 {
+	color:		var(--rojo5);
+	font-style:	normal;
 }
 
 .iframe1 {
@@ -2263,6 +2282,14 @@ ul {
 	line-height:	1.65rem;
 	text-align:		justify;
 	text-indent:	30px;
+	width:			100%;
+}
+
+.p22 {
+	color:			var(--negro);
+	font-size:		1rem;
+	line-height:	1.65rem;
+	text-align:		justify;
 	width:			100%;
 }
 
@@ -3094,7 +3121,7 @@ ul {
 }
 
 #div20 {
-	background-color:	red;
+	background-color:	var(--rojo5);
 }
 
 #div21 {
@@ -3625,7 +3652,7 @@ ul {
 	border-width:	2px 0px; 
 	gap:			7px;
 	height:			429px;
-	margin:			20px auto 0 auto;
+	margin:			-30px auto 0 auto;
 	max-width:		1200px;
 	padding:		11px 10px;
 	/*obliga a que haya un margin lateral de al menos 20px*/
@@ -3770,7 +3797,7 @@ ul {
 }
 
 #span3 {
-	background-color:	red;
+	background-color:	var(--rojo5);
 }
 
 #span4 {
