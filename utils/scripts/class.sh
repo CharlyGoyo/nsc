@@ -2,7 +2,7 @@
 
 a='pages/articulos/*.html'
 c=false
-f='pages/*.html templates/page/*.html template-boletin/seccion.html/*.html utils/html/*.html'
+f='pages/pt/*.html pages/fr/*.html pages/en/*.html pages/*.html templates/page/*.html template-boletin/seccion.html/*.html utils/html/*.html'
 i=class
 I=false
 l=false
@@ -27,6 +27,7 @@ OPCIONES:
 \t-c: devuelve el número de veces que se usa la clase argumento.
 \t-f: archivo en el que buscar. Por defecto en todos estos:
 \tpages/*.html
+\tpages/{en,fr,pt}/*.html
 \ttemplates/page/*.html 
 \ttemplate-boletin/seccion.html/*.html
 \tutils/html/*.html
