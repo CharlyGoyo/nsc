@@ -22,7 +22,7 @@ a partir del nombre del directorio
 
 OPCIONES:
 \t-b: Sólo actualiza /pages/boletín.html. No compila /pages/{*,articulos/*}.cfg
-\t-B: Evita actualizar /pages/boletin.html. Compila /pages/{*,articulos/*}.cfg
+\t-B: Evita actualizar /pages/boletin.html. Compila /pages/{*,{articulos,en,fr,pt}/*}.cfg
 \t-h: Muestra este mensaje
 \t-n: Que haya n boletines por cada sección de /pages/boletin.html (por defecto 5). 
 \t-v: Modo verboso
@@ -83,7 +83,11 @@ if ! $B; then
 	sed -i 's/"${num_paginas}"/'"$d"'/' pages/boletin.html
 fi
 
-# compila los artículos
+# compila los artículos:
 $b || saait -o output/articulos pages/articulos/*.cfg 
-# compila el resto
+# compila el resto:
 $b || saait pages/*.cfg
+# compila los distintos idiomas:
+$b || saait -o output/pt pages/pt/*.cfg
+$b || saait -o output/en pages/en/*.cfg
+$b || saait -o output/fr pages/fr/*.cfg

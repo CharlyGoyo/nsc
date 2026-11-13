@@ -108,6 +108,7 @@
 	--blanco2:		#d5d5d5;
 	--blanco3:		#ededede5;
 	--blanco4:		#fff;
+	--blanco5:		#ddd;
 	--gris:			#f3f3f3;
 	--marron:		#392525;
 	--marron2:		#020000d9;
@@ -477,7 +478,7 @@ ul {
 	padding: 			0;
 	text-align: 		center;
 	transition:			var(--animacion);
-	var(--blanco4)-space: 		nowrap;
+	white-space: 		nowrap;
 }
 
 /*------------------------------------*\
@@ -858,6 +859,15 @@ ul {
 	font-weight:	700;
 }
 
+.blockquote1 {
+	margin:			0 26px 0 53px;
+	border-left:	solid 5px var(--blanco5);
+	padding:		21px;
+	display:		flex;
+	flex-direction:	column;
+	gap:			24px;
+}
+
 .button1 {
 	background-color: 	var(--blanco);
 	border-color:		var(--blanco);
@@ -992,7 +1002,7 @@ ul {
 	font-weight:	500;
 	gap:			7px;
 	padding: 		0 40px;
-	var(--blanco4)-space:	nowrap;
+	white-space:	nowrap;
 }
 
 .button12 {
@@ -1299,6 +1309,11 @@ ul {
 	color:			#adadad;
 	font-size:		0.75rem;
 	padding:		15px 30px;
+}
+
+.em1 {
+	color:		var(--rojo5);
+	font-style:	normal;
 }
 
 .form1 {
@@ -1618,19 +1633,19 @@ ul {
 }
 
 .h44 {
-	color:			var(--amarillo);
+	color:	var(--amarillo);
 }
 
 .h45 {
-	color:			var(--rojo);
+	color:	var(--rojo);
 }
 
 .h46 {
-	color:			var(--azul);
+	text-align:	left;
 }
 
 .h47 {
-	color:			var(--blanco4);
+	color:	var(--blanco4);
 }
 
 .header1 { 
@@ -1675,11 +1690,6 @@ ul {
 
 .i2 {
 	color:	var(--rojo5);
-}
-
-.i3 {
-	color:		var(--rojo5);
-	font-style:	normal;
 }
 
 .iframe1 {
@@ -1937,7 +1947,7 @@ ul {
 }
 
 .li6 {
-	color:			black;
+	color:			var(--negro);
 	font-weight:	400;
 	line-height:	1.65rem;
 	text-align:		left;
@@ -2307,6 +2317,15 @@ ul {
 	line-height:	1.65rem;
 	text-align:		right;
 	width:			100%;
+}
+
+.p24 {
+	color:			var(--marron);
+	line-height:	1.65rem;
+	text-align:		justify;
+	text-indent:	30px;
+	width:			100%;
+	font-size:		1.1rem;
 }
 
 .section1 {
@@ -2934,14 +2953,14 @@ ul {
 	flex:			1;
 	flex-direction:	column;
 	gap:			16px;
-	var(--blanco4)-space:	wrap;
+	white-space:	wrap;
 }
 
 .ul5 {
 	flex:			1;
 	list-style:		disc outside;
 	margin-left:	48px;
-	var(--blanco4)-space:	wrap;
+	white-space:	wrap;
 }
 
 .ul6 {
@@ -2949,7 +2968,7 @@ ul {
 	border-radius:	20px;
 	list-style:		disc outside;
 	padding:		20px 20px 20px 60px;
-	var(--blanco4)-space:	wrap;
+	white-space:	wrap;
 }
 
 /*------------------------------------*\
