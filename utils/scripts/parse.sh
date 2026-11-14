@@ -14,28 +14,62 @@ Lo dejo por si algo sirve. No lo invoques, que a lo mejor rompes cosas.
 done
 
 urls='
-https://nscristiandad.es/significacion/
-https://nscristiandad.es/normativa-general/
-https://nscristiandad.es/aviso-legal/
-https://nscristiandad.es/politica-de-cookies/
-https://nscristiandad.es/mas-informacion-sobre-las-cookies/
-https://nscristiandad.es/politica-de-privacidad/
+https://nscristiandad.es/en/
+https://nscristiandad.es/en/contacto/
+https://nscristiandad.es/en/peregrinacion/
+https://nscristiandad.es/en/inscripcion/
+https://nscristiandad.es/en/capitulos/
+https://nscristiandad.es/en/angeles-de-la-guarda/
+https://nscristiandad.es/en/ruta-familias/
+https://nscristiandad.es/en/sacerdotes/
+https://nscristiandad.es/en/informacion-practica/
+https://nscristiandad.es/en/que-llevar/
+https://nscristiandad.es/en/como-ayudar/
+https://nscristiandad.es/en/voluntariado/
+https://nscristiandad.es/en/donaciones/
+https://nscristiandad.es/fr/
+https://nscristiandad.es/fr/contacto/
+https://nscristiandad.es/fr/peregrinacion/
+https://nscristiandad.es/fr/inscripcion/
+https://nscristiandad.es/fr/capitulos/
+https://nscristiandad.es/fr/angeles-de-la-guarda/
+https://nscristiandad.es/fr/ruta-familias/
+https://nscristiandad.es/fr/sacerdotes/
+https://nscristiandad.es/fr/informacion-practica/
+https://nscristiandad.es/fr/que-llevar/
+https://nscristiandad.es/fr/como-ayudar/
+https://nscristiandad.es/fr/voluntariado/
+https://nscristiandad.es/fr/donaciones/
+https://nscristiandad.es/pt/
+https://nscristiandad.es/pt/contacto/
+https://nscristiandad.es/pt/peregrinacion/
+https://nscristiandad.es/pt/inscripcion/
+https://nscristiandad.es/pt/capitulos/
+https://nscristiandad.es/pt/angeles-de-la-guarda/
+https://nscristiandad.es/pt/ruta-familias/
+https://nscristiandad.es/pt/sacerdotes/
+https://nscristiandad.es/pt/informacion-practica/
+https://nscristiandad.es/pt/que-llevar/
+https://nscristiandad.es/pt/como-ayudar/
+https://nscristiandad.es/pt/voluntariado/
+https://nscristiandad.es/pt/donaciones/
 '
 
 shopt -s extglob
 
 for url in $urls; do
-	page=$(sed -E 's/https:\/\/nscristiandad.es(.*)\//pages\1\.html/' <<< $url)
-	config=$(sed -E 's/https:\/\/nscristiandad.es(.*)\//pages\1\.cfg/' <<< $url)
+	# page=$(sed -E 's/https:\/\/nscristiandad.es(.*)\//pages\1\.html/' <<< $url)
+	# config=$(sed -E 's/https:\/\/nscristiandad.es(.*)\//pages\1\.cfg/' <<< $url)
+	page=$(sed -E 's/https:\/\/nscristiandad.es(.*)\//chuletas\1\.html/' <<< $url)
 
-	# curl $url > $page
+	curl $url > $page
 
 	# # echo "canonical = $url" >> $config
 	# # echo "title = $(sed -En 's#.*<title>([^<]*)</title>#\1#p' $page)" >> $config
 	# # echo "description = $(sed -En 's#.*<meta name="description" content="([^"]*)".*#\1#p' $page)" >> $config
 	# # echo "filename = $(sed 's#pages/##g' <<< $page)" >> $config
 	# # echo "extrafooter = pages/extrafooter.html" >> $config
-	# 
+	 
 	# sed -E '0,/<\/header/d' -i $page
 	# sed -E '/<footer/,$d' -i $page
 	# sed -i -E 's/<\/?span[^>]*>//g; s/<\/?section[^>]*>//g; s/<\/?div[^>]*>//g' $page

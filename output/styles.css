@@ -3,6 +3,14 @@
 \*------------------------------------*/
 
 @font-face {
+	font-display:	swap; 
+	font-family:	'Cabin Sketch';
+	font-style:		normal;
+	font-weight:	400;
+	src:			url('/pages-content/extra/fonts/cabin-sketch-v23-latin-regular.woff2') format('woff2'); 
+}
+
+@font-face {
 	font-display: 	swap; 
 	font-family: 	'Charm';
 	font-style: 	normal;
@@ -334,12 +342,6 @@ header {
 	z-index:				1;
 }
 
-iframe {
-	height:		450px;
-	box-shadow:	#00000080 0px 0px 10px 0px;
-	width:		100%;
-}
-
 img {
 	display:	block;
 	flex:		1;
@@ -348,6 +350,7 @@ img {
 	object-fit:	contain;
 	transition:	var(--animacion);
 	/*object-position:	center;*/ /*maybe*/
+	/*esto rompe cosas sí o sí: */
 	max-width:	100%;
 }
 
@@ -774,6 +777,22 @@ ul {
 	&:hover, &:focus-visible {
 		scale:	1.025;
 	}
+}
+
+.a23 {
+	align-items:			center;
+	box-shadow:				#1e5322 0px 0px 10px 0px;
+	color:					var(--blanco4);
+	display:				flex;
+	font-family:			'Cabin Sketch', sans-serif;
+	font-size:				72px;
+	font-weight:			400;
+	height:					100%;
+	justify-content:		center;
+	text-shadow:			#ffffffad 0px 0px 10px;
+	width:					100%;
+	background-position:	center;
+	background-size:		cover;
 }
 
 .article1 {
@@ -1328,6 +1347,18 @@ ul {
 	padding:		15px 30px;
 }
 
+.div35 {
+	overflow:	auto;
+	min-width:	0;
+	min-height:	0;
+	/* Si cabe, lo centra. Si desborda, empieza arriba (flex-start): */
+	justify-content: safe center; 
+	/*sombra interior: */
+	box-shadow: 
+	inset 0  12px 10px -10px rgba(0, 0, 0, 0.5);
+	/*inset 0 -12px 10px -10px rgba(0, 0, 0, 0.5);*/
+}
+
 .em1 {
 	color:		var(--rojo5);
 	font-style:	normal;
@@ -1628,6 +1659,13 @@ ul {
 	text-align:		left;
 }
 
+.h318 {
+	color:			var(--azul);
+	font-size:		1.3125rem;
+	font-weight:	600;
+	line-height:	1.70625rem;
+}
+
 .h41 {
 	color:			var(--blanco4);
 	font-size:		1.125rem;
@@ -1715,8 +1753,19 @@ ul {
 	left:			50%;
 	top:			50%;
 	transform:		translate(-50%, -50%);
-	box-shadow:		none;
 	width:			85%;
+}
+
+.iframe2 {
+	background-color:	var(--negro);
+	height:				100%;
+	width:				100%;
+}
+
+.iframe3 {
+	height:		450px;
+	box-shadow:	#00000080 0px 0px 10px 0px;
+	width:		100%;
 }
 
 .img1 {}
@@ -1728,6 +1777,7 @@ ul {
 	-webkit-mask-position:	center;
 	-webkit-mask-repeat:	no-repeat;
 	object-fit:	cover;
+	width:		100%;
 }
 
 .img3 {
@@ -2133,6 +2183,20 @@ ul {
 	}
 }
 
+.label14 {
+	border-color:			var(--azul);
+	border-style:			solid;
+	border-width:			2px 0 0 0;
+	gap:					10px;
+	width:					100%;
+	display:				grid;
+	grid-template-columns:	3fr 1fr;
+	padding:				10px;
+	&:has(input:checked) {
+		background-color:	var(--gris);
+	}
+}
+
 .main1 {
 	gap:	100px;
 }
@@ -2255,7 +2319,7 @@ ul {
 	font-size:		1rem;
 	line-height:	1.65rem;
 	text-align:		left;
-	/*espero que no rompa nada. Sirve en pages/novena-covagonda*/
+	/*espero que no rompa nada. Sirve en pages/novena-covadonga.html*/
 	width:			100%;
 }
 
@@ -2507,6 +2571,17 @@ ul {
 	justify-content:		center;
 	align-items:			center;
 	width:					100%;
+}
+
+.section19 {
+	display:				grid;
+	grid-template-columns:	2fr 1fr;
+	grid-template-rows:		50px 360px;
+	column-gap:				10px;
+	justify-items: 			center; 
+	& > *:first-child {
+		grid-row:	1 / span 2;
+	}
 }
 
 .section20 {
@@ -3017,6 +3092,30 @@ ul {
 	margin-top:			70px;
 	line-height:		1.125rem;
 	letter-spacing:		2.1px;
+}
+
+#a6 {
+	background-image:	url('/pages-content/uploads/2026/09/DIA-3-C-COVADONGA-90-scaled.jpg');
+}
+
+#a7 {
+	background-image:	url('/pages-content/uploads/2025/08/Lunes-28-566-scaled.jpg');
+}
+
+#a8 {
+	background-image:	url('/pages-content/uploads/2024/08/ETR5222.jpg');
+}
+
+#a9 {
+	background-image:	url('/pages-content/uploads/2023/07/DSC_0822-scaled.jpg');
+}
+
+#a10 {
+	background-image:	url('/pages-content/uploads/2021/08/IMG-20220727-WA0011.jpg');
+}
+
+#a11 {
+	background-image:	url('/pages-content/uploads/2021/08/photo_2021-07-29_12-44-06.jpg');
 }
 
 #article1 {
@@ -3849,6 +3948,13 @@ ul {
 	& > *:last-child {
 		grid-column:	span 2;
 	}
+}
+
+#section37 {
+	width:					100%;
+	gap:					20px;
+	grid-template-columns:	1fr 1fr;
+	grid-template-rows:		300px 300px 300px ;
 }
 
 #span1 {

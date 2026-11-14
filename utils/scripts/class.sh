@@ -17,6 +17,7 @@ while getopts "acf:hiil" opt; do
 			;;
 		f)
 			f=$OPTARG
+			a=
 			;;
 		h)
 			printf "USO: class [opciones] argumentos (por defecto interpretados como clases)
