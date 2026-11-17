@@ -74,7 +74,7 @@ for url in $urls; do
 	# sed -E '/<footer/,$d' -i $page
 	# sed -i -E 's/<\/?span[^>]*>//g; s/<\/?section[^>]*>//g; s/<\/?div[^>]*>//g' $page
 	# sed -E 's#(</p>)(<p)#\1\n\2#g' -i $page
-	# sed -E 's/(class|height|style)="[^"]*"//g' -i $page 
+	# sed -E 's/(class|height|style|loading)="[^"]*"//g' -i $page 
 	# sed 's#https://nscristiandad.es/wp-content#/pages-content#g' -i $page
 	# sed 's/<!--.*-->//g' $page -i
 	# sed -i '/^[[:space:]]*$/d' $page
