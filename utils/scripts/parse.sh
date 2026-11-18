@@ -61,17 +61,25 @@ https://nscristiandad.es/fotos-2022/
 https://nscristiandad.es/fotos-2023/
 https://nscristiandad.es/fotos-2024/
 https://nscristiandad.es/fotos-2025/
-https://nscristiandad.es/album-2026/
+https://nscristiandad.es/fotos-2026/
 '
 
 shopt -s extglob
+count=0
 
 for url in $urls; do
 	page=$(sed -E 's/https:\/\/nscristiandad.es(.*)\//pages\1\.html/' <<< $url)
 	config=$(sed -E 's/https:\/\/nscristiandad.es(.*)\//pages\1\.cfg/' <<< $url)
 	# page=$(sed -E 's/https:\/\/nscristiandad.es(.*)\//chuletas\1\.html/' <<< $url)
 
-	curl $url > $page
+	# curl $url > $page
+	# curl $url | grep -Eo 'data-thumbnail="[^"]*"' > $count
+	awk '
+	NR==FNR { urls[NR]=$0; next }
+	/src=""/ { sub(/src=""/, urls[++i]) }
+	1
+	' $count $page > prueba/$page
+	((count++))
 
 	# echo "canonical = $url" >> $config
 	# echo "title = $(sed -En 's#.*<title>([^<]*)</title>#\1#p' $page)" >> $config

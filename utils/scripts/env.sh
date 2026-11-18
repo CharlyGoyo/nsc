@@ -7,6 +7,7 @@ while getopts "h" opt; do
 - ARTICULOS: pages/articulos/*.html
 - NOVENAS: pages/novena-{1..9}.html
 - BOLETINES: pages/boletines/*/laudate-*.html
+- FOTOS: pages/fotos-20*.html
 "
 			exit
 			;;
@@ -18,3 +19,4 @@ export HTML_EDITABLES='pages/pt/*.html pages/fr/*.html pages/en/*.html pages/bol
 export ARTICULOS='pages/articulos/*.html'
 export NOVENAS='pages/novena-1.html pages/novena-2.html pages/novena-3.html pages/novena-4.html pages/novena-5.html pages/novena-6.html pages/novena-7.html pages/novena-8.html pages/novena-9.html'
 export BOLETINES='pages/boletines/*/laudate-*.html'
+export FOTOS='pages/fotos-20*.html'
