@@ -55,20 +55,29 @@ https://nscristiandad.es/pt/voluntariado/
 https://nscristiandad.es/pt/donaciones/
 '
 
+urls='
+https://nscristiandad.es/fotos-2021/
+https://nscristiandad.es/fotos-2022/
+https://nscristiandad.es/fotos-2023/
+https://nscristiandad.es/fotos-2024/
+https://nscristiandad.es/fotos-2025/
+https://nscristiandad.es/album-2026/
+'
+
 shopt -s extglob
 
 for url in $urls; do
-	# page=$(sed -E 's/https:\/\/nscristiandad.es(.*)\//pages\1\.html/' <<< $url)
-	# config=$(sed -E 's/https:\/\/nscristiandad.es(.*)\//pages\1\.cfg/' <<< $url)
-	page=$(sed -E 's/https:\/\/nscristiandad.es(.*)\//chuletas\1\.html/' <<< $url)
+	page=$(sed -E 's/https:\/\/nscristiandad.es(.*)\//pages\1\.html/' <<< $url)
+	config=$(sed -E 's/https:\/\/nscristiandad.es(.*)\//pages\1\.cfg/' <<< $url)
+	# page=$(sed -E 's/https:\/\/nscristiandad.es(.*)\//chuletas\1\.html/' <<< $url)
 
 	curl $url > $page
 
-	# # echo "canonical = $url" >> $config
-	# # echo "title = $(sed -En 's#.*<title>([^<]*)</title>#\1#p' $page)" >> $config
-	# # echo "description = $(sed -En 's#.*<meta name="description" content="([^"]*)".*#\1#p' $page)" >> $config
-	# # echo "filename = $(sed 's#pages/##g' <<< $page)" >> $config
-	# # echo "extrafooter = pages/extrafooter.html" >> $config
+	# echo "canonical = $url" >> $config
+	# echo "title = $(sed -En 's#.*<title>([^<]*)</title>#\1#p' $page)" >> $config
+	# echo "description = $(sed -En 's#.*<meta name="description" content="([^"]*)".*#\1#p' $page)" >> $config
+	# echo "filename = ${page##*/}" >> $config
+	# rm $page
 	 
 	# sed -E '0,/<\/header/d' -i $page
 	# sed -E '/<footer/,$d' -i $page
