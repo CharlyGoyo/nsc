@@ -2,7 +2,7 @@
 
 a=0.375
 d=-dark
-o=
+o=.
 
 while getopts "a:d:ho:" opt; do
 	case "$opt" in 

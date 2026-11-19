@@ -1,6 +1,16 @@
 #!/bin/sh
+while getopts "h" opt; do
+	case "$opt" in
+		h)
+			printf 'Arregla svgs que vienen con la bounding-box deformada y les reduce el tamaño 
+'
+			exit
+			;;
+	esac
+done
+
 for arg in "$@"; do
-	inkscape $arg --export-area-drawing --export-plain-svg -o - | usvg - -c | 
+	cleansvg=$(inkscape $arg --export-area-drawing --export-plain-svg -o - | usvg - -c | 
 		sed ' s/ id="[^"]*"//g; s/ stroke="[^"]*"//g; s/ fill="[^"]*"//g;' |
 		awk '
 	/width="[0-9.]+"/ && /height="[0-9.]+"/ {
@@ -11,5 +21,6 @@ for arg in "$@"; do
 			sub(/height="[0-9.]+"/, "viewBox=\"0 0 " w " " h "\"")
 		}
 	{ print }
-	'
+	')
+	echo $cleansvg > $arg
 done

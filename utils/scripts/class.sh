@@ -1,37 +1,32 @@
-#!/bin/sh
+#!/bin/bash
 
-a='pages/articulos/*.html'
+shopt -s extglob
 c=false
-f='pages/pt/*.html pages/fr/*.html pages/en/*.html pages/*.html templates/page/*.html template-boletin/seccion.html/*.html utils/html/*.html'
+[ -z "$HTML_EDITABLES" ] && source utils/scripts/env.sh
+f=$HTML_EDITABLES
 i=class
 I=false
 l=false
 
-while getopts "acf:hiil" opt; do
+while getopts "acf:hiIl" opt; do
 	case "$opt" in 
 		a)
-			a=
+			f=$EDITABLES_NO_ARTICULOS
 			;;
 		c)
 			c=true
 			;;
 		f)
 			f=$OPTARG
-			a=
 			;;
 		h)
 			printf "USO: class [opciones] argumentos (por defecto interpretados como clases)
 POR DEFECTO: Muestra los archivos que contienen la clase argumento
 
 OPCIONES:
-\t-a: no busca en pages/articulos/*.html
+\t-a: busca en \$EDITABLES_NO_ARTICULOS
 \t-c: devuelve el número de veces que se usa la clase argumento.
-\t-f: archivo en el que buscar. Por defecto en todos estos:
-\tpages/*.html
-\tpages/{en,fr,pt}/*.html
-\ttemplates/page/*.html 
-\ttemplate-boletin/seccion.html/*.html
-\tutils/html/*.html
+\t-f: archivo en el que buscar. Por defecto busca en \$HTML_EDITABLES
 \t-h: muestra este mensaje.
 \t-i: interpreta como id lo que se interpretaba como clase
 \t-l: devuelve todas las clases (o ids si es usa -i) en uso del elemento argumento
@@ -51,21 +46,25 @@ OPCIONES:
 	esac
 done
 
+f="$f $a"
+
 shift $((OPTIND - 1))
 [ "$#" -gt 1 ] && masdeuno=true || masdeuno=false
 
 for arg in "$@"
 do
 	if $l; then
-		grep -Eoh "$i=\"${arg}[0-9]+\"" $f $a | cut -d '"' -f 2 | sort -Vu
+		xmllint --html --xpath "//${arg}/@${i}" $f 2>/dev/null | sed -En 's/[^"]*"([^"]*)"[^"]*/\1/p' | sort -Vu
 	elif $c; then
 		$masdeuno && printf '%s:\t' $arg
-		grep -ch "$i=\"${arg}\"" $f $a | awk '{s+=$0} END {print s}'
+		xmllint --html --xpath "count(//*[@${i}='${arg}'])" $f 2>/dev/null | awk '{s+=$0} END {print s}'
 	elif $I; then
-		$masdeuno && printf 'n\t%s:\n' $arg 
-		grep -Eh "$i=\"${arg}\"" $f $a | grep -Eo 'id=".*"' | cut -d '"' -f 2 | sort -Vu
+		$masdeuno && printf '\n\t%s:\n' $arg 
+		xmllint --html --xpath "//*[@class='${arg}']/@id" $f 2>/dev/null | sed -En 's/[^"]*"([^"]*)".*/\1/p' | sort -Vu
 	else
 		$masdeuno && printf '\t%s:\n' $arg
-		grep -ln "$i=\"${arg}\"" $f $a
+		for file in $f; do
+			xmllint --html --xpath "//*[@${i}='${arg}']" "$file" >/dev/null 2>&1 && printf '%s\n' "$file"
+		done
 	fi
 done
