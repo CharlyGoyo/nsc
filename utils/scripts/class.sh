@@ -2,7 +2,7 @@
 
 shopt -s extglob
 c=false
-[ -z "$HTML_EDITABLES" ] && source utils/scripts/env.sh
+[ -z "$HTML_EDITABLES" ] && source utils/scripts/env.sh ""
 f=$HTML_EDITABLES
 i=class
 I=false
