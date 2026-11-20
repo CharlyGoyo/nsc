@@ -12,9 +12,45 @@ document.addEventListener('DOMContentLoaded', () => {
 		const selectores = container.querySelectorAll('[data-carrusel-selector]');
 		const esInfinito = container.dataset.carruselContainer.includes("infinito");
 		const esAutoScroll = container.dataset.carruselContainer.includes("autoscroll");
+		const esAlturaDinamica = container.dataset.carruselContainer.includes("altura_dinamica");
 		let autoscroll_activado = true;
 		let leftLimit = false;
 		let rightLimit = false;
+
+		const scrollDerecha = () => {
+			if (rightLimit) {
+				wrapper.scrollTo({
+					left: 		0,
+					behavior:	'smooth'
+				});
+			}
+			else {
+				wrapper.scrollTo({
+					left: 		wrapper.scrollLeft + wrapper.clientWidth,
+					behavior:	'smooth'
+				});
+			}
+		}
+		const scrollIzquierda = () => {
+			if (leftLimit) {
+				wrapper.scrollTo({
+					left:		wrapper.scrollWidth - wrapper.clientWidth,
+					behavior:	'smooth'
+				});
+			}
+			else {
+				wrapper.scrollTo({
+					left: 		wrapper.scrollLeft - wrapper.clientWidth,
+					behavior:	'smooth'
+				});
+			}
+		}
+		const ajustarAltura = () => {
+			const imgActiva = wrapper.children[Math.round(wrapper.scrollLeft / wrapper.clientWidth)];
+			if (imgActiva.offsetHeight > 0) {
+				wrapper.style.height = `${imgActiva.offsetHeight}px`;
+			}
+		};
 
 		if (esInfinito) {
 			let aux = wrapper.lastElementChild;
@@ -27,6 +63,9 @@ document.addEventListener('DOMContentLoaded', () => {
 		}
 
 		wrapper.addEventListener('scrollend', () => {
+			if (esAlturaDinamica) {
+				ajustarAltura();
+			}
 			leftLimit = false;
 			rightLimit = false;
 			if (wrapper.scrollLeft >= wrapper.scrollWidth - (wrapper.clientWidth + 1)) { 
@@ -74,33 +113,11 @@ document.addEventListener('DOMContentLoaded', () => {
 		});
 
 		rightBtn?.addEventListener('click', () => {
-			if (rightLimit) {
-				wrapper.scrollTo({
-					left: 		0,
-					behavior:	'smooth'
-				});
-			}
-			else {
-				wrapper.scrollTo({
-					left: 		wrapper.scrollLeft + wrapper.clientWidth,
-					behavior:	'smooth'
-				});
-			}
+			scrollDerecha();
 		}, {passive: true});
 
 		leftBtn?.addEventListener('click', () => {
-			if (leftLimit) {
-				wrapper.scrollTo({
-					left:		wrapper.scrollWidth - wrapper.clientWidth,
-					behavior:	'smooth'
-				});
-			}
-			else {
-				wrapper.scrollTo({
-					left: 		wrapper.scrollLeft - wrapper.clientWidth,
-					behavior:	'smooth'
-				});
-			}
+			scrollIzquierda();
 		}, {passive: true});
 
 		selectores?.forEach((selector, index) => {
@@ -124,18 +141,7 @@ document.addEventListener('DOMContentLoaded', () => {
 		if (esAutoScroll) {
 			setInterval(() => {
 				if (autoscroll_activado) {
-					if (rightLimit) {
-						wrapper.scrollTo({
-							left: 		0,
-							behavior:	'smooth'
-						});
-					}
-					else {
-						wrapper.scrollTo({
-							left: 		wrapper.scrollLeft + wrapper.clientWidth,
-							behavior:	'smooth'
-						});
-					}
+					scrollDerecha();
 				}
 			}, 5500);
 
@@ -151,17 +157,16 @@ document.addEventListener('DOMContentLoaded', () => {
 		container.addEventListener('keydown', (e) => {
 			if (e.key === 'ArrowRight') {
 				e.preventDefault();
-				wrapper.scrollTo({
-					left: wrapper.scrollLeft + wrapper.clientWidth,
-					behavior: 'smooth'
-				});
+				scrollDerecha();
 			} else if (e.key === 'ArrowLeft') {
 				e.preventDefault();
-				wrapper.scrollTo({
-					left: wrapper.scrollLeft - wrapper.clientWidth,
-					behavior: 'smooth'
-				});
+				scrollIzquierda();
 			}
 		});
+		if (esAlturaDinamica) {
+			ajustarAltura();
+			new ResizeObserver(() => ajustarAltura()).observe(wrapper);
+		}
 	});
 });
+
