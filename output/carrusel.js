@@ -2,83 +2,151 @@
 document.documentElement.classList.add('js');
 
 document.addEventListener('DOMContentLoaded', () => {
-	const containers = document.querySelectorAll('.div30');
+	const containers = document.querySelectorAll('[data-carrusel-container]');
 
 	containers.forEach((container) => {
 		container.setAttribute('tabindex', '0');
-		const wrapper = container.querySelector('.div32');
-		const rightBtn = container.querySelector('.svg19');
-		const leftBtn = container.querySelector('.svg20');
-		const dots = container.querySelectorAll('.span11 > .span12');
+		const wrapper = container.querySelector('[data-carrusel-wrapper]');
+		const rightBtn = container.querySelector('[data-carrusel-right]');
+		const leftBtn = container.querySelector('[data-carrusel-left]');
+		const selectores = container.querySelectorAll('[data-carrusel-selector]');
+		const esInfinito = container.dataset.carruselContainer.includes("infinito");
+		const esAutoScroll = container.dataset.carruselContainer.includes("autoscroll");
 		let autoscroll_activado = true;
+		let leftLimit = false;
+		let rightLimit = false;
 
-		let aux = wrapper.lastElementChild;
-		wrapper.appendChild(wrapper.firstElementChild.cloneNode(true));
-		wrapper.prepend(aux.cloneNode(true));
-		wrapper.scrollLeft = wrapper.clientWidth;
+		if (esInfinito) {
+			let aux = wrapper.lastElementChild;
+			wrapper.appendChild(wrapper.firstElementChild.cloneNode(true));
+			wrapper.prepend(aux.cloneNode(true));
+			wrapper.scrollLeft = wrapper.clientWidth;
+		}
+		else {
+			wrapper.scrollLeft = 0;
+		}
 
 		wrapper.addEventListener('scrollend', () => {
+			leftLimit = false;
+			rightLimit = false;
 			if (wrapper.scrollLeft >= wrapper.scrollWidth - (wrapper.clientWidth + 1)) { 
-				wrapper.scrollTo({
-					left:		wrapper.clientWidth,
-					behavior:	'instant'
-				});
+				if (esInfinito) {
+					wrapper.scrollTo({
+						left:		wrapper.clientWidth,
+						behavior:	'instant'
+					});
+				}
+				else {
+					rightLimit = true;
+				}
 			} else if (wrapper.scrollLeft <= 1) { 
-				wrapper.scrollTo({
-					left:		wrapper.scrollWidth - (wrapper.clientWidth * 2),
-					behavior:	'instant'
-				});
+				if (esInfinito) {
+					wrapper.scrollTo({
+						left:		wrapper.scrollWidth - (wrapper.clientWidth * 2),
+						behavior:	'instant'
+					});
+				}
+				else {
+					leftLimit = true;
+				}
+			}
+			else {
+
 			}
 
-			let ind = (Math.round(wrapper.scrollLeft / wrapper.clientWidth) - 1) % (wrapper.childElementCount - 2);
-			dots.forEach((dot, index) => {
+			const offset = esInfinito ? 1 : 0;
+			const totalReales = wrapper.childElementCount - (offset * 2);
+			let ind = (Math.round(wrapper.scrollLeft / wrapper.clientWidth) - offset) % totalReales;
+
+			if (wrapper.hasAttribute('data-cursor-zoom')) {
+				wrapper.dataset.cursorZoom = ind;
+			}
+
+			/* esto es un poco chapucilla. Feel free to improve */
+			selectores?.forEach((selector, index) => {
 				let op = '0.2';
 				if (ind == index) {
 					op = '1';
+					selector.checked = true;
 				}
-				dot.style.opacity = op;
+				selector.style.opacity = op;
 			});
 		});
 
-		rightBtn.addEventListener('click', () => {
-			wrapper.scrollTo({
-				left: 		wrapper.scrollLeft + wrapper.clientWidth,
-				behavior:	'smooth'
-			});
-		}, {passive: true});
-
-		leftBtn.addEventListener('click', () => {
-			wrapper.scrollTo({
-				left: 		wrapper.scrollLeft - wrapper.clientWidth,
-				behavior:	'smooth'
-			});
-		}, {passive: true});
-
-		dots.forEach((dot, index) => {
-			dot.addEventListener('click', () => {
+		rightBtn?.addEventListener('click', () => {
+			if (rightLimit) {
 				wrapper.scrollTo({
-					left:		(wrapper.clientWidth * (index + 1)),
-					behavior:	'smooth'
-				});
-			});
-		});
-
-		setInterval(() => {
-			if (autoscroll_activado) {
-				wrapper.scrollTo({
-					left:		wrapper.scrollLeft + wrapper.clientWidth,
+					left: 		0,
 					behavior:	'smooth'
 				});
 			}
-		}, 5500);
+			else {
+				wrapper.scrollTo({
+					left: 		wrapper.scrollLeft + wrapper.clientWidth,
+					behavior:	'smooth'
+				});
+			}
+		}, {passive: true});
 
-		container.addEventListener('mouseenter', () => {
-			autoscroll_activado = false;
+		leftBtn?.addEventListener('click', () => {
+			if (leftLimit) {
+				wrapper.scrollTo({
+					left:		wrapper.scrollWidth - wrapper.clientWidth,
+					behavior:	'smooth'
+				});
+			}
+			else {
+				wrapper.scrollTo({
+					left: 		wrapper.scrollLeft - wrapper.clientWidth,
+					behavior:	'smooth'
+				});
+			}
+		}, {passive: true});
+
+		selectores?.forEach((selector, index) => {
+			/* otra chapucilla que se puede mejorar */
+			selector.addEventListener('click', () => {
+				wrapper.scrollTo({
+					left:		(wrapper.clientWidth * (index + (esInfinito ? 1 : 0))),
+					behavior:	'smooth'
+				});
+			});
+			selector.addEventListener('change', (e) => {
+				if (e.target.checked) {
+					wrapper.scrollTo({
+						left:		(wrapper.clientWidth * (index + (esInfinito ? 1 : 0))),
+						behavior:	'smooth'
+					});
+				}
+			});
 		});
 
-		container.addEventListener('mouseleave', () => {
-			autoscroll_activado = true;
-		});
+		if (esAutoScroll) {
+			setInterval(() => {
+				if (autoscroll_activado) {
+					if (rightLimit) {
+						wrapper.scrollTo({
+							left: 		0,
+							behavior:	'smooth'
+						});
+					}
+					else {
+						wrapper.scrollTo({
+							left: 		wrapper.scrollLeft + wrapper.clientWidth,
+							behavior:	'smooth'
+						});
+					}
+				}
+			}, 5500);
+
+			container.addEventListener('mouseenter', () => {
+				autoscroll_activado = false;
+			});
+
+			container.addEventListener('mouseleave', () => {
+				autoscroll_activado = true;
+			});
+		}
 
 		container.addEventListener('keydown', (e) => {
 			if (e.key === 'ArrowRight') {

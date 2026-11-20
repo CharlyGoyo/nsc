@@ -4,17 +4,21 @@ shopt -s extglob
 c=false
 [ -z "$HTML_EDITABLES" ] && source utils/scripts/env.sh ""
 f=$HTML_EDITABLES
+e=false
 i=class
 I=false
 l=false
 
-while getopts "acf:hiIl" opt; do
+while getopts "acef:hiIl" opt; do
 	case "$opt" in 
 		a)
 			f=$EDITABLES_NO_ARTICULOS
 			;;
 		c)
 			c=true
+			;;
+		e)
+			e=true
 			;;
 		f)
 			f=$OPTARG
@@ -26,6 +30,8 @@ POR DEFECTO: Muestra los archivos que contienen la clase argumento
 OPCIONES:
 \t-a: busca en \$EDITABLES_NO_ARTICULOS
 \t-c: devuelve el número de veces que se usa la clase argumento.
+\t-e: interpreta como argumento lo que se interpretaba como clase.
+Devuelve todos los elementos de ese tipo que no tienen clase ni id.
 \t-f: archivo en el que buscar. Por defecto busca en \$HTML_EDITABLES
 \t-h: muestra este mensaje.
 \t-i: interpreta como id lo que se interpretaba como clase
@@ -53,16 +59,18 @@ shift $((OPTIND - 1))
 
 for arg in "$@"
 do
+	$masdeuno && printf '\t%s:\n' $arg
 	if $l; then
 		xmllint --html --xpath "//${arg}/@${i}" $f 2>/dev/null | sed -En 's/[^"]*"([^"]*)"[^"]*/\1/p' | sort -Vu
 	elif $c; then
-		$masdeuno && printf '%s:\t' $arg
 		xmllint --html --xpath "count(//*[@${i}='${arg}'])" $f 2>/dev/null | awk '{s+=$0} END {print s}'
 	elif $I; then
-		$masdeuno && printf '\n\t%s:\n' $arg 
 		xmllint --html --xpath "//*[@class='${arg}']/@id" $f 2>/dev/null | sed -En 's/[^"]*"([^"]*)".*/\1/p' | sort -Vu
+	elif $e; then
+		for file in $f; do
+			xmllint --html --xpath "//${arg}[not(@class) and not(@id)]" $file >/dev/null 2>&1 && printf '%s\n' "$file"
+		done
 	else
-		$masdeuno && printf '\t%s:\n' $arg
 		for file in $f; do
 			xmllint --html --xpath "//*[@${i}='${arg}']" "$file" >/dev/null 2>&1 && printf '%s\n' "$file"
 		done
