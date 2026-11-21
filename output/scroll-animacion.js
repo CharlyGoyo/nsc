@@ -15,10 +15,8 @@ document.addEventListener('DOMContentLoaded', () => {
 		entries.forEach(entry => {
 			if (entry.isIntersecting) {
 				groupMap.get(entry.target.dataset.animationGroup).forEach(element => {
-					element.style.opacity = "1";
-					element.style.scale = "1";
-					element.style.translate = "0 0";
-					element.style.visibility = "visible";
+					void element.offsetWidth;
+					element.removeAttribute('data-animation');
 					observer.unobserve(element);
 				});
 			}
@@ -31,7 +29,6 @@ document.addEventListener('DOMContentLoaded', () => {
 		'bottom-opacity2': 	new IntersectionObserver(onIntersect, { rootMargin: `0px 50% ${getCssVar("--distancia")} 50%`, threshold: 0 }),
 		'top':         		new IntersectionObserver(onIntersect, { rootMargin: `0px 50% ${getCssVar("--distancia4")} 50%`, threshold: 0 }),
 		'top2':         	new IntersectionObserver(onIntersect, { rootMargin: `0px 50% ${getCssVar("--distancia5")} 50%`, threshold: 0 }),
-		'top-opacity':		new IntersectionObserver(onIntersect, { rootMargin: `0px 50% ${getCssVar("--distancia6")} 50%`, threshold: 0 }),
 		'top-opacity':		new IntersectionObserver(onIntersect, { rootMargin: `0px 50% ${getCssVar("--distancia5")} 50%`, threshold: 0 }),
 		'default':        	new IntersectionObserver(onIntersect, { rootMargin: '0px 50% 0px 50%', threshold: 0 })
 	};
