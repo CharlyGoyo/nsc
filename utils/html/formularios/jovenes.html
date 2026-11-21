@@ -1,0 +1,65 @@
+			<form action="" method="post">
+				<label>
+					Nombre y apellidos *
+					<input autocomplete="name" name="nombre" required type="text"/>
+				</label>
+
+				<label>
+					Email *
+					<input autocomplete="email" inputmode="email" name="email" required type="email"/>
+				</label>
+
+				<label>
+					Edad *
+					<input inputmode="numeric" max="120" min="0" name="edad" required step="1" type="number"/>
+				</label>
+
+				<label>
+					Sexo *
+					<select autocomplete="sex" name="sexo" required>
+						<option disabled hidden selected value=""></option>
+						<option value="hombre">Hombre</option>
+						<option value="mujer">Mujer</option>
+					</select>
+				</label>
+
+				<label>
+					Teléfono *
+					<input autocomplete="tel" inputmode="tel" name="tel" required type="tel"/>
+				</label>
+
+				<label>
+					Ciudad de residencia *
+					<input autocomplete="address-level2" name="ciudad" required type="text"/>
+				</label>
+
+				<label>
+					En caso de tener alguna intolerancia alimentaria, indíquelo aquí
+					<input autocomplete="off" name="intolerancia" type="text"/>
+				</label>
+
+				<label>
+					Si vas en coche, ¿cuántas plazas tienes libres?
+					<input inputmode="numeric" max="9" min="0" name="plazas_libres" step="1" type="number"/>
+				</label>
+
+				<fieldset>
+					<legend>Quiero ser incluido en el grupo de Whatsapp del encuentro *</legend>
+					<label>
+						<input name="whatsapp" required type="radio" value="si"/>
+						Sí
+					</label>
+					<label>
+						<input name="whatsapp" required type="radio" value="no"/>
+						No
+					</label>
+				</fieldset>
+
+				<label>
+					<input name="privacidad" required type="checkbox" value="1"/>
+					El interesado conoce y ACEPTA la <a href="/politica-de-privacidad" rel="noopener noreferrer" target="_blank">Política de Privacidad</a> de la Asociación Nuestra Señora de la Cristiandad - España. *
+				</label>
+
+				<button type="submit">Solicitar plaza</button>
+			</form>
+		</main>

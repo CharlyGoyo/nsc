@@ -1,0 +1,98 @@
+<form action="" method="post">
+	<fieldset>
+		<legend>¿Has participado en años anteriores como voluntario de la Peregrinación? *</legend>
+		<label>
+			<input name="experiencia" required type="radio" value="si"/>
+			Sí
+		</label>
+		<label>
+			<input name="experiencia" required type="radio" value="no"/>
+			No
+		</label>
+	</fieldset>
+
+	<label>
+		Nombre *
+		<input autocomplete="given-name" name="nombre" required type="text"/>
+	</label>
+
+	<label>
+		Apellidos *
+		<input autocomplete="family-name" name="apellidos" required type="text"/>
+	</label>
+
+	<label>
+		Email *
+		<input autocomplete="email" inputmode="email" name="email" required type="email"/>
+	</label>
+
+	<label>
+		Edad *
+		<input inputmode="numeric" max="120" min="0" name="edad" required step="1" type="number"/>
+	</label>
+
+	<label>
+		Profesión/ocupación *
+		<input autocomplete="organization-title" name="profesion" required type="text"/>
+	</label>
+
+	<label>
+		Teléfono *
+		<input autocomplete="tel" inputmode="tel" minlength="6" name="telefono" required type="tel"/>
+		<small>If you have a foreign number, please add the prefix.</small>
+	</label>
+
+	<label>
+		Provincia *
+		<input autocomplete="address-level1" name="provincia" required type="text"/>
+	</label>
+
+	<label>
+		Localidad *
+		<input autocomplete="address-level2" name="localidad" required type="text"/>
+	</label>
+
+	<hr/>
+
+	<fieldset>
+		<legend>¿Puedes aportar coche propio? *</legend>
+		<label>
+			<input name="coche" required type="radio" value="si"/>
+			Sí
+		</label>
+		<label>
+			<input name="coche" required type="radio" value="no"/>
+			No
+		</label>
+	</fieldset>
+
+	<hr/>
+
+	<fieldset>
+		<legend>¿Tienes experiencia en sacristía/liturgia? *</legend>
+		<label>
+			<input name="sacristia" required type="radio" value="si"/>
+			Sí
+		</label>
+		<label>
+			<input name="sacristia" required type="radio" value="no"/>
+			No
+		</label>
+	</fieldset>
+
+	<label>
+		¿Cuál? *
+		<textarea name="pregunta1" required rows="4"></textarea>
+	</label>
+
+	<label>
+		¿Por qué quieres ser voluntario de Clero-Ceremonias? *
+		<textarea name="pregunta2" required rows="4"></textarea>
+	</label>
+
+	<label>
+		<input name="privacidad" required type="checkbox" value="1"/>
+		Conozco y acepto la <a href="/politica-de-privacidad" rel="noopener noreferrer" target="_blank">Política de Privacidad</a> de la Asociación Nuestra Señora de la Cristiandad - España. *
+	</label>
+
+	<input name="area" type="hidden" value="ceremonias"/>

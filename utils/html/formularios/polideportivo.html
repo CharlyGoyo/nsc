@@ -1,0 +1,144 @@
+<form action="" method="post">
+	<fieldset>
+		<legend>¿Qué día va a dormir en el polideportivo/colegio? *</legend>
+		<label>
+			<input name="dia[]" type="checkbox" value="viernes"/>
+			Viernes 24
+		</label>
+		<label>
+			<input name="dia[]" type="checkbox" value="lunes"/>
+			Lunes 27
+		</label>
+	</fieldset>
+
+	<label>
+		Nombre *
+		<input autocomplete="given-name" name="nombre" required type="text"/>
+	</label>
+
+	<label>
+		Apellidos *
+		<input autocomplete="family-name" name="apellidos" required type="text"/>
+	</label>
+
+	<label>
+		Email *
+		<input autocomplete="email" inputmode="email" name="email" required type="email"/>
+	</label>
+
+	<label>
+		Confirmación de email *
+		<input autocomplete="email" inputmode="email" name="email_confirmation" required type="email"/>
+	</label>
+
+	<label>
+		Seleccione un capítulo *
+		<select name="capitulo" required>
+			<option disabled hidden selected value=""></option>
+			<option value="voluntario">Voluntario</option>
+			<option value="rafael">Arcángel San Rafael</option>
+			<option value="cubilete">Cristo del Cubilete</option>
+			<option value="willibrord">Heilige Willibrord</option>
+			<option value="fuensanta">Inmaculada Virgen de la Fuensanta</option>
+			<option value="santa_faz">La Santa Faz</option>
+			<option value="częstochowska">Matka Boża Częstochowska</option>
+			<option value="fatima">Nossa Senhora de Fátima</option>
+			<option value="terre_sainte">Notre-Dame de Terre Sainte</option>
+			<option value="covadonga">Nuestra Señora de Covadonga</option>
+			<option value="antigua">Nuestra Señora de la Antigua</option>
+			<option value="medalla_milagrosa">Nuestra Señora de la Medalla Milagrosa</option>
+			<option value="paz">Nuestra Señora de la Paz</option>
+			<option value="vega">Nuestra Señora de la Vega</option>
+			<option value="victorias">Nuestra Señora de las Victorias</option>
+			<option value="desamparados">Nuestra Señora de los Desamparados</option>
+			<option value="montserrat">Nuestra Señora de Montserrat</option>
+			<option value="valvanera">Nuestra Señora de Valvanera</option>
+			<option value="carmen">Nuestra Señora del Carmen</option>
+			<option value="mar">Nuestra Señora del Mar</option>
+			<option value="pilar">Nuestra Señora del Pilar</option>
+			<option value="pino">Nuestra Señora del Pino</option>
+			<option value="sagrario">Nuestra Señora del Sagrario</option>
+			<option value="evesham">Our Lady of Evesham</option>
+			<option value="concepcion">Pura y Limpia Concepción de María</option>
+			<option value="anne">Saint Anne</option>
+			<option value="joseph">Saint Joseph</option>
+			<option value="patrick">Saint Patrick</option>
+			<option value="behnam_sarah">Saints Behnam et Sarah</option>
+			<option value="populi_romani">Salus Populi Romani</option>
+			<option value="andres">San Andrés</option>
+			<option value="fernando">San Fernando</option>
+			<option value="fco_javier">San Francisco de Javier</option>
+			<option value="jorge">San Jorge</option>
+			<option value="pascual_baylon">San Pascual Baylón</option>
+			<option value="pedro_alcantara">San Pedro de Alcántara</option>
+			<option value="pelayo">San Pelayo</option>
+			<option value="eulalia">Santa Eulàlia</option>
+			<option value="juana_arco">Santa Juana de Arco</option>
+			<option value="maria_mayor">Santa María la Mayor</option>
+			<option value="teresa">Santa Teresa</option>
+			<option value="tomas_aquino">Santo Tomás de Aquino</option>
+			<option value="fco_y_jacinta">Santos Francisco y Jacinta</option>
+			<option value="ysabel">Ysabel la Católica</option>
+		</select>
+	</label>
+
+	<label>
+		Edad *
+		<input inputmode="numeric" max="120" min="16" name="edad" required step="1" type="number"/>
+	</label>
+
+	<fieldset>
+		<legend>¿Viene de manera individual o con familia? *</legend>
+		<label>
+			<input name="inscripcion" required type="radio" value="individual"/>
+			Individual
+		</label>
+		<label>
+			<input name="inscripcion" required type="radio" value="familiar"/>
+			Familiar
+		</label>
+	</fieldset>
+
+	<label>
+		¿Cuántos realizan la ruta completa? *
+		<input inputmode="numeric" min="0" name="cuantos_completa" required step="1" type="number" value="0"/>
+	</label>
+
+	<label>
+		¿Cuántos realizan la ruta de familias? *
+		<input inputmode="numeric" min="0" name="cuantos_familias" required step="1" type="number" value="0"/>
+	</label>
+
+	<fieldset>
+		<legend>¿Estaría dispuesto a ayudar como voluntario en el polideportivo/colegio? (Orden y limpieza, entrada y salida, etc.) *</legend>
+		<label>
+			<input name="inscripcion_copy" required type="radio" value="si"/>
+			Sí
+		</label>
+		<label>
+			<input name="inscripcion_copy" required type="radio" value="no"/>
+			No
+		</label>
+	</fieldset>
+
+	<label>
+		Donativo (LLÉVELO AL POLIDEPORTIVO EN METÁLICO Y JUSTO)
+		<output name="aportacion">0.00 €</output>
+	</label>
+
+	<p>Para la reserva del polideportivo/colegio para dormir se requiere un donativo simbólico de 2€ por persona y noche (con un máximo de 12€ por familia y noche), que la Asociación entregará a los lugares que nos ceden.</p>
+
+	<p><b>HAY QUE LLEVAR EL DINERO JUSTO EN METÁLICO AL POLIDEPORTIVO</b></p>
+
+	<label>
+		<input name="normas" required type="checkbox" value="SI"/>
+		<b>ACEPTO</b> las <b>normas de uso del polideportivo/colegio</b>: no comer dentro, respetar las indicaciones de los encargados, mantener el lugar limpio, respetar el silencio y los horarios de entrada y salida. *
+	</label>
+
+	<label>
+		<input name="privacidad" required type="checkbox" value="SI"/>
+		El interesado conoce y <b>ACEPTA</b> la <a href="/politica-de-privacidad" rel="noopener noreferrer" target="_blank">Política de Privacidad</a> de la Asociación Nuestra Señora de la Cristiandad-España. *
+	</label>
+
+	<button type="submit">Reservar plaza en polideportivo/colegio</button>
+</form>

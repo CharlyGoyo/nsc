@@ -1,0 +1,142 @@
+<form action="" method="post">
+	<label>
+		Nombre *
+		<input autocomplete="given-name" name="nombre" required type="text"/>
+	</label>
+
+	<label>
+		Apellidos *
+		<input autocomplete="family-name" name="apellidos" required type="text"/>
+	</label>
+
+	<label>
+		Email *
+		<input autocomplete="email" inputmode="email" name="email" required type="email"/>
+	</label>
+
+	<label>
+		Teléfono *
+		<input autocomplete="tel" inputmode="tel" name="tel" required type="tel"/>
+	</label>
+
+	<label>
+		Localidad *
+		<input autocomplete="address-level2" name="localidad" required type="text"/>
+	</label>
+
+	<fieldset>
+		<legend>Si viene en coche, ¿tiene alguna plaza libre?</legend>
+		<label>
+			<input name="coche" type="radio" value="si"/>
+			Sí
+		</label>
+		<label>
+			<input name="coche" type="radio" value="no"/>
+			No
+		</label>
+	</fieldset>
+
+	<fieldset>
+		<legend>Tipo de alojamiento en la Hospedería *</legend>
+		<label>
+			<input name="hospederia" required type="radio" value="todo"/>
+			Pensión completa todos los días (385 € a pagar en la Hospedería)
+		</label>
+		<label>
+			<input name="hospederia" required type="radio" value="no_todo"/>
+			Me quedo a (indicar a qué se va a quedar):
+		</label>
+	</fieldset>
+
+	<label>
+		Especificar estancia *
+		<textarea name="no_completa" placeholder="Me voy a quedar a..." required rows="4"></textarea>
+	</label>
+
+	<p>Pensión completa: 78€<br/>Comida: 18€<br/>Cena: 15€<br/>Desayuno: 8€<br/>Sólo dormir: 50€</p>
+
+	<p>Además del precio de la Hospedería, se dará un donativo para sufragar los gastos de folletos, viaje del predicador, donación a la comunidad, etc.</p>
+
+	<label>
+		En caso de tener alguna intolerancia alimentaria, indíquelo aquí
+		<input name="intolerancia" type="text"/>
+	</label>
+
+	<fieldset>
+		<legend>¿Quiere que le hagamos el check-in para ahorrarle tiempo a la llegada? *</legend>
+		<label>
+			<input name="check_in" required type="radio" value="si"/>
+			Sí
+		</label>
+		<label>
+			<input name="check_in" required type="radio" value="no"/>
+			No
+		</label>
+	</fieldset>
+
+	<label>
+		País de residencia *
+		<input autocomplete="country-name" name="pais_de_residencia" required type="text"/>
+	</label>
+
+	<label>
+		Tipo de documento *
+		<select name="tipo_de_documento" required>
+			<option value="DNI">DNI</option>
+			<option value="NIE">NIE</option>
+			<option value="pasaporte">Pasaporte</option>
+		</select>
+	</label>
+
+	<label>
+		Número de documento *
+		<input autocomplete="off" name="numero_de_documento" required type="text"/>
+	</label>
+
+	<label>
+		Número de soporte *
+		<input autocomplete="off" name="numero_de_soporte" required type="text"/>
+		<small>Sale en el DNI.</small>
+	</label>
+
+	<label>
+		Código Postal *
+		<input autocomplete="postal-code" inputmode="numeric" name="codigo_postal" required type="text"/>
+	</label>
+
+	<label>
+		Provincia *
+		<input autocomplete="address-level1" name="provincia" required type="text"/>
+	</label>
+
+	<label>
+		Fecha de nacimiento *
+		<input autocomplete="bday" name="fecha_de_nacimiento" required type="date"/>
+	</label>
+
+	<fieldset>
+		<legend>¿Qué días celebrará Misa allí?</legend>
+		<label>
+			<input name="misa[]" type="checkbox" value="lunes"/>
+			Lunes
+		</label>
+		<label>
+			<input name="misa[]" type="checkbox" value="martes"/>
+			Martes
+		</label>
+		<label>
+			<input name="misa[]" type="checkbox" value="miercoles"/>
+			Miércoles
+		</label>
+		<label>
+			<input name="misa[]" type="checkbox" value="jueves"/>
+			Jueves
+		</label>
+		<label>
+			<input name="misa[]" type="checkbox" value="viernes"/>
+			Viernes
+		</label>
+	</fieldset>
+
+	<button type="submit">Inscribirme</button>
+</form>
