@@ -2355,10 +2355,14 @@ ul {
 }
 
 .main8 {
-	gap:		24px;
+	gap:	24px;
 }
 
-.ol1 {}
+.ol1 {
+	list-style-position:	outside;
+	margin-left:			48px;
+	white-space:			wrap;
+}
 
 .p1 {
 	color:			var(--negro);
@@ -3620,6 +3624,12 @@ ul {
 	& > *:last-child {
 		grid-column:	span 2;
 	}
+}
+
+#form12 {
+	max-width:	1140px;
+	width:		100%;
+	padding:	0 10px;
 }
 
 #h25 {}
