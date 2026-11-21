@@ -138,6 +138,11 @@
 	--distancia4:	-80px;
 	--distancia5:	-200px;
 	--distancia6:	-400px;
+
+	--resize-factor:	1;
+	@media (max-width:	921px) {
+		--resize-factor:	0.8;
+	}
 }
 
 .js {
@@ -245,7 +250,7 @@ button {
 	cursor: 			pointer;
 	display:			inline-flex;
 	font-family:		'Montserrat', sans-serif;
-	font-size: 			0.9375rem;
+	font-size: 			calc(0.9375rem * var(--resize-factor));
 	font-weight: 		400;
 	height:				39px;
 	justify-content:	center;
@@ -264,7 +269,7 @@ div {
 	flex:				1;
 	flex-direction:		column;
 	font-family:		'Montserrat', sans-serif;
-	font-size:			0.875rem;
+	font-size:			calc(0.875rem * var(--resize-factor));
 	font-weight:		400;
 	justify-content:	center;
 	position:			relative;
@@ -293,17 +298,13 @@ form {
 h1 {
 	color:			var(--azul);
 	font-family: 	'Cinzel', serif;
-	font-size: 		2.5rem;
+	font-size: 		calc(2.5rem * var(--resize-factor));
 	font-weight: 	200;
-	line-height: 	3rem; 
+	line-height: 	calc(3rem * var(--resize-factor)); 
 	margin: 		0;
 	padding: 		0;
 	text-align:		center;
 	transition:		var(--animacion);
-	@media (max-width:	921px) {
-		font-size: 		1.875rem;
-		line-height:	2.25rem;
-	}
 }
 
 h2 {
@@ -318,9 +319,9 @@ h2 {
 h3 {
 	color:			var(--blanco);
 	font-family:	'Montserrat', sans-serif;
-	font-size:		1.625rem;
+	font-size:		calc(1.625rem * var(--resize-factor));
 	font-weight:	400;
-	line-height:	2.1125rem;
+	line-height:	calc(2.1125rem * var(--resize-factor));
 	margin: 		0;
 	padding: 		0;
 	text-align:		center;
@@ -329,8 +330,8 @@ h3 {
 h4 {
 	color:			var(--azul);
 	font-family: 	'Cinzel', serif;
-	font-size:		1.5rem;
-	line-height:	1.8rem;
+	font-size:		calc(1.5rem * var(--resize-factor));
+	line-height:	calc(1.8rem * var(--resize-factor));
 	font-weight: 	400;
 	margin: 		0;
 	padding: 		0;
@@ -366,8 +367,8 @@ img {
 input {
 	outline:		none;
 	font-family:	'Montserrat', sans-serif;
-	font-size:		1rem;
-	line-height:	1rem;
+	font-size:		calc(1rem * var(--resize-factor));
+	line-height:	calc(1rem * var(--resize-factor));
 }
 
 label {
@@ -375,9 +376,9 @@ label {
 	color:			black;
 	cursor:			pointer;
 	flex:			1;
-	font-size:		1rem;
+	font-size:		calc(1rem * var(--resize-factor));
 	font-family:	'Montserrat', sans-serif;
-	line-height:	1.65rem;
+	line-height:	calc(1.65rem * var(--resize-factor));
 	transition:		var(--animacion);
 }
 
@@ -391,7 +392,7 @@ main {
 li {
 	color:			var(--azul);
 	font-family:	'Montserrat', sans-serif;
-	font-size: 		1rem;
+	font-size: 		calc(1rem * var(--resize-factor));
 	font-weight:	600;
 	overflow:		hidden;
 }
@@ -428,7 +429,7 @@ option {
 
 p {
 	font-family:	'Montserrat', sans-serif;
-	font-size:		1rem;
+	font-size:		calc(1rem * var(--resize-factor));
 	margin: 		0;
 	padding:		0;
 	text-align:		center;
@@ -444,9 +445,9 @@ section {
 }
 
 select {
-	font-size:		1rem;
+	font-size:		calc(1rem * var(--resize-factor));
 	font-family:	'Montserrat', sans-serif;
-	line-height:	1.65rem;
+	line-height:	calc(1.65rem * var(--resize-factor));
 }
 
 span {
@@ -455,8 +456,8 @@ span {
 
 strong {
 	font-family:	'Montserrat', sans-serif;
-	font-size:		1rem;
-	line-height:	1.65rem;
+	font-size:		calc(1rem * var(--resize-factor));
+	line-height:	calc(1.65rem * var(--resize-factor));
 	text-align:		center;
 }
 
@@ -480,8 +481,8 @@ svg {
 
 textarea {
 	font-family:	'Montserrat', sans-serif;
-	font-size:		1rem;
-	line-height:	1.65rem;
+	font-size:		calc(1rem * var(--resize-factor));
+	line-height:	calc(1.65rem * var(--resize-factor));
 }   	
     	
 ul {
@@ -502,11 +503,11 @@ ul {
 	color:			var(--azul);
 	display:		flex;
 	/*fill:			var(--azul);*/
-	/*font-size:	0.9375rem;*/
-	font-size:		1rem;
+	/*font-size:	calc(0.9375rem * var(--resize-factor));*/
+	font-size:		calc(1rem * var(--resize-factor));
 	font-weight:	500;
 	gap:			10px;
-	line-height:	1.25rem;
+	line-height:	calc(1.25rem * var(--resize-factor));
 	&:hover {
 		color:	var(--rojo);
 	}
@@ -520,7 +521,7 @@ ul {
 	background-color: 	var(--blanco);
 	color:				var(--azul);
 	display:			flex;
-	font-size:			0.9375rem;
+	font-size:			calc(0.9375rem * var(--resize-factor));
 	font-weight:		400;
 	padding: 			12px 20px;
 	text-align:			left;
@@ -540,7 +541,7 @@ ul {
 	border-radius:			20px;
 	color:					var(--blanco);
 	display:				flex;
-	font-size:				2rem;
+	font-size:				calc(2rem * var(--resize-factor));
 	font-weight:			800;
 	height:					100%;
 	justify-content:		center;
@@ -568,9 +569,9 @@ ul {
 .a6 {
 	color:			var(--rojo);
 	font-weight:	600;
-	font-size:		1rem;
+	font-size:		calc(1rem * var(--resize-factor));
 	/*margin-bottom:	4px;*/
-	line-height:	1.65rem;
+	line-height:	calc(1.65rem * var(--resize-factor));
 	&:hover {
 		color:		var(--amarillo);
 	}
@@ -578,15 +579,15 @@ ul {
 
 /*elemento no desplegable del navbar en pantalla pequeña*/
 .a7 {
-	/*font-size:		0.9375rem;*/
+	/*font-size:		calc(0.9375rem * var(--resize-factor));*/
 	background-color:	var(--blanco);
 	color:				var(--azul);
 	display:			none;
-	font-size:			1rem;
+	font-size:			calc(1rem * var(--resize-factor));
 	font-weight:		500;
 	height:				2.75rem;
 	letter-spacing:		-0.2px;
-	line-height:		2.75rem;
+	line-height:		calc(2.75rem * var(--resize-factor));
 	transition:			background-color 0.3s, color 0.3s;
 	width:				100%;
 	&:hover {
@@ -603,7 +604,7 @@ ul {
 	background-color: 	var(--blanco);
 	color:				var(--azul);
 	display:			none;
-	font-size:			1rem;
+	font-size:			calc(1rem * var(--resize-factor));
 	font-weight:		400;
 	padding:  			12px 0 12px 0;
 	text-align:			center;
@@ -623,11 +624,11 @@ ul {
 	align-items:	center;
 	color:			var(--azul);
 	display:		none;
-	font-size:		1rem;
+	font-size:		calc(1rem * var(--resize-factor));
 	font-weight:	500;
 	column-gap:		8px;
 	letter-spacing:	-0.2px;
-	line-height:	2.75rem;
+	line-height:	calc(2.75rem * var(--resize-factor));
 	height:			2.75rem;
 	transition:		color 0.3s;
 	width:			max-content;
@@ -643,10 +644,10 @@ ul {
 .a10 {
 	color:			var(--azul);
 	display:		none;
-	font-size:		1rem;
+	font-size:		calc(1rem * var(--resize-factor));
 	font-weight:	400;
 	gap:			7px;
-	line-height:	1.25rem;
+	line-height:	calc(1.25rem * var(--resize-factor));
 	padding:  		12px 0 12px 0;
 	transition:		color 0.3s;
 	&:hover {
@@ -659,9 +660,9 @@ ul {
 
 .a11 {
 	color:			var(--rojo);
-	font-size:		1rem;
+	font-size:		calc(1rem * var(--resize-factor));
 	font-weight:	400;
-	line-height:	1.65rem;
+	line-height:	calc(1.65rem * var(--resize-factor));
 	&:hover {
 		color:		var(--amarillo);
 	}
@@ -673,12 +674,12 @@ ul {
 	border-radius:		6px;
 	color:				var(--blanco4);
 	display:			flex;
-	font-size:			1.5rem;
+	font-size:			calc(1.5rem * var(--resize-factor));
 	font-weight:		700;
 	gap:				15px;
 	height:				204px;
 	justify-content:	center;
-	line-height:		1.8rem;
+	line-height:		calc(1.8rem * var(--resize-factor));
 	scale:				1;
 	width:				326px;
 	letter-spacing:		0.5px;
@@ -699,10 +700,10 @@ ul {
 	color:			var(--negro2);
 	display:		flex;
 	font-family:	'Roboto', sans-serif;
-	font-size:		1.25rem;
+	font-size:		calc(1.25rem * var(--resize-factor));
 	font-weight:	300;
 	gap:			15px;
-	line-height:	1.875rem;
+	line-height:	calc(1.875rem * var(--resize-factor));
 	&:hover {
 		color:	#d90a2c;
 	}
@@ -728,30 +729,30 @@ ul {
 
 .a17 {
 	color:			navy;
-	font-size:		1rem;
+	font-size:		calc(1rem * var(--resize-factor));
 	font-weight:	700;
-	line-height:	1.65rem;
+	line-height:	calc(1.65rem * var(--resize-factor));
 }
 
 .a18 {
 	color:			var(--rojo);
 	font-family:	'Cinzel', sans-serif;
-	font-size:		1.4375rem;
-	line-height:	2.0125rem;
+	font-size:		calc(1.4375rem * var(--resize-factor));
+	line-height:	calc(2.0125rem * var(--resize-factor));
 }
 
 .a19 {
 	color:			var(--amarillo);
-	font-size:		0.75rem;
-	line-height:	1.65rem;
+	font-size:		calc(0.75rem * var(--resize-factor));
+	line-height:	calc(1.65rem * var(--resize-factor));
 }
 
 .a20 {
 	background-color:	#940000;
 	border-radius:		3px;
 	color:				var(--blanco4);
-	font-size:			0.9375rem;
-	line-height:		0.9375rem;
+	font-size:			calc(0.9375rem * var(--resize-factor));
+	line-height:		calc(0.9375rem * var(--resize-factor));
 	padding:			10px 40px;
 	align-self:			flex-end;
 }
@@ -762,7 +763,7 @@ ul {
 	color:					#e8e6e3;
 	display:				flex;
 	font-family:			'Libre Baskerville', sans-serif;
-	font-size:				1.3125rem;
+	font-size:				calc(1.3125rem * var(--resize-factor));
 	font-weight:			600;
 	justify-content:		center;
 	background-position:	50% 0%;
@@ -778,7 +779,7 @@ ul {
 	color:					#e8e6e3;
 	display:				flex;
 	font-family:			'Libre Baskerville', sans-serif;
-	font-size:				1.3125rem;
+	font-size:				calc(1.3125rem * var(--resize-factor));
 	font-weight:			600;
 	justify-content:		center;
 	background-position:	center;
@@ -992,7 +993,7 @@ ul {
 .button7 {
 	border-color:		var(--azul);
 	background-color:	var(--azul);
-	font-size:			1rem;
+	font-size:			calc(1rem * var(--resize-factor));
 	font-weight:		500;
 	height:				40px;
 	padding:			10px 40px;
@@ -1008,10 +1009,10 @@ ul {
 .button8 {
 	background-color:	var(--azul);
 	border:				none;
-	font-size:			0.75rem;
+	font-size:			calc(0.75rem * var(--resize-factor));
 	font-weight:		500;
 	height:				32px;
-	line-height:		0.75rem;
+	line-height:		calc(0.75rem * var(--resize-factor));
 	margin:				auto;
 	padding:			10px 40px;
 	&:hover, &:focus-visible {
@@ -1024,9 +1025,9 @@ ul {
 	border-color:	var(--azul);
 	color:			var(--azul);
 	display:		flex;
-	font-size:		1rem;
+	font-size:		calc(1rem * var(--resize-factor));
 	font-weight:	500;
-	line-height:	1rem;
+	line-height:	calc(1rem * var(--resize-factor));
 	gap:			12px;
 	width:			100%;
 	&:hover, &:focus-visible {
@@ -1043,7 +1044,7 @@ ul {
 	border-color:	var(--azul);
 	color:			var(--azul);
 	display:		flex;
-	font-size:		0.9375rem;
+	font-size:		calc(0.9375rem * var(--resize-factor));
 	font-weight:	500;
 	gap:			7px;
 	padding: 		0 40px;
@@ -1064,9 +1065,9 @@ ul {
 	border-color:		var(--rojo2);
 	border-radius:		3px;
 	color:				var(--blanco4);
-	font-size:			1.25rem;
+	font-size:			calc(1.25rem * var(--resize-factor));
 	font-weight:		600;
-	line-height:		1.25rem;
+	line-height:		calc(1.25rem * var(--resize-factor));
 	padding:			10px 40px;
 }
 
@@ -1257,10 +1258,10 @@ ul {
 	background-size:		cover;
 	border-radius:			20px;
 	color:					var(--blanco4);
-	font-size:				1.875rem;
+	font-size:				calc(1.875rem * var(--resize-factor));
 	font-weight:			600;
 	height:					100%;
-	line-height:			1.875rem;
+	line-height:			calc(1.875rem * var(--resize-factor));
 	position:				relative;
 	width:					100%;
 	&:hover > .span5 {
@@ -1273,10 +1274,10 @@ ul {
 	border-radius:	20px;
 	color:			var(--blanco4);
 	font-family:	'Montserrat', sans-serif;
-	font-size:		0.875rem;
+	font-size:		calc(0.875rem * var(--resize-factor));
 	font-weight:	400;
 	height:			100%;
-	line-height:	1.65rem;
+	line-height:	calc(1.65rem * var(--resize-factor));
 	overflow:		hidden;
 	padding:		0 35px;
 	position:		relative;
@@ -1352,7 +1353,7 @@ ul {
 	align-items:	flex-start;
 	border-top:		1px solid #eaeaea;
 	color:			#adadad;
-	font-size:		0.75rem;
+	font-size:		calc(0.75rem * var(--resize-factor));
 	padding:		15px 30px;
 }
 
@@ -1443,18 +1444,18 @@ ul {
 .figcaption1 {
 	color:			var(--negro);
 	font-family:	'Montserrat', sans-serif;
-	font-size:		0.9375rem;
+	font-size:		calc(0.9375rem * var(--resize-factor));
 	font-style:		italic;
-	line-height:	1.1875rem;
+	line-height:	calc(1.1875rem * var(--resize-factor));
 	text-align:		center;
 }
 
 .figcaption2 {
 	color:			var(--negro);
 	font-family:	'Libre Baskerville', sans-serif;
-	font-size:		0.9375rem;
+	font-size:		calc(0.9375rem * var(--resize-factor));
 	font-style:		italic;
-	line-height:	1.65rem;
+	line-height:	calc(1.65rem * var(--resize-factor));
 	text-align:		center;
 	text-shadow:	0px 0px 10px rgba(0,0,0,0.3);
 }
@@ -1467,71 +1468,65 @@ ul {
 
 .h12 {
 	color:			var(--blanco4);
-	font-size:		3.125rem;
+	font-size:		calc(3.125rem * var(--resize-factor));
 	letter-spacing:	1.4px;
 	text-shadow:	#000000fc 0px 0px 10px;
 }
 
 .h13 {
 	color:			var(--blanco4);
-	font-size:		1.5rem;
+	font-size:		calc(1.5rem * var(--resize-factor));
 	font-weight:	500;
 	letter-spacing:	1.4px;
-	line-height:	2.65rem;
+	line-height:	calc(2.65rem * var(--resize-factor));
 	text-shadow:	#0000004d 0px 0px 11px;
 }
 
 .h21 {
-	font-size: 		2rem;
+	font-size: 		calc(2rem * var(--resize-factor));
 	font-weight: 	200;
-	line-height:	2.6rem;
-	@media (max-width:	921px) {
-		font-size:	1.5625rem;
-	}
+	line-height:	calc(2.6rem * var(--resize-factor));
 }
 
 .h22 {
 	color:			var(--blanco);
-	font-size: 		2.5rem;
+	font-size: 		calc(2.5rem * var(--resize-factor));
 	font-weight:	400;
-	line-height: 	3.5rem; 
-	@media (max-width:	921px) {
-		font-size:	1.875rem;
-	}
+	line-height: 	calc(3.5rem * var(--resize-factor)); 
 }
 
 .h23 {
-	font-size:		2.5rem;
+	font-size:		calc(2.5rem * var(--resize-factor));
 	font-weight:	400;
-	line-height: 	3.5rem; 
+	line-height: 	calc(3.5rem * var(--resize-factor)); 
 	text-align:		left;
 }
 
 .h24 {
 	color:			var(--blanco);
-	font-size:		1.8125rem;
+	font-size:		calc(1.8125rem * var(--resize-factor));
 	font-weight:	400;
-	line-height:	2.5375rem;
+	line-height:	calc(2.5375rem * var(--resize-factor));
 }
 
 .h25 {
 	color:			var(--blanco);
-	font-size:		2rem;
+	font-size:		calc(2rem * var(--resize-factor));
 	font-weight:	400;
-	line-height:	2.6rem;
+	line-height:	calc(2.6rem * var(--resize-factor));
 }
 
 .h26 {
-	font-size:		1.625rem;
+	font-size:		calc(1.625rem * var(--resize-factor));
 	font-weight:	400;
-	line-height:	2.1125rem;
+	line-height:	calc(2.1125rem * var(--resize-factor));
 }
 
 .h27 {
 	font-family:	'Rochester', sans-serif;
-	font-size:		2.6875rem;
+	font-size:		calc(2.6875rem * var(--resize-factor));
 	font-weight:	600;
-	line-height:	3.49375rem;
+	line-height:	calc(3.49375rem * var(--resize-factor));
 }
 
 .h31 {
@@ -1541,16 +1536,16 @@ ul {
 .h32 {
 	color:			var(--blanco2);
 	font-weight:	600;
-	font-size:		1.25rem;
+	font-size:		calc(1.25rem * var(--resize-factor));
 	text-align:		left;
-	line-height:	1.75rem;
+	line-height:	calc(1.75rem * var(--resize-factor));
 }
 
 .h33 {
 	color:			var(--azul);
-	font-size:		1.875rem;
+	font-size:		calc(1.875rem * var(--resize-factor));
 	font-weight:	600;
-	line-height:	2.4375rem;
+	line-height:	calc(2.4375rem * var(--resize-factor));
 }
 
 .h34 {
@@ -1559,54 +1554,54 @@ ul {
 
 .h35 {
 	color:			var(--rojo);
-	font-size:		1.3125rem;
+	font-size:		calc(1.3125rem * var(--resize-factor));
 	font-weight:	600;
-	line-height:	2.0625rem;
+	line-height:	calc(2.0625rem * var(--resize-factor));
 }
 
 .h36 {
 	color:			var(--rojo);
-	font-size:		1.25rem;
+	font-size:		calc(1.25rem * var(--resize-factor));
 	font-weight:	600;
-	line-height:	1.625rem;
+	line-height:	calc(1.625rem * var(--resize-factor));
 }
 
 .h37 {
 	color:			var(--azul);
-	font-size:		1.6875rem;
+	font-size:		calc(1.6875rem * var(--resize-factor));
 	font-weight:	600;
-	line-height:	2.625rem;
+	line-height:	calc(2.625rem * var(--resize-factor));
 }
 
 .h38 {
 	color:			var(--rojo);
-	font-size:		1.125rem;
+	font-size:		calc(1.125rem * var(--resize-factor));
 	font-weight:	700;
-	line-height:	1.4625rem;
+	line-height:	calc(1.4625rem * var(--resize-factor));
 }
 
 .h39 {
 	color:			var(--azul);
-	font-size:		1.3125rem;
+	font-size:		calc(1.3125rem * var(--resize-factor));
 	font-weight:	600;
-	line-height:	1.70625rem;
+	line-height:	calc(1.70625rem * var(--resize-factor));
 	text-align:		left;
 }
 
 .h310 {
 	color:			var(--rojo4);
-	font-size:		1.3125rem;
+	font-size:		calc(1.3125rem * var(--resize-factor));
 	font-weight:	600;
-	line-height:	1.70625rem;
+	line-height:	calc(1.70625rem * var(--resize-factor));
 	text-align:		left;
 }
 
 .h311 {
 	color:			var(--blanco4);
-	font-size:		1.3125rem;
+	font-size:		calc(1.3125rem * var(--resize-factor));
 	font-weight:	600;
 	letter-spacing:	0.5px;
-	line-height:	1.70625rem;
+	line-height:	calc(1.70625rem * var(--resize-factor));
 	text-align:		right;
 	&:hover {
 		color:	var(--amarillo2);
@@ -1616,10 +1611,10 @@ ul {
 .h312 {
 	color:				var(--azul);
 	display:			flex;
-	font-size:			1.4375rem;
+	font-size:			calc(1.4375rem * var(--resize-factor));
 	font-weight:		500;
 	height:				100%;
-	line-height:		1.86875rem;
+	line-height:		calc(1.86875rem * var(--resize-factor));
 	justify-content:	center;
 	align-items:		center;
 	text-align:			center;
@@ -1629,16 +1624,16 @@ ul {
 
 .h313 {
 	color:			var(--azul);
-	font-size:		1.25rem;
-	line-height:	1.625rem;
+	font-size:		calc(1.25rem * var(--resize-factor));
+	line-height:	calc(1.625rem * var(--resize-factor));
 }
 
 .h314 {
 	color:			var(--marron);
-	font-size:		1.3125rem;
+	font-size:		calc(1.3125rem * var(--resize-factor));
 	font-weight:	600;
 	letter-spacing:	0.5px;
-	line-height:	1.70625rem;
+	line-height:	calc(1.70625rem * var(--resize-factor));
 	text-align:		right;
 	&:hover {
 		color:	var(--rojo);
@@ -1647,55 +1642,55 @@ ul {
 
 .h315 {
 	color:			var(--blanco4);
-	font-size:		1.1875rem;
+	font-size:		calc(1.1875rem * var(--resize-factor));
 	letter-spacing:	1.4px;
-	line-height:	1.30625rem;
+	line-height:	calc(1.30625rem * var(--resize-factor));
 }
 
 .h316 {
 	color:			var(--blanco4);
-	font-size:		1.5rem;
+	font-size:		calc(1.5rem * var(--resize-factor));
 	font-weight:	500;
 	letter-spacing:	1.4px;
-	line-height:	3rem;
+	line-height:	calc(3rem * var(--resize-factor));
 	text-align:		left;
 }
 
 .h317 {
 	color:			var(--blanco4);
 	font-family:	'Montez', sans-serif;
-	font-size:		1.5rem;
+	font-size:		calc(1.5rem * var(--resize-factor));
 	font-weight:	500;
 	letter-spacing:	1.4px;
-	line-height:	1.65rem;
+	line-height:	calc(1.65rem * var(--resize-factor));
 	text-align:		left;
 }
 
 .h318 {
 	color:			var(--azul);
-	font-size:		1.3125rem;
+	font-size:		calc(1.3125rem * var(--resize-factor));
 	font-weight:	600;
-	line-height:	1.70625rem;
+	line-height:	calc(1.70625rem * var(--resize-factor));
 }
 
 .h41 {
 	color:			var(--blanco4);
-	font-size:		1.125rem;
+	font-size:		calc(1.125rem * var(--resize-factor));
 	font-weight:	500;
 	text-align:		left;
-	line-height:	1.35rem;
+	line-height:	calc(1.35rem * var(--resize-factor));
 }
 
 .h42 {
-	font-size:		1.3rem;
+	font-size:		calc(1.3rem * var(--resize-factor));
 	letter-spacing:	0.06rem;
 	text-align:		center;
 }
 
 .h43 {
 	color:			var(--amarillo2);
-	font-size:		1.25rem;
-	line-height:	1.5rem;
+	font-size:		calc(1.25rem * var(--resize-factor));
+	line-height:	calc(1.5rem * var(--resize-factor));
 	text-align:		left;
 }
 
@@ -1748,9 +1743,9 @@ ul {
 
 .i1 {
 	font-family:	'Montserrat', sans-serif;
-	font-size:		1rem;
+	font-size:		calc(1rem * var(--resize-factor));
 	font-weight:	400;
-	line-height:	1.65rem;
+	line-height:	calc(1.65rem * var(--resize-factor));
 	/*ajusta esto cuando te aburras*/
 	margin-top:		-1.5em;
 }
@@ -1843,7 +1838,7 @@ ul {
 	border-radius:	34px;	
 	border-width:	1px;
 	border-color:	#ddd;
-	line-height:	1.65rem;
+	line-height:	calc(1.65rem * var(--resize-factor));
 	font-weight:	400;
 	width:			100%;
 }
@@ -1906,7 +1901,7 @@ ul {
 	border:			solid 2px var(--rojo2);
 	border-radius:	20px;
 	height:			100%;
-	line-height:	1.65rem;
+	line-height:	calc(1.65rem * var(--resize-factor));
 	padding:		12px;
 	width:			100%;
 }
@@ -1929,7 +1924,7 @@ ul {
 	border:			solid 2px var(--azul);
 	border-radius:	20px;
 	height:			100%;
-	line-height:	1.65rem;
+	line-height:	calc(1.65rem * var(--resize-factor));
 	padding:		12px;
 	width:			100%;
 }
@@ -1939,7 +1934,7 @@ ul {
 	border-radius:		20px;
 	border:				none;
 	color:				var(--blanco4);
-	font-size:			0.9375rem;
+	font-size:			calc(0.9375rem * var(--resize-factor));
 	font-weight:		500;
 	outline:			none;
 	padding:			10px 40px;
@@ -2004,7 +1999,7 @@ ul {
 	font-weight:			400;
 	gap:					25px;
 	grid-template-columns:	1.171875rem auto;
-	line-height:			1.65rem;
+	line-height:			calc(1.65rem * var(--resize-factor));
 	text-align:				left;
 	&:hover > .svg9 {
 		color:	#00078B;
@@ -2013,15 +2008,15 @@ ul {
 
 .li4 {
 	color:			black;
-	font-size:		1.25rem;
+	font-size:		calc(1.25rem * var(--resize-factor));
 	font-weight:	400;
-	line-height:	1.65rem;
+	line-height:	calc(1.65rem * var(--resize-factor));
 }
 
 .li5 {
 	color:			var(--blanco4);
 	font-weight:	400;
-	line-height:	1.65rem;
+	line-height:	calc(1.65rem * var(--resize-factor));
 	text-align:		left;
 	overflow:		visible;
 }
@@ -2029,24 +2024,24 @@ ul {
 .li6 {
 	color:			var(--negro);
 	font-weight:	400;
-	line-height:	1.65rem;
+	line-height:	calc(1.65rem * var(--resize-factor));
 	text-align:		left;
 	overflow:		visible;
 }
 
 .li7 {
 	color:			var(--blanco4);
-	font-size:		0.875rem;
+	font-size:		calc(0.875rem * var(--resize-factor));
 	font-weight:	400;
-	line-height:	1.65rem;
+	line-height:	calc(1.65rem * var(--resize-factor));
 	text-align:		center;
 }
 
 .li8 {
 	color:			var(--negro);
-	font-size:		0.875rem;
+	font-size:		calc(0.875rem * var(--resize-factor));
 	font-weight:	400;
-	line-height:	1.65rem;
+	line-height:	calc(1.65rem * var(--resize-factor));
 	text-align:		center;
 }
 
@@ -2057,7 +2052,7 @@ ul {
 	font-weight:			400;
 	gap:					25px;
 	grid-template-columns:	25px auto;
-	line-height:			1.65rem;
+	line-height:			calc(1.65rem * var(--resize-factor));
 	text-align:				left;
 }
 
@@ -2068,7 +2063,7 @@ ul {
 
 .label2 {
 	color:			var(--blanco4);
-	font-size:		0.9375rem;
+	font-size:		calc(0.9375rem * var(--resize-factor));
 	font-weight:	500;
 }
 
@@ -2160,9 +2155,9 @@ ul {
 	color:				var(--marron);
 	display:			flex;
 	gap:				30px;
-	font-size:			0.8125rem;
+	font-size:			calc(0.8125rem * var(--resize-factor));
 	justify-content:	left;
-	line-height:		1.65rem;
+	line-height:		calc(1.65rem * var(--resize-factor));
 	width:				100%;
 }
 
@@ -2172,7 +2167,7 @@ ul {
 	display:		flex;
 	font-weight:	600;
 	gap:			10px;
-	line-height:	1rem;
+	line-height:	calc(1rem * var(--resize-factor));
 }
 
 .label12 {
@@ -2182,7 +2177,7 @@ ul {
 	font-weight:		700;
 	gap:				10px;
 	justify-content:	flex-start;
-	line-height:		1rem;
+	line-height:		calc(1rem * var(--resize-factor));
 	transition:			color 0.3s;
 }
 
@@ -2261,90 +2256,87 @@ ul {
 .p1 {
 	color:			var(--negro);
 	flex:			1;
-	font-size:		1rem;
-	line-height:	1.65rem;
+	font-size:		calc(1rem * var(--resize-factor));
+	line-height:	calc(1.65rem * var(--resize-factor));
 }
 
 .p2 {
 	color:			var(--marron);
 	font-weight:	600;
-	font-size:		3.78rem;
+	font-size:		calc(3.78rem * var(--resize-factor));
 	margin-bottom:	-5px;
 }
 
 .p3 {
 	color:			var(--rojo2);
-	font-size:		1.125rem;
+	font-size:		calc(1.125rem * var(--resize-factor));
 	/*font-weight:	400;*/ 
-	line-height:	1.65rem;
+	line-height:	calc(1.65rem * var(--resize-factor));
 }
 
 .p4 {
 	color:			var(--blanco);
-	font-size:		1.125rem;
-	line-height:	1.3rem;
+	font-size:		calc(1.125rem * var(--resize-factor));
+	line-height:	calc(1.3rem * var(--resize-factor));
 	text-align:		right;
 }
 
 .p5 {
 	color:			var(--blanco);
-	font-size:		1rem;
-	line-height:	1.65rem;
+	font-size:		calc(1rem * var(--resize-factor));
+	line-height:	calc(1.65rem * var(--resize-factor));
 }
 
 .p6 {
 	color:			var(--rojo);
-	font-size:		1.625rem;
+	font-size:		calc(1.625rem * var(--resize-factor));
 	font-weight:	600;
-	line-height:	2.1125rem;
+	line-height:	calc(2.1125rem * var(--resize-factor));
 }
 
 .p7 {
 	color:			var(--amarillo2);
-	font-size:		1rem;
-	line-height:	1.65rem;
+	font-size:		calc(1rem * var(--resize-factor));
+	line-height:	calc(1.65rem * var(--resize-factor));
 }
 
 .p8 {
 	color:			var(--rojo);
-	font-size:		1rem;
+	font-size:		calc(1rem * var(--resize-factor));
 	font-weight:	600;
-	line-height:	1.65rem;
+	line-height:	calc(1.65rem * var(--resize-factor));
 	text-align:		left;
 }
 
 .p9 {
 	color:			var(--negro);
 	font-family:	'Charm', sans-serif;
-	font-size:		1.3125rem;
-	line-height:	1.65rem;
+	font-size:		calc(1.3125rem * var(--resize-factor));
+	line-height:	calc(1.65rem * var(--resize-factor));
 }
 
 .p10 {
 	color:			var(--blanco4);
-	font-size:		1rem;
-	line-height:	1.65rem;
+	font-size:		calc(1rem * var(--resize-factor));
+	line-height:	calc(1.65rem * var(--resize-factor));
 	text-align:		right;
 }
 
 .p11 {
 	color:			var(--marron);
-	font-size:		1.25rem;
+	font-size:		calc(1.25rem * var(--resize-factor));
 	font-weight:	500;
-	line-height:	1.625rem;
+	line-height:	calc(1.625rem * var(--resize-factor));
 }
 
 .p12 {
 	color:		var(--azul);
-	@media (max-width:	921px) {
-		font-size:	0.912rem;
-	}
 }
 
 .p13 {
 	color:			var(--negro);
-	font-size:		1rem;
-	line-height:	1.65rem;
+	font-size:		calc(1rem * var(--resize-factor));
+	line-height:	calc(1.65rem * var(--resize-factor));
 	text-align:		left;
 	/*espero que no rompa nada. Sirve en pages/novena-covadonga.html*/
 	width:			100%;
@@ -2357,31 +2349,31 @@ ul {
 
 .p15 {
 	color:			var(--negro2);
-	font-size:		1rem;
-	line-height:	1.65rem;
+	font-size:		calc(1rem * var(--resize-factor));
+	line-height:	calc(1.65rem * var(--resize-factor));
 	text-align:		justify;
 }
 
 .p16 {
 	color:			var(--blanco4);
-	font-size:		1rem;
-	line-height:	1.65rem;
+	font-size:		calc(1rem * var(--resize-factor));
+	line-height:	calc(1.65rem * var(--resize-factor));
 	text-align:		left;
 }
 
 .p17 {
 	color:			var(--rojo);
-	font-size:		1rem;
+	font-size:		calc(1rem * var(--resize-factor));
 	font-weight:	700;
-	line-height:	0.9rem;
+	line-height:	calc(0.9rem * var(--resize-factor));
 	text-align:		left;
 }
 
 .p18 {
 	color:			var(--negro);
-	font-size:		1rem;
+	font-size:		calc(1rem * var(--resize-factor));
 	max-height:		0;
-	line-height:	1.65rem;
+	line-height:	calc(1.65rem * var(--resize-factor));
 	overflow:		hidden;
 	text-align:		left;
 	transition:		max-height 0.6s;
@@ -2390,22 +2382,22 @@ ul {
 .p19 {
 	color:			var(--marron);
 	flex:			1;
-	font-size:		1rem;
-	line-height:	1.65rem;
+	font-size:		calc(1rem * var(--resize-factor));
+	line-height:	calc(1.65rem * var(--resize-factor));
 	margin-top:		-14px; /*eeeee chapuza*/
 }
 
 .p20 {
 	color:			#777;
-	font-size:		0.875rem;
-	line-height:	1.3125rem;
+	font-size:		calc(0.875rem * var(--resize-factor));
+	line-height:	calc(1.3125rem * var(--resize-factor));
 	text-align:		left;
 }
 
 .p21 {
 	color:			var(--negro);
-	font-size:		1rem;
-	line-height:	1.65rem;
+	font-size:		calc(1rem * var(--resize-factor));
+	line-height:	calc(1.65rem * var(--resize-factor));
 	text-align:		justify;
 	text-indent:	30px;
 	width:			100%;
@@ -2413,27 +2405,27 @@ ul {
 
 .p22 {
 	color:			var(--negro);
-	font-size:		1rem;
-	line-height:	1.65rem;
+	font-size:		calc(1rem * var(--resize-factor));
+	line-height:	calc(1.65rem * var(--resize-factor));
 	text-align:		justify;
 	width:			100%;
 }
 
 .p23 {
 	color:			var(--negro);
-	font-size:		1rem;
-	line-height:	1.65rem;
+	font-size:		calc(1rem * var(--resize-factor));
+	line-height:	calc(1.65rem * var(--resize-factor));
 	text-align:		right;
 	width:			100%;
 }
 
 .p24 {
 	color:			var(--marron);
-	line-height:	1.65rem;
+	line-height:	calc(1.65rem * var(--resize-factor));
 	text-align:		justify;
 	text-indent:	30px;
 	width:			100%;
-	font-size:		1.1rem;
+	font-size:		calc(1.1rem * var(--resize-factor));
 }
 
 .section1 {
@@ -2665,11 +2657,11 @@ ul {
 	color:				var(--blanco4);
 	display: 			inline-flex;
 	font-family:		'Montserrat', sans-serif;
-	font-size:			0.875rem;
+	font-size:			calc(0.875rem * var(--resize-factor));
 	font-weight:		400;
 	height:				100%;
 	justify-content:	center;
-	line-height:		1.65rem;
+	line-height:		calc(1.65rem * var(--resize-factor));
 	opacity:			0;
 	padding:			35px;
 	position:			absolute;
@@ -2685,11 +2677,11 @@ ul {
 	color:				var(--blanco4);
 	display: 			inline-flex;
 	font-family:		'Montserrat', sans-serif;
-	font-size:			1.3125rem;
+	font-size:			calc(1.3125rem * var(--resize-factor));
 	font-weight:		600;
 	height:				100%;
 	justify-content:	center;
-	line-height:		0.65625rem;
+	line-height:		calc(0.65625rem * var(--resize-factor));
 	opacity:			1;
 	position:			absolute;
 	scale:				1;
@@ -2789,11 +2781,11 @@ ul {
 	border-radius: 		20px; 
 	color:				var(--blanco4);
 	display:			inline-flex;
-	font-size:			0.75rem;
+	font-size:			calc(0.75rem * var(--resize-factor));
 	font-weight:		500;
 	height:				32px;
 	justify-content:	center;
-	line-height:		0.75rem;
+	line-height:		calc(0.75rem * var(--resize-factor));
 	outline:			none;
 	padding:			10px 40px;
 	position:			absolute;
@@ -3127,9 +3119,9 @@ ul {
 	background-color:	var(--amarillo);
 	padding:			10px 40px;
 	color:				var(--blanco4);
-	font-size:			1.125rem;
+	font-size:			calc(1.125rem * var(--resize-factor));
 	margin-top:			70px;
-	line-height:		1.125rem;
+	line-height:		calc(1.125rem * var(--resize-factor));
 	letter-spacing:		2.1px;
 }
 
@@ -3718,14 +3710,14 @@ ul {
 
 #p3 {
 	color:			var(--negro);
-	font-size:		1.1875rem;
-	line-height:	1.65rem;
+	font-size:		calc(1.1875rem * var(--resize-factor));
+	line-height:	calc(1.65rem * var(--resize-factor));
 	text-align:		center;
 	width:			100%;
 }
 
 #p5 {
-	font-size:	1.25rem;
+	font-size:	calc(1.25rem * var(--resize-factor));
 	color:		var(--blanco);
 	max-width:		1120px; 
 }
@@ -3753,7 +3745,7 @@ ul {
 }
 
 #p11 {
-	font-size:	1.25rem;
+	font-size:	calc(1.25rem * var(--resize-factor));
 	height:		0;
 	overflow:	hidden;
 	transition:	height 0.6s;

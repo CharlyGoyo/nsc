@@ -1,36 +1,36 @@
 <form id="form5" action="" method="post">
-	<label class="label9">
-		Nombre <b class="b7">*</b>
+	<label class="label7">
+		<span>Nombre <b class="b7">*</b></span>
 		<input class="input9" autocomplete="given-name" name="nombre" required type="text"/>
 	</label>
 
-	<label class="label9">
-		Apellidos <b class="b7">*</b>
+	<label class="label7">
+		<span>Apellidos <b class="b7">*</b></span>
 		<input class="input9" autocomplete="family-name" name="apellidos" required type="text"/>
 	</label>
 
-	<label class="label9">
-		Email <b class="b7">*</b>
+	<label class="label7">
+		<span>Email <b class="b7">*</b></span>
 		<input class="input9" autocomplete="email" inputmode="email" name="email" required type="email"/>
 	</label>
 
-	<label class="label9">
-		Teléfono <b class="b7">*</b>
+	<label class="label7">
+		<span>Teléfono <b class="b7">*</b></span>
 		<input class="input9" autocomplete="tel" inputmode="tel" name="tel" required type="tel"/>
 	</label>
 
-	<label class="label9">
-		Localidad <b class="b7">*</b>
+	<label class="label7">
+		<span>Localidad <b class="b7">*</b></span>
 		<input class="input9" autocomplete="address-level2" name="localidad" required type="text"/>
 	</label>
 
 	<fieldset>
 		<legend>Si viene en coche, ¿tiene alguna plaza libre?</legend>
-		<label class="label9">
+		<label class="label7">
 			<input name="coche" type="radio" value="si"/>
 			Sí
 		</label>
-		<label class="label9">
+		<label class="label7">
 			<input name="coche" type="radio" value="no"/>
 			No
 		</label>
@@ -38,17 +38,17 @@
 
 	<fieldset>
 		<legend>Tipo de alojamiento en la Hospedería <b class="b7">*</b></legend>
-		<label class="label9">
+		<label class="label7">
 			<input name="hospederia" required type="radio" value="todo"/>
 			Pensión completa todos los días (385 € a pagar en la Hospedería)
 		</label>
-		<label class="label9">
+		<label class="label7">
 			<input name="hospederia" required type="radio" value="no_todo"/>
 			Me quedo a (indicar a qué se va a quedar):
 		</label>
 	</fieldset>
 
-	<label class="label9">
+	<label class="label7">
 		Especificar estancia <b class="b7">*</b>
 		<textarea class="textarea2" name="no_completa" placeholder="Me voy a quedar a..." required rows="4"></textarea>
 	</label>
@@ -57,29 +57,29 @@
 
 	<p class="p1">Además del precio de la Hospedería, se dará un donativo para sufragar los gastos de folletos, viaje del predicador, donación a la comunidad, etc.</p>
 
-	<label class="label9">
-		En caso de tener alguna intolerancia alimentaria, indíquelo aquí
+	<label class="label7">
+		<span>En caso de tener alguna intolerancia alimentaria, indíquelo aquí</span>
 		<input class="input9" name="intolerancia" type="text"/>
 	</label>
 
 	<fieldset>
 		<legend>¿Quiere que le hagamos el check-in para ahorrarle tiempo a la llegada? <b class="b7">*</b></legend>
-		<label class="label9">
+		<label class="label7">
 			<input name="check_in" required type="radio" value="si"/>
 			Sí
 		</label>
-		<label class="label9">
+		<label class="label7">
 			<input name="check_in" required type="radio" value="no"/>
 			No
 		</label>
 	</fieldset>
 
-	<label class="label9">
-		País de residencia <b class="b7">*</b>
+	<label class="label7">
+		<span>País de residencia <b class="b7">*</b></span>
 		<input class="input9" autocomplete="country-name" name="pais_de_residencia" required type="text"/>
 	</label>
 
-	<label class="label9">
+	<label class="label7">
 		Tipo de documento <b class="b7">*</b>
 		<select name="tipo_de_documento" required>
 			<option value="DNI">DNI</option>
@@ -88,51 +88,51 @@
 		</select>
 	</label>
 
-	<label class="label9">
-		Número de documento <b class="b7">*</b>
+	<label class="label7">
+		<span>Número de documento <b class="b7">*</b></span>
 		<input class="input9" autocomplete="off" name="numero_de_documento" required type="text"/>
 	</label>
 
-	<label class="label9">
-		Número de soporte <b class="b7">*</b>
+	<label class="label7">
+		<span>Número de soporte <b class="b7">*</b></span>
 		<input class="input9" autocomplete="off" name="numero_de_soporte" required type="text"/>
 		<small>Sale en el DNI.</small>
 	</label>
 
-	<label class="label9">
-		Código Postal <b class="b7">*</b>
+	<label class="label7">
+		<span>Código Postal <b class="b7">*</b></span>
 		<input class="input9" autocomplete="postal-code" inputmode="numeric" name="codigo_postal" required type="text"/>
 	</label>
 
-	<label class="label9">
-		Provincia <b class="b7">*</b>
+	<label class="label7">
+		<span>Provincia <b class="b7">*</b></span>
 		<input class="input9" autocomplete="address-level1" name="provincia" required type="text"/>
 	</label>
 
-	<label class="label9">
-		Fecha de nacimiento <b class="b7">*</b>
+	<label class="label7">
+		<span>Fecha de nacimiento <b class="b7">*</b></span>
 		<input class="input9" autocomplete="bday" name="fecha_de_nacimiento" required type="date"/>
 	</label>
 
 	<fieldset>
 		<legend>¿Qué días celebrará Misa allí?</legend>
-		<label class="label9">
+		<label class="label7">
 			<input name="misa[]" type="checkbox" value="lunes"/>
 			Lunes
 		</label>
-		<label class="label9">
+		<label class="label7">
 			<input name="misa[]" type="checkbox" value="martes"/>
 			Martes
 		</label>
-		<label class="label9">
+		<label class="label7">
 			<input name="misa[]" type="checkbox" value="miercoles"/>
 			Miércoles
 		</label>
-		<label class="label9">
+		<label class="label7">
 			<input name="misa[]" type="checkbox" value="jueves"/>
 			Jueves
 		</label>
-		<label class="label9">
+		<label class="label7">
 			<input name="misa[]" type="checkbox" value="viernes"/>
 			Viernes
 		</label>

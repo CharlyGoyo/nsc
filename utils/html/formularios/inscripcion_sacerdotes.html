@@ -1,25 +1,25 @@
 <form id="form7" action="" method="post">
-	<label class="label9">
-		Nombre <b class="b7">*</b>
+	<label class="label7">
+		<span>Nombre <b class="b7">*</b></span>
 		<input class="input9" autocomplete="given-name" name="nombre" required type="text"/>
 	</label>
 
-	<label class="label9">
-		Apellidos <b class="b7">*</b>
+	<label class="label7">
+		<span>Apellidos <b class="b7">*</b></span>
 		<input class="input9" autocomplete="family-name" name="apellidos" required type="text"/>
 	</label>
 
-	<label class="label9">
-		Email <b class="b7">*</b>
+	<label class="label7">
+		<span>Email <b class="b7">*</b></span>
 		<input class="input9" autocomplete="email" inputmode="email" name="email" required type="email"/>
 	</label>
 
-	<label class="label9">
-		Confirmación de email <b class="b7">*</b>
+	<label class="label7">
+		<span>Confirmación de email <b class="b7">*</b></span>
 		<input class="input9" autocomplete="email" inputmode="email" name="email_confirmation" required type="email"/>
 	</label>
 
-	<label class="label9">
+	<label class="label7">
 		País <b class="b7">*</b>
 		<select autocomplete="country-name" name="pais" required>
 			<option value="afghanistan">Afghanistán</option>
@@ -219,7 +219,7 @@
 		</select>
 	</label>
 
-	<label class="label9">
+	<label class="label7">
 		Provincia <b class="b7">*</b>
 		<select autocomplete="address-level1" name="provincia" required>
 			<option value="alava">Álava</option>
@@ -275,12 +275,12 @@
 		</select>
 	</label>
 
-	<label class="label9">
-		Teléfono <b class="b7">*</b>
+	<label class="label7">
+		<span>Teléfono <b class="b7">*</b></span>
 		<input class="input9" autocomplete="tel" inputmode="tel" minlength="9" name="tel" required type="tel"/>
 	</label>
 
-	<label class="label9">
+	<label class="label7">
 		Sexo <b class="b7">*</b>
 		<select autocomplete="sex" name="sexo" required>
 			<option value="hombre">Hombre</option>
@@ -288,12 +288,12 @@
 		</select>
 	</label>
 
-	<label class="label9">
-		Edad <b class="b7">*</b>
+	<label class="label7">
+		<span>Edad <b class="b7">*</b></span>
 		<input class="input9" inputmode="numeric" max="120" min="18" name="edad" required step="1" type="number"/>
 	</label>
 
-	<label class="label9">
+	<label class="label7">
 		Tipo de asistente <b class="b7">*</b>
 		<select name="tipo" required>
 			<option value="sacerdote">Sacerdote</option>
@@ -302,12 +302,12 @@
 		</select>
 	</label>
 
-	<label class="label9">
-		Diócesis/instituto/fraternidad/orden religiosa a la que pertenece: <b class="b7">*</b>
+	<label class="label7">
+		<span>Diócesis/instituto/fraternidad/orden religiosa a la que pertenece: <b class="b7">*</b></span>
 		<input class="input9" name="diocesis" required type="text"/>
 	</label>
 
-	<label class="label9">
+	<label class="label7">
 		Seleccione un capítulo <b class="b7">*</b>
 		<select name="capitulo" required>
 			<option disabled hidden selected value=""></option>
@@ -354,7 +354,7 @@
 		<small><a class="a5" href="/capitulos" rel="noopener noreferrer" target="_blank">¿Qué es un capítulo?</a></small>
 	</label>
 
-	<label class="label9">
+	<label class="label7">
 		¿Qué ruta va a realizar? <b class="b7">*</b>
 		<select name="ruta" required>
 			<option disabled hidden selected value=""></option>
@@ -366,11 +366,11 @@
 
 	<fieldset>
 		<legend>¿Quiere ser voluntario en el coro? <b class="b7">*</b></legend>
-		<label class="label9">
+		<label class="label7">
 			<input name="coro" required type="radio" value="si"/>
 			Sí
 		</label>
-		<label class="label9">
+		<label class="label7">
 			<input name="coro" required type="radio" value="no"/>
 			No
 		</label>
@@ -378,11 +378,11 @@
 
 	<fieldset>
 		<legend>¿Quiere ser voluntario como acólito? <b class="b7">*</b></legend>
-		<label class="label9">
+		<label class="label7">
 			<input name="acolito" required type="radio" value="si"/>
 			Sí
 		</label>
-		<label class="label9">
+		<label class="label7">
 			<input name="acolito" required type="radio" value="no"/>
 			No
 		</label>
@@ -391,11 +391,11 @@
 
 	<fieldset>
 		<legend>¿Va a dormir en el campamento? <b class="b7">*</b></legend>
-		<label class="label9">
+		<label class="label7">
 			<input name="campamento" required type="radio" value="si"/>
 			Sí
 		</label>
-		<label class="label9">
+		<label class="label7">
 			<input name="campamento" required type="radio" value="no"/>
 			No
 		</label>
@@ -403,11 +403,11 @@
 
 	<fieldset>
 		<legend>¿Va a hacer uso del autobús de vuelta de Covadonga a Oviedo? <b class="b7">*</b></legend>
-		<label class="label9">
+		<label class="label7">
 			<input name="autobus" required type="radio" value="si"/>
 			Sí
 		</label>
-		<label class="label9">
+		<label class="label7">
 			<input name="autobus" required type="radio" value="no"/>
 			No
 		</label>
@@ -415,11 +415,11 @@
 
 	<fieldset>
 		<legend>La organización prepara comida para el clero (bocadillo para comer y sopa y un segundo plato para cenar). ¿Va a querer esa comida? <b class="b7">*</b></legend>
-		<label class="label9">
+		<label class="label7">
 			<input name="comida" required type="radio" value="1"/>
 			Sí
 		</label>
-		<label class="label9">
+		<label class="label7">
 			<input name="comida" required type="radio" value="0"/>
 			No
 		</label>
@@ -427,11 +427,11 @@
 
 	<fieldset>
 		<legend>¿Va a querer un folleto con el oficio divino (de laudes del sábado a vísperas del lunes)? <b class="b7">*</b></legend>
-		<label class="label9">
+		<label class="label7">
 			<input name="folleto" required type="radio" value="1"/>
 			Sí
 		</label>
-		<label class="label9">
+		<label class="label7">
 			<input name="folleto" required type="radio" value="0"/>
 			No
 		</label>
@@ -439,9 +439,9 @@
 
 	<p class="p1">Los sacerdotes deberán llevar su <i>celebret</i>, que podrá ser solicitado durante la peregrinación.</p>
 
-	<label class="label9">
+	<label class="label8">
 		<input name="privacidad[]" required type="checkbox" value="SI"/>
-		El interesado conoce y <b class="b1">ACEPTA</b> la <a class="a5" href="/politica-de-privacidad" rel="noopener noreferrer" target="_blank">Política de Privacidad</a> de la Asociación Nuestra Señora de la Cristiandad-España, la <b class="b1"><a class="a5" href="/normativa-general/" rel="noopener noreferrer" target="_blank">Normativa General de la Peregrinación</a></b>, así como la difusión de materiales de fotografía o video donde pueda figurar su imagen, con fines legítimos meramente informativos o culturales, de conformidad con el art. 8 de la Ley Orgánica 1/1982, de 5 de mayo.<br/>Si el interesado no estuviera de acuerdo en la utilización de materiales de fotografía o video fuera de los legítimos fines anteriormente expresados, puede ejercer sus derechos de acceso, rectificación, supresión, limitación del tratamiento, portabilidad y oposición de conformidad con la Ley Orgánica 3/2018, de 5 de diciembre, dirigiendo un correo a <a class="a5" href="mailto:datos@nscristiandad.es">datos@nscristiandad.es</a>. <b class="b7">*</b>
+		<span>El interesado conoce y <b class="b1">ACEPTA</b> la <a class="a5" href="/politica-de-privacidad" rel="noopener noreferrer" target="_blank">Política de Privacidad</a> de la Asociación Nuestra Señora de la Cristiandad-España, la <b class="b1"><a class="a5" href="/normativa-general/" rel="noopener noreferrer" target="_blank">Normativa General de la Peregrinación</a></b>, así como la difusión de materiales de fotografía o video donde pueda figurar su imagen, con fines legítimos meramente informativos o culturales, de conformidad con el art. 8 de la Ley Orgánica 1/1982, de 5 de mayo.<br/>Si el interesado no estuviera de acuerdo en la utilización de materiales de fotografía o video fuera de los legítimos fines anteriormente expresados, puede ejercer sus derechos de acceso, rectificación, supresión, limitación del tratamiento, portabilidad y oposición de conformidad con la Ley Orgánica 3/2018, de 5 de diciembre, dirigiendo un correo a <a class="a5" href="mailto:datos@nscristiandad.es">datos@nscristiandad.es</a>. <b class="b7">*</b></span>
 	</label>
 
 	<button type="submit">Inscribirme</button>
