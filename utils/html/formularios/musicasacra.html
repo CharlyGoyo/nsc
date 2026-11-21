@@ -1,32 +1,32 @@
-		<form action="" method="post">
+		<form id="form10" action="" method="post">
 			<h4 class="h45">Inscripción</h4>
-			<label>
-				Nombre *
-				<input autocomplete="given-name" name="nombre" required type="text"/>
+			<label class="label9">
+				Nombre <b class="b7">*</b>
+				<input class="input9" autocomplete="given-name" name="nombre" required type="text"/>
 			</label>
 
-			<label>
-				Apellidos *
-				<input autocomplete="family-name" name="apellidos" required type="text"/>
+			<label class="label9">
+				Apellidos <b class="b7">*</b>
+				<input class="input9" autocomplete="family-name" name="apellidos" required type="text"/>
 			</label>
 
-			<label>
-				Email *
-				<input autocomplete="email" inputmode="email" name="email" required type="email"/>
+			<label class="label9">
+				Email <b class="b7">*</b>
+				<input class="input9" autocomplete="email" inputmode="email" name="email" required type="email"/>
 			</label>
 
-			<label>
-				Teléfono *
-				<input autocomplete="tel" inputmode="tel" name="tel" required type="tel"/>
+			<label class="label9">
+				Teléfono <b class="b7">*</b>
+				<input class="input9" autocomplete="tel" inputmode="tel" name="tel" required type="tel"/>
 			</label>
 
-			<label>
-				Edad *
-				<input inputmode="numeric" max="120" min="0" name="edad" required step="1" type="number"/>
+			<label class="label9">
+				Edad <b class="b7">*</b>
+				<input class="input9" inputmode="numeric" max="120" min="0" name="edad" required step="1" type="number"/>
 			</label>
 
-			<label>
-				Sexo *
+			<label class="label9">
+				Sexo <b class="b7">*</b>
 				<select autocomplete="sex" name="sexo" required>
 					<option disabled hidden selected value=""></option>
 					<option value="hombre">Hombre</option>
@@ -34,8 +34,8 @@
 				</select>
 			</label>
 
-			<label>
-				Experiencia musical *
+			<label class="label9">
+				Experiencia musical <b class="b7">*</b>
 				<select name="nivel" required>
 					<option disabled hidden selected value=""></option>
 					<option value="poca">Poca</option>
@@ -46,8 +46,8 @@
 				</select>
 			</label>
 
-			<label>
-				Tipo de voz *
+			<label class="label9">
+				Tipo de voz <b class="b7">*</b>
 				<select name="voz" required>
 					<option disabled hidden selected value=""></option>
 					<option value="soprano">Soprano</option>
@@ -59,35 +59,35 @@
 			</label>
 
 			<fieldset>
-				<legend>¿Has participado en el coro de NSC? *</legend>
-				<label>
+				<legend>¿Has participado en el coro de NSC? <b class="b7">*</b></legend>
+				<label class="label9">
 					<input name="coro" required type="radio" value="si"/>
 					Sí
 				</label>
-				<label>
+				<label class="label9">
 					<input name="coro" required type="radio" value="no"/>
 					No
 				</label>
 			</fieldset>
 
-			<label>
+			<label class="label9">
 				En caso de tener alguna intolerancia alimentaria, indícalo aquí
-				<input autocomplete="off" name="intolerancia" type="text"/>
+				<input class="input9" autocomplete="off" name="intolerancia" type="text"/>
 			</label>
 
-			<label>
+			<label class="label9">
 				<input name="privacidad" required type="checkbox" value="1"/>
-				El interesado conoce y ACEPTA la <a href="/politica-de-privacidad" rel="noopener noreferrer" target="_blank">Política de Privacidad</a> de la Asociación Nuestra Señora de la Cristiandad - España. *
+				El interesado conoce y ACEPTA la <a class="a5" href="/politica-de-privacidad" rel="noopener noreferrer" target="_blank">Política de Privacidad</a> de la Asociación Nuestra Señora de la Cristiandad - España. <b class="b7">*</b>
 			</label>
 
-			<p>El precio del encuentro no llega a cubrir todos los gastos del mismo. Por favor, considera hacer una donación adicional.</p>
+			<p class="p1">El precio del encuentro no llega a cubrir todos los gastos del mismo. Por favor, considera hacer una donación adicional.</p>
 
-			<label>
+			<label class="label9">
 				Donación (€)
-				<input inputmode="decimal" min="0" name="donacion" placeholder="0.00" step="0.01" type="number"/>
+				<input class="input9" inputmode="decimal" min="0" name="donacion" placeholder="0.00" step="0.01" type="number"/>
 			</label>
 
-			<label>
+			<label class="label9">
 				Precio total
 				<output name="precio">85.00 €</output>
 			</label>
