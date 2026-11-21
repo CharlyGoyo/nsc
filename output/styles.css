@@ -204,6 +204,15 @@
 	}
 }
 
+body:not(:has(input[data-input-name="todos"]:checked)) [data-activated-by]:not(
+	body:has(input[data-input-name="sabado"]:checked) [data-activated-by~="sabado"],
+	body:has(input[data-input-name="domingo"]:checked) [data-activated-by~="domingo"],
+	body:has(input[data-input-name="lunes"]:checked) [data-activated-by~="lunes"],
+	body:has(input[data-input-name="voluntarios"]:checked) [data-activated-by~="voluntarios"]
+) {
+	display: none;
+}
+
 /*------------------------------------*\
 #ELEMENTOS BASE
 \*------------------------------------*/
@@ -1797,6 +1806,7 @@ ul {
 	filter:			brightness(1);
 	object-fit:		cover;
 	transition:		filter 0.8s, var(--animacion3);
+	width:			100%;
 	&:hover {
 		filter:	brightness(0.7);
 	}
@@ -2197,6 +2207,20 @@ ul {
 	}
 }
 
+.label15 {
+	color:			var(--azul);
+	white-space:	nowrap;
+	border-bottom:	3px solid transparent;
+	padding:		7px 14px;
+	font-weight:	500;
+	transition:		color 0.2s ease, border-color 0.2s ease;
+	&:has(input:checked),
+   	&:hover {
+		border-bottom-color:	var(--amarillo2);
+		color:					var(--rojo);
+	}
+}
+
 .main1 {
 	gap:	100px;
 }
@@ -2585,8 +2609,12 @@ ul {
 }
 
 .section20 {
-	flex-direction:	column;
-	gap:			120px;
+	display:				grid;
+	grid-template-columns:	repeat(4, 1fr);
+	width:					100%;
+	max-width:				1140px;
+	padding:				20px;
+	gap:					10px;
 }
 
 .select1 {
@@ -2735,6 +2763,14 @@ ul {
 	flex-direction:	column;
 	gap:			24px;
 	flex:			1;
+}
+
+.span16 {
+	display:			flex;
+	align-items:		center;
+	justify-content:	center;
+	width:				auto;
+	gap:				40px;
 }
 
 .strong1 {

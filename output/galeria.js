@@ -1,4 +1,4 @@
-/* gemini cocina que da gusto eh */
+/* como cocina mi pana el gemini */
 document.documentElement.classList.add('js');
 
 document.addEventListener('DOMContentLoaded', () => {
@@ -23,10 +23,10 @@ document.addEventListener('DOMContentLoaded', () => {
 			borderRadius:	'4px',
 			cursor:			'pointer',
 			display:		'flex',
-			height:			'30px',
+			height:			'36px',
 			justifyContent:	'center',
 			padding:		'8px',
-			width:			'30px'
+			width:			'36px'
 		});
 
 		const img = document.createElement('img');
@@ -44,22 +44,95 @@ document.addEventListener('DOMContentLoaded', () => {
 		return { btn, img };
 	};
 
-	const activarGaleria = (setId) => {
-		const setContenedor = document.querySelector(`[data-galeria-set="${setId}"]`);
-		if (!setContenedor) return;
+	// Obtiene los activadores de un elemento (en el propio input o en un ancestro cercano)
+	const obtenerActivadores = (el) => {
+		const nodo = el.closest('[data-activated-by]') || el;
+		const raw = nodo.dataset.activatedBy || '';
+		return raw.trim().split(/\s+/).filter(Boolean);
+	};
 
-		// Obtener imágenes reales del set (descartando posibles clones de carrusel infinito)
-		let imagenes = Array.from(setContenedor.querySelectorAll('img'));
-		const carruselPadre = setContenedor.closest('[data-carrusel-container]');
-		if (carruselPadre?.dataset.carruselContainer.includes('infinito') && imagenes.length > 2) {
-			imagenes = imagenes.slice(1, -1);
+	// Detecta el filtro activo actual (ej. "todos", "sabado", "voluntarios", etc.)
+	const obtenerFiltroActivo = () => {
+		const filtro = document.querySelector(
+			'input[data-input]:checked, input[data-input-name]:checked'
+		);
+		if (!filtro) return null;
+		return filtro.dataset.input || filtro.dataset.inputName || null;
+	};
+
+	// Devuelve todos los inputs[data-galeria] que corresponden al filtro actual
+	const obtenerInputsActivos = (inputPulsado = null) => {
+		const todosInputs = Array.from(document.querySelectorAll('input[data-galeria]'));
+		const filtroActivo = obtenerFiltroActivo();
+
+		// 1. Si "todos" está marcado, devuelve toda la galería sin filtrar
+		if (filtroActivo === 'todos') {
+			return todosInputs;
 		}
-		if (!imagenes.length) return;
 
-		// Índice n del input con data-galeria activo en ese momento
-		const inputs = Array.from(document.querySelectorAll(`input[data-galeria="${setId}"]`));
-		const indiceActivo = inputs.findIndex(input => input.checked);
-		let indiceActual = indiceActivo >= 0 ? indiceActivo : 0;
+		// 2. Si hay un filtro específico marcado, filtra por data-activated-by ~= filtroActivo
+		if (filtroActivo) {
+			const filtrados = todosInputs.filter(inp => obtenerActivadores(inp).includes(filtroActivo));
+			if (filtrados.length) return filtrados;
+		}
+
+		// 3. Fallback si no hay filtro externo: usa el primer activador del input pulsado (o todos)
+		if (inputPulsado) {
+			const activadores = obtenerActivadores(inputPulsado);
+			if (activadores.length) {
+				return todosInputs.filter(inp => obtenerActivadores(inp).includes(activadores[0]));
+			}
+		}
+
+		return todosInputs;
+	};
+
+	const mapearInputAItem = (input) => {
+		const enlace = input.closest('a');
+		const img = enlace?.querySelector('img') || input.parentElement?.querySelector('img');
+		return {
+			src:	enlace?.getAttribute('href') || img?.dataset.galeriaImg || img?.currentSrc || img?.src || '',
+			alt:	img?.alt || '',
+			titulo:	enlace?.dataset.galeriaTitulo || ''
+		};
+	};
+
+	const obtenerElementos = (setId = null, inputPulsado = null) => {
+		// Modo 1: Contenedor explícito [data-galeria-set] (fichas de producto / carrusel)
+		if (setId) {
+			const setContenedor = document.querySelector(`[data-galeria-set~="${setId}"]`);
+			if (setContenedor) {
+				let imgs = Array.from(setContenedor.querySelectorAll('img'));
+				const carruselPadre = setContenedor.closest('[data-carrusel-container]');
+				if (carruselPadre?.dataset.carruselContainer.includes('infinito') && imgs.length > 2) {
+					imgs = imgs.slice(1, -1);
+				}
+				return imgs.map(img => ({
+					src:	img.dataset.galeriaImg || img.currentSrc || img.src,
+					alt:	img.alt || '',
+					titulo:	img.closest('[data-galeria-titulo]')?.dataset.galeriaTitulo || ''
+				}));
+			}
+		}
+
+		// Modo 2: Rejilla de inputs[data-galeria] guiada por data-activated-by
+		return obtenerInputsActivos(inputPulsado)
+			.map(mapearInputAItem)
+			.filter(item => item.src);
+	};
+
+	const activarGaleria = ({ setId = null, inputPulsado = null, indiceForzado = null } = {}) => {
+		const elementos = obtenerElementos(setId, inputPulsado);
+		if (!elementos.length) return;
+
+		let indiceActual = 0;
+		if (indiceForzado !== null && indiceForzado >= 0) {
+			indiceActual = indiceForzado;
+		} else {
+			const inputs = obtenerInputsActivos(inputPulsado);
+			const indiceActivo = inputs.findIndex(inp => inp.checked);
+			indiceActual = indiceActivo >= 0 ? indiceActivo : 0;
+		}
 
 		// Estado de zoom y arrastre
 		let zoomActivo = false;
@@ -105,13 +178,14 @@ document.addEventListener('DOMContentLoaded', () => {
 		// 3. Barra superior derecha: magnifying-plus, expand, xmark
 		const barraDerecha = document.createElement('div');
 		Object.assign(barraDerecha.style, {
-			display:	'flex',
-			gap:		'8px',
-			position:	'absolute',
-			right:		'20px',
-			top:		'16px',
-			zIndex:		'2',
-			width:		'auto'
+			display:		'flex',
+			flexDirection:	'row',
+			gap:			'8px',
+			position:		'absolute',
+			right:			'20px',
+			top:			'16px',
+			width:			'auto',
+			zIndex:			'2'
 		});
 
 		const { btn: btnZoom, img: imgZoom } = crearBotonIcono(SVG.zoomIn, 'Ampliar imagen');
@@ -138,13 +212,28 @@ document.addEventListener('DOMContentLoaded', () => {
 			zIndex:		'2'
 		});
 
-		// 5. Imagen en primer plano
+		// 5. Pie de foto opcional (si existe data-galeria-titulo)
+		const pieTitulo = document.createElement('div');
+		Object.assign(pieTitulo.style, {
+			bottom:			'20px',
+			color:			'#ffffff',
+			fontFamily:		'"Montserrat", sans-serif',
+			fontSize:		'14px',
+			left:			'50%',
+			opacity:		'0.85',
+			pointerEvents:	'none',
+			position:		'absolute',
+			transform:		'translateX(-50%)',
+			zIndex:			'2'
+		});
+
+		// 6. Imagen en primer plano
 		const visorImg = document.createElement('img');
 		visorImg.draggable = false;
 		Object.assign(visorImg.style, {
 			cursor:		'zoom-in',
-			maxHeight:	'80vh',
-			maxWidth:	'80vw',
+			maxHeight:	'82vh',
+			maxWidth:	'84vw',
 			objectFit:	'contain',
 			transition:	'none',
 			willChange:	'transform',
@@ -183,19 +272,21 @@ document.addEventListener('DOMContentLoaded', () => {
 
 		const renderizarImagen = () => {
 			resetearZoom();
-			const origen = imagenes[indiceActual];
-			visorImg.src = origen.dataset.galeriaImg || origen.currentSrc || origen.src;
-			visorImg.alt = origen.alt || '';
-			contador.textContent = `${indiceActual + 1} / ${imagenes.length}`;
+			const item = elementos[indiceActual];
+			visorImg.src = item.src;
+			visorImg.alt = item.alt;
+			contador.textContent = `${indiceActual + 1} / ${elementos.length}`;
+			pieTitulo.textContent = item.titulo;
+			pieTitulo.style.display = item.titulo ? 'block' : 'none';
 		};
 
 		const irAnterior = () => {
-			indiceActual = (indiceActual - 1 + imagenes.length) % imagenes.length;
+			indiceActual = (indiceActual - 1 + elementos.length) % elementos.length;
 			renderizarImagen();
 		};
 
 		const irSiguiente = () => {
-			indiceActual = (indiceActual + 1) % imagenes.length;
+			indiceActual = (indiceActual + 1) % elementos.length;
 			renderizarImagen();
 		};
 
@@ -239,7 +330,6 @@ document.addEventListener('DOMContentLoaded', () => {
 			cerrarGaleria();
 		});
 
-		// Cerrar al pulsar sobre el fondo negro
 		overlay.addEventListener('click', (e) => {
 			if (e.target === overlay) {
 				cerrarGaleria();
@@ -288,7 +378,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
 		visorImg.addEventListener('click', (e) => {
 			e.stopPropagation();
-			// Solo alterna el zoom si fue un clic limpio y no el final de un arrastre
 			if (!seHaMovido) {
 				toggleZoom();
 			}
@@ -308,7 +397,6 @@ document.addEventListener('DOMContentLoaded', () => {
 			}
 		};
 
-		// Sincronizar icono expand/compress al entrar/salir de fullscreen
 		const manejarFullscreen = () => {
 			imgExpand.src = (document.fullscreenElement === overlay) ? SVG.compress : SVG.expand;
 		};
@@ -317,16 +405,29 @@ document.addEventListener('DOMContentLoaded', () => {
 		document.addEventListener('fullscreenchange', manejarFullscreen);
 
 		// Montaje en el DOM
-		overlay.append(contador, barraDerecha, btnPrev, visorImg, btnNext);
+		overlay.append(contador, barraDerecha, btnPrev, visorImg, btnNext, pieTitulo);
 		document.body.style.overflow = 'hidden';
 		document.body.appendChild(overlay);
 		renderizarImagen();
 	};
 
-	// Vincular disparadores (botones o elementos no-input con data-galeria)
+	// 1. Disparadores explícitos (botones sin ser input, ej. la lupa en productos)
 	document.querySelectorAll('[data-galeria]:not(input)').forEach(disparador => {
 		disparador.addEventListener('click', () => {
-			activarGaleria(disparador.dataset.galeria);
+			const setId = disparador.dataset.galeria || null;
+			activarGaleria({ setId });
+		});
+	});
+
+	// 2. Disparadores directos en rejilla (inputs[data-galeria])
+	document.querySelectorAll('input[data-galeria]').forEach(input => {
+		const zonaClic = input.closest('a') || input.closest('label') || input;
+		zonaClic.addEventListener('click', (e) => {
+			e.preventDefault();
+			input.checked = true;
+			const inputsActivos = obtenerInputsActivos(input);
+			const indice = inputsActivos.indexOf(input);
+			activarGaleria({ inputPulsado: input, indiceForzado: indice });
 		});
 	});
 });
