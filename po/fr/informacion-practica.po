@@ -1,0 +1,294 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-11-21 21:08+0200\n"
+"PO-Revision-Date: 2026-11-21 21:35+0200\n"
+"Last-Translator: Automatically generated\n"
+"Language-Team: none\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Translate Toolkit 3.20.0\n"
+"Language: fr\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+
+#: pages/informacion-practica.html%2Bheader.h1:4-4
+msgid "Información práctica"
+msgstr "Informations pratiques"
+
+#: pages/informacion-practica.html%2Bmain.section.h3:9-5
+msgid ""
+"La Organización NO se responsabiliza del alojamiento de <br>los peregrinos "
+"el día previo y posterior a la peregrinación."
+msgstr ""
+"L'Organisation n'est PAS responsable de l'hébergement <br>des pèlerins la "
+"veille et le lendemain du pèlerinage."
+
+#: pages/informacion-practica.html%2Bmain.section.div.h2:14-6
+msgid "Viaje hasta Oviedo"
+msgstr "Voyage jusqu'à Oviedo"
+
+#: pages/informacion-practica.html%2Bmain.section.div.p:15-6
+msgid ""
+"El viaje hasta Oviedo no está gestionado por la Organización. No obstante, "
+"animamos a los participantes a ponerse en contacto con los Jefes de Capítulo "
+"para sopesar la posibilidad de compartir algún medio de transporte y que el "
+"viaje sea más económico."
+msgstr ""
+"Le voyage jusqu'à Oviedo n'est pas géré par l'Organisation. Cependant, nous "
+"encourageons les participants à contacter les Chefs de Chapitre afin "
+"d'envisager la possibilité de partager un moyen de transport pour rendre le "
+"trajet plus économique."
+
+#: pages/informacion-practica.html%2Bmain.section.div:15-272
+msgid "Cómo llegar a Oviedo"
+msgstr "Comment se rendre à Oviedo"
+
+#: pages/informacion-practica.html%2Bmain.section.div.h2:22-6
+msgid "Regreso a Oviedo"
+msgstr "Retour à Oviedo"
+
+#: pages/informacion-practica.html%2Bmain.section.div.p:23-6
+msgid ""
+"La Organización pondrá a disposición de los peregrinos <b "
+"class=\"b1\">autobuses</b> para regresar a Oviedo al finalizar la "
+"peregrinación en Covadonga. Aquellos que quieran hacer uso de este servicio "
+"deberán indicarlo en el momento de la inscripción."
+msgstr ""
+"L'Organisation mettra à la disposition des pèlerins des <b "
+"class=\"b1\">bus</b> pour retourner à Oviedo à la fin du pèlerinage à "
+"Covadonga. Ceux qui souhaitent utiliser ce service devront l'indiquer au "
+"moment de l'inscription."
+
+#: pages/informacion-practica.html%2Bmain.section.div:23-268
+msgid "Dónde aparcar en Oviedo"
+msgstr "Où se garer à Oviedo"
+
+#: pages/informacion-practica.html%2Bmain.section.h2:32-5
+msgid "Horario"
+msgstr "Horaires"
+
+#: pages/informacion-practica.html%2Bmain.section.div.h4:34-6
+msgid "25 de julio"
+msgstr "25 juillet"
+
+#: pages/informacion-practica.html%2Bmain.section.div.ul.li:36-7
+msgid ""
+"<b class=\"b2\">6:30</b>-Convocatoria de peregrinos en la plaza de la "
+"Catedral de Oviedo"
+msgstr ""
+"<b class=\"b2\">6 h 30</b> - Rassemblement des pèlerins sur la place de la "
+"Cathédrale d'Oviedo"
+
+#: pages/informacion-practica.html%2Bmain.section.div.ul.li:37-7
+msgid ""
+"<b class=\"b2\">9:30</b>-Convocatoria de peregrinos de la <b "
+"class=\"b1\">ruta de familias</b> en el <a class=\"a5\" href=\"https://"
+"maps.app.goo.gl/i2tXrG1u1czwTXdJ7\">Colegio Fundación Masaveu</a>"
+msgstr ""
+"<b class=\"b2\">9 h 30</b> - Rassemblement des pèlerins du <b "
+"class=\"b1\">parcours familial</b> au <a class=\"a5\" href=\"https://maps."
+"app.goo.gl/i2tXrG1u1czwTXdJ7\">Colegio Fundación Masaveu</a>"
+
+#: pages/informacion-practica.html%2Bmain.section.div.ul.li:38-7
+msgid ""
+"<b class=\"b2\">19:15</b>-Santa Misa Solemne en <a class=\"a15\" "
+"href=\"https://goo.gl/maps/s3aAhVs3LbSGsueB9\">El Remediu</a>"
+msgstr ""
+"<b class=\"b2\">19 h 15</b> - Sainte Messe Solennelle à <a class=\"a15\" "
+"href=\"https://goo.gl/maps/s3aAhVs3LbSGsueB9\">El Remediu</a>"
+
+#: pages/informacion-practica.html%2Bmain.section.div.h4:40-6
+msgid "26 de julio"
+msgstr "26 juillet"
+
+#: pages/informacion-practica.html%2Bmain.section.div.ul.li:42-7
+msgid ""
+"<b class=\"b2\">18:45</b>-Santa Misa Solemne en <a class=\"a15\" "
+"href=\"https://www.google.es/maps/search/43.364350,+-5.256737?"
+"coh=245187&entry=tts&g_ep=EgoyMDI1MDUxMi4wIPu8ASoJLDEwMjExNDUzSAFQAw%3D%3D&skid=28948a71-012e-44b8-"
+"acba-3a9eba312d73\">Sebares</a>. Por motivos de seguridad, se requiere "
+"pulsera de inscripción para acceder al campamento."
+msgstr ""
+"<b class=\"b2\">18 h 45</b> - Sainte Messe Solennelle à <a class=\"a15\" "
+"href=\"https://www.google.es/maps/search/43.364350,+-5.256737?"
+"coh=245187&entry=tts&g_ep=EgoyMDI1MDUxMi4wIPu8ASoJLDEwMjExNDUzSAFQAw%3D%3D&skid=28948a71-012e-44b8-"
+"acba-3a9eba312d73\">Sebares</a>. Pour des raisons de sécurité, le bracelet "
+"d'inscription est obligatoire pour accéder au bivouac."
+
+#: pages/informacion-practica.html%2Bmain.section.div.h4:44-6
+msgid "27 de julio"
+msgstr "27 juillet"
+
+#: pages/informacion-practica.html%2Bmain.section.div.ul.li:46-7
+msgid ""
+"<b class=\"b2\">6:30</b>-Santa Misa Solemne en <b class=\"b3\">Sebares</b>. "
+"Por motivos de seguridad, se requiere pulsera de inscripción para acceder al "
+"campamento."
+msgstr ""
+"<b class=\"b2\">6 h 30</b> - Sainte Messe Solennelle à <b "
+"class=\"b3\">Sebares</b>. Pour des raisons de sécurité, le bracelet "
+"d'inscription est obligatoire pour accéder au bivouac."
+
+#: pages/informacion-practica.html%2Bmain.section.div.ul.li:47-7
+msgid "<b class=\"b2\">17:15</b>-<i>Te Deum</i> en Covadonga"
+msgstr "<b class=\"b2\">17 h 15</b> - <i>Te Deum</i> à Covadonga"
+
+#: pages/informacion-practica.html%2Bmain.section.div.ul.li:48-7
+msgid ""
+"<b class=\"b2\">19:00-20:30</b>-Salida de autobuses a Oviedo (parada en el "
+"<a class=\"a5\" href=\"https://maps.app.goo.gl/i2tXrG1u1czwTXdJ7\">Colegio "
+"Fundación Masaveu</a>)"
+msgstr ""
+"<b class=\"b2\">19 h 00 - 20 h 30</b> - Départ des bus vers Oviedo (arrêt au "
+"<a class=\"a5\" href=\"https://maps.app.goo.gl/i2tXrG1u1czwTXdJ7\">Colegio "
+"Fundación Masaveu</a>)"
+
+#: pages/informacion-practica.html%2Bmain.section.div.p:50-6
+msgid ""
+"Los peregrinos de la minirruta recibirán toda la información sobre horarios "
+"y ubicaciones por correo electrónico."
+msgstr ""
+"Les pèlerins de la petite route recevront toutes les informations sur les "
+"horaires et les lieux par courrier électronique."
+
+#: pages/informacion-practica.html%2Bmain.section.div.h2:59-6
+msgid "Recorrido"
+msgstr "Parcours"
+
+#: pages/informacion-practica.html%2Bmain.section.div.p:60-6
+msgid "1er día: Oviedo – El Remediu (32 km)"
+msgstr "1er jour : Oviedo – El Remediu (32 km)"
+
+#: pages/informacion-practica.html%2Bmain.section.div.p:61-6
+msgid "2º día: El Remediu – Sebares (32 km)"
+msgstr "2e jour : El Remediu – Sebares (32 km)"
+
+#: pages/informacion-practica.html%2Bmain.section.div.p:62-6
+msgid "3er día: Sebares – Covadonga (27 km)"
+msgstr "3e jour : Sebares – Covadonga (27 km)"
+
+#: pages/informacion-practica.html%2Bmain.section.div.p:63-6
+msgid "Ruta de familias: unos 12-14 km/día"
+msgstr "Parcours familial : environ 12-14 km/jour"
+
+#: pages/informacion-practica.html%2Bmain.section.h2:68-5
+msgid "PREPARACIÓN FÍSICA (30 días)"
+msgstr "PRÉPARATION PHYSIQUE (30 jours)"
+
+#: pages/informacion-practica.html%2Bmain.section.p:69-5
+msgid "Primera semana"
+msgstr "Première semaine"
+
+#: pages/informacion-practica.html%2Bmain.section.div.p:71-6
+msgctxt "pages/informacion-practica.html+section23.div.p:4-2"
+msgid "Opción A"
+msgstr "Option A"
+
+#: pages/informacion-practica.html%2Bmain.section.div.p:72-6
+msgid "(L-V) 3 salidas de 5 km.<br>(S/D) 1 salida de 10 km."
+msgstr "(Lun-Ven) 3 sorties de 5 km.<br>(Sam/Dim) 1 sortie de 10 km."
+
+#: pages/informacion-practica.html%2Bmain.section.div.p:75-6
+msgctxt "pages/informacion-practica.html+section23.div.p:8-2"
+msgid "Opción B"
+msgstr "Option B"
+
+#: pages/informacion-practica.html%2Bmain.section.div.p:76-6
+msgid "(L-V) 2 salidas de 10 km.<br>(S/D) 1 salida de 15 km."
+msgstr "(Lun-Ven) 2 sorties de 10 km.<br>(Sam/Dim) 1 sortie de 15 km."
+
+#: pages/informacion-practica.html%2Bmain.section.p:78-5
+msgid "Segunda semana"
+msgstr "Deuxième semaine"
+
+#: pages/informacion-practica.html%2Bmain.section.div.p:80-6
+msgctxt "pages/informacion-practica.html+section23.div.p:13-2"
+msgid "Opción A"
+msgstr "Option A"
+
+#: pages/informacion-practica.html%2Bmain.section.div.p:81-6
+msgid "(L-V) 2 salidas de 10 km.<br>(S/D) 1 salida de 20 km."
+msgstr "(Lun-Ven) 2 sorties de 10 km.<br>(Sam/Dim) 1 sortie de 20 km."
+
+#: pages/informacion-practica.html%2Bmain.section.div.p:84-6
+msgctxt "pages/informacion-practica.html+section23.div.p:17-2"
+msgid "Opción B"
+msgstr "Option B"
+
+#: pages/informacion-practica.html%2Bmain.section.div.p:85-6
+msgid "(L-V) 2 salidas de 15 km.<br>(S/D) 1 salida de 25 km"
+msgstr "(Lun-Ven) 2 sorties de 15 km.<br>(Sam/Dim) 1 sortie de 25 km."
+
+#: pages/informacion-practica.html%2Bmain.section.p:87-5
+msgid "Tercera semana"
+msgstr "Troisième semaine"
+
+#: pages/informacion-practica.html%2Bmain.section.div.p:89-6
+msgctxt "pages/informacion-practica.html+section23.div.p:22-2"
+msgid "Opción A"
+msgstr "Option A"
+
+#: pages/informacion-practica.html%2Bmain.section.div.p:90-6
+msgid "(L-V) 2 salidas de 15 km.<br>(A/D) 1 salida de 30 km."
+msgstr "(Lun-Ven) 2 sorties de 15 km.<br>(Sam/Dim) 1 sortie de 30 km."
+
+#: pages/informacion-practica.html%2Bmain.section.div.p:93-6
+msgctxt "pages/informacion-practica.html+section23.div.p:26-2"
+msgid "Opción B"
+msgstr "Option B"
+
+#: pages/informacion-practica.html%2Bmain.section.div.p:94-6
+msgid "(L-V) 2 salidas de 20 km.<br>(S/D) 1 salida de 35 km."
+msgstr "(Lun-Ven) 2 sorties de 20 km.<br>(Sam/Dim) 1 sortie de 35 km."
+
+#: pages/informacion-practica.html%2Bmain.section.p:96-5
+msgid "Cuarta semana"
+msgstr "Quatrième semaine"
+
+#: pages/informacion-practica.html%2Bmain.section.ul.li:98-6
+msgid "Cuatro días para recuperación, descanso y preparación del viaje."
+msgstr ""
+"Quatre jours pour la récupération, le repos et la préparation du voyage."
+
+#: pages/informacion-practica.html%2Bmain.section.ul.li:99-6
+msgid "Un día de viaje."
+msgstr "Un jour de voyage."
+
+#: pages/informacion-practica.html%2Bmain.section.ul.li:100-6
+msgid "Tres días de peregrinación."
+msgstr "Trois jours de pèlerinage."
+
+#: pages/informacion-practica.html%2Bmain.section.h2:105-5
+msgid "Recomendaciones para la preparación"
+msgstr "Recommandations pour la préparation"
+
+#: pages/informacion-practica.html%2Bmain.section.ul.li:107-6
+msgid "Comenzar siempre a baja intensidad e ir incrementando progresivamente."
+msgstr ""
+"Commencer toujours à faible intensité et augmenter progressivement."
+
+#: pages/informacion-practica.html%2Bmain.section.ul.li:108-6
+msgid ""
+"Vigilar posibles molestias musculares en los pies o de cualquier índole "
+"durante la marcha. Si algún elemento del calzado o la ropa molesta, es "
+"preferible parar y corregirlo."
+msgstr ""
+"Surveiller les éventuelles gênes musculaires aux pieds ou de toute autre "
+"nature pendant la marche. Si un élément des chaussures ou des vêtements "
+"gêne, il est préférable de s'arrêter et de le corriger."
+
+#: pages/informacion-practica.html%2Bmain.section.ul.li:109-6
+msgid "Hidratarse antes, durante y después del ejercicio."
+msgstr "S'hydrater avant, pendant et après l'effort."
+
+#: pages/informacion-practica.html%2Bmain.section.ul.li:110-6
+msgid ""
+"Prestar especial atención a los estiramientos una vez finalizado el "
+"ejercicio. Si la marcha es larga, se aconseja realizarlos también en un "
+"breve descanso intermedio."
+msgstr ""
+"Accorder une attention particulière aux étirements une fois l'exercice "
+"terminé. Si la marche est longue, il est conseillé de les faire également "
+"lors d'une brève pause intermédiaire."

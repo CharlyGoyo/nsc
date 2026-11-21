@@ -88,6 +88,6 @@ $b || saait -o output/articulos pages/articulos/*.cfg
 # compila el resto:
 $b || saait pages/*.cfg
 # compila los distintos idiomas:
-$b || saait -o output/pt pages/pt/*.cfg
-$b || saait -o output/en pages/en/*.cfg
-$b || saait -o output/fr pages/fr/*.cfg
+$b || saait -c pages/pt/config.cfg -o output/pt pages/pt/*.cfg
+$b || saait -c pages/en/config.cfg -o output/en pages/en/*.cfg
+$b || saait -c pages/fr/config.cfg -o output/fr pages/fr/*.cfg

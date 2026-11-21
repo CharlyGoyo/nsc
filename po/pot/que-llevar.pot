@@ -1,0 +1,398 @@
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-11-21 21:08+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Translate Toolkit 3.20.0\n"
+
+#: pages/que-llevar.html%2Bheader.h1:3-4
+msgid "¿Qué llevar?"
+msgstr ""
+
+#: pages/que-llevar.html%2Bmain.section.p:8-5
+msgid ""
+"Para ver los elementos que provee la organización, haga click <a href=\"/"
+"como-ayudar.html\" class=\"a5\">aquí</a>. A continuación se detalla el "
+"material que cada peregrino debe llevar:"
+msgstr ""
+
+#: pages/que-llevar.html%2Bmain.section.h3:12-5
+msgid "CALZADO"
+msgstr ""
+
+#: pages/que-llevar.html%2Bmain.section.ul.li:14-6
+msgid "Calzado cómodo y resistente (no llevar zapatillas nuevas)."
+msgstr ""
+
+#: pages/que-llevar.html%2Bmain.section.ul.li:15-6
+msgid "Opcional: crema hidratante, vaselina…"
+msgstr ""
+
+#: pages/que-llevar.html%2Bmain.section.h3:20-5
+msgid "EQUIPO DE ACAMPADA"
+msgstr ""
+
+#: pages/que-llevar.html%2Bmain.section.ul.li:22-6
+msgid "Saco de dormir y esterilla."
+msgstr ""
+
+#: pages/que-llevar.html%2Bmain.section.ul.li:23-6
+msgid ""
+"Tienda de campaña (a coordinar con los miembros del capítulo). <b "
+"class=\"b8\">Los peregrinos que vienen de fuera de la España peninsular no "
+"están obligados a traerla.</b>"
+msgstr ""
+
+#: pages/que-llevar.html%2Bmain.section.h3:28-5
+msgid "MOCHILA PEQUEÑA PARA PEREGRINAR"
+msgstr ""
+
+#: pages/que-llevar.html%2Bmain.section.p:29-5
+msgid "Esta mochila será usada para caminar. Debe llevar:"
+msgstr ""
+
+#: pages/que-llevar.html%2Bmain.section.ul.li:31-6
+msgid "Comida del día."
+msgstr ""
+
+#: pages/que-llevar.html%2Bmain.section.ul.li:32-6
+msgid ""
+"Alimentos energéticos: barritas de cereales, chocolate, frutos secos, "
+"caramelos, etc."
+msgstr ""
+
+#: pages/que-llevar.html%2Bmain.section.ul.li:33-6
+msgid "Chubasquero."
+msgstr ""
+
+#: pages/que-llevar.html%2Bmain.section.ul.li:34-6
+msgid "Abrigo necesario (por la mañana podría hacer frío)."
+msgstr ""
+
+#: pages/que-llevar.html%2Bmain.section.ul.li:35-6
+msgid ""
+"Vajilla de exteriores para acampada en caso de necesitarla para su comida "
+"(plato hondo, cubiertos, vaso/taza…)."
+msgstr ""
+
+#: pages/que-llevar.html%2Bmain.section.ul.li:36-6
+msgid "Papel higiénico."
+msgstr ""
+
+#: pages/que-llevar.html%2Bmain.section.ul.li:37-6
+msgid "Botella de agua."
+msgstr ""
+
+#: pages/que-llevar.html%2Bmain.section.ul.li:38-6
+msgid "Gorra y protección solar."
+msgstr ""
+
+#: pages/que-llevar.html%2Bmain.section.ul.li:39-6
+msgid ""
+"Botiquín con medicación, <b class=\"b8\">material para cura de ampollas…</b>"
+msgstr ""
+
+#: pages/que-llevar.html%2Bmain.section.ul.li:40-6
+msgid "Libro del peregrino (que facilita NSC-E)."
+msgstr ""
+
+#: pages/que-llevar.html%2Bmain.section.ul.li:41-6
+msgid "Documentación (no olvidar la <b class=\"b8\">tarjeta sanitaria</b>)."
+msgstr ""
+
+#: pages/que-llevar.html%2Bmain.section.ul.li:42-6
+msgid "Rosario."
+msgstr ""
+
+#: pages/que-llevar.html%2Bmain.section.h3:47-5
+msgid "MOCHILA GRANDE"
+msgstr ""
+
+#: pages/que-llevar.html%2Bmain.section.p:48-5
+msgid ""
+"Será llevada por la Organización junto con el equipo de acampada de un "
+"campamento a otro. <b class=\"b4\">Se recomienda meter las pertenencias en</"
+"b> <b class=\"b5\">bolsas impermeables dentro de la mochila</b>, ya que las "
+"mochilas pueden mojarse si llueve. Debe llevar:"
+msgstr ""
+
+#: pages/que-llevar.html%2Bmain.section.ul.li:50-6
+msgid "La comida que no se consumirá en el día."
+msgstr ""
+
+#: pages/que-llevar.html%2Bmain.section.ul.li:51-6
+msgid "Cena de todos los días."
+msgstr ""
+
+#: pages/que-llevar.html%2Bmain.section.ul.li:52-6
+msgid "Calzado liviano de recambio para el campamento."
+msgstr ""
+
+#: pages/que-llevar.html%2Bmain.section.ul.li:53-6
+msgid "Ropa de recambio (no excederse)."
+msgstr ""
+
+#: pages/que-llevar.html%2Bmain.section.ul.li:54-6
+msgid "<b class=\"b8\">Bañador</b> (de uso obligatorio en el río y «duchas»)."
+msgstr ""
+
+#: pages/que-llevar.html%2Bmain.section.ul.li:55-6
+msgid ""
+"Elementos de higiene personal y toalla ligera. Se recomienda llevar "
+"toallitas húmedas."
+msgstr ""
+
+#: pages/que-llevar.html%2Bmain.section.ul.li:56-6
+msgid "Linterna."
+msgstr ""
+
+#: pages/que-llevar.html%2Bmain.section.ul.li:57-6
+msgid "Material de curas (los sanitarios sólo atenderán casos graves)."
+msgstr ""
+
+#: pages/que-llevar.html%2Bmain.section.h3:62-5
+msgid "IMPORTANTE"
+msgstr ""
+
+#: pages/que-llevar.html%2Bmain.section.p:63-5
+msgid ""
+"Es imprescindible señalizar pertenencias con nombre y <b class=\"b8\">cinta "
+"de color</b> del capítulo (la cinta la aporta cada peregrino, no la entrega "
+"la Organización). La asignación se encuentra al final de esta página.<br>No "
+"deben atarse elementos a la mochila grande, sino prepararla de manera "
+"compacta para evitar extravíos."
+msgstr ""
+
+#: pages/que-llevar.html%2Bmain.section.p:64-5
+msgid ""
+"Intentar usar el teléfono móvil lo menos posible. No habrá en los "
+"campamentos enchufes para recargarlos."
+msgstr ""
+
+#: pages/que-llevar.html%2Bmain.section.div:68-5
+msgid "Zona Levante"
+msgstr ""
+
+#: pages/que-llevar.html%2Bmain.section.div.ul.li:71-7
+msgid "Inmaculada Virgen de la Fuensanta"
+msgstr ""
+
+#: pages/que-llevar.html%2Bmain.section.div.ul.li:72-7
+msgid "La Santa Faz"
+msgstr ""
+
+#: pages/que-llevar.html%2Bmain.section.div.ul.li:73-7
+msgid "Nuestra Señora de los Desamparados"
+msgstr ""
+
+#: pages/que-llevar.html%2Bmain.section.div.ul.li:74-7
+msgid "Nuestra Señora de Montserrat"
+msgstr ""
+
+#: pages/que-llevar.html%2Bmain.section.div.ul.li:75-7
+msgid "San Pascual Baylón"
+msgstr ""
+
+#: pages/que-llevar.html%2Bmain.section.div.ul.li:76-7
+msgid "Santa Eulàlia"
+msgstr ""
+
+#: pages/que-llevar.html%2Bmain.section.div:79-5
+msgid "Zona Sur"
+msgstr ""
+
+#: pages/que-llevar.html%2Bmain.section.div.ul.li:82-7
+msgid "Arcángel San Rafael"
+msgstr ""
+
+#: pages/que-llevar.html%2Bmain.section.div.ul.li:83-7
+msgid "Ntra. Sra. de la Antigua"
+msgstr ""
+
+#: pages/que-llevar.html%2Bmain.section.div.ul.li:84-7
+msgid "Ntra. Sra. del Mar"
+msgstr ""
+
+#: pages/que-llevar.html%2Bmain.section.div.ul.li:85-7
+msgid "Ntra. Sra. del Pino"
+msgstr ""
+
+#: pages/que-llevar.html%2Bmain.section.div.ul.li:86-7
+msgid "San Fernando"
+msgstr ""
+
+#: pages/que-llevar.html%2Bmain.section.div:89-5
+msgid "Zona Norte"
+msgstr ""
+
+#: pages/que-llevar.html%2Bmain.section.div.ul.li:92-7
+msgid "Ntra. Sra. de Covadonga"
+msgstr ""
+
+#: pages/que-llevar.html%2Bmain.section.div.ul.li:93-7
+msgid "Ntra. Sra de Valvanera"
+msgstr ""
+
+#: pages/que-llevar.html%2Bmain.section.div.ul.li:94-7
+msgid "Nuestra Señora del Carmen"
+msgstr ""
+
+#: pages/que-llevar.html%2Bmain.section.div.ul.li:95-7
+msgid "San Francisco de Javier"
+msgstr ""
+
+#: pages/que-llevar.html%2Bmain.section.div.ul.li:96-7
+msgid "San Jorge"
+msgstr ""
+
+#: pages/que-llevar.html%2Bmain.section.div.ul.li:97-7
+msgid "Santa María la Mayor"
+msgstr ""
+
+#: pages/que-llevar.html%2Bmain.section.div:100-5
+msgid "Zona Centro A"
+msgstr ""
+
+#: pages/que-llevar.html%2Bmain.section.div.ul.li:103-7
+msgid "Nuestra Señora de la Medalla Milagrosa"
+msgstr ""
+
+#: pages/que-llevar.html%2Bmain.section.div.ul.li:104-7
+msgid "Nuestra Señora de la Paz"
+msgstr ""
+
+#: pages/que-llevar.html%2Bmain.section.div.ul.li:105-7
+msgid "Nuestra Señora del Pilar"
+msgstr ""
+
+#: pages/que-llevar.html%2Bmain.section.div.ul.li:106-7
+msgid "San Andrés"
+msgstr ""
+
+#: pages/que-llevar.html%2Bmain.section.div:109-5
+msgid "Zona Centro B"
+msgstr ""
+
+#: pages/que-llevar.html%2Bmain.section.div.ul.li:112-7
+msgid "Ysabel la Católica"
+msgstr ""
+
+#: pages/que-llevar.html%2Bmain.section.div.ul.li:113-7
+msgid "Nuestra Señora de las Victorias"
+msgstr ""
+
+#: pages/que-llevar.html%2Bmain.section.div.ul.li:114-7
+msgid "San Pelayo"
+msgstr ""
+
+#: pages/que-llevar.html%2Bmain.section.div.ul.li:115-7
+msgid "Santa Juana de Arco"
+msgstr ""
+
+#: pages/que-llevar.html%2Bmain.section.div.ul.li:116-7
+msgid "Santa Teresa"
+msgstr ""
+
+#: pages/que-llevar.html%2Bmain.section.div.ul.li:117-7
+msgid "Santo Tomás de Aquino"
+msgstr ""
+
+#: pages/que-llevar.html%2Bmain.section.div:120-5
+msgid "Zona Centro C"
+msgstr ""
+
+#: pages/que-llevar.html%2Bmain.section.div.ul.li:123-7
+msgid "Nuestra Señora de la Vega"
+msgstr ""
+
+#: pages/que-llevar.html%2Bmain.section.div.ul.li:124-7
+msgid "Nuestra Señora del Sagrario"
+msgstr ""
+
+#: pages/que-llevar.html%2Bmain.section.div.ul.li:125-7
+msgid "Pura y Limpia Concepción de María"
+msgstr ""
+
+#: pages/que-llevar.html%2Bmain.section.div.ul.li:126-7
+msgid "Santos Francisco y Jacinta"
+msgstr ""
+
+#: pages/que-llevar.html%2Bmain.section.div.ul.li:127-7
+msgid "San Pedro de Alcántara"
+msgstr ""
+
+#: pages/que-llevar.html%2Bmain.section.div:130-5
+msgid "Extranjeros"
+msgstr ""
+
+#: pages/que-llevar.html%2Bmain.section.div.ul.li:133-7
+msgid "Cristo del Cubilete"
+msgstr ""
+
+#: pages/que-llevar.html%2Bmain.section.div.ul.li:134-7
+msgid "Heilige Willibrord"
+msgstr ""
+
+#: pages/que-llevar.html%2Bmain.section.div.ul.li:135-7
+msgid "Matka Boża Częstochowska"
+msgstr ""
+
+#: pages/que-llevar.html%2Bmain.section.div.ul.li:136-7
+msgid "Nossa Senhora de Fátima"
+msgstr ""
+
+#: pages/que-llevar.html%2Bmain.section.div.ul.li:137-7
+msgid "Notre-Dame de Fourvière"
+msgstr ""
+
+#: pages/que-llevar.html%2Bmain.section.div.ul.li:138-7
+msgid "Notre-Dame de Terre Sainte"
+msgstr ""
+
+#: pages/que-llevar.html%2Bmain.section.div.ul.li:139-7
+msgid "Our Lady of Evesham"
+msgstr ""
+
+#: pages/que-llevar.html%2Bmain.section.div.ul.li:140-7
+msgid "Saint Anne"
+msgstr ""
+
+#: pages/que-llevar.html%2Bmain.section.div.ul.li:141-7
+msgid "Saint Joseph"
+msgstr ""
+
+#: pages/que-llevar.html%2Bmain.section.div.ul.li:142-7
+msgid "Saint Patrick"
+msgstr ""
+
+#: pages/que-llevar.html%2Bmain.section.div.ul.li:143-7
+msgid "Saints Behnam et Sarah"
+msgstr ""
+
+#: pages/que-llevar.html%2Bmain.section.div.ul.li:144-7
+msgid "Salus Populi Romani"
+msgstr ""
+
+#: pages/que-llevar.html%2Bmain.section.div:147-5
+msgid ""
+"<span class=\"span6\" id=\"span8\">Ruta de Familias</span> Todos los "
+"peregrinos que hagan la ruta de familias, independientemente de su capítulo "
+"y región."
+msgstr ""
+
+#: pages/que-llevar.html%2Bmain.section.div:151-5
+msgid "<span class=\"span6\" id=\"span9\">Voluntarios</span> Voluntarios"
+msgstr ""
+
+#: pages/que-llevar.html%2Bmain.section.div:155-5
+msgid ""
+"<span class=\"span6\" id=\"span10\">Clero</span> Para el clero, "
+"independientemente de su capítulo y región."
+msgstr ""

@@ -1,0 +1,257 @@
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-11-21 21:08+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Translate Toolkit 3.20.0\n"
+
+#: pages/index.html%2Bheader.h1:6-4
+msgid "VI Peregrinación<br>nuestra señora de la cristiandad"
+msgstr ""
+
+#: pages/index.html%2Bheader.p:7-4
+msgid "Del 24 al 26 de julio de 2027"
+msgstr ""
+
+#: pages/index.html%2Bmain.section.div.h2:13-6
+msgid "¿Qué es?"
+msgstr ""
+
+#: pages/index.html%2Bmain.section.div.p:14-6
+msgid ""
+"Nuestra Señora de la Cristiandad – España es una peregrinación anual al "
+"Santuario de Covadonga (Asturias). Organizada por un grupo de fieles laicos, "
+"es independiente de cualquier instituto, comunidad, u organización religiosa."
+msgstr ""
+
+#: pages/index.html%2Bmain.section.div:14-247
+msgctxt "pages/index.html:div7"
+msgid "Saber más"
+msgstr ""
+
+#: pages/index.html%2Bmain.section.h2:22-5
+msgid "Inscripción"
+msgstr ""
+
+#: pages/index.html%2Bmain.section.p:23-5
+msgid "Del 15 de mayo al 15 de julio"
+msgstr ""
+
+#: pages/index.html%2Bmain.section:23-97
+msgid "Inscribirme"
+msgstr ""
+
+#: pages/index.html%2Bmain.section.div.h2:30-6
+msgid "HAZTE VOLUNTARIO"
+msgstr ""
+
+#: pages/index.html%2Bmain.section.div.p:31-6
+msgid "¡Ayuda a hacer la peregrinación posible!"
+msgstr ""
+
+#: pages/index.html%2Bmain.section.div:31-60
+msgctxt "pages/index.html+img4:1-0"
+msgid "Saber más"
+msgstr ""
+
+#: pages/index.html%2Bmain.section.h2:38-5
+msgid "Ayuda a sostener la Peregrinación"
+msgstr ""
+
+#: pages/index.html%2Bmain.section.p:39-5
+msgid ""
+"Las inscripciones no son suficientes para cubrir todos los gastos. Ayúdanos "
+"con tu donación puntual o mensual."
+msgstr ""
+
+#: pages/index.html%2Bmain.section:39-178
+msgid "Haz tu donativo"
+msgstr ""
+
+#: pages/index.html%2Bmain.section.label.label.iframe[title]:48-7
+msgid "YouTube video player"
+msgstr ""
+
+#: pages/index.html%2Bmain.section.div.h2:61-6
+msgid "Galería"
+msgstr ""
+
+#: pages/index.html%2Bmain.section.div.p:62-6
+msgid "Descubre fotos, testimonios y vídeos de ediciones anteriores."
+msgstr ""
+
+#: pages/index.html%2Bmain.section.div:62-89
+msgid "ver aquí"
+msgstr ""
+
+#: pages/index.html%2Bmain.section.div.h3:70-6
+msgid "Preguntas frecuentes"
+msgstr ""
+
+#: pages/index.html%2Bmain.section.div.p:71-6
+msgid ""
+"Consulta las preguntas más frecuentes y resuelve todas tus dudas sobre la "
+"Peregrinación"
+msgstr ""
+
+#: pages/index.html%2Bmain.section.div:71-107
+msgctxt "pages/index.html+section7.div:1-1"
+msgid "Saber más"
+msgstr ""
+
+#: pages/index.html%2Bmain.section.div.h3:76-6
+msgid "Información práctica"
+msgstr ""
+
+#: pages/index.html%2Bmain.section.div.p:77-6
+msgid ""
+"¿Cómo me preparo? ¿Cuál es el horario? ¿Desde dónde se sale? ¿Cómo llego "
+"hasta Oviedo?"
+msgstr ""
+
+#: pages/index.html%2Bmain.section.div:77-106
+msgctxt "pages/index.html+section7.div:7-1"
+msgid "Saber más"
+msgstr ""
+
+#: pages/index.html%2Bmain.section.div.h3:82-6
+msgid "¿Qué llevar?"
+msgstr ""
+
+#: pages/index.html%2Bmain.section.div.p:83-6
+msgid "¿Tengo que llevar tienda de campaña? ¿Cómo identifico mis pertenencias?"
+msgstr ""
+
+#: pages/index.html%2Bmain.section.div:83-91
+msgctxt "pages/index.html+section7.div:13-1"
+msgid "Saber más"
+msgstr ""
+
+#: pages/index.html%2Bmain.section.div.h3:88-6
+msgid "Capítulos"
+msgstr ""
+
+#: pages/index.html%2Bmain.section.div.p:89-6
+msgid ""
+"Para participar en la Peregrinación es necesario inscribirse en un capítulo. "
+"Descubre en qué capítulo apuntarte."
+msgstr ""
+
+#: pages/index.html%2Bmain.section.div:89-132
+msgctxt "pages/index.html+section7.div:19-1"
+msgid "Saber más"
+msgstr ""
+
+#: pages/index.html%2Bmain.section.div.h3:94-6
+msgid "Ángeles de la Guarda"
+msgstr ""
+
+#: pages/index.html%2Bmain.section.div.p:95-6
+msgid ""
+"¿No puedes venir a la peregrinación? Únete espiritualmente apuntándote al "
+"capítulo de «Ángeles de la Guarda»."
+msgstr ""
+
+#: pages/index.html%2Bmain.section.div:95-129
+msgctxt "pages/index.html+section7.div:25-1"
+msgid "Saber más"
+msgstr ""
+
+#: pages/index.html%2Bmain.section.div.h3:100-6
+msgid "Sacerdotes"
+msgstr ""
+
+#: pages/index.html%2Bmain.section.div.p:101-6
+msgid "¿Es sacerdote, seminarista o religioso/a? ¡Este es su sitio!"
+msgstr ""
+
+#: pages/index.html%2Bmain.section.div:101-80
+msgctxt "pages/index.html+section7.div:31-1"
+msgid "Saber más"
+msgstr ""
+
+#: pages/index.html%2Bmain.section.h2:107-5
+msgid "Actividades durante el año"
+msgstr ""
+
+#: pages/index.html%2Bmain.section.div:108-5
+msgid ""
+"<a class=\"a3\" id=\"a1\" data-animation=\"bottom\" data-animation-"
+"group=\"8\" href=\"/retiros.html\">Retiros espirituales</a> <a class=\"a3\" "
+"id=\"a2\" data-animation=\"left\" data-animation-group=\"9\" href=\"/"
+"jovenes.html\">Convivencias</a> <a class=\"a3\" id=\"a3\" data-"
+"animation=\"right\" data-animation-group=\"9\" href=\"/musicasacra.html\">"
+"Música sacra</a>"
+msgstr ""
+
+#: pages/index.html%2Bmain.article.div.h2:119-6
+msgid "Laudate n.º57 - Junio 2026"
+msgstr ""
+
+#: pages/index.html%2Bmain.article.div.p:120-6
+msgid "En este número:"
+msgstr ""
+
+#: pages/index.html%2Bmain.article.div:120-36
+msgid ""
+"<a class=\"a4\">«Airaos, mas no pequéis». Los vicios capitales (IV): La ira</"
+"a> <i class=\"i1\">D. Tomás Minguet Civera, Pbro. Nuestra Señora de los "
+"Desamparados.</i> <a class=\"a4\" id=\"a4\">¿Pathos en Dios? Una "
+"aproximación histórica: Conclusión</a> <i class=\"i1\">D. Gabriel Orejas "
+"Iriarte, Universidad Francisco de Vitoria</i> <a class=\"a4\">Vida de san "
+"Basilio (VI)</a> <i class=\"i1\">Anfiloquio de Iconio</i>"
+msgstr ""
+
+#: pages/index.html%2Bmain.article:127-5
+msgid "Suscríbete al boletín"
+msgstr ""
+
+#: pages/index.html%2Bmain.section.h2:132-5
+msgid "Recursos"
+msgstr ""
+
+#: pages/index.html%2Bmain.section.div.h3:137-6
+msgid "Espiritualidad"
+msgstr ""
+
+#: pages/index.html%2Bmain.section.div.p:138-6
+msgid "Novenas, oraciones, artículos de interés."
+msgstr ""
+
+#: pages/index.html%2Bmain.section.div:138-61
+msgctxt "pages/index.html+section9.div:2-1"
+msgid "Acceder"
+msgstr ""
+
+#: pages/index.html%2Bmain.section.div.h3:143-6
+msgid "La Santa Misa"
+msgstr ""
+
+#: pages/index.html%2Bmain.section.div.p:144-6
+msgid "Aprende más sobre la Santa Misa según el <i>Usus Antiquior</i> ."
+msgstr ""
+
+#: pages/index.html%2Bmain.section.div:144-84
+msgid "Próximamente"
+msgstr ""
+
+#: pages/index.html%2Bmain.section.div.h3:149-6
+msgid "Formación"
+msgstr ""
+
+#: pages/index.html%2Bmain.section.div.p:150-6
+msgid "Artículos sobre diversos temas para formarte en la fe."
+msgstr ""
+
+#: pages/index.html%2Bmain.section.div:150-74
+msgctxt "pages/index.html+section9.div:2-1"
+"pages/index.html+main.section.div:150-74"
+msgid "Acceder"
+msgstr ""

@@ -1,0 +1,321 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-11-21 21:08+0200\n"
+"PO-Revision-Date: 2026-11-21 21:15+0200\n"
+"Last-Translator: Automatically generated\n"
+"Language-Team: none\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Translate Toolkit 3.20.0\n"
+"Language: en\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: pages/ruta-familias.html%2Bheader.h1:4-4
+msgid "Familias"
+msgstr "Families"
+
+#: pages/ruta-familias.html%2Bmain.p:8-4
+msgid ""
+"Como célula fundamental del Orden Social Cristiano, Nuestra Señora de la "
+"Cristiandad busca que las familias puedan integrarse cada vez más plenamente "
+"en la Peregrinación. Por ello, desde su fundación existe la posibilidad de "
+"inscribirse en la <a href=\"#familias\" class=\"a4\">ruta de familias</a>, "
+"más reducida que la ruta completa y apta para mayores de 6 años. En la VI "
+"Peregrinación, en 2026, se añadirá una nueva modalidad de inscripción, la <a "
+"href=\"#minirruta\" class=\"a4\">minirruta</a>, adaptada para niños de 0 a 6 "
+"años, pues es apta para carritos de bebé. Se describen los detalles de ambas "
+"rutas a continuación."
+msgstr ""
+"As a fundamental unit of the Christian Social Order, Our Lady of Christendom "
+"seeks to enable families to become increasingly involved in the Pilgrimage. "
+"For this reason, since its foundation, it has been possible to register for "
+"the <a href=\"#familias\" class=\"a4\">family route</a>, which is shorter "
+"than the full route and suitable for children aged 6 and over. For the 6th "
+"Pilgrimage, in 2026, a new registration option will be added: the <a "
+"href=\"#minirruta\" class=\"a4\">little-route</a>, adapted for children aged "
+"0 to 6, as it is suitable for pushchairs. Details of both routes are "
+"described below."
+
+#: pages/ruta-familias.html%2Bmain.section.h2:11-5
+msgid "Ruta de familias"
+msgstr "Family route"
+
+#: pages/ruta-familias.html%2Bmain.section.div.h4:13-6
+msgctxt "pages/ruta-familias.html+familias.div.h4:3-2"
+msgid "¿En qué consiste?"
+msgstr "What is it?"
+
+#: pages/ruta-familias.html%2Bmain.section.div.p:14-6
+msgid ""
+"Se camina entre 11 y 14 km al día. Los traslados desde un punto a otro de la "
+"ruta se realizan en autobuses de la organización."
+msgstr ""
+"You will walk between 11 and 14 km a day. Transport between different points "
+"along the route is provided by the organisation’s buses."
+
+#: pages/ruta-familias.html%2Bmain.section.div.h4:15-6
+msgctxt "pages/ruta-familias.html+familias.div.h4:5-2"
+msgid "¿En qué capítulo se inscriben?"
+msgstr "Which chapter do they fall under?"
+
+#: pages/ruta-familias.html%2Bmain.section.div.p:16-6
+msgctxt "pages/ruta-familias.html+familias.div.p:6-2"
+msgid ""
+"Los peregrinos que eligen esta ruta están integrados en los capítulos de la "
+"ruta completa."
+msgstr ""
+"Pilgrims who choose this route are integrated into the chapters of the "
+"complete route."
+
+#: pages/ruta-familias.html%2Bmain.section.div.h4:17-6
+msgctxt "pages/ruta-familias.html+familias.div.h4:7-2"
+msgid "¿Quién puede inscribirse?"
+msgstr "Who is eligible to register?"
+
+#: pages/ruta-familias.html%2Bmain.section.div.p:18-6
+msgid ""
+"La edad recomendada para la ruta de familias es entre 6 y 12 años, siempre "
+"acompañados por un adulto responsable."
+msgstr ""
+"The recommended age for the family route is between 6 and 12 years old, "
+"always accompanied by a responsible adult."
+
+#: pages/ruta-familias.html%2Bmain.section.div.h4:25-6
+msgid "Primer Día"
+msgstr "First day"
+
+#: pages/ruta-familias.html%2Bmain.section.div.p:26-6
+msgid "De la Virgen de la Cabeza a Los Corros"
+msgstr "From Virgen de la Cabeza to Los Corros"
+
+#: pages/ruta-familias.html%2Bmain.section.div.p:27-6
+msgid "14 km"
+msgstr "14 km"
+
+#: pages/ruta-familias.html%2Bmain.section.div.h4:30-6
+msgid "Segundo día"
+msgstr "Day two"
+
+#: pages/ruta-familias.html%2Bmain.section.div.p:31-6
+msgid "De Ceceda a San Román"
+msgstr "From Ceceda to San Román"
+
+#: pages/ruta-familias.html%2Bmain.section.div.p:32-6
+msgid "12,3 km"
+msgstr "12.3 km"
+
+#: pages/ruta-familias.html%2Bmain.section.div.h4:37-6
+msgid "Tercer día"
+msgstr "Day three"
+
+#: pages/ruta-familias.html%2Bmain.section.div.p:38-6
+msgid "De Cangas de Onís a Covadonga"
+msgstr "From Cangas de Onís to Covadonga"
+
+#: pages/ruta-familias.html%2Bmain.section.div.p:39-6
+msgid "10,6 km"
+msgstr "10.6 km"
+
+#: pages/ruta-familias.html%2Bmain.section.h2:44-5
+msgid "Minirruta"
+msgstr "Little-route"
+
+#: pages/ruta-familias.html%2Bmain.section.div.h4:46-6
+msgctxt "pages/ruta-familias.html+minirruta.div.h4:3-2"
+msgid "¿En qué consiste?"
+msgstr "What is it?"
+
+#: pages/ruta-familias.html%2Bmain.section.div.p:47-6
+msgid ""
+"Se camina entre 3 y 5 km al día por asfalto, por lo que es apta para llevar "
+"carritos de bebé. El inicio será en un punto establecido por la "
+"organización, donde <b class=\"b1\">se deberá acudir en coche</b>, que podrá "
+"quedar allí aparcado. Una vez finalizada la ruta, un autobús los llevará de "
+"vuelta a los vehículos, que también podrán aparcar en el campamento."
+msgstr ""
+"The route involves walking between 3 and 5 km per day on paved roads, making "
+"it suitable for strollers. The starting point will be designated by the "
+"organizers, where <b class=\"b1\">participants must arrive by car</b> and "
+"can park there. After completing the route, a bus will take participants "
+"back to their vehicles, which can also be parked at the campsite."
+
+#: pages/ruta-familias.html%2Bmain.section.div.h4:48-6
+msgctxt "pages/ruta-familias.html+minirruta.div.h4:5-2"
+msgid "¿En qué capítulo se inscriben?"
+msgstr "Which chapter do they fall under?"
+
+#: pages/ruta-familias.html%2Bmain.section.div.p:49-6
+msgctxt "pages/ruta-familias.html+minirruta.div.p:6-2"
+msgid ""
+"Los peregrinos que eligen esta ruta están integrados en los capítulos de la "
+"ruta completa."
+msgstr ""
+"Pilgrims who choose this route are integrated into the chapters of the "
+"complete route."
+
+#: pages/ruta-familias.html%2Bmain.section.div.h4:50-6
+msgctxt "pages/ruta-familias.html+minirruta.div.h4:7-2"
+msgid "¿Quién puede inscribirse?"
+msgstr "Who is eligible to register?"
+
+#: pages/ruta-familias.html%2Bmain.section.div.p:51-6
+msgid ""
+"La edad recomendada para la ruta de familias es entre 0 y 6 años, siempre "
+"acompañados por un adulto responsable."
+msgstr ""
+"The recommended age for the little-route is between 0 and 6 years old, "
+"always accompanied by a responsible adult."
+
+#: pages/ruta-familias.html%2Bmain.section.div.h4:61-6
+msgid "Información importante"
+msgstr "Important information"
+
+#: pages/ruta-familias.html%2Bmain.section.ul.li:64-6
+msgid ""
+"Los inscritos deberán desplazarse en coche propio hasta el inicio de la "
+"minirruta, donde podrá quedar aparcado y adonde les llevará de vuelta el "
+"autobús tras finalizar la ruta."
+msgstr ""
+"Participants must drive their own cars to the start of the little-route, "
+"where they can park and where the bus will take them back after the hike "
+"has finished."
+
+#: pages/ruta-familias.html%2Bmain.section.ul.li:65-6
+msgid ""
+"El uso de autobús es obligatorio. Si no vas a usarlo, no te inscribas en "
+"esta modalidad."
+msgstr ""
+"Use of the bus is compulsory. If you do not intend to use it, please do not "
+"register for this option."
+
+#: pages/ruta-familias.html%2Bmain.section.ul.li:66-6
+msgid "En esta edición de 2026 las plazas estarán limitadas a un autobús."
+msgstr "For the 2026 edition, places will be limited to one bus."
+
+#: pages/ruta-familias.html%2Bmain.section.ul.li:67-6
+msgid ""
+"Los menores de 3 años no ocupan plaza, por lo que deberán ir en el regazo de "
+"su padre/madre."
+msgstr ""
+"Children under 3 years of age do not occupy a seat, so they must sit on "
+"their parent’s lap."
+
+#: pages/ruta-familias.html%2Bmain.section.ul.li:68-6
+msgid ""
+"Los inscritos recibirán una tarjeta de parking de la organización que les "
+"autoriza a aparcar en las plazas habilitadas para ellos, también en el "
+"campamento."
+msgstr ""
+"Those registered will receive a parking pass from the organisers "
+"authorising them to park in the spaces designated for them, including at the "
+"campsite."
+
+#: pages/ruta-familias.html%2Bmain.section.ul.li:69-6
+msgid ""
+"La información sobre horarios y ubicaciones se enviará a los inscritos "
+"durante las semanas previas a la Peregrinación."
+msgstr ""
+"Information regarding timetables and locations will be sent to those "
+"registered in the weeks leading up to the Pilgrimage."
+
+#: pages/ruta-familias.html%2Bmain.section.div.h4:75-6
+msgid "Minirruta - Primer día"
+msgstr "Little-route – Day one"
+
+#: pages/ruta-familias.html%2Bmain.section.div.p:76-6
+msgid "De la Virgen de la Cabeza a Buenavista"
+msgstr "From Virgen de la Cabeza to Buenavista"
+
+#: pages/ruta-familias.html%2Bmain.section.div.div.p:80-7
+msgctxt "pages/ruta-familias.html+main.section.div.div.p:80-7"
+msgid "Dificultad:"
+msgstr "Difficulty:"
+
+#: pages/ruta-familias.html%2Bmain.section.div.div.ul.li:82-8
+msgid "Ninguna reseñable."
+msgstr "None worth mentioning."
+
+#: pages/ruta-familias.html%2Bmain.section.div.div.span.p:92-8
+msgid "<b class=\"b1\">Recorrido</b>: 3,23km"
+msgstr "<b class=\"b1\">Distance</b>: 3.23 km"
+
+#: pages/ruta-familias.html%2Bmain.section.div.div.span.p:99-8
+msgid "<b class=\"b1\">Desnivel Positivo</b>: 14m"
+msgstr "<b class=\"b1\">Elevation gain</b>: 14 m"
+
+#: pages/ruta-familias.html%2Bmain.section.div.div.span.p:106-8
+msgid "<b class=\"b1\">Desnivel negativo</b>: 6m"
+msgstr "<b class=\"b1\">Elevation drop</b>: 6 m"
+
+#: pages/ruta-familias.html%2Bmain.section.div.h4:111-6
+msgid "Minirruta - Segundo día"
+msgstr "Little-route – Day two"
+
+#: pages/ruta-familias.html%2Bmain.section.div.p:112-6
+msgid "De La Villa Riba a Montecoya"
+msgstr "From La Villa Riba to Montecoya"
+
+#: pages/ruta-familias.html%2Bmain.section.div.div.p:116-7
+msgctxt "pages/ruta-familias.html+main.section.div.div.p:116-7"
+msgid "Dificultad:"
+msgstr "Difficulty:"
+
+#: pages/ruta-familias.html%2Bmain.section.div.div.ul.li:118-8
+msgid "Pendiente pronunciada en bajada."
+msgstr "Steep downhill slope."
+
+#: pages/ruta-familias.html%2Bmain.section.div.div.span.p:128-8
+msgid "<b class=\"b1\">Recorrido</b>: 3,30km"
+msgstr "<b class=\"b1\">Distance</b>: 3.30 km"
+
+#: pages/ruta-familias.html%2Bmain.section.div.div.span.p:135-8
+msgid "<b class=\"b1\">Desnivel Positivo</b>: 32m"
+msgstr "<b class=\"b1\">Elevation gain</b>: 32 m"
+
+#: pages/ruta-familias.html%2Bmain.section.div.div.span.p:142-8
+msgid "<b class=\"b1\">Desnivel negativo</b>: 101m"
+msgstr "<b class=\"b1\">Elevation drop</b>: 101 m"
+
+#: pages/ruta-familias.html%2Bmain.section.div.h4:147-6
+msgid "Minirruta - Tercer día"
+msgstr "Little-route – Day three"
+
+#: pages/ruta-familias.html%2Bmain.section.div.p:148-6
+msgid "Del Parking P2 a Covadonga"
+msgstr "From Parking P2 to Covadonga"
+
+#: pages/ruta-familias.html%2Bmain.section.div.div.p:152-7
+msgctxt "pages/ruta-familias.html+main.section.div.div.p:152-7"
+msgid "Dificultad:"
+msgstr "Difficulty:"
+
+#: pages/ruta-familias.html%2Bmain.section.div.div.ul.li:154-8
+msgid "Pendiente pronunciada en subida."
+msgstr "Steep incline."
+
+#: pages/ruta-familias.html%2Bmain.section.div.div.ul.li:155-8
+msgid ""
+"Barreras de madera en la última subida (quizá haya que pasar el carrito por "
+"encima)."
+msgstr ""
+"Wooden barriers on the final climb (you may need to lift the pushchair over "
+"them)."
+
+#: pages/ruta-familias.html%2Bmain.section.div.div.ul.li:156-8
+msgid "Se recomienda llevar portabebés."
+msgstr "We recommend bringing a baby carrier."
+
+#: pages/ruta-familias.html%2Bmain.section.div.div.span.p:166-8
+msgid "<b class=\"b1\">Recorrido</b>: 4,85km"
+msgstr "<b class=\"b1\">Distance</b>: 4.85 km"
+
+#: pages/ruta-familias.html%2Bmain.section.div.div.span.p:173-8
+msgid "<b class=\"b1\">Desnivel Positivo</b>: 159m"
+msgstr "<b class=\"b1\">Elevation gain</b>: 159 m"
+
+#: pages/ruta-familias.html%2Bmain.section.div.div.span.p:180-8
+msgid "<b class=\"b1\">Desnivel negativo</b>: 0m"
+msgstr "<b class=\"b1\">Elevation drop</b>: 0 m"

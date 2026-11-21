@@ -1,0 +1,847 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-11-21 21:08+0200\n"
+"PO-Revision-Date: 2026-11-21 21:08+0200\n"
+"Last-Translator: Automatically generated\n"
+"Language-Team: none\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Translate Toolkit 3.20.0\n"
+"Language: pt\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: pages/capitulos.html%2Bheader.h1:3-4
+msgid "Capítulos"
+msgstr "Capítulos"
+
+#: pages/capitulos.html%2Bmain:6-3
+msgid "Ver capítulos existentes"
+msgstr "Ver capítulos existentes"
+
+#: pages/capitulos.html%2Bmain.section.div.h2:17-6
+msgid "¿Qué es un capítulo?"
+msgstr "O que é um capítulo?"
+
+#: pages/capitulos.html%2Bmain.section.div.p:18-6
+msgid ""
+"Durante la peregrinación se busca mantener un clima de orden que facilite la "
+"oración y la meditación y que permita el desarrollo armónico de las "
+"actividades del cronograma."
+msgstr ""
+"Durante a peregrinação procura-se manter um clima de ordem que facilite a "
+"oração e a meditação e que permita o desenrolar harmónico das atividades do "
+"programa."
+
+#: pages/capitulos.html%2Bmain.section.div.p:19-6
+msgid ""
+"Por ello, el modo de participar en la Peregrinación es en grupos que se "
+"denominan “Capítulos”. Estos representan comunidades naturales: una región, "
+"ciudad, parroquia, un grupo misionero, de formación, un colegio, una "
+"familia, etc. que marchan juntos a los pies de Nuestra Madre."
+msgstr ""
+"Por isso, o modo de participar na Peregrinação é em grupos denominados "
+"“Capítulos”. Estes representam comunidades naturais: uma região, cidade, "
+"paróquia, um grupo missionário, de formação, um colégio, uma família, etc., "
+"que marcham juntos aos pés de Nossa Mãe."
+
+#: pages/capitulos.html%2Bmain.section.h2:24-5
+msgid "¿En qué capítulo inscribirse?"
+msgstr "Em que capítulo se inscrever?"
+
+#: pages/capitulos.html%2Bmain.section.p:25-5
+msgid ""
+"Para poder participar en la peregrinación es necesario estar inscrito en "
+"algún capítulo. Aquellos que quieran inscribirse en alguno que ya conozcan "
+"deben ponerse en contacto con el Jefe de Capítulo (a través del e-mail que "
+"encontrarán en la información del capítulo), que se encargará de recoger sus "
+"datos y de brindarle toda la información necesaria. Esto no exime del "
+"requisito de completar el formulario de inscripción una vez abierto el "
+"plazo, seleccionando el capítulo correspondiente."
+msgstr ""
+"Para poder participar na peregrinação é necessário estar inscrito num "
+"capítulo. Aqueles que desejarem inscrever-se num que já conheçam devem "
+"entrar em contacto com o Chefe de Capítulo (através do e-mail que "
+"encontrarão na informação do capítulo), que se encarregará de recolher os "
+"seus dados e de lhe fornecer toda a informação necessária. Isto não dispensa "
+"o requisito de preencher o formulário de inscrição assim que o prazo abrir, "
+"selecionando o capítulo correspondente."
+
+#: pages/capitulos.html%2Bmain.section.p:26-5
+msgid ""
+"A aquellos que estén interesados en asistir pero no conozcan ningún "
+"capítulo, les animamos a ponerse en contacto con nosotros a través del mail "
+"<a class=\"a5\" "
+"href=\"mailto:informacion@nscristiandad.es\">informacion@nscristiandad.es</"
+"a> y le ayudaremos a encontrar el capítulo más apropiado."
+msgstr ""
+"Àqueles que estejam interessados em participar, mas não conheçam nenhum "
+"capítulo, encorajamo-los a entrar em contacto connosco através do e-mail <a "
+"class=\"a5\" "
+"href=\"mailto:informacion@nscristiandad.es\">informacion@nscristiandad.es</"
+"a> e ajudá-lo-emos a encontrar o capítulo mais adequado."
+
+#: pages/capitulos.html%2Bmain.section:26-307
+msgid "CÓMO CREAR UN CAPÍTULO"
+msgstr "COMO CRIAR UM CAPÍTULO"
+
+#: pages/capitulos.html%2Bmain.section.div.h2:32-6
+msgid "Familias y niños"
+msgstr "Famílias e crianças"
+
+#: pages/capitulos.html%2Bmain.section.div.p:33-6
+msgid ""
+"Los niños, acompañados de adultos responsables, también podrán participar. "
+"Realizarán una ruta adaptada a sus capacidades. La edad recomendada para la "
+"ruta de familias es entre 6 y 12 años. Los niños entre 12 y 15 años podrán "
+"caminar la ruta de adultos o de niños, acompañados de al menos un familiar "
+"mayor de edad."
+msgstr ""
+"As crianças, acompanhadas por adultos responsáveis, também poderão "
+"participar. Realizarão uma rota adaptada às suas capacidades. A idade "
+"recomendada para a rota das famílias é entre os 6 e os 12 anos. As crianças "
+"entre os 12 e os 15 anos poderão fazer a rota dos adultos ou das crianças, "
+"acompanhadas por pelo menos um familiar maior de idade."
+
+#: pages/capitulos.html%2Bmain.section.div.p:34-6
+msgid ""
+"Los niños menores de 6 años podrán participar en otra ruta adaptada, la "
+"«minirruta», accesible para carritos de bebé. Deberán ir siempre acompañados "
+"de su padre/madre. Puede encontrar más información <a class=\"a5\" href=\"/"
+"familias#minirruta\">aquí</a>."
+msgstr ""
+"As crianças com menos de 6 anos poderão participar noutra rota adaptada, a "
+"«minirrota», acessível a carrinhos de bebé. Deverão ir sempre acompanhadas "
+"pelo seu pai/mãe. Pode encontrar mais informações <a class=\"a5\" href=\"/"
+"familias#minirruta\">aqui</a>."
+
+#: pages/capitulos.html%2Bmain.section.div:34-270
+msgid ""
+"No se permitirá el acceso de vehículos ajenos a la organización en los "
+"campamentos ni en las paradas."
+msgstr ""
+"Não será permitido o acesso de veículos alheios à organização nos "
+"acampamentos nem nas paragens."
+
+#: pages/capitulos.html%2Bmain.section:42-4
+msgid "Ángeles de la Guarda"
+msgstr "Anjos da Guarda"
+
+#: pages/capitulos.html%2Bmain.section.p:45-5
+msgid ""
+"Selecciona una de las regiones en el mapa para ver aquí abajo los capítulos "
+"existentes."
+msgstr ""
+"Seleciona uma das regiões no mapa para ver aqui em baixo os capítulos "
+"existentes."
+
+#: pages/capitulos.html%2Bmain.section:45-106
+msgid "Norte"
+msgstr "Norte"
+
+#: pages/capitulos.html%2Bmain.section.details.div.h3:51-7
+msgid "ZONA NORTE"
+msgstr "ZONA NORTE"
+
+#: pages/capitulos.html%2Bmain.section.details.div.div.div.p:54-9
+msgctxt "pages/capitulos.html+details1.div.div.div.p:8-4"
+msgid "Nombre"
+msgstr "Nome"
+
+#: pages/capitulos.html%2Bmain.section.details.div.div.div.p:55-9
+msgctxt "pages/capitulos.html+details1.div.div.div.p:9-4"
+msgid "Origen"
+msgstr "Origem"
+
+#: pages/capitulos.html%2Bmain.section.details.div.div.div.p:56-9
+msgctxt "pages/capitulos.html+details1.div.div.div.p:10-4"
+msgid "Contacto"
+msgstr "Contacto"
+
+#: pages/capitulos.html%2Bmain.section.details.div.div.div:58-8
+msgid "Nuestra Señora de Covadonga"
+msgstr "Nuestra Señora de Covadonga"
+
+#: pages/capitulos.html%2Bmain.section.details.div.div.div.p:60-9
+msgid "Asturias"
+msgstr "Astúrias"
+
+#: pages/capitulos.html%2Bmain.section.details.div.div.div:60-20
+msgctxt "pages/capitulos.html+details1.div.div.div:12-3"
+msgid "capitulonscovadonga@gmail.com"
+msgstr "capitulonscovadonga@gmail.com"
+
+#: pages/capitulos.html%2Bmain.section.details.div.div.div:63-8
+msgid "Nuestra Señora de Valvanera"
+msgstr "Nuestra Señora de Valvanera"
+
+#: pages/capitulos.html%2Bmain.section.details.div.div.div.p:65-9
+msgid "La Rioja"
+msgstr "La Rioja"
+
+#: pages/capitulos.html%2Bmain.section.details.div.div.div:65-20
+msgctxt "pages/capitulos.html+details1.div.div.div:17-3"
+msgid "capitulonscovadonga@gmail.com"
+msgstr "capitulonscovadonga@gmail.com"
+
+#: pages/capitulos.html%2Bmain.section.details.div.div.div:68-8
+msgid "Nuestra Señora del Carmen"
+msgstr "Nuestra Señora del Carmen"
+
+#: pages/capitulos.html%2Bmain.section.details.div.div.div.p:70-9
+msgid "Santander"
+msgstr "Santander"
+
+#: pages/capitulos.html%2Bmain.section.details.div.div.div:70-21
+msgctxt "pages/capitulos.html+details1.div.div.div:22-3"
+msgid "capitulonscovadonga@gmail.com"
+msgstr "capitulonscovadonga@gmail.com"
+
+#: pages/capitulos.html%2Bmain.section.details.div.div.div:73-8
+msgid "San Francisco de Javier"
+msgstr "San Francisco de Javier"
+
+#: pages/capitulos.html%2Bmain.section.details.div.div.div.p:75-9
+msgid "Navarra"
+msgstr "Navarra"
+
+#: pages/capitulos.html%2Bmain.section.details.div.div.div:75-19
+msgctxt "pages/capitulos.html+details1.div.div.div:27-3"
+msgid "capitulonscovadonga@gmail.com"
+msgstr "capitulonscovadonga@gmail.com"
+
+#: pages/capitulos.html%2Bmain.section.details.div.div.div:78-8
+msgid "San Jorge"
+msgstr "San Jorge"
+
+#: pages/capitulos.html%2Bmain.section.details.div.div.div.p:80-9
+msgid "Aragón"
+msgstr "Aragão"
+
+#: pages/capitulos.html%2Bmain.section.details.div.div.div:80-18
+msgctxt "pages/capitulos.html+details1.div.div.div:32-3"
+msgid "capitulonscovadonga@gmail.com"
+msgstr "capitulonscovadonga@gmail.com"
+
+#: pages/capitulos.html%2Bmain.section.details.div.div.div:83-8
+msgid "Santa María la Mayor"
+msgstr "Santa María la Mayor"
+
+#: pages/capitulos.html%2Bmain.section.details.div.div.div.p:85-9
+msgid "Burgos"
+msgstr "Burgos"
+
+#: pages/capitulos.html%2Bmain.section.details.div.div.div:85-18
+msgctxt "pages/capitulos.html+details1.div.div.div:37-3"
+msgid "capitulonscovadonga@gmail.com"
+msgstr "capitulonscovadonga@gmail.com"
+
+#: pages/capitulos.html%2Bmain.section.details:89-6
+msgid "Centro"
+msgstr "Centro"
+
+#: pages/capitulos.html%2Bmain.section.details.div.h3:96-7
+msgid "CENTRO A"
+msgstr "CENTRO A"
+
+#: pages/capitulos.html%2Bmain.section.details.div.div.div.p:99-9
+msgctxt "pages/capitulos.html+img13.div.div.div.p:55-4"
+msgid "Nombre"
+msgstr "Nome"
+
+#: pages/capitulos.html%2Bmain.section.details.div.div.div.p:100-9
+msgctxt "pages/capitulos.html+img13.div.div.div.p:56-4"
+msgid "Origen"
+msgstr "Origem"
+
+#: pages/capitulos.html%2Bmain.section.details.div.div.div.p:101-9
+msgctxt "pages/capitulos.html+img13.div.div.div.p:57-4"
+msgid "Contacto"
+msgstr "Contacto"
+
+#: pages/capitulos.html%2Bmain.section.details.div.div.div:103-8
+msgid "Nuestra Señora de la Medalla Milagrosa"
+msgstr "Nuestra Señora de la Medalla Milagrosa"
+
+#: pages/capitulos.html%2Bmain.section.details.div.div.div.p:105-9
+msgid "Madrid (Universidad Complutense)"
+msgstr "Madrid (Universidad Complutense)"
+
+#: pages/capitulos.html%2Bmain.section.details.div.div.div:105-44
+msgid "capitulomilagrosa@gmail.com"
+msgstr "capitulomilagrosa@gmail.com"
+
+#: pages/capitulos.html%2Bmain.section.details.div.div.div:108-8
+msgid "Nuestra Señora de la Paz"
+msgstr "Nuestra Señora de la Paz"
+
+#: pages/capitulos.html%2Bmain.section.details.div.div.div.p:110-9
+msgctxt "pages/capitulos.html+img13.div.div.div.p:66-4"
+msgid "Madrid (ICRSS)"
+msgstr "Madrid (ICRSS)"
+
+#: pages/capitulos.html%2Bmain.section.details.div.div.div:110-26
+msgid "capitulonslapaz@proton.me"
+msgstr "capitulonslapaz@proton.me"
+
+#: pages/capitulos.html%2Bmain.section.details.div.div.div:113-8
+msgid "Nuestra Señora del Pilar"
+msgstr "Nuestra Señora del Pilar"
+
+#: pages/capitulos.html%2Bmain.section.details.div.div.div.p:115-9
+msgctxt "pages/capitulos.html+img13.div.div.div.p:71-4"
+msgid "Madrid (ICRSS)"
+msgstr "Madrid (ICRSS)"
+
+#: pages/capitulos.html%2Bmain.section.details.div.div.div:115-26
+msgid "capitulonspilar@proton.me"
+msgstr "capitulonspilar@proton.me"
+
+#: pages/capitulos.html%2Bmain.section.details.div.div.div:118-8
+msgid "San Andrés"
+msgstr "San Andrés"
+
+#: pages/capitulos.html%2Bmain.section.details.div.div.div.p:120-9
+msgid "Madrid (Asoc. Cruz de Borgoña)"
+msgstr "Madrid (Asoc. Cruz de Borgoña)"
+
+#: pages/capitulos.html%2Bmain.section.details.div.div.div:120-42
+msgid "pelayosymargaritas@gmail.com"
+msgstr "pelayosymargaritas@gmail.com"
+
+#: pages/capitulos.html%2Bmain.section.details.div.h3:126-7
+msgid "CENTRO B"
+msgstr "CENTRO B"
+
+#: pages/capitulos.html%2Bmain.section.details.div.div.div.p:129-9
+msgctxt "pages/capitulos.html+img13.div.div.div.p:85-4"
+msgid "Nombre"
+msgstr "Nome"
+
+#: pages/capitulos.html%2Bmain.section.details.div.div.div.p:130-9
+msgctxt "pages/capitulos.html+img13.div.div.div.p:86-4"
+msgid "Origen"
+msgstr "Origem"
+
+#: pages/capitulos.html%2Bmain.section.details.div.div.div.p:131-9
+msgctxt "pages/capitulos.html+img13.div.div.div.p:87-4"
+msgid "Contacto"
+msgstr "Contacto"
+
+#: pages/capitulos.html%2Bmain.section.details.div.div.div:133-8
+msgid "Nuestra Señora de las Victorias"
+msgstr "Nuestra Señora de las Victorias"
+
+#: pages/capitulos.html%2Bmain.section.details.div.div.div.p:135-9
+msgid "Madrid (Instituto Lepanto)"
+msgstr "Madrid (Instituto Lepanto)"
+
+#: pages/capitulos.html%2Bmain.section.details.div.div.div:135-38
+msgid "capitulodelasvictorias@gmail.com"
+msgstr "capitulodelasvictorias@gmail.com"
+
+#: pages/capitulos.html%2Bmain.section.details.div.div.div:138-8
+msgid "San Pelayo"
+msgstr "San Pelayo"
+
+#: pages/capitulos.html%2Bmain.section.details.div.div.div.p:140-9
+msgctxt "pages/capitulos.html+img13.div.div.div.p:96-4"
+msgid "Madrid"
+msgstr "Madrid"
+
+#: pages/capitulos.html%2Bmain.section.details.div.div.div:140-18
+msgid "juventudescarlistas1833@yahoo.com"
+msgstr "juventudescarlistas1833@yahoo.com"
+
+#: pages/capitulos.html%2Bmain.section.details.div.div.div:143-8
+msgid "Santa Juana de Arco"
+msgstr "Santa Juana de Arco"
+
+#: pages/capitulos.html%2Bmain.section.details.div.div.div.p:145-9
+msgctxt "pages/capitulos.html+img13.div.div.div.p:101-4"
+msgid "Madrid (Orden San Elías)"
+msgstr "Madrid (Orden San Elías)"
+
+#: pages/capitulos.html%2Bmain.section.details.div.div.div:145-36
+msgctxt "pages/capitulos.html+img13.div.div.div:99-3"
+msgid "nsc@fundacionsanelias.org"
+msgstr "nsc@fundacionsanelias.org"
+
+#: pages/capitulos.html%2Bmain.section.details.div.div.div:148-8
+msgid "Santa Teresa"
+msgstr "Santa Teresa"
+
+#: pages/capitulos.html%2Bmain.section.details.div.div.div.p:150-9
+msgctxt "pages/capitulos.html+img13.div.div.div.p:106-4"
+msgid "Madrid"
+msgstr "Madrid"
+
+#: pages/capitulos.html%2Bmain.section.details.div.div.div:150-18
+msgid "capitulosantateresaysanblas@gmail.com"
+msgstr "capitulosantateresaysanblas@gmail.com"
+
+#: pages/capitulos.html%2Bmain.section.details.div.div.div:153-8
+msgid "Santo Tomás de Aquino"
+msgstr "Santo Tomás de Aquino"
+
+#: pages/capitulos.html%2Bmain.section.details.div.div.div.p:155-9
+msgctxt "pages/capitulos.html+img13.div.div.div.p:111-4"
+msgid "Madrid"
+msgstr "Madrid"
+
+#: pages/capitulos.html%2Bmain.section.details.div.div.div:155-18
+msgid "santotomasdeaquinocapitulo@gmail.com"
+msgstr "santotomasdeaquinocapitulo@gmail.com"
+
+#: pages/capitulos.html%2Bmain.section.details.div.div.div:158-8
+msgid "Ysabel la Católica"
+msgstr "Ysabel la Católica"
+
+#: pages/capitulos.html%2Bmain.section.details.div.div.div.p:160-9
+msgctxt "pages/capitulos.html+img13.div.div.div.p:116-4"
+msgid "Madrid (Orden San Elías)"
+msgstr "Madrid (Orden San Elías)"
+
+#: pages/capitulos.html%2Bmain.section.details.div.div.div:160-36
+msgctxt "pages/capitulos.html+img13.div.div.div:114-3"
+msgid "nsc@fundacionsanelias.org"
+msgstr "nsc@fundacionsanelias.org"
+
+#: pages/capitulos.html%2Bmain.section.details.div.h3:166-7
+msgid "CENTRO C"
+msgstr "CENTRO C"
+
+#: pages/capitulos.html%2Bmain.section.details.div.div.div.p:169-9
+msgctxt "pages/capitulos.html+img13.div.div.div.p:125-4"
+msgid "Nombre"
+msgstr "Nome"
+
+#: pages/capitulos.html%2Bmain.section.details.div.div.div.p:170-9
+msgctxt "pages/capitulos.html+img13.div.div.div.p:126-4"
+msgid "Origen"
+msgstr "Origem"
+
+#: pages/capitulos.html%2Bmain.section.details.div.div.div.p:171-9
+msgctxt "pages/capitulos.html+img13.div.div.div.p:127-4"
+msgid "Contacto"
+msgstr "Contacto"
+
+#: pages/capitulos.html%2Bmain.section.details.div.div.div:173-8
+msgid "Nuestra Señora de la Vega"
+msgstr "Nuestra Señora de la Vega"
+
+#: pages/capitulos.html%2Bmain.section.details.div.div.div.p:175-9
+msgid "Salamanca"
+msgstr "Salamanca"
+
+#: pages/capitulos.html%2Bmain.section.details.div.div.div:175-21
+msgid "capitulovirgendelavega@gmail.com"
+msgstr "capitulovirgendelavega@gmail.com"
+
+#: pages/capitulos.html%2Bmain.section.details.div.div.div:178-8
+msgid "Nuestra Señora del Sagrario"
+msgstr "Nuestra Señora del Sagrario"
+
+#: pages/capitulos.html%2Bmain.section.details.div.div.div.p:180-9
+msgctxt "pages/capitulos.html+img13.div.div.div.p:136-4"
+msgid "Toledo"
+msgstr "Toledo"
+
+#: pages/capitulos.html%2Bmain.section.details.div.div.div:180-18
+msgid "capitulosagrariotoledo@gmail.com"
+msgstr "capitulosagrariotoledo@gmail.com"
+
+#: pages/capitulos.html%2Bmain.section.details.div.div.div:183-8
+msgid "Pura y Limpia Concepción de María"
+msgstr "Pura y Limpia Concepción de María"
+
+#: pages/capitulos.html%2Bmain.section.details.div.div.div.p:185-9
+msgctxt "pages/capitulos.html+img13.div.div.div.p:141-4"
+msgid "Madrid"
+msgstr "Madrid"
+
+#: pages/capitulos.html%2Bmain.section.details.div.div.div:185-18
+msgid "puraylimpiaconcepciondemaria@gmail.com"
+msgstr "puraylimpiaconcepciondemaria@gmail.com"
+
+#: pages/capitulos.html%2Bmain.section.details.div.div.div:188-8
+msgid "Santos Francisco y Jacinta"
+msgstr "Santos Francisco y Jacinta"
+
+#: pages/capitulos.html%2Bmain.section.details.div.div.div.p:190-9
+msgctxt "pages/capitulos.html+img13.div.div.div.p:146-4"
+msgid "Toledo"
+msgstr "Toledo"
+
+#: pages/capitulos.html%2Bmain.section.details.div.div.div:190-18
+msgid "santosfranciscoyjacintacap@gmail.com"
+msgstr "santosfranciscoyjacintacap@gmail.com"
+
+#: pages/capitulos.html%2Bmain.section.details.div.div.div:193-8
+msgid "San Pedro de Alcántara"
+msgstr "San Pedro de Alcántara"
+
+#: pages/capitulos.html%2Bmain.section.details.div.div.div.p:195-9
+msgid "Extremadura"
+msgstr "Estremadura"
+
+#: pages/capitulos.html%2Bmain.section.details.div.div.div:195-23
+msgid "forumtraditionis@gmail.com"
+msgstr "forumtraditionis@gmail.com"
+
+#: pages/capitulos.html%2Bmain.section.details:199-6
+msgid "Levante"
+msgstr "Levante"
+
+#: pages/capitulos.html%2Bmain.section.details.div.h3:206-7
+msgid "LEVANTE"
+msgstr "LEVANTE"
+
+#: pages/capitulos.html%2Bmain.section.details.div.div.div.p:209-9
+msgctxt "pages/capitulos.html+img13.div.div.div.p:165-4"
+msgid "Nombre"
+msgstr "Nome"
+
+#: pages/capitulos.html%2Bmain.section.details.div.div.div.p:210-9
+msgctxt "pages/capitulos.html+img13.div.div.div.p:166-4"
+msgid "Origen"
+msgstr "Origem"
+
+#: pages/capitulos.html%2Bmain.section.details.div.div.div.p:211-9
+msgctxt "pages/capitulos.html+img13.div.div.div.p:167-4"
+msgid "Contacto"
+msgstr "Contacto"
+
+#: pages/capitulos.html%2Bmain.section.details.div.div.div:213-8
+msgid "Inmaculada Virgen de la Fuensanta"
+msgstr "Inmaculada Virgen de la Fuensanta"
+
+#: pages/capitulos.html%2Bmain.section.details.div.div.div.p:215-9
+msgid "Murcia"
+msgstr "Múrcia"
+
+#: pages/capitulos.html%2Bmain.section.details.div.div.div:215-18
+msgid "nsc.fuensanta@gmail.com"
+msgstr "nsc.fuensanta@gmail.com"
+
+#: pages/capitulos.html%2Bmain.section.details.div.div.div:218-8
+msgid "La Santa Faz"
+msgstr "La Santa Faz"
+
+#: pages/capitulos.html%2Bmain.section.details.div.div.div.p:220-9
+msgid "Alicante"
+msgstr "Alicante"
+
+#: pages/capitulos.html%2Bmain.section.details.div.div.div:220-20
+msgid "capituloalicante.nscristiandad@gmail.com"
+msgstr "capituloalicante.nscristiandad@gmail.com"
+
+#: pages/capitulos.html%2Bmain.section.details.div.div.div:223-8
+msgid "Nuestra Señora de los Desamparados"
+msgstr "Nuestra Señora de los Desamparados"
+
+#: pages/capitulos.html%2Bmain.section.details.div.div.div.p:225-9
+msgctxt "pages/capitulos.html+img13.div.div.div.p:181-4"
+msgid "Valencia"
+msgstr "Valência"
+
+#: pages/capitulos.html%2Bmain.section.details.div.div.div:225-20
+msgid "capitulo.virgen.desamparados@gmail.com"
+msgstr "capitulo.virgen.desamparados@gmail.com"
+
+#: pages/capitulos.html%2Bmain.section.details.div.div.div:228-8
+msgid "Nuestra Señora de Montserrat"
+msgstr "Nuestra Señora de Montserrat"
+
+#: pages/capitulos.html%2Bmain.section.details.div.div.div.p:230-9
+msgctxt "pages/capitulos.html+img13.div.div.div.p:186-4"
+msgid "Barcelona"
+msgstr "Barcelona"
+
+#: pages/capitulos.html%2Bmain.section.details.div.div.div:230-21
+msgid "barcelona.nscristiandad@gmail.com"
+msgstr "barcelona.nscristiandad@gmail.com"
+
+#: pages/capitulos.html%2Bmain.section.details.div.div.div:233-8
+msgid "San Pascual Baylón"
+msgstr "San Pascual Baylón"
+
+#: pages/capitulos.html%2Bmain.section.details.div.div.div.p:235-9
+msgctxt "pages/capitulos.html+img13.div.div.div.p:191-4"
+msgid "Valencia"
+msgstr "Valência"
+
+#: pages/capitulos.html%2Bmain.section.details.div.div.div:235-20
+msgid "capitulosanpascual@gmail.com"
+msgstr "capitulosanpascual@gmail.com"
+
+#: pages/capitulos.html%2Bmain.section.details.div.div.div:238-8
+msgid "Santa Eulàlia"
+msgstr "Santa Eulàlia"
+
+#: pages/capitulos.html%2Bmain.section.details.div.div.div.p:240-9
+msgctxt "pages/capitulos.html+img13.div.div.div.p:196-4"
+msgid "Barcelona"
+msgstr "Barcelona"
+
+#: pages/capitulos.html%2Bmain.section.details.div.div.div:240-21
+msgid "capitulosantaeulalia@gmail.com"
+msgstr "capitulosantaeulalia@gmail.com"
+
+#: pages/capitulos.html%2Bmain.section.details:244-6
+msgid "Sur"
+msgstr "Sul"
+
+#: pages/capitulos.html%2Bmain.section.details.div.h3:251-7
+msgid "SUR"
+msgstr "SUL"
+
+#: pages/capitulos.html%2Bmain.section.details.div.div.div.p:254-9
+msgctxt "pages/capitulos.html+img13.div.div.div.p:210-4"
+msgid "Nombre"
+msgstr "Nome"
+
+#: pages/capitulos.html%2Bmain.section.details.div.div.div.p:255-9
+msgctxt "pages/capitulos.html+img13.div.div.div.p:211-4"
+msgid "Origen"
+msgstr "Origem"
+
+#: pages/capitulos.html%2Bmain.section.details.div.div.div.p:256-9
+msgctxt "pages/capitulos.html+img13.div.div.div.p:212-4"
+msgid "Contacto"
+msgstr "Contacto"
+
+#: pages/capitulos.html%2Bmain.section.details.div.div.div:258-8
+msgid "Arcángel San Rafael"
+msgstr "Arcángel San Rafael"
+
+#: pages/capitulos.html%2Bmain.section.details.div.div.div.p:260-9
+msgid "Córdoba (Una Voce Córdoba)"
+msgstr "Córdova (Una Voce Córdoba)"
+
+#: pages/capitulos.html%2Bmain.section.details.div.div.div:260-38
+msgid "capitulosanrafaelnsc@gmail.com"
+msgstr "capitulosanrafaelnsc@gmail.com"
+
+#: pages/capitulos.html%2Bmain.section.details.div.div.div:263-8
+msgid "Nuestra Señora de la Antigua"
+msgstr "Nuestra Señora de la Antigua"
+
+#: pages/capitulos.html%2Bmain.section.details.div.div.div.p:265-9
+msgctxt "pages/capitulos.html+img13.div.div.div.p:221-4"
+msgid "Sevilla (Una Voce Sevilla"
+msgstr "Sevilha (Una Voce Sevilla"
+
+#: pages/capitulos.html%2Bmain.section.details.div.div.div:265-37
+msgctxt "pages/capitulos.html+img13.div.div.div:219-3"
+msgid "capitulonsantigua@gmail.com"
+msgstr "capitulonsantigua@gmail.com"
+
+#: pages/capitulos.html%2Bmain.section.details.div.div.div:268-8
+msgid "Nuestra Señora del Mar"
+msgstr "Nuestra Señora del Mar"
+
+#: pages/capitulos.html%2Bmain.section.details.div.div.div.p:270-9
+msgid "Almería"
+msgstr "Almeria"
+
+#: pages/capitulos.html%2Bmain.section.details.div.div.div:270-19
+msgid "capitulovirgendelmaralmeria@gmail.com"
+msgstr "capitulovirgendelmaralmeria@gmail.com"
+
+#: pages/capitulos.html%2Bmain.section.details.div.div.div:273-8
+msgid "Nuestra Señora del Pino"
+msgstr "Nuestra Señora del Pino"
+
+#: pages/capitulos.html%2Bmain.section.details.div.div.div.p:275-9
+msgid "Las Palmas"
+msgstr "Las Palmas"
+
+#: pages/capitulos.html%2Bmain.section.details.div.div.div:275-22
+msgid "misatradicionalgrancanaria@gmail.com"
+msgstr "misatradicionalgrancanaria@gmail.com"
+
+#: pages/capitulos.html%2Bmain.section.details.div.div.div:278-8
+msgid "San Fernando"
+msgstr "San Fernando"
+
+#: pages/capitulos.html%2Bmain.section.details.div.div.div.p:280-9
+msgctxt "pages/capitulos.html+img13.div.div.div.p:236-4"
+msgid "Sevilla (Una Voce Sevilla"
+msgstr "Sevilha (Una Voce Sevilla"
+
+#: pages/capitulos.html%2Bmain.section.details.div.div.div:280-37
+msgctxt "pages/capitulos.html+img13.div.div.div:234-3"
+msgid "capitulonsantigua@gmail.com"
+msgstr "capitulonsantigua@gmail.com"
+
+#: pages/capitulos.html%2Bmain.section.details:284-6
+msgid "Extranjeros"
+msgstr "Estrangeiros"
+
+#: pages/capitulos.html%2Bmain.section.details.div.h3:291-7
+msgid "EXTRANJEROS"
+msgstr "ESTRANGEIROS"
+
+#: pages/capitulos.html%2Bmain.section.details.div.div.div.p:294-9
+msgctxt "pages/capitulos.html+img13.div.div.div.p:250-4"
+msgid "Nombre"
+msgstr "Nome"
+
+#: pages/capitulos.html%2Bmain.section.details.div.div.div.p:295-9
+msgctxt "pages/capitulos.html+img13.div.div.div.p:251-4"
+msgid "Origen"
+msgstr "Origem"
+
+#: pages/capitulos.html%2Bmain.section.details.div.div.div.p:296-9
+msgctxt "pages/capitulos.html+img13.div.div.div.p:252-4"
+msgid "Contacto"
+msgstr "Contacto"
+
+#: pages/capitulos.html%2Bmain.section.details.div.div.div:298-8
+msgid "Cristo del Cubilete"
+msgstr "Cristo del Cubilete"
+
+#: pages/capitulos.html%2Bmain.section.details.div.div.div.p:300-9
+msgid "México"
+msgstr "México"
+
+#: pages/capitulos.html%2Bmain.section.details.div.div.div:300-18
+msgid "capitulomexiconsc@protonmail.com"
+msgstr "capitulomexiconsc@protonmail.com"
+
+#: pages/capitulos.html%2Bmain.section.details.div.div.div:303-8
+msgid "Heilige Willibrord"
+msgstr "Heilige Willibrord"
+
+#: pages/capitulos.html%2Bmain.section.details.div.div.div.p:305-9
+msgid "Países Bajos"
+msgstr "Países Baixos"
+
+#: pages/capitulos.html%2Bmain.section.details.div.div.div:305-24
+msgid "weberaugust@protonmail.com"
+msgstr "weberaugust@protonmail.com"
+
+#: pages/capitulos.html%2Bmain.section.details.div.div.div:308-8
+msgid "Matka Boża Częstochowska"
+msgstr "Matka Boża Częstochowska"
+
+#: pages/capitulos.html%2Bmain.section.details.div.div.div.p:310-9
+msgid "Polonia"
+msgstr "Polónia"
+
+#: pages/capitulos.html%2Bmain.section.details.div.div.div:310-19
+msgid "claramontana.polonia@gmail.com"
+msgstr "claramontana.polonia@gmail.com"
+
+#: pages/capitulos.html%2Bmain.section.details.div.div.div:313-8
+msgid "Nossa Senhora de Fátima"
+msgstr "Nossa Senhora de Fátima"
+
+#: pages/capitulos.html%2Bmain.section.details.div.div.div.p:315-9
+msgid "Portugal"
+msgstr "Portugal"
+
+#: pages/capitulos.html%2Bmain.section.details.div.div.div:315-20
+msgid "portugal.nscristiandad@gmail.com"
+msgstr "portugal.nscristiandad@gmail.com"
+
+#: pages/capitulos.html%2Bmain.section.details.div.div.div:318-8
+msgid "Notre-Dame de Fourvière"
+msgstr "Notre-Dame de Fourvière"
+
+#: pages/capitulos.html%2Bmain.section.details.div.div.div.p:320-9
+msgid "Francia (Lyon)"
+msgstr "França (Lyon)"
+
+#: pages/capitulos.html%2Bmain.section.details.div.div.div:320-26
+msgid "chapitrenotredamedefourviere@gmail.com"
+msgstr "chapitrenotredamedefourviere@gmail.com"
+
+#: pages/capitulos.html%2Bmain.section.details.div.div.div:323-8
+msgid "Notre-Dame de Terre Sainte"
+msgstr "Notre-Dame de Terre Sainte"
+
+#: pages/capitulos.html%2Bmain.section.details.div.div.div.p:325-9
+msgid "Francia (Paris)"
+msgstr "França (Paris)"
+
+#: pages/capitulos.html%2Bmain.section.details.div.div.div:325-27
+msgid "pelerinagedecovadonga@gmail.com"
+msgstr "pelerinagedecovadonga@gmail.com"
+
+#: pages/capitulos.html%2Bmain.section.details.div.div.div:328-8
+msgid "Our Lady of Evesham"
+msgstr "Our Lady of Evesham"
+
+#: pages/capitulos.html%2Bmain.section.details.div.div.div.p:330-9
+msgid "Reino Unido"
+msgstr "Reino Unido"
+
+#: pages/capitulos.html%2Bmain.section.details.div.div.div:330-23
+msgid "chapterourladyofwalsingham@gmail.com"
+msgstr "chapterourladyofwalsingham@gmail.com"
+
+#: pages/capitulos.html%2Bmain.section.details.div.div.div:333-8
+msgid "Saint Anne"
+msgstr "Saint Anne"
+
+#: pages/capitulos.html%2Bmain.section.details.div.div.div.p:335-9
+msgid "Australia"
+msgstr "Austrália"
+
+#: pages/capitulos.html%2Bmain.section.details.div.div.div:335-21
+msgid "stannecovadonga@proton.me"
+msgstr "stannecovadonga@proton.me"
+
+#: pages/capitulos.html%2Bmain.section.details.div.div.div:338-8
+msgid "Saint Joseph"
+msgstr "Saint Joseph"
+
+#: pages/capitulos.html%2Bmain.section.details.div.div.div.p:340-9
+msgid "Estados Unidos"
+msgstr "Estados Unidos"
+
+#: pages/capitulos.html%2Bmain.section.details.div.div.div:340-26
+msgid "covadonga@tithefortradition.org"
+msgstr "covadonga@tithefortradition.org"
+
+#: pages/capitulos.html%2Bmain.section.details.div.div.div:343-8
+msgid "Saint Patrick"
+msgstr "Saint Patrick"
+
+#: pages/capitulos.html%2Bmain.section.details.div.div.div.p:345-9
+msgid "Irlanda"
+msgstr "Irlanda"
+
+#: pages/capitulos.html%2Bmain.section.details.div.div.div:345-19
+msgid "chapitrestpatick@gmail.com"
+msgstr "chapitrestpatick@gmail.com"
+
+#: pages/capitulos.html%2Bmain.section.details.div.div.div:348-8
+msgid "Saints Behnam et Sarah"
+msgstr "Saints Behnam et Sarah"
+
+#: pages/capitulos.html%2Bmain.section.details.div.div.div.p:350-9
+msgid "Francia (SOS Chrétiens d’Orient)"
+msgstr "França (SOS Chrétiens d’Orient)"
+
+#: pages/capitulos.html%2Bmain.section.details.div.div.div:350-44
+msgctxt "pages/capitulos.html+img13.div.div.div:304-3"
+msgid "chapitrestsbehnametsarah@soschretiensdorient.fr"
+msgstr "chapitrestsbehnametsarah@soschretiensdorient.fr"
+
+#: pages/capitulos.html%2Bmain.section.details.div.div.div:353-8
+msgid "Salus Populi Romani"
+msgstr "Salus Populi Romani"
+
+#: pages/capitulos.html%2Bmain.section.details.div.div.div.p:355-9
+msgid "Italia"
+msgstr "Itália"
+
+#: pages/capitulos.html%2Bmain.section.details.div.div.div:355-18
+msgctxt "pages/capitulos.html+img13.div.div.div:309-3"
+msgid "chapitrestsbehnametsarah@soschretiensdorient.fr"
+msgstr "chapitrestsbehnametsarah@soschretiensdorient.fr"

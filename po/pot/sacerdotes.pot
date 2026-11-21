@@ -1,0 +1,48 @@
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-11-21 21:08+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Translate Toolkit 3.20.0\n"
+
+#: pages/sacerdotes.html%2Bheader.h1:3-4
+msgid "Sacerdotes"
+msgstr ""
+
+#: pages/sacerdotes.html%2Bmain.section.p:8-5
+msgid ""
+"Todos los sacerdotes interesados están invitados a participar en la "
+"peregrinación Nuestra Señora de la Cristiandad – España. Para ellos, así "
+"como para los religiosos y religiosas, la inscripción será gratuita y, a "
+"diferencia del resto de participantes, se les proporcionará comida y cena "
+"durante los días de marcha."
+msgstr ""
+
+#: pages/sacerdotes.html%2Bmain.section.p:18-5
+msgid ""
+"Aquellos que no hayan podido aprender hasta ahora a celebrar la Santa Misa "
+"según la Forma Extraordinaria del Rito Romano son igualmente bienvenidos, y "
+"se les facilitarán los recursos necesarios para aprenderla. Durante los tres "
+"días de peregrinación, la Santa Misa celebrada de forma pública será "
+"oficiada en la Forma Extraordinaria, por lo que este encuentro es una "
+"oportunidad excelente para acercarse más a ella y aprender a celebrarla. "
+"Todos los sacerdotes y seminaristas podrán asistir en coro."
+msgstr ""
+
+#: pages/sacerdotes.html%2Bmain.section.p:22-5
+msgid ""
+"La Peregrinación se financia gracias a <b class=\"b8\">donaciones. Las "
+"inscripciones no son suficientes para sufragar todos los gastos</b>. "
+"Cualquier donación, por pequeña que sea, será de gran utilidad."
+msgstr ""
+
+#: pages/sacerdotes.html%2Bmain.section:22-228
+msgid "DONA AQUÍ"
+msgstr ""

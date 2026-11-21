@@ -1,0 +1,231 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-11-21 21:08+0200\n"
+"PO-Revision-Date: 2026-11-21 21:20+0200\n"
+"Last-Translator: Automatically generated\n"
+"Language-Team: none\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Translate Toolkit 3.20.0\n"
+"Language: en\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: pages/donaciones.html%2Bheader.h1:5-4
+msgid "Donaciones"
+msgstr "Donations"
+
+#: pages/donaciones.html%2Bmain.p:9-4
+msgid ""
+"La Peregrinación de Nuestra Señora de la Cristiandad se financia gracias a "
+"las donaciones que de manera altruista realizan muchos fieles. Cualquier "
+"aportación, por pequeña que sea, puede ayudarnos a llevar este encuentro "
+"adelante."
+msgstr ""
+"The Pilgrimage of Our Lady of Christendom is financed thanks to the "
+"altruistic donations made by many of the faithful. Any contribution, no "
+"matter how small, can help us to carry this meeting forward."
+
+#: pages/donaciones.html%2Bmain.section.label:11-5
+msgid "DONACIÓN PUNTUAL"
+msgstr "ONE-TIME DONATION"
+
+#: pages/donaciones.html%2Bmain.section.label:15-5
+msgid "DONACIÓN RECURRENTE"
+msgstr "RECURRING DONATION"
+
+#: pages/donaciones.html%2Bmain.section.form.p:23-6
+msgid ""
+"Elija la cantidad que quiere donar. Se le realizará un cargo mensual en su "
+"tarjeta. Podrá modificar y cancelar su suscripción en cualquier momento a "
+"través de <a class=\"a5\" href=\"https://billing.stripe.com/p/login/"
+"test_7sY6oG5gb76s0pv38Ie7m00\">este enlace</a>."
+msgstr ""
+"Choose the amount you wish to donate. Your card will be charged monthly. "
+"You can modify or cancel your subscription at any time via <a class=\"a5\" "
+"href=\"https://billing.stripe.com/p/login/"
+"test_7sY6oG5gb76s0pv38Ie7m00\">this link</a>."
+
+#: pages/donaciones.html%2Bmain.section.form.label:24-6
+msgid "5€ al mes"
+msgstr "€5 per month"
+
+#: pages/donaciones.html%2Bmain.section.form.label.input[value]:25-7
+msgid "price_1UIAVNCNOpaMFlfClH2H7yDW"
+msgstr "price_1UIAVNCNOpaMFlfClH2H7yDW"
+
+#: pages/donaciones.html%2Bmain.section.form.label:28-6
+msgid "10€ al mes"
+msgstr "€10 per month"
+
+#: pages/donaciones.html%2Bmain.section.form.label.input[value]:29-7
+msgid "price_1UIAVcCNOpaMFlfCEJBXf5Nm"
+msgstr "price_1UIAVcCNOpaMFlfCEJBXf5Nm"
+
+#: pages/donaciones.html%2Bmain.section.form.label:31-6
+msgid "15€ al mes"
+msgstr "€15 per month"
+
+#: pages/donaciones.html%2Bmain.section.form.label.input[value]:32-7
+msgid "price_1UIAVjCNOpaMFlfCQSfl4hIu"
+msgstr "price_1UIAVjCNOpaMFlfCQSfl4hIu"
+
+#: pages/donaciones.html%2Bmain.section.form.label:34-6
+msgid "20€ al mes"
+msgstr "€20 per month"
+
+#: pages/donaciones.html%2Bmain.section.form.label.input[value]:35-7
+msgid "price_1UIAVtCNOpaMFlfC4XbWQNce"
+msgstr "price_1UIAVtCNOpaMFlfC4XbWQNce"
+
+#: pages/donaciones.html%2Bmain.section.form.label:37-6
+msgid "30€ al mes"
+msgstr "€30 per month"
+
+#: pages/donaciones.html%2Bmain.section.form.label.input[value]:38-7
+msgid "price_1UIAW2CNOpaMFlfCVPGV87Wp"
+msgstr "price_1UIAW2CNOpaMFlfCVPGV87Wp"
+
+#: pages/donaciones.html%2Bmain.section.form.label:40-6
+msgid "50€ al mes"
+msgstr "€50 per month"
+
+#: pages/donaciones.html%2Bmain.section.form.label.input[value]:41-7
+msgid "price_1UIAW8CNOpaMFlfCKONEzJvi"
+msgstr "price_1UIAW8CNOpaMFlfCKONEzJvi"
+
+#: pages/donaciones.html%2Bmain.section.form.label:43-6
+msgid "100€ al mes"
+msgstr "€100 per month"
+
+#: pages/donaciones.html%2Bmain.section.form.label.input[value]:44-7
+msgid "price_1UIAWFCNOpaMFlfCxp2lOYd1"
+msgstr "price_1UIAWFCNOpaMFlfCxp2lOYd1"
+
+#: pages/donaciones.html%2Bmain.section.form.input[value]:46-6
+msgid "Donar y suscribirse"
+msgstr "Donate and subscribe"
+
+#: pages/donaciones.html%2Bmain.section.div.h3:50-6
+msgid "Bizum"
+msgstr "Bizum"
+
+#: pages/donaciones.html%2Bmain.section.div.h3:56-6
+msgid "Transferencia"
+msgstr "Bank transfer"
+
+#: pages/donaciones.html%2Bmain.section.div.h3:62-6
+msgid "Cualquier otro método"
+msgstr "Any other method"
+
+#: pages/donaciones.html%2Bmain.section.ol.li:72-6
+msgid "Accede a Bizum con tus credenciales bancarias."
+msgstr "Log in to Bizum with your banking credentials."
+
+#: pages/donaciones.html%2Bmain.section.ol.li:73-6
+msgid ""
+"En la sección «Donaciones» introduce el siguiente código: <b "
+"class=\"b6\">05269</b>"
+msgstr ""
+"In the “Donations” section, enter the following code: <b class=\"b6\">05269</"
+"b>"
+
+#: pages/donaciones.html%2Bmain.section.p:76-5
+msgid ""
+"<b class=\"b8\">Titular</b> : NUESTRA SEÑORA DE LA CRISTIANDAD ESPAÑA<br> <b "
+"class=\"b8\">IBAN</b> : ES2100730100530506229065<br> <b class=\"b8\">Entidad "
+"Bancaria</b> : OpenBank<br> <b class=\"b8\">Swift / BIC</b> : OPENESMM<br> "
+"<b class=\"b8\">Concepto</b> : DONACIÓN y nombre (si se quiere)"
+msgstr ""
+"<b class=\"b8\">Account Holder</b> : NUESTRA SEÑORA DE LA CRISTIANDAD "
+"ESPAÑA<br> <b class=\"b8\">IBAN</b> : ES2100730100530506229065<br> <b "
+"class=\"b8\">Bank</b> : OpenBank<br> <b class=\"b8\">Swift / BIC</b> : "
+"OPENESMM<br> <b class=\"b8\">Reference</b> : DONATION and name (optional)"
+
+#: pages/donaciones.html%2Bmain.section.form.label:91-6
+msgid "Nombre:"
+msgstr "Name:"
+
+#: pages/donaciones.html%2Bmain.section.form.label:94-6
+msgid "Email:"
+msgstr "Email:"
+
+#: pages/donaciones.html%2Bmain.section.form.label:97-6
+msgid "Cantidad:"
+msgstr "Amount:"
+
+#: pages/donaciones.html%2Bmain.section.form.label:100-6
+msgid "Tarjeta:"
+msgstr "Card:"
+
+#: pages/donaciones.html%2Bmain.section.form.span.label:105-8
+msgid ""
+"Conozco y acepto la <a class=\"a5\" href=\"/politica-de-"
+"privacidad\">Política de Privacidad</a> de la Asociación NSC-E.."
+msgstr ""
+"I have read and accept the <a class=\"a5\" href=\"/en/politica-de-"
+"privacidad\">Privacy Policy</a> of the NSC-E Association."
+
+#: pages/donaciones.html%2Bmain.section.form.span.input[value]:109-8
+msgid "Donar"
+msgstr "Donate"
+
+#: pages/donaciones.html%2Bmain.section.div.h2:116-6
+msgid "Donación de materiales"
+msgstr "Material donation"
+
+#: pages/donaciones.html%2Bmain.section.p:118-5
+msgid ""
+"Para contribuir materialmente con alimentos, material logístico o litúrgico, "
+"flores, prestando equipos de sonido, vehículos para el transporte de "
+"peregrinos o de mochilas, o cualquier aporte que crea pueda ayudarnos (vea "
+"la lista de necesidades <a href=\"/como-ayudar.html\" class=\"a5\">aquí</"
+"a>). Póngase en contacto con nosotros a través del siguiente formulario o "
+"por correo electrónico: <a class=\"a5\" "
+"href=\"mailto:informacion@nscristiandad.es\">informacion@nscristiandad.es</"
+"a>."
+msgstr ""
+"To contribute materially with food, logistic or liturgical material, "
+"flowers, lending sound equipment, vehicles for the transportation of "
+"pilgrims or backpacks, or any contribution that you think can help us (take "
+"a look at the list of needs <a href=\"/en/como-ayudar.html\" "
+"class=\"a5\">here</a>). Please contact us through the following form or by "
+"email: <a class=\"a5\" "
+"href=\"mailto:informacion@nscristiandad.es\">informacion@nscristiandad.es</"
+"a>."
+
+#: pages/donaciones.html%2Bmain.section:118-498
+msgid "."
+msgstr "."
+
+#: pages/donaciones.html%2Bmain.section.form.label:120-6
+msgid "Nombre: <b class=\"b7\">*</b>"
+msgstr "Name: <b class=\"b7\">*</b>"
+
+#: pages/donaciones.html%2Bmain.section.form.label:124-6
+msgid "Teléfono:"
+msgstr "Phone:"
+
+#: pages/donaciones.html%2Bmain.section.form.label:128-6
+msgid "Email: <b class=\"b7\">*</b>"
+msgstr "Email: <b class=\"b7\">*</b>"
+
+#: pages/donaciones.html%2Bmain.section.form.label:132-6
+msgid "¿Qué puede donar o prestar?<b class=\"b7\">*</b>"
+msgstr "What can you donate or lend?<b class=\"b7\">*</b>"
+
+#: pages/donaciones.html%2Bmain.section.form.label:136-6
+msgid ""
+"El interesado conoce y ACEPTA la <a class=\"a5\" href=\"/politica-de-"
+"privacidad\">Política de Privacidad</a> de la Asociación Nuestra Señora de "
+"la Cristiandad - España."
+msgstr ""
+"I have read and ACCEPT the <a class=\"a5\" href=\"/en/politica-de-"
+"privacidad\">Privacy Policy</a> of the Association Nuestra Señora de la "
+"Cristiandad - España."
+
+#: pages/donaciones.html%2Bmain.section.form.input[value]:140-6
+msgid "Enviar"
+msgstr "Send"

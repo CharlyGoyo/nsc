@@ -1,0 +1,520 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-11-21 21:08+0200\n"
+"PO-Revision-Date: 2026-11-21 21:08+0200\n"
+"Last-Translator: Automatically generated\n"
+"Language-Team: none\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Translate Toolkit 3.20.0\n"
+"Language: pt\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: pages/voluntariado.html%2Bheader.h1:5-4
+msgid "Voluntariado"
+msgstr "Voluntariado"
+
+#: pages/voluntariado.html%2Bmain.section.h2:10-5
+msgid "¿En qué consiste?"
+msgstr "Em que consiste?"
+
+#: pages/voluntariado.html%2Bmain.section.p:11-5
+msgid ""
+"Como voluntario puedes realizar muchas labores: montaje de carpas, control "
+"de accesos, cocina, seguridad en la marcha, preparación de las paradas… Los "
+"voluntarios no harán la peregrinación a pie (excepto los de orden de la "
+"marcha y algunos sanitarios)."
+msgstr ""
+"Como voluntário podes realizar muitas tarefas: montagem de tendas, controlo "
+"de acessos, cozinha, segurança na marcha, preparação das paragens… Os "
+"voluntários não farão a peregrinação a pé (exceto os de ordem da marcha e "
+"alguns profissionais de saúde)."
+
+#: pages/voluntariado.html%2Bmain.section.ul.li:37-6
+msgid ""
+"A lo largo de la jornada hay descansos para recibir charlas espirituales, "
+"así como para compartir aperitivos con los compañeros. ¡Puedes traer algo "
+"para compartir!"
+msgstr ""
+"Ao longo do dia há pausas para receber palestras espirituais, bem como para "
+"partilhar aperitivos com os companheiros. Podes trazer algo para partilhar!"
+
+#: pages/voluntariado.html%2Bmain.section.ul.li:38-6
+msgid ""
+"Todos los voluntarios reciben comida y cena completas y el libro del "
+"peregrino."
+msgstr ""
+"Todos os voluntários recebem almoço e jantar completos e o livro do "
+"peregrino."
+
+#: pages/voluntariado.html%2Bmain.section.ul.li:39-6
+msgid ""
+"Pueden disfrutar en el campamento de una zona exclusiva para voluntarios y "
+"clero: un espacio para comer y descansar en grupo, con comida y bebida."
+msgstr ""
+"Podem desfrutar no acampamento de uma zona exclusiva para voluntários e "
+"clero: um espaço para comer e descansar em grupo, com comida e bebida."
+
+#: pages/voluntariado.html%2Bmain.section.h2:44-5
+msgid "¿Cómo me hago<br>voluntario?"
+msgstr "Como me torno<br>voluntário?"
+
+#: pages/voluntariado.html%2Bmain.section.ul.a.li:47-7
+msgid "Asegúrate de cumplir los requisitos."
+msgstr "Certifica-te de que cumpres os requisitos."
+
+#: pages/voluntariado.html%2Bmain.section.ul.li:55-6
+msgid "Haz una solicitud en el área que desees."
+msgstr "Faz uma candidatura na área que desejares."
+
+#: pages/voluntariado.html%2Bmain.section.ul.li:62-6
+msgid "Serás contactado por el jefe del área para una entrevista personal."
+msgstr "Serás contactado pelo chefe de área para uma entrevista pessoal."
+
+#: pages/voluntariado.html%2Bmain.section.ul.li:69-6
+msgid ""
+"Una vez seas aceptado como voluntario por la Organización, deberás confirmar "
+"tu inscripción formalmente abonando el <b class=\"b8\">precio de "
+"inscripción</b>. Una vez finalizada y habiendo cumplido con tus obligaciones "
+"como voluntario, podrás solicitar el reembolso o bien dejarlo como donativo."
+msgstr ""
+"Assim que fores aceite como voluntário pela Organização, deverás confirmar "
+"formalmente a tua inscrição pagando o <b class=\"b8\">preço de inscrição</b>. "
+"Uma vez terminada e tendo cumprido as tuas obrigações como voluntário, "
+"poderás solicitar o reembolso ou deixá-lo como donativo."
+
+#: pages/voluntariado.html%2Bmain.section.h2:80-5
+msgid "Requisitos para ser<br>voluntario"
+msgstr "Requisitos para ser<br>voluntário"
+
+#: pages/voluntariado.html%2Bmain.section.div.ul.li:83-7
+msgid ""
+"Cumplir la <a class=\"a5\" href=\"/normativa-general\">Normativa de la "
+"Peregrinación.</a>"
+msgstr ""
+"Cumprir o <a class=\"a5\" href=\"/normativa-general\">Regulamento da "
+"Peregrinação.</a>"
+
+#: pages/voluntariado.html%2Bmain.section.div.ul.li:84-7
+msgid "Voluntad de ayudar."
+msgstr "Vontade de ajudar."
+
+#: pages/voluntariado.html%2Bmain.section.div.ul.li:85-7
+msgid ""
+"No tener impedimentos físicos ni psicológicos para la labor a la que se "
+"presenta voluntario."
+msgstr ""
+"Não ter impedimentos físicos nem psicológicos para a tarefa a que se "
+"candidata."
+
+#: pages/voluntariado.html%2Bmain.section.div.ul.li:86-7
+msgid "Estar disponible desde el inicio hasta el final de la Peregrinación."
+msgstr "Estar disponível desde o início até ao fim da Peregrinação."
+
+#: pages/voluntariado.html%2Bmain.section.div.ul.li:87-7
+msgid ""
+"Tener la aplicación Telegram en el teléfono (para coordinarse con la "
+"Organización)."
+msgstr ""
+"Ter a aplicação Telegram no telemóvel (para coordenação com a Organização)."
+
+#: pages/voluntariado.html%2Bmain.section.div.ul.li:88-7
+msgid "Requisitos propios de cada área."
+msgstr "Requisitos próprios de cada área."
+
+#: pages/voluntariado.html%2Bmain.section.h2:94-5
+msgid "áreas"
+msgstr "áreas"
+
+#: pages/voluntariado.html%2Bmain.div.h2:106-5
+msgid "LOGÍSTICA"
+msgstr "LOGÍSTICA"
+
+#: pages/voluntariado.html%2Bmain.section.div.p:116-6
+msgid ""
+"El voluntariado de logística dentro de la peregrinación es posiblemente uno "
+"de los más sacrificados. Se subdivide en dos áreas bien diferenciadas: "
+"abastecimiento y transporte."
+msgstr ""
+"O voluntariado de logística na peregrinação é possivelmente um dos mais "
+"sacrificados. Subdivide-se em duas áreas bem diferenciadas: abastecimento e "
+"transporte."
+
+#: pages/voluntariado.html%2Bmain.section.div.p:117-6
+msgid ""
+"Mientras los peregrinos caminen, tú te encargarás de que todo funcione a su "
+"alrededor correctamente para que puedan centrarse en lo que de verdad "
+"importa, el camino a Covadonga, hacia Nuestra Madre."
+msgstr ""
+"Enquanto os peregrinos caminham, tu encarregar-te-ás de que tudo funcione "
+"corretamente à sua volta para que se possam centrar no que realmente "
+"importa: o caminho até Covadonga, rumo a Nossa Mãe."
+
+#: pages/voluntariado.html%2Bmain.section.div.h2:122-6
+msgid "abastecimiento"
+msgstr "abastecimento"
+
+#: pages/voluntariado.html%2Bmain.section.div.ul.li:124-7
+msgid ""
+"<b class=\"b8\">Almacén</b>: coordinación del centro de distribución "
+"logístico desde donde sale todo el material necesario para la peregrinación."
+msgstr ""
+"<b class=\"b8\">Armazém</b>: coordenação do centro de distribuição "
+"logístico de onde sai todo o material necessário para a peregrinação."
+
+#: pages/voluntariado.html%2Bmain.section.div.ul.li:130-7
+msgid ""
+"<b class=\"b8\">Limpieza</b>: es de vital importancia mantener todos los "
+"espacios que utilizamos en perfecto estado de limpieza."
+msgstr ""
+"<b class=\"b8\">Limpeza</b>: é de vital importância manter todos os espaços "
+"que utilizamos em perfeito estado de limpeza."
+
+#: pages/voluntariado.html%2Bmain.section.div.h2:139-6
+msgid "transporte"
+msgstr "transporte"
+
+#: pages/voluntariado.html%2Bmain.section.div.ul.li:141-7
+msgid ""
+"<b class=\"b8\">Material</b>: incluye el transporte de todo tipo de "
+"material, así como el montaje del campamento, los suministros de agua, fruta "
+"y pan en las paradas y la gestión de las mochilas."
+msgstr ""
+"<b class=\"b8\">Material</b>: inclui o transporte de todo o tipo de "
+"material, bem como a montagem do acampamento, o fornecimento de água, fruta e "
+"pão nas paragens e a gestão das mochilas."
+
+#: pages/voluntariado.html%2Bmain.section.div.ul.li:147-7
+msgid ""
+"<b class=\"b8\">Personal</b>: tranporte de peregrinos lesionados a lo largo "
+"de la ruta, así como otras necesidades dentro de la Organización."
+msgstr ""
+"<b class=\"b8\">Pessoal</b>: transporte de peregrinos lesionados ao longo do "
+"percurso, bem como outras necessidades dentro da Organização."
+
+#: pages/voluntariado.html%2Bmain.section.div.span.p:159-7
+msgid ""
+"Los voluntarios de Mochilas podrán ir a caminar tras la carga y descarga de "
+"las mismas."
+msgstr ""
+"Os voluntários das Mochilas poderão ir caminhar após a carga e descarga das "
+"mesmas."
+
+#: pages/voluntariado.html%2Bmain.section.p:203-5
+msgid ""
+"Buscamos personas que vean en la logística no solo un trabajo técnico, sino "
+"un acto de caridad y entrega. Si te identificas con estos valores y "
+"habilidades, tu aportación será clave para el desarrollo de la peregrinación."
+msgstr ""
+"Procuramos pessoas que vejam na logística não apenas um trabalho técnico, "
+"mas um ato de caridade e entrega. Se te identificas com estes valores e "
+"competências, o teu contributo será fundamental para o desenrolar da "
+"peregrinação."
+
+#: pages/voluntariado.html%2Bmain.div.h2:207-5
+msgid "ORDEN"
+msgstr "ORDEM"
+
+#: pages/voluntariado.html%2Bmain.section.div.p:217-6
+msgid ""
+"Los voluntarios de Orden son esenciales para que la Peregrinación transcurra "
+"de manera ordenada y que los peregrinos sepan dónde dirigirse en todo "
+"momento . Se dividen a su vez en dos secciones: marcha y paradas."
+msgstr ""
+"Os voluntários de Ordem são essenciais para que a Peregrinação decorra de "
+"forma ordenada e para que os peregrinos saibam para onde se dirigir em "
+"todos os momentos. Dividem-se, por sua vez, em duas secções: marcha e "
+"paragens."
+
+#: pages/voluntariado.html%2Bmain.section.div.h2:222-6
+msgid "marcha"
+msgstr "marcha"
+
+#: pages/voluntariado.html%2Bmain.section.div.p:223-6
+msgid ""
+"Se encargan de guiar la columna de peregrinos al ritmo pautado y de "
+"mantenerla unida, procurando que la distancia entre capítulos sea la "
+"adecuada."
+msgstr ""
+"Encarregam-se de guiar a coluna de peregrinos ao ritmo estabelecido e de a "
+"manter unida, procurando que a distância entre capítulos seja a adequada."
+
+#: pages/voluntariado.html%2Bmain.section.div:223-166
+msgid "Requisito de edad: entre 20 y 60 años."
+msgstr "Requisito de idade: entre os 20 e os 60 anos."
+
+#: pages/voluntariado.html%2Bmain.section.div.h2:227-6
+msgid "paradas"
+msgstr "paragens"
+
+#: pages/voluntariado.html%2Bmain.section.div.p:228-6
+msgid ""
+"Organiza los tres momentos de descanso de los peregrinos durante la marcha "
+"para que en todo momento se mantenga el orden y sea ágil el tránsito de "
+"peregrinos. Además, el equipo determina la colocación de fruta, agua y pan, "
+"aseos portátiles, y cubos de basura."
+msgstr ""
+"Organiza os três momentos de descanso dos peregrinos durante a marcha para "
+"que se mantenha sempre a ordem e o trânsito de peregrinos seja ágil. Além "
+"disso, a equipa determina a colocação de fruta, água e pão, casas de banho "
+"portáteis e caixotes do lixo."
+
+#: pages/voluntariado.html%2Bmain.section.div:228-279
+msgid "Requisito de edad: entre 25 y 65 años."
+msgstr "Requisito de idade: entre os 25 e os 65 anos."
+
+#: pages/voluntariado.html%2Bmain.div.h2:259-5
+msgid "SEGURIDAD"
+msgstr "SEGURANÇA"
+
+#: pages/voluntariado.html%2Bmain.section.p:268-5
+msgid ""
+"El voluntario de seguridad se encargará por velar en todo momento por la "
+"buena marcha de la peregrinación, haciendo cumplir las normas de "
+"comportamiento, dando continuidad al plan ideado por la organización y "
+"velando por la seguridad de los peregrinos, para que ninguna amenaza, tanto "
+"interna como externa, pueda perturbar la buena marcha de esta."
+msgstr ""
+"O voluntário de segurança encarregar-se-á de zelar em todos os momentos pelo "
+"bom andamento da peregrinação, fazendo cumprir as normas de comportamento, "
+"dando continuidade ao plano idealizado pela organização e velando pela "
+"segurança dos peregrinos, para que nenhuma ameaça, tanto interna como "
+"externa, possa perturbar o seu bom decorrer."
+
+#: pages/voluntariado.html%2Bmain.section.div.h2:274-6
+msgid "campamento y paradas"
+msgstr "acampamento e paragens"
+
+#: pages/voluntariado.html%2Bmain.section.div.p:275-6
+msgid ""
+"Realiza controles de acceso, vela por el cumplimiento de las normas, hace "
+"vigilancia nocturna para mantener la seguridad del campamento. Son "
+"responsables del cumplimiento del plan de evacuación y emergencias."
+msgstr ""
+"Realiza controlos de acesso, zela pelo cumprimento das normas e faz "
+"vigilância noturna para manter a segurança do acampamento. São responsáveis "
+"pelo cumprimento do plano de evacuação e emergências."
+
+#: pages/voluntariado.html%2Bmain.section.div.h2:278-6
+msgid "cruces"
+msgstr "cruzamentos"
+
+#: pages/voluntariado.html%2Bmain.section.div.p:279-6
+msgid ""
+"Controla la seguridad y el acceso de vehículos en las paradas y regula el "
+"tráfico en los cruces más peligrosos por los que discurren los peregrinos."
+msgstr ""
+"Controla a segurança e o acesso de veículos nas paragens e regula o trânsito "
+"nos cruzamentos mais perigosos por onde passam os peregrinos."
+
+#: pages/voluntariado.html%2Bmain.div.h2:287-5
+msgid "FAMILIAS"
+msgstr "FAMÍLIAS"
+
+#: pages/voluntariado.html%2Bmain.section.p:296-5
+msgid ""
+"El equipo de familias se encarga de ayudar a que todos los peregrinos de "
+"esta ruta adaptada realicen la peregrinación con orden y seguridad, "
+"asegurándose de que monten y bajen de los autobuses cuando esté establecido, "
+"guiándoles hasta las paradas, etc."
+msgstr ""
+"A equipa de famílias encarrega-se de ajudar a que todos os peregrinos deste "
+"percurso adaptado realizem a peregrinação com ordem e segurança, "
+"certificando-se de que entram e saem dos autocarros quando estabelecido, "
+"guiando-os até às paragens, etc."
+
+#: pages/voluntariado.html%2Bmain.section.div.p:304-6
+msgctxt "pages/voluntariado.html+section36.div.p:9-2"
+msgid "Requisitos:"
+msgstr "Requisitos:"
+
+#: pages/voluntariado.html%2Bmain.section.div.ul.li:306-7
+msgid "Estar en forma para realizar los kilómetros de la ruta de familias"
+msgstr "Estar em forma para realizar os quilómetros da rota das famílias."
+
+#: pages/voluntariado.html%2Bmain.section.div.ul.li:307-7
+msgid ""
+"Saber dar instrucciones y dirigir un grupo con autoridad y buen carácter."
+msgstr ""
+"Saber dar instruções e liderar um grupo com autoridade e boa disposição."
+
+#: pages/voluntariado.html%2Bmain.section.p:310-5
+msgid "CUPO COMPLETO"
+msgstr "VAGAS ESGOTADAS"
+
+#: pages/voluntariado.html%2Bmain.div.h2:314-5
+msgid "SANITARIOS"
+msgstr "SAÚDE"
+
+#: pages/voluntariado.html%2Bmain.section.div.p:324-6
+msgid ""
+"El equipo sanitario, integrado por profesionales de distintos ámbitos de la "
+"salud, se encargará de atender a todas aquellas personas que precisen "
+"asistencia sanitaria tanto durante la marcha como en el campamento."
+msgstr ""
+"A equipa de saúde, integrada por profissionais de diversas áreas médicas, "
+"encarregar-se-á de assistir todas as pessoas que necessitem de cuidados de "
+"saúde, tanto durante a marcha como no acampamento."
+
+#: pages/voluntariado.html%2Bmain.section.div.p:325-6
+msgid ""
+"Sin embargo, cada peregrino deberá llevar su propio botiquín sencillo para "
+"tratar las lesiones que no revistan gravedad, como las pequeñas ampollas."
+msgstr ""
+"Contudo, cada peregrino deverá levar o seu próprio estojo de primeiros "
+"socorros simples para tratar lesões ligeiras, como pequenas bolhas."
+
+#: pages/voluntariado.html%2Bmain.div.h2:356-5
+msgid "CLERO-CEREMONIAS"
+msgstr "CLERO-CERIMÓNIAS"
+
+#: pages/voluntariado.html%2Bmain.section.p:365-5
+msgid ""
+"La Santa Misa es el motivo por el cual se celebra la peregrinación de "
+"Nuestra Señora de la Cristiandad. Todo lo que ocurre en ella está dirigida a "
+"Dios Sacramentado que se hace presente en el sacrificio de la Santa Misa. "
+"Por esta razón, en cada jornada de la peregrinación, se celebra una misa "
+"solemne y muchas misas privadas."
+msgstr ""
+"A Santa Missa é o motivo pelo qual se celebra a peregrinação de Nossa "
+"Senhora da Cristandade. Tudo o que nela acontece é dirigido a Deus "
+"Sacramentado, que se torna presente no sacrifício da Santa Missa. Por esta "
+"razão, em cada dia da peregrinação, celebra-se uma missa solene e muitas "
+"missas privadas."
+
+#: pages/voluntariado.html%2Bmain.section.div.h2:371-6
+msgid "sacristía"
+msgstr "sacristia"
+
+#: pages/voluntariado.html%2Bmain.section.div.p:372-6
+msgid ""
+"Todo lo que tiene que ver con la preparación para hacer posible el Santo "
+"Sacrificio es preparado por los voluntarios de liturgia: montaje y "
+"revestimiento de los altares, ornamentos, comulgatorios, consumibles "
+"litúrgicos… Se trata, en definitiva, de dignificar el lugar para la venida "
+"de Dios al altar."
+msgstr ""
+"Tudo o que diz respeito à preparação para tornar possível o Santo Sacrifício "
+"é preparado pelos voluntários de liturgia: montagem e revestimento dos "
+"altares, paramentos, mesas de comunhão, consumíveis litúrgicos… Trata-se, "
+"em suma, de dignificar o lugar para a vinda de Deus ao altar."
+
+#: pages/voluntariado.html%2Bmain.section.div.h2:375-6
+msgid "montaje de infraestructuras"
+msgstr "montagem de infraestruturas"
+
+#: pages/voluntariado.html%2Bmain.section.div.p:376-6
+msgid ""
+"Montaje de carpas para las misas privadas, para la sacristía, bancos… así "
+"como montaje de camastros para la pernocta de los sacerdotes en tiendas "
+"colectivas."
+msgstr ""
+"Montagem de tendas para as missas privadas, para a sacristia, bancos… bem "
+"como montagem de catres para a pernoita dos sacerdotes em tendas coletivas."
+
+#: pages/voluntariado.html%2Bmain.section.div.h2:385-6
+msgid "acogida clero"
+msgstr "acolhimento ao clero"
+
+#: pages/voluntariado.html%2Bmain.section.div.p:386-6
+msgid ""
+"Atienden las necesidades materiales de los sacerdotes, como el transporte de "
+"los objetos litúrgicos que porten o que reciban el debido avituallamiento."
+msgstr ""
+"Atendem às necessidades materiais dos sacerdotes, como o transporte dos "
+"objetos litúrgicos que trazem ou garantir que recebem o devido "
+"abastecimento."
+
+#: pages/voluntariado.html%2Bmain.section.div.h2:389-6
+msgid "liturgia"
+msgstr "liturgia"
+
+#: pages/voluntariado.html%2Bmain.section.div.p:390-6
+msgid ""
+"Son puestos de voluntariado específicos necesarios para el buen desarrollo "
+"de las funciones litúrgicas: encargado de sonido, de acólitos, de comunión o "
+"de coro."
+msgstr ""
+"São funções de voluntariado específicas necessárias para o bom desenrolar "
+"das celebrações litúrgicas: responsável pelo som, pelos acólitos, pela "
+"comunhão ou pelo coro."
+
+#: pages/voluntariado.html%2Bmain.div.h2:398-5
+msgid "CAMPAMENTO"
+msgstr "ACAMPAMENTO"
+
+#: pages/voluntariado.html%2Bmain.section.p:407-5
+msgid ""
+"Todo debe estar dispuesto para recibir a los peregrinos en su lugar de "
+"descanso al final de la jornada, tarea desempeñada por los voluntarios de "
+"campamento."
+msgstr ""
+"Tudo deve estar preparado para receber os peregrinos no seu local de "
+"descanso ao final do dia, tarefa desempenhada pelos voluntários de "
+"acampamento."
+
+#: pages/voluntariado.html%2Bmain.section.div.h2:413-6
+msgid "cocina"
+msgstr "cozinha"
+
+#: pages/voluntariado.html%2Bmain.section.div.p:414-6
+msgid ""
+"Preparan la comida de sacerdotes y religiosos. Además, para todos los "
+"peregrinos preparan el desayuno y un caldo caliente por la noche."
+msgstr ""
+"Preparam as refeições dos sacerdotes e religiosos. Além disso, para todos "
+"os peregrinos preparam o pequeno-almoço e um caldo quente à noite."
+
+#: pages/voluntariado.html%2Bmain.section.div.h2:417-6
+msgid "acogida"
+msgstr "acolhimento"
+
+#: pages/voluntariado.html%2Bmain.section.div.p:418-6
+msgid ""
+"Se encargan de balizar y señalizar todo el campamento. Reciben a los "
+"peregrinos, resuelven sus dudas y dan las indicaciones pertinentes para "
+"todos los participantes."
+msgstr ""
+"Encarregam-se de balizar e sinalizar todo o acampamento. Recebem os "
+"peregrinos, esclarecem as suas dúvidas e dão as indicações pertinentes a "
+"todos os participantes."
+
+#: pages/voluntariado.html%2Bmain.div.h2:426-5
+msgid "IMAGEN Y COMUNICACIÓN"
+msgstr "IMAGEM E COMUNICAÇÃO"
+
+#: pages/voluntariado.html%2Bmain.section.p:438-5
+msgid ""
+"El equipo de imagen y comunicación se encarga del reportaje audiovisual de "
+"la peregrinación, tanto con equipo de fotografía, como de vídeo. También se "
+"responsabiliza de la tienda física de los productos y de la comunicación en "
+"directo a través de las redes sociales."
+msgstr ""
+"A equipa de imagem e comunicação encarrega-se da reportagem audiovisual da "
+"peregrinação, tanto com equipamento de fotografia como de vídeo. Também se "
+"responsabiliza pela loja física dos produtos e pela comunicação em direto "
+"através das redes sociais."
+
+#: pages/voluntariado.html%2Bmain.section.div.p:440-6
+msgctxt "pages/voluntariado.html+div31.p:112-1"
+msgid "Requisitos:"
+msgstr "Requisitos:"
+
+#: pages/voluntariado.html%2Bmain.section.div.ul.li:442-7
+msgid ""
+"Se valorará la experiencia profesional en alguno de los sectores que "
+"conforman el área, ya que se manipulará equipo y medios sensibles."
+msgstr ""
+"Será valorizada a experiência profissional nalgum dos setores que compõem a "
+"área, uma vez que se irá manusear equipamento e meios sensíveis."
+
+#: pages/voluntariado.html%2Bmain.section.div.ul.li:443-7
+msgid ""
+"En el caso de la tienda, tener don de gentes y agilidad con la gestión de "
+"producto."
+msgstr ""
+"No caso da loja, ter facilidade de trato com o público e agilidade na gestão "
+"de produtos."
