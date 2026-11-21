@@ -1230,7 +1230,7 @@ ul {
 }
 
 .div21 {
-	flex:				1.4; /*por poner algo*/
+	flex:				1.85; /*por poner algo*/
 	gap:				20px;
 }
 
@@ -1290,13 +1290,13 @@ ul {
 }
 
 .div26 {
-	flex:				0.9; /*por poner algo*/
+	flex:				1.1; /*por poner algo*/
 	gap:				20px;
 	justify-content:	start;
 }
 
 .div27 {
-	background-color:	#724ba7;
+	background-color:	var(--azul);
 	border-radius:		10px;
 	flex-direction:		row;
 	gap:				30px;
@@ -1634,12 +1634,15 @@ ul {
 }
 
 .h314 {
-	color:			var(--azul);
+	color:			var(--marron);
 	font-size:		1.3125rem;
 	font-weight:	600;
 	letter-spacing:	0.5px;
 	line-height:	1.70625rem;
 	text-align:		right;
+	&:hover {
+		color:	var(--rojo);
+	}
 }
 
 .h315 {
@@ -3928,7 +3931,7 @@ ul {
 
 #section25 {
 	align-items:	flex-start;
-	gap:			30px;
+	gap:			70px;
 }
 
 .section9#familias { /*#section26*/

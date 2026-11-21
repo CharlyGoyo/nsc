@@ -299,7 +299,7 @@
 
 		<section class="section1" id="section33">
 			<div class="div21">
-				<h3 class="h38">APÚNTATE HASTA EL 6 DE FEBRERO</h3>
+				<h3 class="h38">APÚNTATE HASTA EL 22 DE ENERO</h3>
 				<div class="div22">
 					<!--calendar-alt-regular.svg-->
 					<svg viewBox="0 0 448 512" xmlns="http://www.w3.org/2000/svg" class="svg14"><path d="M 148 288 L 108 288 C 101.4 288 96 282.6 96 276 L 96 236 C 96 229.40001 101.4 224 108 224 L 148 224 C 154.6 224 160 229.40001 160 236 L 160 276 C 160 282.6 154.6 288 148 288 Z M 256 276 L 256 236 C 256 229.40001 250.59999 224 244 224 L 204 224 C 197.40001 224 192 229.40001 192 236 L 192 276 C 192 282.6 197.40001 288 204 288 L 244 288 C 250.59999 288 256 282.6 256 276 Z M 352 276 L 352 236 C 352 229.40001 346.6 224 340 224 L 300 224 C 293.4 224 288 229.40001 288 236 L 288 276 C 288 282.6 293.4 288 300 288 L 340 288 C 346.6 288 352 282.6 352 276 Z M 256 372 L 256 332 C 256 325.4 250.59999 320 244 320 L 204 320 C 197.40001 320 192 325.4 192 332 L 192 372 C 192 378.6 197.40001 384 204 384 L 244 384 C 250.59999 384 256 378.6 256 372 Z M 160 372 L 160 332 C 160 325.4 154.6 320 148 320 L 108 320 C 101.4 320 96 325.4 96 332 L 96 372 C 96 378.6 101.4 384 108 384 L 148 384 C 154.6 384 160 378.6 160 372 Z M 352 372 L 352 332 C 352 325.4 346.6 320 340 320 L 300 320 C 293.4 320 288 325.4 288 332 L 288 372 C 288 378.6 293.4 384 300 384 L 340 384 C 346.6 384 352 378.6 352 372 Z M 448 112 L 448 464 C 448 490.5 426.5 512 400 512 L 48 512 C 21.500002 512 0 490.5 0 464 L 0 112 C 0 85.5 21.500002 64 48 64 L 96 64 L 96 12 C 96 5.4 101.4 0 108 0 L 148 0 C 154.6 0 160 5.4 160 12 L 160 64 L 288 64 L 288 12 C 288 5.4 293.4 0 300 0 L 340 0 C 346.6 0 352 5.4 352 12 L 352 64 L 400 64 C 426.5 64 448 85.5 448 112 Z M 400 458 L 400 160 L 48 160 L 48 458 C 48 461.3 50.7 464 54 464 L 394 464 C 397.3 464 400 461.3 400 458 Z"/></svg>
@@ -329,8 +329,105 @@
 					</span>
 				</div>
 			</div>
-			<img srcset="/pages-content/uploads/2023/10/POSTER_CORO_Mesa-de-trabajo-1_Mesa-de-trabajo-1.jpg 556w, /pages-content/uploads/2023/10/POSTER_CORO_Mesa-de-trabajo-1_Mesa-de-trabajo-1-238x300.jpg 238w" sizes="(max-width: 556px) 100vw, 556px">
+			<img srcset="/pages-content/uploads/2023/10/POSTER_musicasacra_v2-811x1024.png 811w, /pages-content/uploads/2023/10/POSTER_musicasacra_v2-238x300.png 238w, /pages-content/uploads/2023/10/POSTER_musicasacra_v2-768x970.png 768w, /pages-content/uploads/2023/10/POSTER_musicasacra_v2-1217x1536.png 1217w, /pages-content/uploads/2023/10/POSTER_musicasacra_v2-1622x2048.png 1622w, /pages-content/uploads/2023/10/POSTER_musicasacra_v2-scaled.png 2028w" sizes="(max-width: 556px) 100vw, 556px">
 		</section>
+		<form action="" method="post">
+			<h4 class="h45">Inscripción</h4>
+			<label>
+				Nombre *
+				<input autocomplete="given-name" name="nombre" required type="text"/>
+			</label>
+
+			<label>
+				Apellidos *
+				<input autocomplete="family-name" name="apellidos" required type="text"/>
+			</label>
+
+			<label>
+				Email *
+				<input autocomplete="email" inputmode="email" name="email" required type="email"/>
+			</label>
+
+			<label>
+				Teléfono *
+				<input autocomplete="tel" inputmode="tel" name="tel" required type="tel"/>
+			</label>
+
+			<label>
+				Edad *
+				<input inputmode="numeric" max="120" min="0" name="edad" required step="1" type="number"/>
+			</label>
+
+			<label>
+				Sexo *
+				<select autocomplete="sex" name="sexo" required>
+					<option disabled hidden selected value=""></option>
+					<option value="hombre">Hombre</option>
+					<option value="mujer">Mujer</option>
+				</select>
+			</label>
+
+			<label>
+				Experiencia musical *
+				<select name="nivel" required>
+					<option disabled hidden selected value=""></option>
+					<option value="poca">Poca</option>
+					<option value="media">Media</option>
+					<option value="alta">Alta</option>
+					<option value="profesional">Profesional</option>
+					<option value="nose">No lo sé</option>
+				</select>
+			</label>
+
+			<label>
+				Tipo de voz *
+				<select name="voz" required>
+					<option disabled hidden selected value=""></option>
+					<option value="soprano">Soprano</option>
+					<option value="alto">Alto</option>
+					<option value="tenor">Tenor</option>
+					<option value="bajo">Bajo</option>
+					<option value="nose">No lo sé</option>
+				</select>
+			</label>
+
+			<fieldset>
+				<legend>¿Has participado en el coro de NSC? *</legend>
+				<label>
+					<input name="coro" required type="radio" value="si"/>
+					Sí
+				</label>
+				<label>
+					<input name="coro" required type="radio" value="no"/>
+					No
+				</label>
+			</fieldset>
+
+			<label>
+				En caso de tener alguna intolerancia alimentaria, indícalo aquí
+				<input autocomplete="off" name="intolerancia" type="text"/>
+			</label>
+
+			<label>
+				<input name="privacidad" required type="checkbox" value="1"/>
+				El interesado conoce y ACEPTA la <a href="/politica-de-privacidad" rel="noopener noreferrer" target="_blank">Política de Privacidad</a> de la Asociación Nuestra Señora de la Cristiandad - España. *
+			</label>
+
+			<p>El precio del encuentro no llega a cubrir todos los gastos del mismo. Por favor, considera hacer una donación adicional.</p>
+
+			<label>
+				Donación (€)
+				<input inputmode="decimal" min="0" name="donacion" placeholder="0.00" step="0.01" type="number"/>
+			</label>
+
+			<label>
+				Precio total
+				<output name="precio">85.00 €</output>
+			</label>
+
+			<button type="submit">Inscribirme y pagar</button>
+		</form>
+
 
 		<section class="section6" id="section18">
 			<button class="button5" id="button11">
