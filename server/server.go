@@ -9,11 +9,6 @@ import (
 	/*"github.com/stripe/stripe-go/v86/webhook"*/
 )
 
-/*var mapita := make(map[string]int)*/
-/*mapita["Ana"] = 25*/
-/*item, err := mapita["Mondongo"]*/
-/*delete(mapita, "Ana")*/
-/*clear(mapita)*/
 var stripeClient *stripe.Client 
 var addr = ":8000"
 var domain = "https://nscristiandad.es"

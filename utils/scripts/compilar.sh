@@ -13,7 +13,7 @@ while getopts "bBhin:v" opt; do
 
 IMPORTANTE
 Este script: 
-- Sobreescribe /pages/boletines/*/config.cfg a partir de /config.cfg 
+- Sobreescribe /pages/boletines/*/config.cfg a partir de /configs/es.cfg 
 - Sobreescribe /pages/boletines/*/seccion.html
 - Sobreescribe /pages/boletin.html
 - Crea o elimina directorios en /pages/boletines según necesite.
@@ -59,7 +59,7 @@ if ! $B; then
 		for e in ${boletines[@]:i:$n}; do
 			mv $v $e ${e%%.*}.html pages/boletines/$d 2>/dev/null
 		done
-		cp $v config.cfg pages/boletines/$d/config.cfg
+		cp $v configs/es.cfg pages/boletines/$d/config.cfg
 		printf "pagina = $d" >> pages/boletines/$d/config.cfg
 	done
 
@@ -72,7 +72,7 @@ if ! $B; then
 	# compila cada /pages/boletines/*/seccion.html y cada /output/laudate-*
 	for dir in pages/boletines/*; do
 		[ -d "$dir" ] || continue
-		ls -rv $dir/laudate*.cfg | xargs saait -t template-boletin -c $dir/config.cfg
+		ls -rv $dir/laudate*.cfg | xargs saait -t templates/boletin -c $dir/config.cfg
 		mv -f $v output/seccion.html $dir
 	done
 
@@ -84,11 +84,11 @@ if ! $B; then
 fi
 
 # compila los artículos:
-$b || saait -o output/articulos pages/articulos/*.cfg 
+$b || saait -t templates/default -c configs/es.cfg -o output/articulos pages/articulos/*.cfg 
 # compila los distintos idiomas:
 shopt -s extglob
-$b || saait -c pages/pt/config.cfg -o output/pt pages/pt/!(config).cfg
-$b || saait -c pages/en/config.cfg -o output/en pages/en/!(config).cfg
-$b || saait -c pages/fr/config.cfg -o output/fr pages/fr/!(config).cfg
+$b || saait -t templates/default -c configs/pt.cfg -o output/pt pages/pt/*.cfg
+$b || saait -t templates/default -c configs/en.cfg -o output/en pages/en/*.cfg
+$b || saait -t templates/default -c configs/fr.cfg -o output/fr pages/fr/*.cfg
 # compila el resto:
-$b || saait pages/*.cfg
+$b || saait -t templates/default -c configs/es.cfg pages/*.cfg

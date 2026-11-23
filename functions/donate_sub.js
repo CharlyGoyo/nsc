@@ -1,6 +1,6 @@
-export async function onRequestPost(context) {
-	const url = new URL(context.request.url).origin;
-	const formData = await context.request.formData();
+export async function onRequestPost({request, env}) {
+	const url = new URL(request.url).origin;
+	const formData = await request.formData();
 
 	const params = new URLSearchParams({
 		mode:							'subscription',
@@ -15,7 +15,7 @@ export async function onRequestPost(context) {
 	const res = await fetch('https://api.stripe.com/v1/checkout/sessions', {
 		method: 'POST',
 		headers: {
-			'Authorization': `Bearer ${context.env.STRIPE_API_KEY}`
+			'Authorization': `Bearer ${env.STRIPE_API_KEY}`
 		},
 		body: params
 	});
