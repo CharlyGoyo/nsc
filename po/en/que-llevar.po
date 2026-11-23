@@ -2,15 +2,15 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-11-21 21:08+0200\n"
+"POT-Creation-Date: 2026-11-22 02:17+0200\n"
 "PO-Revision-Date: 2026-11-21 21:15+0200\n"
 "Last-Translator: Automatically generated\n"
 "Language-Team: none\n"
+"Language: en\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: Translate Toolkit 3.20.0\n"
-"Language: en\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
 #: pages/que-llevar.html%2Bheader.h1:3-4
@@ -23,9 +23,9 @@ msgid ""
 "como-ayudar.html\" class=\"a5\">aquí</a>. A continuación se detalla el "
 "material que cada peregrino debe llevar:"
 msgstr ""
-"To see the items that the organisation provides, click <a href=\"/en/"
-"como-ayudar.html\" class=\"a5\">here</a>. Below is detailed the gear that "
-"each pilgrim needs to bring:"
+"To see the items that the organisation provides, click <a href=\"/en/como-"
+"ayudar.html\" class=\"a5\">here</a>. Below is detailed the gear that each "
+"pilgrim needs to bring:"
 
 #: pages/que-llevar.html%2Bmain.section.h3:12-5
 msgid "CALZADO"
@@ -73,8 +73,7 @@ msgstr "Food for the day."
 msgid ""
 "Alimentos energéticos: barritas de cereales, chocolate, frutos secos, "
 "caramelos, etc."
-msgstr ""
-"Energy snacks: cereal bars, chocolate, nuts, sweets, etc."
+msgstr "Energy snacks: cereal bars, chocolate, nuts, sweets, etc."
 
 #: pages/que-llevar.html%2Bmain.section.ul.li:33-6
 msgid "Chubasquero."
@@ -89,8 +88,8 @@ msgid ""
 "Vajilla de exteriores para acampada en caso de necesitarla para su comida "
 "(plato hondo, cubiertos, vaso/taza…)."
 msgstr ""
-"Outdoor camping mess kit if needed for your meals (deep plate, cutlery, "
-"cup/mug…)."
+"Outdoor camping mess kit if needed for your meals (deep plate, cutlery, cup/"
+"mug…)."
 
 #: pages/que-llevar.html%2Bmain.section.ul.li:36-6
 msgid "Papel higiénico."
@@ -117,7 +116,8 @@ msgstr "Pilgrim’s Book (provided by NSC-E)."
 
 #: pages/que-llevar.html%2Bmain.section.ul.li:41-6
 msgid "Documentación (no olvidar la <b class=\"b8\">tarjeta sanitaria</b>)."
-msgstr "Personal ID/documentation (do not forget your <b class=\"b8\">health "
+msgstr ""
+"Personal ID/documentation (do not forget your <b class=\"b8\">health "
 "insurance card</b>)."
 
 #: pages/que-llevar.html%2Bmain.section.ul.li:42-6
@@ -173,8 +173,7 @@ msgstr "Torch / flashlight."
 
 #: pages/que-llevar.html%2Bmain.section.ul.li:57-6
 msgid "Material de curas (los sanitarios sólo atenderán casos graves)."
-msgstr ""
-"First-aid supplies (medical staff will only attend to serious cases)."
+msgstr "First-aid supplies (medical staff will only attend to serious cases)."
 
 #: pages/que-llevar.html%2Bmain.section.h3:62-5
 msgid "IMPORTANTE"
@@ -188,11 +187,11 @@ msgid ""
 "deben atarse elementos a la mochila grande, sino prepararla de manera "
 "compacta para evitar extravíos."
 msgstr ""
-"It is essential to label all belongings with your name and your chapter's "
-"<b class=\"b8\">coloured ribbon</b> (each pilgrim must bring their own "
-"ribbon; it is not provided by the Organisation). The colour allocation is "
-"listed at the bottom of this page.<br>Do not tie loose items to the outside "
-"of your large backpack; pack everything compactly to avoid loss."
+"It is essential to label all belongings with your name and your chapter's <b "
+"class=\"b8\">coloured ribbon</b> (each pilgrim must bring their own ribbon; "
+"it is not provided by the Organisation). The colour allocation is listed at "
+"the bottom of this page.<br>Do not tie loose items to the outside of your "
+"large backpack; pack everything compactly to avoid loss."
 
 #: pages/que-llevar.html%2Bmain.section.p:64-5
 msgid ""

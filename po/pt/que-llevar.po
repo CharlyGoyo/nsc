@@ -2,15 +2,15 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-11-21 21:08+0200\n"
+"POT-Creation-Date: 2026-11-22 02:17+0200\n"
 "PO-Revision-Date: 2026-11-21 21:08+0200\n"
 "Last-Translator: Automatically generated\n"
 "Language-Team: none\n"
+"Language: pt\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: Translate Toolkit 3.20.0\n"
-"Language: pt\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
 #: pages/que-llevar.html%2Bheader.h1:3-4
@@ -24,8 +24,8 @@ msgid ""
 "material que cada peregrino debe llevar:"
 msgstr ""
 "Para ver os elementos que a organização fornece, clique <a href=\"/como-"
-"ayudar.html\" class=\"a5\">aqui</a>. A seguir detalha-se o material que "
-"cada peregrino deve levar:"
+"ayudar.html\" class=\"a5\">aqui</a>. A seguir detalha-se o material que cada "
+"peregrino deve levar:"
 
 #: pages/que-llevar.html%2Bmain.section.h3:12-5
 msgid "CALZADO"
@@ -90,8 +90,8 @@ msgid ""
 "Vajilla de exteriores para acampada en caso de necesitarla para su comida "
 "(plato hondo, cubiertos, vaso/taza…)."
 msgstr ""
-"Loiça de campismo caso necessite para a sua refeição (prato fundo, "
-"talheres, copo/caneca…)."
+"Loiça de campismo caso necessite para a sua refeição (prato fundo, talheres, "
+"copo/caneca…)."
 
 #: pages/que-llevar.html%2Bmain.section.ul.li:36-6
 msgid "Papel higiénico."
@@ -137,10 +137,10 @@ msgid ""
 "b> <b class=\"b5\">bolsas impermeables dentro de la mochila</b>, ya que las "
 "mochilas pueden mojarse si llueve. Debe llevar:"
 msgstr ""
-"Será transportada pela Organização juntamente com o equipamento de "
-"campismo de um acampamento para outro. <b class=\"b4\">Recomenda-se colocar "
-"os pertences em</b> <b class=\"b5\">sacos impermeáveis dentro da mochila</"
-"b>, uma vez que as mochilas podem molhar-se se chover. Deve conter:"
+"Será transportada pela Organização juntamente com o equipamento de campismo "
+"de um acampamento para outro. <b class=\"b4\">Recomenda-se colocar os "
+"pertences em</b> <b class=\"b5\">sacos impermeáveis dentro da mochila</b>, "
+"uma vez que as mochilas podem molhar-se se chover. Deve conter:"
 
 #: pages/que-llevar.html%2Bmain.section.ul.li:50-6
 msgid "La comida que no se consumirá en el día."
@@ -160,7 +160,8 @@ msgstr "Roupa suplente (não exceder)."
 
 #: pages/que-llevar.html%2Bmain.section.ul.li:54-6
 msgid "<b class=\"b8\">Bañador</b> (de uso obligatorio en el río y «duchas»)."
-msgstr "<b class=\"b8\">Fato de banho</b> (de uso obrigatório no rio e «duches»)."
+msgstr ""
+"<b class=\"b8\">Fato de banho</b> (de uso obrigatório no rio e «duches»)."
 
 #: pages/que-llevar.html%2Bmain.section.ul.li:55-6
 msgid ""
@@ -176,8 +177,7 @@ msgstr "Lanterna."
 
 #: pages/que-llevar.html%2Bmain.section.ul.li:57-6
 msgid "Material de curas (los sanitarios sólo atenderán casos graves)."
-msgstr ""
-"Material de pensos (a equipa de saúde apenas atenderá casos graves)."
+msgstr "Material de pensos (a equipa de saúde apenas atenderá casos graves)."
 
 #: pages/que-llevar.html%2Bmain.section.h3:62-5
 msgid "IMPORTANTE"
@@ -194,8 +194,8 @@ msgstr ""
 "É imprescindível identificar os pertences com nome e <b class=\"b8\">fita "
 "com a cor</b> do capítulo (a fita é trazida por cada peregrino, não é "
 "fornecida pela Organização). A atribuição encontra-se no final desta página."
-"<br>Não se devem prender objetos por fora da mochila grande, devendo "
-"prepará-la de forma compacta para evitar extravios."
+"<br>Não se devem prender objetos por fora da mochila grande, devendo prepará-"
+"la de forma compacta para evitar extravios."
 
 #: pages/que-llevar.html%2Bmain.section.p:64-5
 msgid ""

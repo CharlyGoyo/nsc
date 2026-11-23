@@ -2,15 +2,15 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-11-21 21:08+0200\n"
+"POT-Creation-Date: 2026-11-22 02:37+0200\n"
 "PO-Revision-Date: 2026-11-21 21:08+0200\n"
 "Last-Translator: Automatically generated\n"
 "Language-Team: none\n"
+"Language: pt\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: Translate Toolkit 3.20.0\n"
-"Language: pt\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
 #: pages/index.html%2Bheader.h1:6-4
@@ -136,8 +136,7 @@ msgstr "O que levar?"
 
 #: pages/index.html%2Bmain.section.div.p:83-6
 msgid "¿Tengo que llevar tienda de campaña? ¿Cómo identifico mis pertenencias?"
-msgstr ""
-"Tenho de levar tenda de campismo? Como identifico os meus pertences?"
+msgstr "Tenho de levar tenda de campismo? Como identifico os meus pertences?"
 
 #: pages/index.html%2Bmain.section.div:83-91
 msgctxt "pages/index.html+section7.div:13-1"
@@ -212,72 +211,101 @@ msgstr ""
 "musicasacra.html\">Música sacra</a>"
 
 #: pages/index.html%2Bmain.article.div.h2:119-6
-msgid "Laudate n.º57 - Junio 2026"
+#, fuzzy
+msgid "Laudate n.º61 - Octubre 2026"
 msgstr "Laudate n.º 57 - Junho 2026"
 
 #: pages/index.html%2Bmain.article.div.p:120-6
 msgid "En este número:"
 msgstr "Neste número:"
 
-#: pages/index.html%2Bmain.article.div:120-36
-msgid ""
-"<a class=\"a4\">«Airaos, mas no pequéis». Los vicios capitales (IV): La ira</"
-"a> <i class=\"i1\">D. Tomás Minguet Civera, Pbro. Nuestra Señora de los "
-"Desamparados.</i> <a class=\"a4\" id=\"a4\">¿Pathos en Dios? Una "
-"aproximación histórica: Conclusión</a> <i class=\"i1\">D. Gabriel Orejas "
-"Iriarte, Universidad Francisco de Vitoria</i> <a class=\"a4\">Vida de san "
-"Basilio (VI)</a> <i class=\"i1\">Anfiloquio de Iconio</i>"
+#: pages/index.html%2Bmain.article.div.p:121-6
+msgid "Un siglo tras la institución de la fiesta de Cristo Rey"
 msgstr ""
-"<a class=\"a4\">«Airaos, mas no pequéis». Los vicios capitales (IV): La ira</"
-"a> <i class=\"i1\">D. Tomás Minguet Civera, Pbro. Nuestra Señora de los "
-"Desamparados.</i> <a class=\"a4\" id=\"a4\">¿Pathos en Dios? Una "
-"aproximación histórica: Conclusión</a> <i class=\"i1\">D. Gabriel Orejas "
-"Iriarte, Universidad Francisco de Vitoria</i> <a class=\"a4\">Vida de san "
-"Basilio (VI)</a> <i class=\"i1\">Anfiloquio de Iconio</i>"
 
-#: pages/index.html%2Bmain.article:127-5
-msgid "Suscríbete al boletín"
-msgstr "Subscreve o boletim"
+#: pages/index.html%2Bmain.article.div:121-121
+msgid "D. Julen Erro, Jefe de Capítulos de NSC-E"
+msgstr ""
 
-#: pages/index.html%2Bmain.section.h2:132-5
+#: pages/index.html%2Bmain.article.div.p:123-6
+msgid "«Es una escuela de virtud» — EXPERIENCIA NSC-E"
+msgstr ""
+
+#: pages/index.html%2Bmain.article.div:123-130
+msgid "D. Agustín, Capítulo Santa Teresa"
+msgstr ""
+
+#: pages/index.html%2Bmain.article.div.p:125-6
+msgid "Vida de san Efrén (II)"
+msgstr ""
+
+#: pages/index.html%2Bmain.article.div:125-100
+msgid "Autor Anónimo"
+msgstr ""
+
+#: pages/index.html%2Bmain.section.h2:131-5
 msgid "Recursos"
 msgstr "Recursos"
 
-#: pages/index.html%2Bmain.section.div.h3:137-6
+#: pages/index.html%2Bmain.section.div.h3:136-6
 msgid "Espiritualidad"
 msgstr "Espiritualidade"
 
-#: pages/index.html%2Bmain.section.div.p:138-6
+#: pages/index.html%2Bmain.section.div.p:137-6
 msgid "Novenas, oraciones, artículos de interés."
 msgstr "Novenas, orações, artigos de interesse."
 
-#: pages/index.html%2Bmain.section.div:138-61
+#: pages/index.html%2Bmain.section.div:137-61
 msgctxt "pages/index.html+section9.div:2-1"
 msgid "Acceder"
 msgstr "Aceder"
 
-#: pages/index.html%2Bmain.section.div.h3:143-6
+#: pages/index.html%2Bmain.section.div.h3:142-6
 msgid "La Santa Misa"
 msgstr "A Santa Missa"
 
-#: pages/index.html%2Bmain.section.div.p:144-6
+#: pages/index.html%2Bmain.section.div.p:143-6
 msgid "Aprende más sobre la Santa Misa según el <i>Usus Antiquior</i> ."
 msgstr "Aprende mais sobre a Santa Missa segundo o <i>Usus Antiquior</i>."
 
-#: pages/index.html%2Bmain.section.div:144-84
+#: pages/index.html%2Bmain.section.div:143-84
 msgid "Próximamente"
 msgstr "Brevemente"
 
-#: pages/index.html%2Bmain.section.div.h3:149-6
+#: pages/index.html%2Bmain.section.div.h3:148-6
 msgid "Formación"
 msgstr "Formação"
 
-#: pages/index.html%2Bmain.section.div.p:150-6
+#: pages/index.html%2Bmain.section.div.p:149-6
 msgid "Artículos sobre diversos temas para formarte en la fe."
 msgstr "Artigos sobre diversos temas para te formares na fé."
 
-#: pages/index.html%2Bmain.section.div:150-74
+#: pages/index.html%2Bmain.section.div:149-74
+#, fuzzy
 msgctxt ""
-"pages/index.html+section9.div:2-1pages/index.html+main.section.div:150-74"
+"pages/index.html+section9.div:2-1pages/index.html+main.section.div:149-74"
 msgid "Acceder"
 msgstr "Aceder"
+
+#~ msgid ""
+#~ "<a class=\"a4\">«Airaos, mas no pequéis». Los vicios capitales (IV): La "
+#~ "ira</a> <i class=\"i1\">D. Tomás Minguet Civera, Pbro. Nuestra Señora de "
+#~ "los Desamparados.</i> <a class=\"a4\" id=\"a4\">¿Pathos en Dios? Una "
+#~ "aproximación histórica: Conclusión</a> <i class=\"i1\">D. Gabriel Orejas "
+#~ "Iriarte, Universidad Francisco de Vitoria</i> <a class=\"a4\">Vida de san "
+#~ "Basilio (VI)</a> <i class=\"i1\">Anfiloquio de Iconio</i>"
+#~ msgstr ""
+#~ "<a class=\"a4\">«Airaos, mas no pequéis». Los vicios capitales (IV): La "
+#~ "ira</a> <i class=\"i1\">D. Tomás Minguet Civera, Pbro. Nuestra Señora de "
+#~ "los Desamparados.</i> <a class=\"a4\" id=\"a4\">¿Pathos en Dios? Una "
+#~ "aproximación histórica: Conclusión</a> <i class=\"i1\">D. Gabriel Orejas "
+#~ "Iriarte, Universidad Francisco de Vitoria</i> <a class=\"a4\">Vida de san "
+#~ "Basilio (VI)</a> <i class=\"i1\">Anfiloquio de Iconio</i>"
+
+#~ msgid "Suscríbete al boletín"
+#~ msgstr "Subscreve o boletim"
+
+#~ msgctxt ""
+#~ "pages/index.html+section9.div:2-1pages/index.html+main.section.div:150-74"
+#~ msgid "Acceder"
+#~ msgstr "Aceder"

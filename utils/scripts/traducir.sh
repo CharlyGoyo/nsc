@@ -3,7 +3,7 @@
 set -e
 
 langs="pt en fr"
-pot_dir="pot"
+pot_dir="po/pot"
 po_base="po"
 pages_dir="pages"
 

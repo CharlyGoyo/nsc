@@ -285,7 +285,7 @@ fieldset {
 }
 
 footer {
-	background-image:		url('/pages-content/extra/lunes29-7.png');
+	background-image:		url('/pages-content/extra/lunes29-7-dark.jpg');
 	background-size:		cover;
 	background-position:	center;
 	display:				grid;
@@ -3533,15 +3533,15 @@ ul {
 \*------------------------------------*/
 
 #a1 {
-	background-image:	url('/pages-content/extra/DSCF2620-copia-scaled-dark.png');
+	background-image:	url('/pages-content/extra/DSCF2620-copia-scaled-dark.jpg');
 }
 
 #a2 {
-	background-image:	url('/pages-content/extra/IIIENC11.jpeg-scaled-dark.png');
+	background-image:	url('/pages-content/extra/IIIENC11.jpeg-scaled-dark.jpg');
 }
 
 #a3 {
-	background-image:	url('/pages-content/extra/coro1-scaled-dark.png');
+	background-image:	url('/pages-content/extra/coro1-scaled-dark.jpg');
 }
 
 #a4 {
@@ -3615,8 +3615,8 @@ ul {
 }
 
 #article1 {
-	background-size:		contain;
-	background-image:		url('/pages-content/extra/domingo28-71.png');
+	background-size:		cover;
+	background-image:		url('/pages-content/extra/domingo28-71-dark.jpg');
 	grid-template-columns:	minmax(0, 309px) minmax(0, 675px);
 	max-height:				604px;
 	padding:				70px 0 97px 0;
@@ -4186,7 +4186,10 @@ ul {
 }
 
 #input14 {
+	/*space:		nowrap;*/
 	align-items: 		center;
+	background: 		transparent;
+	border-color:		var(--blanco);
 	border-radius: 		20px; 
 	border-style: 		solid;
 	border-width: 		2px;
@@ -4198,30 +4201,16 @@ ul {
 	font-weight: 		400;
 	height:				39px;
 	justify-content:	center;
-	/*space:		nowrap;*/
+	margin-left:		auto;
+	margin-top:			auto;
 	outline:			none;
-	transition:			background-color 0.3s, border-color 0.3s, var(--animacion), scale 0.3s;
-	margin-top:		auto;
-	margin-left:	auto;
-	transition:	border-color 0.3s;
+	padding: 			0 40px ;
+	transition:			background-color 0.3s, border-color 0.3s;
 	&:hover, &:focus-visible {
-		scale:			1;
 		border-color:	var(--amarillo);
 	}
 	@media (max-width:	760px) {
 		margin-right:	auto;
-	}
-	border-color:	var(--blanco);
-	color:			var(--blanco);
-	background: 	transparent;
-	padding: 		0 40px ;
-	/*margin-top:		auto;*/
-	&:hover, &:focus-visible {
-		scale:	1.1;
-	}
-	&:active {
-		scale:	0.95;
-		transition: scale 0.05s; 
 	}
 }
 
@@ -4386,11 +4375,11 @@ ul {
 }
 
 #section2 {
-	background-image:	url('/pages-content/extra/ETR4494-dark.png');
+	background-image:	url('/pages-content/extra/ETR4494-dark.jpg');
 }
 
 #section3 {
-	background-image:	url('/pages-content/extra/lunes29-41-dark.png');
+	background-image:	url('/pages-content/extra/lunes29-41-dark.jpg');
 }
 
 #section4 {}

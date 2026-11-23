@@ -2,15 +2,15 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-11-21 21:08+0200\n"
+"POT-Creation-Date: 2026-11-22 02:23+0200\n"
 "PO-Revision-Date: 2026-11-21 21:30+0200\n"
 "Last-Translator: Automatically generated\n"
 "Language-Team: none\n"
+"Language: fr\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: Translate Toolkit 3.20.0\n"
-"Language: fr\n"
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
 
 #: pages/ruta-familias.html%2Bheader.h1:4-4
@@ -53,8 +53,8 @@ msgid ""
 "Se camina entre 11 y 14 km al día. Los traslados desde un punto a otro de la "
 "ruta se realizan en autobuses de la organización."
 msgstr ""
-"On marche entre 11 et 14 km par jour. Les transferts d'un point à un autre du "
-"parcours sont assurés par les bus de l'organisation."
+"On marche entre 11 et 14 km par jour. Les transferts d'un point à un autre "
+"du parcours sont assurés par les bus de l'organisation."
 
 #: pages/ruta-familias.html%2Bmain.section.div.h4:15-6
 msgctxt "pages/ruta-familias.html+familias.div.h4:5-2"
@@ -166,8 +166,8 @@ msgid ""
 "La edad recomendada para la ruta de familias es entre 0 y 6 años, siempre "
 "acompañados por un adulto responsable."
 msgstr ""
-"L'âge recommandé pour la petite route est de 0 à 6 ans, toujours "
-"accompagnés d'un adulte responsable."
+"L'âge recommandé pour la petite route est de 0 à 6 ans, toujours accompagnés "
+"d'un adulte responsable."
 
 #: pages/ruta-familias.html%2Bmain.section.div.h4:61-6
 msgid "Información importante"
@@ -179,9 +179,9 @@ msgid ""
 "minirruta, donde podrá quedar aparcado y adonde les llevará de vuelta el "
 "autobús tras finalizar la ruta."
 msgstr ""
-"Les participants devront se rendre en voiture jusqu'au point de départ de "
-"la petite route, où ils pourront se garer et où le bus les ramènera à la fin "
-"du parcours."
+"Les participants devront se rendre en voiture jusqu'au point de départ de la "
+"petite route, où ils pourront se garer et où le bus les ramènera à la fin du "
+"parcours."
 
 #: pages/ruta-familias.html%2Bmain.section.ul.li:65-6
 msgid ""
@@ -193,8 +193,7 @@ msgstr ""
 
 #: pages/ruta-familias.html%2Bmain.section.ul.li:66-6
 msgid "En esta edición de 2026 las plazas estarán limitadas a un autobús."
-msgstr ""
-"Pour cette édition 2026, les places seront limitées à un seul bus."
+msgstr "Pour cette édition 2026, les places seront limitées à un seul bus."
 
 #: pages/ruta-familias.html%2Bmain.section.ul.li:67-6
 msgid ""

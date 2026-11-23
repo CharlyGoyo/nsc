@@ -2,15 +2,15 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-11-21 21:08+0200\n"
+"POT-Creation-Date: 2026-11-22 02:23+0200\n"
 "PO-Revision-Date: 2026-11-21 21:35+0200\n"
 "Last-Translator: Automatically generated\n"
 "Language-Team: none\n"
+"Language: fr\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: Translate Toolkit 3.20.0\n"
-"Language: fr\n"
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
 
 #: pages/capitulos.html%2Bheader.h1:3-4
@@ -133,8 +133,8 @@ msgid ""
 "Selecciona una de las regiones en el mapa para ver aquí abajo los capítulos "
 "existentes."
 msgstr ""
-"Sélectionnez une des régions sur la carte pour voir ci-dessous les "
-"chapitres existants."
+"Sélectionnez une des régions sur la carte pour voir ci-dessous les chapitres "
+"existants."
 
 #: pages/capitulos.html%2Bmain.section:45-106
 msgid "Norte"
@@ -816,4 +816,31 @@ msgid "Irlanda"
 msgstr "Irlande"
 
 #: pages/capitulos.html%2Bmain.section.details.div.div.div:345-19
-msgid "chapitrestpatick@gmail.
+msgid "chapitrestpatick@gmail.com"
+msgstr "chapitrestpatick@gmail.com"
+
+#: pages/capitulos.html%2Bmain.section.details.div.div.div:348-8
+msgid "Saints Behnam et Sarah"
+msgstr "Saints Behnam et Sarah"
+
+#: pages/capitulos.html%2Bmain.section.details.div.div.div.p:350-9
+msgid "Francia (SOS Chrétiens d’Orient)"
+msgstr "França (SOS Chrétiens d’Orient)"
+
+#: pages/capitulos.html%2Bmain.section.details.div.div.div:350-44
+msgctxt "pages/capitulos.html+img13.div.div.div:304-3"
+msgid "chapitrestsbehnametsarah@soschretiensdorient.fr"
+msgstr "chapitrestsbehnametsarah@soschretiensdorient.fr"
+
+#: pages/capitulos.html%2Bmain.section.details.div.div.div:353-8
+msgid "Salus Populi Romani"
+msgstr "Salus Populi Romani"
+
+#: pages/capitulos.html%2Bmain.section.details.div.div.div.p:355-9
+msgid "Italia"
+msgstr "Itália"
+
+#: pages/capitulos.html%2Bmain.section.details.div.div.div:355-18
+msgctxt "pages/capitulos.html+img13.div.div.div:309-3"
+msgid "chapitrestsbehnametsarah@soschretiensdorient.fr"
+msgstr "chapitrestsbehnametsarah@soschretiensdorient.fr"

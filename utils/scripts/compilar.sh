@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/bash
 
 b=false
 B=false
@@ -85,9 +85,10 @@ fi
 
 # compila los artículos:
 $b || saait -o output/articulos pages/articulos/*.cfg 
+# compila los distintos idiomas:
+shopt -s extglob
+$b || saait -c pages/pt/config.cfg -o output/pt pages/pt/!(config).cfg
+$b || saait -c pages/en/config.cfg -o output/en pages/en/!(config).cfg
+$b || saait -c pages/fr/config.cfg -o output/fr pages/fr/!(config).cfg
 # compila el resto:
 $b || saait pages/*.cfg
-# compila los distintos idiomas:
-$b || saait -c pages/pt/config.cfg -o output/pt pages/pt/*.cfg
-$b || saait -c pages/en/config.cfg -o output/en pages/en/*.cfg
-$b || saait -c pages/fr/config.cfg -o output/fr pages/fr/*.cfg

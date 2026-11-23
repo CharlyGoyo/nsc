@@ -21,6 +21,9 @@ oscurecer -a 0.375 -o output/pages-content/extra output/pages-content/uploads/20
 oscurecer -a 0.375 -o output/pages-content/extra output/pages-content/uploads/2024/08/domingo28-86.jpg
 oscurecer -a 0.375 -o output/pages-content/extra output/pages-content/uploads/2024/08/domingo28-34.jpg
 oscurecer -a 0.375 -o output/pages-content/extra output/pages-content/uploads/2024/08/ETR4494.jpg
+oscurecer -a 0.375 -o output/pages-content/extra output/pages-content/uploads/2024/08/lunes29-41.jpg
+oscurecer -a 0.375 -o output/pages-content/extra output/pages-content/uploads/2025/03/DSCF2620-copia-scaled.jpg
+oscurecer -a 0.375 -o output/pages-content/extra output/pages-content/uploads/2025/03/coro1-scaled.jpg
 
 oscurecer -a 0.5 -o output/pages-content/extra output/pages-content/uploads/2021/08/DSC_0619-scaled.jpg
 oscurecer -a 0.5 -o output/pages-content/extra output/pages-content/uploads/2025/08/Domingo-27-645-scaled.jpg
@@ -31,6 +34,9 @@ oscurecer -a 0.635 -o output/pages-content/extra output/pages-content/uploads/20
 oscurecer -a 0.635 -o output/pages-content/extra output/pages-content/uploads/2025/03/marcha2.png
 
 oscurecer -a 0.8 -o output/pages-content/extra output/pages-content/uploads/2024/08/lunes29-49.jpg
+
+oscurecer -r 0 -g 16 -b 53 -a 0.6 -o output/pages-content/extra output/pages-content/uploads/2024/08/lunes29-7.jpg
+oscurecer -r 255 -g 255 -b 255 -a 0.8 -o output/pages-content/extra output/pages-content/uploads/2024/08/domingo28-71.jpg
 
 # No estoy seguro de si este valor de -a es el correcto
 oscurecer -a 0.375 -o output/pages-content/extra output/pages-content/uploads/2024/07/sabado27-28.jpg

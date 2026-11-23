@@ -2,15 +2,15 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-11-21 21:08+0200\n"
+"POT-Creation-Date: 2026-11-22 02:23+0200\n"
 "PO-Revision-Date: 2026-11-21 21:35+0200\n"
 "Last-Translator: Automatically generated\n"
 "Language-Team: none\n"
+"Language: fr\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: Translate Toolkit 3.20.0\n"
-"Language: fr\n"
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
 
 #: pages/informacion-practica.html%2Bheader.h1:4-4
@@ -56,10 +56,9 @@ msgid ""
 "peregrinación en Covadonga. Aquellos que quieran hacer uso de este servicio "
 "deberán indicarlo en el momento de la inscripción."
 msgstr ""
-"L'Organisation mettra à la disposition des pèlerins des <b "
-"class=\"b1\">bus</b> pour retourner à Oviedo à la fin du pèlerinage à "
-"Covadonga. Ceux qui souhaitent utiliser ce service devront l'indiquer au "
-"moment de l'inscription."
+"L'Organisation mettra à la disposition des pèlerins des <b class=\"b1\">bus</"
+"b> pour retourner à Oviedo à la fin du pèlerinage à Covadonga. Ceux qui "
+"souhaitent utiliser ce service devront l'indiquer au moment de l'inscription."
 
 #: pages/informacion-practica.html%2Bmain.section.div:23-268
 msgid "Dónde aparcar en Oviedo"
@@ -88,8 +87,8 @@ msgid ""
 "maps.app.goo.gl/i2tXrG1u1czwTXdJ7\">Colegio Fundación Masaveu</a>"
 msgstr ""
 "<b class=\"b2\">9 h 30</b> - Rassemblement des pèlerins du <b "
-"class=\"b1\">parcours familial</b> au <a class=\"a5\" href=\"https://maps."
-"app.goo.gl/i2tXrG1u1czwTXdJ7\">Colegio Fundación Masaveu</a>"
+"class=\"b1\">parcours familial</b> au <a class=\"a5\" href=\"https://"
+"maps.app.goo.gl/i2tXrG1u1czwTXdJ7\">Colegio Fundación Masaveu</a>"
 
 #: pages/informacion-practica.html%2Bmain.section.div.ul.li:38-7
 msgid ""
@@ -266,8 +265,7 @@ msgstr "Recommandations pour la préparation"
 
 #: pages/informacion-practica.html%2Bmain.section.ul.li:107-6
 msgid "Comenzar siempre a baja intensidad e ir incrementando progresivamente."
-msgstr ""
-"Commencer toujours à faible intensité et augmenter progressivement."
+msgstr "Commencer toujours à faible intensité et augmenter progressivement."
 
 #: pages/informacion-practica.html%2Bmain.section.ul.li:108-6
 msgid ""
