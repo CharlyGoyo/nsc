@@ -59,7 +59,7 @@ shift $((OPTIND - 1))
 
 for arg in "$@"
 do
-	$masdeuno && printf '\t%s:\n' $arg
+	$masdeuno && printf '+ %s:\n' $arg
 	if $l; then
 		xmllint --html --xpath "//${arg}/@${i}" $f 2>/dev/null | sed -En 's/[^"]*"([^"]*)"[^"]*/\1/p' | sort -Vu
 	elif $c; then
