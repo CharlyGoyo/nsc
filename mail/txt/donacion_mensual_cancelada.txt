@@ -1,0 +1,56 @@
+[Ver en navegador]({{ mirror }})
+
+
+
+DONACIÓN MENSUAL CANCELADA
+
+==========================
+
+
+
+
+
+Estimado/a {{ contact.NOMBRE }}:
+
+
+
+
+
+Su suscripción mensual mediante pago con tarjeta ha sido cancelada con éxito. Le agradecemos su ayuda prestada hasta hoy y esperamos que pueda seguir colaborando en un futuro.
+
+
+
+
+
+Reciba un cordial saludo en Cristo. 
+
+
+
+ 
+
+
+
+*Ad Iesum per Mariam.*
+
+
+
+Equipo de NSC-E
+
+
+
+ 
+
+
+
+Nuestra Señora de la Cristiandad - España  | C/ Monasterio de Irache 66, 1 Izq  |  31011 Pamplona
+
+Teléfono 744 401 760  |  inscripcion[@nscristiandad.es  | nscristiandad.es](http://) 
+
+Usted ha recibido este email porque ha cancelado su donación mensual a Nuestra Señora de la Cristiandad - España
+
+
+
+
+
+[Política de privacidad ](https://nscristiandad.es/politica-de-privacidad/)| [Cancelar suscripción]({{ unsubscribe }})
+

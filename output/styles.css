@@ -233,12 +233,15 @@ a {
 	transition:			background-color 0.3s, color 0.3s, var(--animacion), scale 0.3s;
 }
 
-body {
+html, body {
 	/*en teoría las fuentes se ven mejor así, ni idea la verdad*/
 	-moz-osx-font-smoothing: 	grayscale;
 	-webkit-font-smoothing: 	antialiased;
 	margin: 					0;
-	overflow-x: 				hidden; 
+	overflow-x: 				clip; 
+	width:						100%;
+	max-width:					100%;
+	min-height: 				100dvh; 
 }
 
 /*
@@ -3473,7 +3476,7 @@ ul {
 		opacity:	0;
 		position:	absolute;
 		top:		25px;
-		transition:	opacity 0.3s 0.5s, visibility 0.3s 0.5s;
+		transition:	opacity 0 0, visibility 0 0; /*chapuzaaaaaaaaa -- previously 0.3s 0.5s*/
 		visibility:	hidden; /*activado por li1*/
 		width: 		max-content;
 		& > li:first-child	{
@@ -3507,7 +3510,7 @@ ul {
 		position:			absolute;
 		top:				0;
 		transform:			translateY(100%);
-		transition:			0.3s 0.5s;
+		transition:			0 0; /*chapuzaaaaaaaaa -- previously 0.3s 0.5s*/
 		visibility:			hidden; /*activado por li2*/
 		width: 				max-content;
 	}

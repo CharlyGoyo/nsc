@@ -261,7 +261,9 @@ async function onRequestPost6({ request, env }) {
       body: params
     });
     const session = await res.json();
-    console.log(session);
+    if (!res.ok || !session.url) {
+      throw new Error();
+    }
     await env.DB.prepare("INSERT INTO inscritos_musicasacra (nombre, apellidos, correo, telefono, edad, sexo, nivel, voz, coro, intolerancia) VALUES (?1, ?2, ?3, ?4, ?5, ?6, ?7, ?8, ?9, ?10)").bind(nombre, apellidos, correo, telefono, edad, sexo, nivel, voz, coro, intolerancia).run();
     return Response.redirect(session.url, 303);
   } catch (err) {
@@ -305,35 +307,121 @@ async function onRequestPost7({ request, env }) {
   }
   try {
     const unitAmount = Math.round(donacion * 100);
+    const db_res = await env.DB.prepare("INSERT INTO inscritos_retiros (nombre, apellidos, correo, edad, intolerancia, donacion, habitacion) VALUES (?1, ?2, ?3, ?4, ?5, ?6, ?7)").bind(nombre, apellidos, correo, edad, intolerancia, donacion, habitacion).run();
+    const inscritoId = db_res.meta.last_row_id;
+    const expiresAt = Math.floor(Date.now() / 1e3) + 3600;
     const params = new URLSearchParams({
       mode: "payment",
       success_url: `${url}/retiros?success=true`,
       cancel_url: `${url}/retiros?success=false`,
       locale: "auto",
+      expiresAt: String(expiresAt),
       "adaptive_pricing[enabled]": true,
+      "metadata[inscrito_id]": String(inscritoId),
+      "metadata[tipo]": "retiros",
       "line_items[0][quantity]": 1,
       "line_items[0][price_data][currency]": "eur",
       "line_items[0][price_data][unit_amount]": String(unitAmount),
       "line_items[0][price_data][product_data][name]": "Donaci\xF3n"
     });
-    const res = await fetch("https://api.stripe.com/v1/checkout/sessions", {
+    const stripe_res = await fetch("https://api.stripe.com/v1/checkout/sessions", {
       method: "POST",
       headers: {
         "Authorization": `Bearer ${env.STRIPE_API_KEY}`
       },
       body: params
     });
-    const session = await res.json();
-    await env.DB.prepare("INSERT INTO inscritos_retiros (nombre, apellidos, correo, edad, intolerancia, donacion, habitacion) VALUES (?1, ?2, ?3, ?4, ?5, ?6, ?7)").bind(nombre, apellidos, correo, edad, intolerancia, donacion, habitacion).run();
-    return Response.redirect(session.url, 303);
+    const session = await stripe_res.json();
+    console.log(session);
+    return Response.json({ url: session.url });
   } catch (err) {
     const msg = String(err?.message || "");
-    return new Response(JSON.stringify({ error: "Se ha producido un error." }), { status: 500 });
+    return new Response(JSON.stringify({ error: msg }), { status: 500 });
   }
 }
 __name(onRequestPost7, "onRequestPost");
 
-// ../.wrangler/tmp/pages-SKrPlF/functionsRoutes-0.42002962635861396.mjs
+// stripe_webhook.js
+var encoder = new TextEncoder();
+async function onRequestPost8({ request, env }) {
+  const rawBody = await request.text();
+  const sigHeader = request.headers.get("stripe-signature");
+  const parts = Object.fromEntries(sigHeader.split(",").map((kv) => kv.split("=")));
+  const key = await crypto.subtle.importKey(
+    "raw",
+    encoder.encode(env.STRIPE_WEBHOOK_SECRET),
+    { name: "HMAC", hash: "SHA-256" },
+    false,
+    ["sign"]
+  );
+  const mac = await crypto.subtle.sign("HMAC", key, encoder.encode(`${parts.t}.${rawBody}`));
+  const expected = [...new Uint8Array(mac)].map((b) => b.toString(16).padStart(2, "0")).join("");
+  if (expected !== parts.v1) {
+    return new Response("Firma inv\xE1lida", { status: 400 });
+  }
+  const evento = JSON.parse(rawBody);
+  const session = evento.data?.object;
+  if (!session?.metadata) {
+    return new Response(JSON.stringify({ received: true }), { status: 200 });
+  }
+  console.log(session);
+  const inscritoId = Number(session.metadata.inscrito_id);
+  const tipo = session.metadata.tipo;
+  if (evento.type === "checkout.session.completed" && session.payment_status === "paid") {
+    console.log("ha pagao yay");
+    switch (tipo) {
+      case "retiros":
+        console.log("bro est\xE1 inscrito del todo");
+        await env.DB.prepare("UPDATE inscritos_retiros SET inscrito = 1 WHERE id = ?1").bind(inscritoId).run();
+        break;
+      case "musicasacra":
+        console.log("bro est\xE1 inscrito del todo");
+        await env.DB.prepare("UPDATE inscritos_retiros SET inscrito = 1 WHERE id = ?1").bind(inscritoId).run();
+        break;
+    }
+  }
+  if (evento.type === "checkout.session.async_payment_succeeded") {
+    console.log("ha pagao asincrono yay");
+    switch (tipo) {
+      case "retiros":
+        console.log("bro est\xE1 inscrito del todo");
+        await env.DB.prepare("UPDATE inscritos_retiros SET inscrito = 1 WHERE id = ?1").bind(inscritoId).run();
+        break;
+      case "musicasacra":
+        console.log("bro est\xE1 inscrito del todo");
+        await env.DB.prepare("UPDATE inscritos_retiros SET inscrito = 1 WHERE id = ?1").bind(inscritoId).run();
+        break;
+    }
+  }
+  if (evento.type === "checkout.session.expired") {
+    switch (tipo) {
+      case "retiros":
+        console.log("bro se va fuera de la db");
+        await env.DB.prepare("DELETE FROM inscritos_retiros WHERE id = ?1 AND inscrito = 0").bind(inscritoId).run();
+        break;
+      case "musicasacra":
+        console.log("bro se va fuera de la db");
+        await env.DB.prepare("DELETE FROM inscritos_retiros WHERE id = ?1 AND inscrito = 0").bind(inscritoId).run();
+        break;
+    }
+  }
+  if (evento.type === "checkout.session.async_payment_failed") {
+    switch (tipo) {
+      case "retiros":
+        console.log("bro se va fuera de la db");
+        await env.DB.prepare("DELETE FROM inscritos_retiros WHERE id = ?1").bind(inscritoId).run();
+        break;
+      case "musicasacra":
+        console.log("bro se va fuera de la db");
+        await env.DB.prepare("DELETE FROM inscritos_retiros WHERE id = ?1").bind(inscritoId).run();
+        break;
+    }
+  }
+  return new Response(JSON.stringify({ received: true }), { status: 200 });
+}
+__name(onRequestPost8, "onRequestPost");
+
+// ../.wrangler/tmp/pages-yXsXXN/functionsRoutes-0.5898817532223511.mjs
 var routes = [
   {
     routePath: "/boletin_sub",
@@ -383,6 +471,13 @@ var routes = [
     method: "POST",
     middlewares: [],
     modules: [onRequestPost7]
+  },
+  {
+    routePath: "/stripe_webhook",
+    mountPath: "/",
+    method: "POST",
+    middlewares: [],
+    modules: [onRequestPost8]
   }
 ];
 

@@ -1,0 +1,36 @@
+Ver en navegador ( {{ mirror }} )
+
+­
+
+********************
+Encuentro de Jóvenes
+********************
+
+Estimado/a {{ contact.NOMBRE | default : "peregrino" }}:
+
+Hemos recibido tu solicitud para inscribirte en el Encuentro de Jóvenes de Nuestra Señora de la Cristiandad - España que tendrá lugar del 6 al 8 de noviembre.
+Lamentándolo mucho, no va a ser posible aprobar la solicitud, por lo que no podrás acompañarnos en esta ocasión.
+
+En Cristo,
+
+Equipo de Convivencias NSC-E
+
+( https://www.facebook.com/nscristiandades/ ) ­
+
+( https://www.instagram.com/nscristiandades/ ) ­
+
+( https://t.me/nscristiandades ) ­
+
+( https://twitter.com/nscristiandades ) ­
+
+( https://www.youtube.com/c/NuestraSe%C3%B1oradelaCristiandadEspa%C3%B1a ) ­
+
+( https://nscristiandad.es )
+
+Nuestra Señora de la Cristiandad - España  | C/ Monasterio de Irache 66, 1 Izq  |  31011 Pamplona
+Teléfono 744 401 760  |  inscripcion @nscristiandad.es  | nscristiandad.es ( http:// )
+Usted ha recibido este email porque ha solicitado apuntarse a un evento
+de Nuestra Señora de la Cristiandad - España
+
+Política de privacidad ( https://nscristiandad.es/politica-de-privacidad/ ) | Cancelar suscripción ( {{ unsubscribe }} )
+

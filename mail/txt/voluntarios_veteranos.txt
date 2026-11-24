@@ -1,0 +1,90 @@
+[Ver en navegador]({{ mirror }})
+
+
+
+{% if ( "hombre" in contact.SEXO ) %}Estimado{% else %}Estimada{% endif %} {{ contact.NOMBRE }} {{ contact.APELLIDOS }}:
+
+------------------------------------------------------------------------------------------------------------------------
+
+
+
+En primer lugar, le deseamos un santo Triduo Sacro y una muy feliz Pascua Florida. 
+
+-----------------------------------------------------------------------------------
+
+
+
+Estamos cada vez más cerca de la VI Peregrinación Nuestra Señora de la Cristiandad a Covadonga. Por ello, este Domingo de Pascua se abrirá el plazo de inscripción de peregrinos voluntarios. 
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+
+Contentos y agradecidos de haber podido contar con su ayuda en la pasada edición, **le invitamos a inscribirse de nuevo** como peregrino voluntario. No es necesario que realice de nuevo el proceso de solicitud, sino que puede realizar su inscripción desde ya y **directamente a través del siguiente enlace**:
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+
+ 
+
+
+
+
+
+[ Inscribirme como peregrino voluntario](https://nscristiandad.es/voluntariado/inscripcion/?nombre={{ contact.NOMBRE }}&apellidos={{ contact.APELLIDOS }})
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+
+
+
+Si todavía no sabe si podrá participar, guarde este correo electrónico para inscribirse directamente a través del enlace proporcionado dentro del plazo de inscripción.
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+
+Reciba un cordial saludo en Cristo.
+
+-----------------------------------
+
+
+
+ 
+
+-
+
+
+
+*Ad Iesum per Mariam.*
+
+----------------------
+
+
+
+Equipo de NSC-E
+
+---------------
+
+
+
+ 
+
+
+
+
+
+Nuestra Señora de la Cristiandad - España  | C/ Monasterio de Irache 66, 1 Izq  |  31011 Pamplona
+
+Teléfono 744 401 760  |  inscripcion[@nscristiandad.es  | nscristiandad.es](http://) 
+
+Usted ha recibido este email porque ha sido voluntario en Nuestra Señora de la Cristiandad - España
+
+
+
+
+
+[Política de privacidad ](https://nscristiandad.es/politica-de-privacidad/)| [Cancelar suscripción]({{ unsubscribe }})
+

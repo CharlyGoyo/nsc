@@ -34,19 +34,30 @@ export async function onRequestPost({ request, env }) {
 
 	try {
 		const unitAmount = Math.round(donacion * 100);
+		const db_res = await env.DB
+			.prepare("INSERT INTO inscritos_retiros (nombre, apellidos, correo, edad, intolerancia, donacion, habitacion) VALUES (?1, ?2, ?3, ?4, ?5, ?6, ?7)")
+			.bind(nombre, apellidos, correo, edad, intolerancia, donacion, habitacion)
+			.run();
+
+		const inscritoId = db_res.meta.last_row_id;
+		const expiresAt = Math.floor(Date.now() / 1000) + 3600; 
+
 		const params = new URLSearchParams({
 			mode:												'payment',
 			success_url:										`${url}/retiros?success=true`,
 			cancel_url:											`${url}/retiros?success=false`,
 			locale:												'auto',
+			expiresAt:											String(expiresAt),
 			'adaptive_pricing[enabled]':						true,
+			"metadata[inscrito_id]": 							String(inscritoId),
+			"metadata[tipo]": 									"retiros",
 			"line_items[0][quantity]":							1,
 			"line_items[0][price_data][currency]":				"eur",
 			"line_items[0][price_data][unit_amount]":			String(unitAmount),
 			"line_items[0][price_data][product_data][name]":	"Donación"
 		});
 
-		const res = await fetch('https://api.stripe.com/v1/checkout/sessions', {
+		const stripe_res = await fetch('https://api.stripe.com/v1/checkout/sessions', {
 			method: 'POST',
 			headers: {
 				'Authorization': `Bearer ${env.STRIPE_API_KEY}`
@@ -54,16 +65,12 @@ export async function onRequestPost({ request, env }) {
 			body: params
 		});
 
-		const session = await res.json();
+		const session = await stripe_res.json();
+		console.log(session);
 
-		await env.DB
-			.prepare("INSERT INTO inscritos_retiros (nombre, apellidos, correo, edad, intolerancia, donacion, habitacion) VALUES (?1, ?2, ?3, ?4, ?5, ?6, ?7)")
-			.bind(nombre, apellidos, correo, edad, intolerancia, donacion, habitacion)
-			.run();
-
-		return Response.redirect(session.url, 303);
+		return Response.json({ url: session.url });
 	} catch (err) {
 		const msg = String(err?.message || "");
-		return new Response(JSON.stringify({ error: "Se ha producido un error." }), { status: 500 });
+		return new Response(JSON.stringify({ error: msg }), { status: 500 });
 	}
 }

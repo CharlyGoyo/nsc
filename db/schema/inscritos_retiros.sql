@@ -7,5 +7,6 @@ CREATE TABLE IF NOT EXISTS inscritos_retiros (
 	intolerancia TEXT,
 	donacion REAL NOT NULL CHECK (donacion >= 1),
 	habitacion TEXT,
+	inscrito BOOLEAN NOT NULL DEFAULT FALSE,
 	created_at DATETIME DEFAULT CURRENT_TIMESTAMP
 );

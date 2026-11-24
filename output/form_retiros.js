@@ -26,10 +26,14 @@ document.addEventListener('DOMContentLoaded', () => {
 
 	const successParam = new URLSearchParams(window.location.search).get('success');
 	if (successParam === 'true') {
-		form.after(msg);
+		form.appendChild(msg);
 		msg.style.color = 'green';
 		msg.style.display = 'flex';
 		msg.textContent = 'El formulario se ha subido correctamente.';
+		window.scrollto({
+			top: document.documentelement.scrollheight,
+			behavior: 'smooth' 
+		});
 		form.reset();
 	}
 
@@ -41,13 +45,14 @@ document.addEventListener('DOMContentLoaded', () => {
 			body: new URLSearchParams(new FormData(form)),
 		});
 
-		if (res.ok && res.url && !res.url.startsWith(window.location.origin)) {
-			window.location.href = res.url;
+		const data = await res.json().catch(() => ({}));
+		if (res.ok && data.url && !data.url.startsWith(window.location.origin)) {
+			window.location.href = data.url;
 			return;
 		}
+		console.log(data.url);
 
-		form.after(msg);
-		const data = await res.json().catch(() => ({}));
+		form.appendChild(msg);
 		msg.style.color = 'red';
 		msg.style.display = 'flex';
 		msg.textContent = data.error || `Error (${res.status}).`;

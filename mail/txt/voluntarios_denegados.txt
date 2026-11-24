@@ -1,0 +1,51 @@
+[Ver en navegador]({{ mirror }})
+
+
+
+Estimado/a  {{ contact.NOMBRE | default : "Peregrino" }}:
+
+=========================================================
+
+
+
+
+
+Le agradecemos su ofrecimiento para participar como voluntario en la V Peregrinación Nuestra Señora de la Cristiandad - España a Covadonga, que tendrá lugar del 26 al 28 de julio de 2025.
+
+
+
+ 
+
+
+
+Sin embargo, lamentamos comunicarle que **no podemos aceptar su solicitud**. Le animamos, no obstante, a inscribirse como peregrino si así lo desea. 
+
+
+
+*.*
+
+Ad Iesum per Mariam
+
+*Equipo de NSC-E*
+
+
+
+
+
+[ INSCRIPCIÓN DE PEREGRINOS](https://nscristiandad.es/inscripcion)
+
+
+
+
+
+Nuestra Señora de la Cristiandad - España  | C/ Monasterio de Irache 66, 1 Izq  |  31011 Pamplona
+
+Teléfono 744 401 760  |  informacion[@nscristiandad.es  | nscristiandad.es](http://) 
+
+Usted ha recibido este email porque ha solicitado ser voluntario de Nuestra Señora de la Cristiandad - España
+
+
+
+
+
+[Política de privacidad ](https://nscristiandad.es/politica-de-privacidad/)| [Cancelar suscripción]({{ unsubscribe }})

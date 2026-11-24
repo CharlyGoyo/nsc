@@ -1,0 +1,76 @@
+[Ver en navegador]({{ mirror }})
+
+
+
+¡GRACIAS!
+
+=========
+
+
+
+
+
+ 
+
+-
+
+{{ contact.NOMBRE | default: "Peregrino" }}
+
+
+
+
+
+Le agradecemos infinitamente su aportación económica. Mes a mes, su ayuda nos posibilitará afrontar los gastos que la asociación debe cubrir durante todo el año (alquiler del almacén, servicios web...), así como la gran inversión que supone la organización de la próxima peregrinación a Covadonga.
+
+
+
+
+
+Podrá cancelar su aportación mensual en cualquier momento poniéndose en contacto con nosotros a través del email [informacion@nscristiandad.es](mailto:informacion@nscristiandad.es) o admin@nscristiandad.es
+
+
+
+Atenderemos su solicitud lo antes posible.
+
+
+
+
+
+Le tendremos presente en nuestras oraciones. Reciba un cordial saludo en Cristo.
+
+
+
+ 
+
+
+
+
+
+ 
+
+
+
+*Ad Iesum per Mariam.*
+
+
+
+Equipo de NSC-E
+
+
+
+ 
+
+
+
+Nuestra Señora de la Cristiandad - España  | C/ Monasterio de Irache 66, 1 Izq  |  31011 Pamplona
+
+Teléfono 744 401 760  |  inscripcion[@nscristiandad.es  | nscristiandad.es](http://) 
+
+Usted ha recibido este email porque realiza una aportación mensual a Nuestra Señora de la Cristiandad - España
+
+
+
+
+
+[Política de privacidad ](https://nscristiandad.es/politica-de-privacidad/)| [Cancelar suscripción]({{ unsubscribe }})
+

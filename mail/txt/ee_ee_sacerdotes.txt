@@ -1,0 +1,42 @@
+Ver en navegador ( {{ mirror }} )
+
+­
+
+********************
+Encuentro de Jóvenes
+********************
+
+¡Buenas noticias!
+
+Has sido admitido en el Encuentro de Jóvenes de Nuestra Señora de la Cristiandad - España que tendrá lugar del 6 al 8 de noviembre en Villafranca de los Caballeros (Toledo).
+Para formalizar la inscripción deberás abonar el precio del encuentro en el siguiente enlace de pago:
+
+*Por favor, utiliza la misma dirección de email para realizar el pago: {{ contact.EMAIL }}*
+
+­ *Pagar e inscribirme* ( https://buy.stripe.com/6oU9AU2y2fwPbmg1pzaEE05 ) ­
+
+*No olvides que debes formalizar tu inscripción antes del 27 de octubre. Posteriormente, el precio se incrementará a 120 €.* La reserva de plazas se realizará por orden de pago.
+
+En los días previos al encuentro recibirás un email con toda la información práctica, horarios...
+
+En Cristo,
+
+Equipo de Convivencias NSC-E
+
+( https://www.facebook.com/nscristiandades/ ) ­
+
+( https://www.instagram.com/nscristiandades/ ) ­
+
+( https://t.me/nscristiandades ) ­
+
+( https://twitter.com/nscristiandades ) ­
+
+( https://www.youtube.com/c/NuestraSe%C3%B1oradelaCristiandadEspa%C3%B1a ) ­
+
+( https://nscristiandad.es )
+
+Nuestra Señora de la Cristiandad - España  | C/ Monasterio de Irache 66, 1 Izq  |  31011 Pamplona
+Teléfono 744 401 760  |  inscripcion @nscristiandad.es  | nscristiandad.es ( http:// )
+Usted ha recibido este email porque se ha apuntado a un evento de Nuestra Señora de la Cristiandad - España
+
+Política de privacidad ( https://nscristiandad.es/politica-de-privacidad/ ) | Cancelar suscripción ( {{ unsubscribe }} )

@@ -1,0 +1,7 @@
+Por favor, confirme su suscripción
+
+[Sí, suscribirme a esta lista]({{ doubleoptin }})
+
+Si ha recibido este e-mail por error, solo tiene que borrarlo. No se suscribirá a nuestra lista de distribución si no hace clic en el enlace de confirmación que aparece más arriba.
+
+brevo

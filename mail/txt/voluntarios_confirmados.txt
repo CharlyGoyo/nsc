@@ -1,0 +1,106 @@
+[Ver en navegador]({{ mirror }})
+
+
+
+{% if ( "hombre" in contact.SEXO ) %}Estimado{% else %}Estimada{% endif %} {{ contact.NOMBRE | default : "Peregrino" }}:
+
+========================================================================================================================
+
+
+
+
+
+¡Gracias! Contamos con su colaboración para la VI edición de la Peregrinación, que tendrá lugar del 25 al 27 de julio de 2026.
+
+------------------------------------------------------------------------------------------------------------------------------
+
+
+
+ 
+
+-
+
+
+
+Una vez finalizada la peregrinación, y habiendo cumplido con sus deberes como voluntario/a, podrá solicitar un reembolso del pago de inscripción escribiendo a la siguiente dirección de correo electrónico:
+
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+
+colaborar@nscristiandad.es
+
+--------------------------
+
+
+
+ 
+
+-
+
+
+
+No obstante, también puede dejarlo como **donativo**, lo cual **le agradeceríamos enormemente**, ya que son muchos los gastos que implica la organización de la Peregrinación. 
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+
+ 
+
+-
+
+
+
+En breve se pondrá en contacto con usted el Jefe de su área o el Responsable de su sección para empezar a trabajar en la próxima Peregrinación. 
+
+------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+
+ 
+
+-
+
+
+
+Reciba un cordial saludo en Cristo.
+
+-----------------------------------
+
+
+
+*Ad Iesum per Mariam*
+
+---------------------
+
+Equipo de NSC-E
+
+---------------
+
+
+
+
+
+[ QUÉ LLEVAR](https://nscristiandad.es/que-llevar)
+
+
+
+[ INFORMACIÓN PRÁCTICA](https://nscristiandad.es/informacion-practica)
+
+
+
+
+
+Nuestra Señora de la Cristiandad - España  | C/ Monasterio de Irache 66, 1 Izq  |  31011 Pamplona
+
+Teléfono 744 401 760  |  informacion[@nscristiandad.es  | nscristiandad.es](http://) 
+
+Usted ha recibido este email porque ha solicitado ser voluntario de Nuestra Señora de la Cristiandad - España
+
+
+
+
+
+[Política de privacidad ](https://nscristiandad.es/politica-de-privacidad/)| [Cancelar suscripción]({{ unsubscribe }})
+

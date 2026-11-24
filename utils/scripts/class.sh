@@ -32,7 +32,7 @@ OPCIONES:
 \t-c: devuelve el número de veces que se usa la clase argumento.
 \t-e: interpreta como argumento lo que se interpretaba como clase.
 Devuelve todos los elementos de ese tipo que no tienen clase ni id.
-\t-f: archivo en el que buscar. Por defecto busca en \$HTML_EDITABLES
+\t-f ARCHIVO: archivo(s) donde buscar. Por defecto busca en \$HTML_EDITABLES
 \t-h: muestra este mensaje.
 \t-i: interpreta como id lo que se interpretaba como clase
 \t-l: devuelve todas las clases (o ids si es usa -i) en uso del elemento argumento

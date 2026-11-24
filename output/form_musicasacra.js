@@ -31,6 +31,10 @@ document.addEventListener('DOMContentLoaded', () => {
 		msg.style.color = 'green';
 		msg.style.display = 'flex';
 		msg.textContent = 'El formulario se ha subido correctamente.';
+		window.scrollto({
+			top: document.documentelement.scrollheight,
+			behavior: 'smooth' 
+		});
 		form.reset();
 	}
 
@@ -42,13 +46,14 @@ document.addEventListener('DOMContentLoaded', () => {
 			body: new URLSearchParams(new FormData(form)),
 		});
 
-		if (res.ok && res.url && !res.url.startsWith(window.location.origin)) {
-			window.location.href = res.url;
+		const data = await res.json().catch(() => ({}));
+		if (res.ok && data.url && !data.url.startsWith(window.location.origin)) {
+			window.location.href = data.url;
 			return;
 		}
+		console.log(data.url);
 
 		form.appendChild(msg);
-		const data = await res.json().catch(() => ({}));
 		msg.style.color = 'red';
 		msg.style.display = 'flex';
 		msg.textContent = data.error || `Error (${res.status}).`;

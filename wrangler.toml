@@ -6,7 +6,7 @@ main = "functions/index.js"
 binding = "ASSETS"
 directory = "output"
 not_found_handling = "404-page"
-run_worker_first = ["/contact", "/donate", "/donate_sub", "/contact_materiales", "/boletin_sub", "/inscribir_musicasacra", "/inscribir_retiros"]
+run_worker_first = ["/contact", "/donate", "/donate_sub", "/contact_materiales", "/boletin_sub", "/inscribir_musicasacra", "/inscribir_retiros", "/stripe_webhook"]
 
 [[send_email]]
 name = "EMAIL"

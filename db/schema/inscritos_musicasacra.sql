@@ -10,5 +10,6 @@ CREATE TABLE IF NOT EXISTS inscritos_musicasacra (
 	voz TEXT NOT NULL CHECK (voz IN ('soprano', 'alto', 'tenor', 'bajo', 'nose')),
 	coro TEXT NOT NULL CHECK (coro IN ('si', 'no')),
 	intolerancia TEXT,
+	inscrito BOOLEAN NOT NULL DEFAULT FALSE,
 	created_at DATETIME DEFAULT CURRENT_TIMESTAMP
 );

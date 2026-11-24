@@ -1,0 +1,74 @@
+[Ver en navegador]({{ mirror }})
+
+
+
+Estimado/a {{ contact.NOMBRE | default: "peregrino/a" }}:
+
+---------------------------------------------------------
+
+
+
+Nos alegra comunicarle que su** solicitud de voluntariado ha sido aprobada**. Ya puede inscribirse como peregrino voluntario en el siguiente enlace: 
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+
+
+
+[ Inscribirme como peregrino voluntario](https://nscristiandad.es/voluntariado/inscripcion/?nombre={{ contact.NOMBRE }}&apellidos={{ contact.APELLIDOS }})
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+
+
+
+Su inscripción no será definitiva hasta que complete el formulario.
+
+-------------------------------------------------------------------
+
+
+
+Reciba un cordial saludo en Cristo.
+
+-----------------------------------
+
+
+
+ 
+
+-
+
+
+
+*Ad Iesum per Mariam.*
+
+----------------------
+
+
+
+Equipo de NSC-E
+
+---------------
+
+
+
+ 
+
+
+
+
+
+Nuestra Señora de la Cristiandad - España  | C/ Monasterio de Irache 66, 1 Izq  |  31011 Pamplona
+
+Teléfono 744 401 760  |  inscripcion[@nscristiandad.es  | nscristiandad.es](http://) 
+
+Usted ha recibido este email porque ha solicitado ser voluntario en Nuestra Señora de la Cristiandad - España
+
+
+
+
+
+[Política de privacidad ](https://nscristiandad.es/politica-de-privacidad/)| [Cancelar suscripción]({{ unsubscribe }})
+
