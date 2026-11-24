@@ -1,6 +1,17 @@
-compatibility_date = "2026-11-07"
+compatibility_date = "2026-10-07"
 name = "nscristiandad"
-pages_build_output_dir = "output"
+main = "functions/index.js"
+
+[assets]
+binding = "ASSETS"
+directory = "output"
+not_found_handling = "404-page"
+run_worker_first = ["/contact", "/donate", "/donate_sub", "/contact_materiales", "/boletin_sub", "/inscribir_musicasacra", "/inscribir_retiros"]
 
 [[send_email]]
 name = "EMAIL"
+
+[[d1_databases]]
+binding = "DB"
+database_name = "nsc"
+database_id = "940b33d6-433c-44b0-a90d-3eb7a1ad1e09"

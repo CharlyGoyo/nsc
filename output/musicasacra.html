@@ -333,9 +333,9 @@
 				<img srcset="/pages-content/uploads/2023/10/POSTER_musicasacra_v2-811x1024.png 811w, /pages-content/uploads/2023/10/POSTER_musicasacra_v2-238x300.png 238w, /pages-content/uploads/2023/10/POSTER_musicasacra_v2-768x970.png 768w, /pages-content/uploads/2023/10/POSTER_musicasacra_v2-1217x1536.png 1217w, /pages-content/uploads/2023/10/POSTER_musicasacra_v2-1622x2048.png 1622w, /pages-content/uploads/2023/10/POSTER_musicasacra_v2-scaled.png 2028w" sizes="(max-width: 556px) 100vw, 556px">
 			</section>
 			
-			<script src="/validform_musicasacra.js"></script>
+			<script src="/form_musicasacra.js"></script>
 			<h4 class="h45">Inscripción</h4>
-			<form id="form10" action="" method="post">
+			<form id="form10" data-form="musicasacra" action="inscribir_musicasacra" method="post">
 				<label class="label7">
 					<span>Nombre <b class="b7">*</b></span>
 					<input class="input14" autocomplete="given-name" name="nombre" required type="text"/>
@@ -452,21 +452,22 @@
 		</section>
 
 		<footer id="boletin">
-			<form class="form5">
+			<script src="/form_boletin.js"></script>
+			<form action="/boletin_sub" method="post" data-form="boletin" class="form5">
 				<h3 class="h32">Suscríbete al boletín «Laudate» de <i>Nuestra Señora de la Cristiandad - España</i> </h3>
 				<span class="span1">
 					<label for="input2" class="label1">Nombre (sin apellidos):</label>
-					<input class="input1" id="input2">
+					<input class="input1" id="input2" name="nombre" required>
 				</span>
 				<span class="span1">
 					<label for="input3" class="label1">Email:</label>
-					<input class="input1" id="input3">
+					<input class="input1" id="input3" type="email" name="email" required>
 				</span>
-				<span>
+				<label for="input4" class="label2">
 					<input type="checkbox" class="input2" id="input4" required>
-					<label for="input4" class="label2">&nbsp;&nbsp;&nbsp;Conozco y acepto la <a class="a5" href="/politica-de-privacidad">Política de Privacidad</a> de la Asociación Nuestra Señora de la Cristiandad - España.</label>
-				</span>
-				<input type="submit" id="input14" value="Suscribirme">
+					&nbsp;&nbsp;&nbsp;Conozco y acepto la <a class="a5" href="/politica-de-privacidad">Política de Privacidad</a> de la Asociación Nuestra Señora de la Cristiandad - España.
+				</label>
+				<input type="submit" id="input14" required value="Suscribirme">
 			</form>
 			<div class="div11">
 				<h4 class="h41">Síguenos</h4>

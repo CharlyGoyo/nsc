@@ -342,21 +342,22 @@
 		</section>
 
 		<footer id="boletin">
-			<form class="form5">
+			<script src="/form_boletin.js"></script>
+			<form action="/boletin_sub" method="post" data-form="boletin" class="form5">
 				<h3 class="h32">Suscríbete al boletín «Laudate» de <i>Nuestra Señora de la Cristiandad - España</i> </h3>
 				<span class="span1">
 					<label for="input2" class="label1">Nombre (sin apellidos):</label>
-					<input class="input1" id="input2">
+					<input class="input1" id="input2" name="nombre" required>
 				</span>
 				<span class="span1">
 					<label for="input3" class="label1">Email:</label>
-					<input class="input1" id="input3">
+					<input class="input1" id="input3" type="email" name="email" required>
 				</span>
-				<span>
+				<label for="input4" class="label2">
 					<input type="checkbox" class="input2" id="input4" required>
-					<label for="input4" class="label2">&nbsp;&nbsp;&nbsp;Conozco y acepto la <a class="a5" href="/politica-de-privacidad">Política de Privacidad</a> de la Asociación Nuestra Señora de la Cristiandad - España.</label>
-				</span>
-				<input type="submit" id="input14" value="Suscribirme">
+					&nbsp;&nbsp;&nbsp;Conozco y acepto la <a class="a5" href="/politica-de-privacidad">Política de Privacidad</a> de la Asociación Nuestra Señora de la Cristiandad - España.
+				</label>
+				<input type="submit" id="input14" required value="Suscribirme">
 			</form>
 			<div class="div11">
 				<h4 class="h41">Síguenos</h4>

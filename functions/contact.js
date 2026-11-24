@@ -1,13 +1,11 @@
-import { EmailAddress } from "cloudflare:email";
-
 export async function onRequestPost({ request, env }) {
 	const url = new URL(request.url).origin;
 	const formData = await request.formData();
 	
 	try {
 		const response = await env.EMAIL.send({
-			to: "carlos@imprentanacher.es",
-			from: [{name: `Formulario de contacto de la web: ${formData.get("nombre")}`, email: "carlos@imprentanacher.es"}],
+			to: "carlosnacherabeledo@proton.me",
+			from: {name: `Formulario de contacto de la web: ${formData.get("nombre")}`, email: "carlos@imprentanacher.es"},
 			subject: `CONTACTO WEB: ${formData.get("asunto")}`,
 			replyTo: formData.get("email"),
 			text: formData.get("mensaje"),

@@ -292,6 +292,7 @@
 			</label>
 		</nav>
 
+		<script src="form_contacto.js"></script>
 		<script src="scroll-animacion.js"></script>
 		<header class="header2" id="header21" data-animation="top-opacity" data-animation-group="1">
 			<h1 class="h12" data-animation="top" data-animation-group="1">Contacto</h1>
@@ -306,7 +307,7 @@
 				<svg viewBox="0 0 447.96008 375.6782" xmlns="http://www.w3.org/2000/svg" class="svg23"><path d="M 446.68365 34.2006 L 379.08368 353.0006 C 373.98367 375.5006 360.68365 381.10062 341.78366 370.5006 L 238.78368 294.6006 L 189.08366 342.4006 C 183.58366 347.9006 178.98367 352.5006 168.38367 352.5006 L 175.78368 247.6006 L 366.68365 75.1006 C 374.98367 67.7006 364.88367 63.600597 353.78363 71.000595 L 117.78366 219.60062 L 16.183668 187.8006 C -5.916331 180.9006 -6.3163304 165.7006 20.783669 155.1006 L 418.18365 2.0005975 C 436.58368 -4.8994026 452.68365 6.100597 446.68365 34.2006 Z"/></svg>
 				Escribe a Telegram: @nscristiandadesp
 			</a>
-			<form class="form4" action="/contact" method="post">
+			<form class="form4" data-form="contacto" action="/contact" method="POST">
 				<label class="label7">Nombre: *
 					<input required name="nombre" type="text" class="input7">
 				</label>
@@ -347,21 +348,22 @@
 		</section>
 
 		<footer id="boletin">
-			<form class="form5">
+			<script src="/form_boletin.js"></script>
+			<form action="/boletin_sub" method="post" data-form="boletin" class="form5">
 				<h3 class="h32">Suscríbete al boletín «Laudate» de <i>Nuestra Señora de la Cristiandad - España</i> </h3>
 				<span class="span1">
 					<label for="input2" class="label1">Nombre (sin apellidos):</label>
-					<input class="input1" id="input2">
+					<input class="input1" id="input2" name="nombre" required>
 				</span>
 				<span class="span1">
 					<label for="input3" class="label1">Email:</label>
-					<input class="input1" id="input3">
+					<input class="input1" id="input3" type="email" name="email" required>
 				</span>
-				<span>
+				<label for="input4" class="label2">
 					<input type="checkbox" class="input2" id="input4" required>
-					<label for="input4" class="label2">&nbsp;&nbsp;&nbsp;Conozco y acepto la <a class="a5" href="/politica-de-privacidad">Política de Privacidad</a> de la Asociación Nuestra Señora de la Cristiandad - España.</label>
-				</span>
-				<input type="submit" id="input14" value="Suscribirme">
+					&nbsp;&nbsp;&nbsp;Conozco y acepto la <a class="a5" href="/politica-de-privacidad">Política de Privacidad</a> de la Asociación Nuestra Señora de la Cristiandad - España.
+				</label>
+				<input type="submit" id="input14" required value="Suscribirme">
 			</form>
 			<div class="div11">
 				<h4 class="h41">Síguenos</h4>

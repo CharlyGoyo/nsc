@@ -277,6 +277,10 @@ div {
 	transition:			var(--animacion);
 }
 
+em {
+	font-style:	normal;
+}
+
 fieldset {
 	border:		none;
 	margin:		0;
@@ -307,6 +311,7 @@ form {
 	align-items:	end;
 	display:		grid;
 	justify-items:	center;
+	position:		relative;
 	@media (max-width:	1140px) {
 		& > * {
 			grid-column:	1 / -1;
@@ -1272,6 +1277,11 @@ ul {
 	font-weight:	700;
 }
 
+.b9 {
+	font-weight:	600;
+	color:			var(--azul);
+}
+
 .blockquote1 {
 	margin:			0 26px 0 53px;
 	border-left:	solid 5px var(--blanco5);
@@ -1634,12 +1644,15 @@ ul {
 
 .em1 {
 	color:		var(--rojo5);
-	font-style:	normal;
+}
+
+.em3 {
+	color:	var(--azul);
 }
 
 .form1 {
 	grid-template-columns:	repeat(7, 1fr);
-	grid-template-rows:		1fr 2fr 3fr;
+	grid-template-rows:		2fr 3fr 3fr;
 	max-width:				1120px;
 	width:					100%;
 	gap:					10px;
@@ -1944,7 +1957,7 @@ ul {
 	line-height:	calc(1.70625rem * var(--resize-factor));
 }
 
-.h41 {
+.h41 {;
 	color:			var(--blanco4);
 	font-size:		1.125rem;
 	font-weight:	500;
@@ -1978,6 +1991,7 @@ ul {
 
 .h46 {
 	text-align:	left;
+	width:		100%;
 }
 
 .h47 {
@@ -2573,6 +2587,7 @@ ul {
 	list-style-position:	outside;
 	margin-left:			48px;
 	white-space:			wrap;
+	width:					100%;
 }
 
 .output1 {
