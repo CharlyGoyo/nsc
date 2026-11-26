@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-11-22 02:17+0200\n"
+"POT-Creation-Date: 2026-11-26 05:12+0200\n"
 "PO-Revision-Date: 2026-11-21 21:08+0200\n"
 "Last-Translator: Automatically generated\n"
 "Language-Team: none\n"
@@ -13,11 +13,11 @@ msgstr ""
 "X-Generator: Translate Toolkit 3.20.0\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
-#: pages/donaciones.html%2Bheader.h1:5-4
+#: pages/donaciones.html%2Bheader.h1:4-4
 msgid "Donaciones"
 msgstr "Donativos"
 
-#: pages/donaciones.html%2Bmain.p:9-4
+#: pages/donaciones.html%2Bmain.section.p:9-5
 msgid ""
 "La Peregrinación de Nuestra Señora de la Cristiandad se financia gracias a "
 "las donaciones que de manera altruista realizan muchos fieles. Cualquier "
@@ -28,110 +28,33 @@ msgstr ""
 "donativos que muitos fiéis realizam de forma altruísta. Qualquer contributo, "
 "por mais pequeno que seja, pode ajudar-nos a levar este encontro por diante."
 
-#: pages/donaciones.html%2Bmain.section.label:11-5
-msgid "DONACIÓN PUNTUAL"
-msgstr "DONATIVO PONTUAL"
+#: pages/donaciones.html%2Bmain.section.h2:10-5
+#, fuzzy
+msgid "Donación puntual"
+msgstr "Doação de materiais"
 
-#: pages/donaciones.html%2Bmain.section.label:15-5
-msgid "DONACIÓN RECURRENTE"
-msgstr "DONATIVO RECORRENTE"
-
-#: pages/donaciones.html%2Bmain.section.form.p:23-6
-msgid ""
-"Elija la cantidad que quiere donar. Se le realizará un cargo mensual en su "
-"tarjeta. Podrá modificar y cancelar su suscripción en cualquier momento a "
-"través de <a class=\"a5\" href=\"https://billing.stripe.com/p/login/"
-"test_7sY6oG5gb76s0pv38Ie7m00\">este enlace</a>."
-msgstr ""
-"Escolha o montante que pretende doar. Será efetuado um débito mensal no seu "
-"cartão. Poderá alterar e cancelar a sua subscrição a qualquer momento "
-"através <a class=\"a5\" href=\"https://billing.stripe.com/p/login/"
-"test_7sY6oG5gb76s0pv38Ie7m00\">desta ligação</a>."
-
-#: pages/donaciones.html%2Bmain.section.form.label:24-6
-msgid "5€ al mes"
-msgstr "5€ por mês"
-
-#: pages/donaciones.html%2Bmain.section.form.label.input[value]:25-7
-msgid "price_1UIAVNCNOpaMFlfClH2H7yDW"
-msgstr "price_1UIAVNCNOpaMFlfClH2H7yDW"
-
-#: pages/donaciones.html%2Bmain.section.form.label:28-6
-msgid "10€ al mes"
-msgstr "10€ por mês"
-
-#: pages/donaciones.html%2Bmain.section.form.label.input[value]:29-7
-msgid "price_1UIAVcCNOpaMFlfCEJBXf5Nm"
-msgstr "price_1UIAVcCNOpaMFlfCEJBXf5Nm"
-
-#: pages/donaciones.html%2Bmain.section.form.label:31-6
-msgid "15€ al mes"
-msgstr "15€ por mês"
-
-#: pages/donaciones.html%2Bmain.section.form.label.input[value]:32-7
-msgid "price_1UIAVjCNOpaMFlfCQSfl4hIu"
-msgstr "price_1UIAVjCNOpaMFlfCQSfl4hIu"
-
-#: pages/donaciones.html%2Bmain.section.form.label:34-6
-msgid "20€ al mes"
-msgstr "20€ por mês"
-
-#: pages/donaciones.html%2Bmain.section.form.label.input[value]:35-7
-msgid "price_1UIAVtCNOpaMFlfC4XbWQNce"
-msgstr "price_1UIAVtCNOpaMFlfC4XbWQNce"
-
-#: pages/donaciones.html%2Bmain.section.form.label:37-6
-msgid "30€ al mes"
-msgstr "30€ por mês"
-
-#: pages/donaciones.html%2Bmain.section.form.label.input[value]:38-7
-msgid "price_1UIAW2CNOpaMFlfCVPGV87Wp"
-msgstr "price_1UIAW2CNOpaMFlfCVPGV87Wp"
-
-#: pages/donaciones.html%2Bmain.section.form.label:40-6
-msgid "50€ al mes"
-msgstr "50€ por mês"
-
-#: pages/donaciones.html%2Bmain.section.form.label.input[value]:41-7
-msgid "price_1UIAW8CNOpaMFlfCKONEzJvi"
-msgstr "price_1UIAW8CNOpaMFlfCKONEzJvi"
-
-#: pages/donaciones.html%2Bmain.section.form.label:43-6
-msgid "100€ al mes"
-msgstr "100€ por mês"
-
-#: pages/donaciones.html%2Bmain.section.form.label.input[value]:44-7
-msgid "price_1UIAWFCNOpaMFlfCxp2lOYd1"
-msgstr "price_1UIAWFCNOpaMFlfCxp2lOYd1"
-
-#: pages/donaciones.html%2Bmain.section.form.input[value]:46-6
-msgid "Donar y suscribirse"
-msgstr "Doar e subscrever"
-
-#: pages/donaciones.html%2Bmain.section.div.h3:50-6
-msgid "Bizum"
+#: pages/donaciones.html%2Bmain.section.h4:11-5
+#, fuzzy
+msgid "Bizum:"
 msgstr "Bizum"
 
-#: pages/donaciones.html%2Bmain.section.div.h3:56-6
-msgid "Transferencia"
-msgstr "Transferência"
-
-#: pages/donaciones.html%2Bmain.section.div.h3:62-6
-msgid "Cualquier otro método"
-msgstr "Qualquer outro método"
-
-#: pages/donaciones.html%2Bmain.section.ol.li:72-6
+#: pages/donaciones.html%2Bmain.section.ol.li:13-6
 msgid "Accede a Bizum con tus credenciales bancarias."
 msgstr "Acede ao Bizum com as tuas credenciais bancárias."
 
-#: pages/donaciones.html%2Bmain.section.ol.li:73-6
+#: pages/donaciones.html%2Bmain.section.ol.li:14-6
 msgid ""
 "En la sección «Donaciones» introduce el siguiente código: <b "
 "class=\"b6\">05269</b>"
 msgstr ""
 "Na secção «Donativos» introduz o seguinte código: <b class=\"b6\">05269</b>"
 
-#: pages/donaciones.html%2Bmain.section.p:76-5
+#: pages/donaciones.html%2Bmain.section.h4:16-5
+#, fuzzy
+msgid "Transferencia:"
+msgstr "Transferência"
+
+#: pages/donaciones.html%2Bmain.section.p:17-5
 msgid ""
 "<b class=\"b8\">Titular</b> : NUESTRA SEÑORA DE LA CRISTIANDAD ESPAÑA<br> <b "
 "class=\"b8\">IBAN</b> : ES2100730100530506229065<br> <b class=\"b8\">Entidad "
@@ -144,39 +67,97 @@ msgstr ""
 "BIC</b> : OPENESMM<br> <b class=\"b8\">Descrição</b> : DONATIVO e nome (se "
 "desejar)"
 
-#: pages/donaciones.html%2Bmain.section.form.label:91-6
-msgid "Nombre:"
-msgstr "Nome:"
+#: pages/donaciones.html%2Bmain.section.h4:29-5
+#, fuzzy
+msgid "Cualquier otro método de pago online:"
+msgstr "Qualquer outro método"
 
-#: pages/donaciones.html%2Bmain.section.form.label:94-6
-msgid "Email:"
-msgstr "Email:"
-
-#: pages/donaciones.html%2Bmain.section.form.label:97-6
-msgid "Cantidad:"
-msgstr "Montante:"
-
-#: pages/donaciones.html%2Bmain.section.form.label:100-6
-msgid "Tarjeta:"
-msgstr "Cartão:"
-
-#: pages/donaciones.html%2Bmain.section.form.span.label:105-8
-msgid ""
-"Conozco y acepto la <a class=\"a5\" href=\"/politica-de-"
-"privacidad\">Política de Privacidad</a> de la Asociación NSC-E.."
-msgstr ""
-"Conheço e aceito a <a class=\"a5\" href=\"/politica-de-privacidad\">Política "
-"de Privacidade</a> da Associação NSC-E."
-
-#: pages/donaciones.html%2Bmain.section.form.span.input[value]:109-8
+#: pages/donaciones.html%2Bmain.section.form.input[value]:31-6
 msgid "Donar"
 msgstr "Doar"
 
-#: pages/donaciones.html%2Bmain.section.div.h2:116-6
+#: pages/donaciones.html%2Bmain.section.h2:33-5
+#, fuzzy
+msgid "Donación recurrente"
+msgstr "Doação de materiais"
+
+#: pages/donaciones.html%2Bmain.section.form.p:35-6
+msgid ""
+"Elija la cantidad que quiere donar. Se le realizará un cargo mensual en su "
+"tarjeta. Podrá modificar y cancelar su suscripción en cualquier momento a "
+"través de <a class=\"a5\" href=\"https://billing.stripe.com/p/login/"
+"test_7sY6oG5gb76s0pv38Ie7m00\">este enlace</a>."
+msgstr ""
+"Escolha o montante que pretende doar. Será efetuado um débito mensal no seu "
+"cartão. Poderá alterar e cancelar a sua subscrição a qualquer momento "
+"através <a class=\"a5\" href=\"https://billing.stripe.com/p/login/"
+"test_7sY6oG5gb76s0pv38Ie7m00\">desta ligação</a>."
+
+#: pages/donaciones.html%2Bmain.section.form.label:36-6
+msgid "5€ al mes"
+msgstr "5€ por mês"
+
+#: pages/donaciones.html%2Bmain.section.form.label.input[value]:37-7
+msgid "price_1UIAVNCNOpaMFlfClH2H7yDW"
+msgstr "price_1UIAVNCNOpaMFlfClH2H7yDW"
+
+#: pages/donaciones.html%2Bmain.section.form.label:41-6
+msgid "10€ al mes"
+msgstr "10€ por mês"
+
+#: pages/donaciones.html%2Bmain.section.form.label.input[value]:42-7
+msgid "price_1UIAVcCNOpaMFlfCEJBXf5Nm"
+msgstr "price_1UIAVcCNOpaMFlfCEJBXf5Nm"
+
+#: pages/donaciones.html%2Bmain.section.form.label:44-6
+msgid "15€ al mes"
+msgstr "15€ por mês"
+
+#: pages/donaciones.html%2Bmain.section.form.label.input[value]:45-7
+msgid "price_1UIAVjCNOpaMFlfCQSfl4hIu"
+msgstr "price_1UIAVjCNOpaMFlfCQSfl4hIu"
+
+#: pages/donaciones.html%2Bmain.section.form.label:47-6
+msgid "20€ al mes"
+msgstr "20€ por mês"
+
+#: pages/donaciones.html%2Bmain.section.form.label.input[value]:48-7
+msgid "price_1UIAVtCNOpaMFlfC4XbWQNce"
+msgstr "price_1UIAVtCNOpaMFlfC4XbWQNce"
+
+#: pages/donaciones.html%2Bmain.section.form.label:50-6
+msgid "30€ al mes"
+msgstr "30€ por mês"
+
+#: pages/donaciones.html%2Bmain.section.form.label.input[value]:51-7
+msgid "price_1UIAW2CNOpaMFlfCVPGV87Wp"
+msgstr "price_1UIAW2CNOpaMFlfCVPGV87Wp"
+
+#: pages/donaciones.html%2Bmain.section.form.label:53-6
+msgid "50€ al mes"
+msgstr "50€ por mês"
+
+#: pages/donaciones.html%2Bmain.section.form.label.input[value]:54-7
+msgid "price_1UIAW8CNOpaMFlfCKONEzJvi"
+msgstr "price_1UIAW8CNOpaMFlfCKONEzJvi"
+
+#: pages/donaciones.html%2Bmain.section.form.label:56-6
+msgid "100€ al mes"
+msgstr "100€ por mês"
+
+#: pages/donaciones.html%2Bmain.section.form.label.input[value]:57-7
+msgid "price_1UIAWFCNOpaMFlfCxp2lOYd1"
+msgstr "price_1UIAWFCNOpaMFlfCxp2lOYd1"
+
+#: pages/donaciones.html%2Bmain.section.form.input[value]:59-6
+msgid "Donar y suscribirse"
+msgstr "Doar e subscrever"
+
+#: pages/donaciones.html%2Bmain.section.div.h2:65-6
 msgid "Donación de materiales"
 msgstr "Doação de materiais"
 
-#: pages/donaciones.html%2Bmain.section.p:118-5
+#: pages/donaciones.html%2Bmain.section.p:67-5
 msgid ""
 "Para contribuir materialmente con alimentos, material logístico o litúrgico, "
 "flores, prestando equipos de sonido, vehículos para el transporte de "
@@ -196,27 +177,27 @@ msgstr ""
 "href=\"mailto:informacion@nscristiandad.es\">informacion@nscristiandad.es</"
 "a>."
 
-#: pages/donaciones.html%2Bmain.section:118-498
+#: pages/donaciones.html%2Bmain.section:67-498
 msgid "."
 msgstr "."
 
-#: pages/donaciones.html%2Bmain.section.form.label:120-6
+#: pages/donaciones.html%2Bmain.section.form.label:69-6
 msgid "Nombre: <b class=\"b7\">*</b>"
 msgstr "Nome: <b class=\"b7\">*</b>"
 
-#: pages/donaciones.html%2Bmain.section.form.label:124-6
+#: pages/donaciones.html%2Bmain.section.form.label:73-6
 msgid "Teléfono:"
 msgstr "Telefone:"
 
-#: pages/donaciones.html%2Bmain.section.form.label:128-6
+#: pages/donaciones.html%2Bmain.section.form.label:77-6
 msgid "Email: <b class=\"b7\">*</b>"
 msgstr "Email: <b class=\"b7\">*</b>"
 
-#: pages/donaciones.html%2Bmain.section.form.label:132-6
+#: pages/donaciones.html%2Bmain.section.form.label:81-6
 msgid "¿Qué puede donar o prestar?<b class=\"b7\">*</b>"
 msgstr "O que pode doar ou emprestar?<b class=\"b7\">*</b>"
 
-#: pages/donaciones.html%2Bmain.section.form.label:136-6
+#: pages/donaciones.html%2Bmain.section.form.label:85-6
 msgid ""
 "El interesado conoce y ACEPTA la <a class=\"a5\" href=\"/politica-de-"
 "privacidad\">Política de Privacidad</a> de la Asociación Nuestra Señora de "
@@ -226,6 +207,31 @@ msgstr ""
 "privacidad\">Política de Privacidade</a> da Associação Nuestra Señora de la "
 "Cristiandad - España."
 
-#: pages/donaciones.html%2Bmain.section.form.input[value]:140-6
+#: pages/donaciones.html%2Bmain.section.form.input[value]:89-6
 msgid "Enviar"
 msgstr "Enviar"
+
+#~ msgid "DONACIÓN PUNTUAL"
+#~ msgstr "DONATIVO PONTUAL"
+
+#~ msgid "DONACIÓN RECURRENTE"
+#~ msgstr "DONATIVO RECORRENTE"
+
+#~ msgid "Nombre:"
+#~ msgstr "Nome:"
+
+#~ msgid "Email:"
+#~ msgstr "Email:"
+
+#~ msgid "Cantidad:"
+#~ msgstr "Montante:"
+
+#~ msgid "Tarjeta:"
+#~ msgstr "Cartão:"
+
+#~ msgid ""
+#~ "Conozco y acepto la <a class=\"a5\" href=\"/politica-de-"
+#~ "privacidad\">Política de Privacidad</a> de la Asociación NSC-E.."
+#~ msgstr ""
+#~ "Conheço e aceito a <a class=\"a5\" href=\"/politica-de-"
+#~ "privacidad\">Política de Privacidade</a> da Associação NSC-E."

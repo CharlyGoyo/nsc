@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-11-22 02:17+0200\n"
+"POT-Creation-Date: 2026-11-26 05:12+0200\n"
 "PO-Revision-Date: 2026-11-21 21:20+0200\n"
 "Last-Translator: Automatically generated\n"
 "Language-Team: none\n"
@@ -13,11 +13,11 @@ msgstr ""
 "X-Generator: Translate Toolkit 3.20.0\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
-#: pages/contacto.html%2Bheader.h1:3-4
+#: pages/contacto.html%2Bheader.h1:4-4
 msgid "Contacto"
 msgstr "Contact"
 
-#: pages/contacto.html%2Bsection:6-3
+#: pages/contacto.html%2Bsection:7-3
 msgid ""
 "<a class=\"a14\" href=\"mailto:informacion@nscristiandad.es\"> <svg "
 "viewbox=\"0 0 512 384\" xmlns=\"http://www.w3.org/2000/svg\" "
@@ -59,23 +59,23 @@ msgstr ""
 "155.1006 L 418.18365 2.0005975 C 436.58368 -4.8994026 452.68365 6.100597 "
 "446.68365 34.2006 Z\" /></svg> Message us on Telegram: @nscristiandadesp </a>"
 
-#: pages/contacto.html%2Bsection.form.label:16-5
+#: pages/contacto.html%2Bsection.form.label:17-5
 msgid "Nombre: *"
 msgstr "Name: *"
 
-#: pages/contacto.html%2Bsection.form.label:19-5
+#: pages/contacto.html%2Bsection.form.label:20-5
 msgid "Email: *"
 msgstr "Email: *"
 
-#: pages/contacto.html%2Bsection.form.label:22-5
+#: pages/contacto.html%2Bsection.form.label:23-5
 msgid "Asunto: *"
 msgstr "Subject: *"
 
-#: pages/contacto.html%2Bsection.form.label:25-5
+#: pages/contacto.html%2Bsection.form.label:26-5
 msgid "Mensaje: *"
 msgstr "Message: *"
 
-#: pages/contacto.html%2Bsection.form.label:28-5
+#: pages/contacto.html%2Bsection.form.label:29-5
 msgid ""
 "El interesado conoce y <b class=\"b1\">ACEPTA</b> la <a class=\"a5\" href=\"/"
 "politica-de-privacidad\">Política de Privacidad</a> de la Asociación Nuestra "
@@ -85,6 +85,6 @@ msgstr ""
 "politica-de-privacidad\">Privacy Policy</a> of the Association Nuestra "
 "Señora de la Cristiandad-España."
 
-#: pages/contacto.html%2Bsection.form.input[value]:32-5
+#: pages/contacto.html%2Bsection.form.input[value]:33-5
 msgid "Enviar"
 msgstr "Send"

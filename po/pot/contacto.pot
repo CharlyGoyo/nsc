@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-11-22 02:37+0200\n"
+"POT-Creation-Date: 2026-11-26 05:12+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -12,11 +12,11 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: Translate Toolkit 3.20.0\n"
 
-#: pages/contacto.html%2Bheader.h1:3-4
+#: pages/contacto.html%2Bheader.h1:4-4
 msgid "Contacto"
 msgstr ""
 
-#: pages/contacto.html%2Bsection:6-3
+#: pages/contacto.html%2Bsection:7-3
 msgid ""
 "<a class=\"a14\" href=\"mailto:informacion@nscristiandad.es\"> <svg "
 "viewbox=\"0 0 512 384\" xmlns=\"http://www.w3.org/2000/svg\" class=\"svg23\">"
@@ -39,29 +39,29 @@ msgid ""
 "Escribe a Telegram: @nscristiandadesp </a>"
 msgstr ""
 
-#: pages/contacto.html%2Bsection.form.label:16-5
+#: pages/contacto.html%2Bsection.form.label:17-5
 msgid "Nombre: *"
 msgstr ""
 
-#: pages/contacto.html%2Bsection.form.label:19-5
+#: pages/contacto.html%2Bsection.form.label:20-5
 msgid "Email: *"
 msgstr ""
 
-#: pages/contacto.html%2Bsection.form.label:22-5
+#: pages/contacto.html%2Bsection.form.label:23-5
 msgid "Asunto: *"
 msgstr ""
 
-#: pages/contacto.html%2Bsection.form.label:25-5
+#: pages/contacto.html%2Bsection.form.label:26-5
 msgid "Mensaje: *"
 msgstr ""
 
-#: pages/contacto.html%2Bsection.form.label:28-5
+#: pages/contacto.html%2Bsection.form.label:29-5
 msgid ""
 "El interesado conoce y <b class=\"b1\">ACEPTA</b> la <a class=\"a5\" href=\"/"
 "politica-de-privacidad\">Política de Privacidad</a> de la Asociación Nuestra "
 "Señora de la Cristiandad-España."
 msgstr ""
 
-#: pages/contacto.html%2Bsection.form.input[value]:32-5
+#: pages/contacto.html%2Bsection.form.input[value]:33-5
 msgid "Enviar"
 msgstr ""

@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-11-22 02:37+0200\n"
+"POT-Creation-Date: 2026-11-26 05:12+0200\n"
 "PO-Revision-Date: 2026-11-21 21:08+0200\n"
 "Last-Translator: Automatically generated\n"
 "Language-Team: none\n"
@@ -212,7 +212,7 @@ msgstr ""
 
 #: pages/index.html%2Bmain.article.div.h2:119-6
 #, fuzzy
-msgid "Laudate n.º61 - Octubre 2026"
+msgid "Laudate n.º62 - Noviembre 2026"
 msgstr "Laudate n.º 57 - Junho 2026"
 
 #: pages/index.html%2Bmain.article.div.p:120-6
@@ -220,72 +220,72 @@ msgid "En este número:"
 msgstr "Neste número:"
 
 #: pages/index.html%2Bmain.article.div.p:121-6
-msgid "Un siglo tras la institución de la fiesta de Cristo Rey"
+msgid ""
+"Santo Tomás de Aquino, gran seguidor e intérprete ortodoxo de la teoría de "
+"la gracia de san Agustín"
 msgstr ""
 
-#: pages/index.html%2Bmain.article.div:121-121
-msgid "D. Julen Erro, Jefe de Capítulos de NSC-E"
+#: pages/index.html%2Bmain.article.div:121-182
+msgid "D. Gabriel Orejas Iriarte, Universidad Francisco de Vitoria"
 msgstr ""
 
 #: pages/index.html%2Bmain.article.div.p:123-6
-msgid "«Es una escuela de virtud» — EXPERIENCIA NSC-E"
+msgid "Vida de san Onofre (por Pafnucio el Egipcio)"
 msgstr ""
 
-#: pages/index.html%2Bmain.article.div:123-130
-msgid "D. Agustín, Capítulo Santa Teresa"
+#: pages/index.html%2Bmain.article.div:123-120
+msgid "Anónimo."
 msgstr ""
 
-#: pages/index.html%2Bmain.article.div.p:125-6
-msgid "Vida de san Efrén (II)"
-msgstr ""
-
-#: pages/index.html%2Bmain.article.div:125-100
-msgid "Autor Anónimo"
-msgstr ""
-
-#: pages/index.html%2Bmain.section.h2:131-5
+#: pages/index.html%2Bmain.section.h2:129-5
 msgid "Recursos"
 msgstr "Recursos"
 
-#: pages/index.html%2Bmain.section.div.h3:136-6
+#: pages/index.html%2Bmain.section.div.h3:134-6
 msgid "Espiritualidad"
 msgstr "Espiritualidade"
 
-#: pages/index.html%2Bmain.section.div.p:137-6
+#: pages/index.html%2Bmain.section.div.p:135-6
 msgid "Novenas, oraciones, artículos de interés."
 msgstr "Novenas, orações, artigos de interesse."
 
-#: pages/index.html%2Bmain.section.div:137-61
+#: pages/index.html%2Bmain.section.div:135-61
 msgctxt "pages/index.html+section9.div:2-1"
 msgid "Acceder"
 msgstr "Aceder"
 
-#: pages/index.html%2Bmain.section.div.h3:142-6
+#: pages/index.html%2Bmain.section.div.h3:140-6
 msgid "La Santa Misa"
 msgstr "A Santa Missa"
 
-#: pages/index.html%2Bmain.section.div.p:143-6
+#: pages/index.html%2Bmain.section.div.p:141-6
 msgid "Aprende más sobre la Santa Misa según el <i>Usus Antiquior</i> ."
 msgstr "Aprende mais sobre a Santa Missa segundo o <i>Usus Antiquior</i>."
 
-#: pages/index.html%2Bmain.section.div:143-84
+#: pages/index.html%2Bmain.section.div:141-84
 msgid "Próximamente"
 msgstr "Brevemente"
 
-#: pages/index.html%2Bmain.section.div.h3:148-6
+#: pages/index.html%2Bmain.section.div.h3:146-6
 msgid "Formación"
 msgstr "Formação"
 
-#: pages/index.html%2Bmain.section.div.p:149-6
+#: pages/index.html%2Bmain.section.div.p:147-6
 msgid "Artículos sobre diversos temas para formarte en la fe."
 msgstr "Artigos sobre diversos temas para te formares na fé."
 
-#: pages/index.html%2Bmain.section.div:149-74
+#: pages/index.html%2Bmain.section.div:147-74
 #, fuzzy
 msgctxt ""
-"pages/index.html+section9.div:2-1pages/index.html+main.section.div:149-74"
+"pages/index.html+section9.div:2-1pages/index.html+main.section.div:147-74"
 msgid "Acceder"
 msgstr "Aceder"
+
+#, fuzzy
+#~ msgctxt ""
+#~ "pages/index.html+section9.div:2-1pages/index.html+main.section.div:149-74"
+#~ msgid "Acceder"
+#~ msgstr "Aceder"
 
 #~ msgid ""
 #~ "<a class=\"a4\">«Airaos, mas no pequéis». Los vicios capitales (IV): La "
