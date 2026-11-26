@@ -2407,9 +2407,20 @@ ul {
 }
 
 .label2 {
-	color:			var(--blanco4);
-	font-size:		calc(0.9375rem * var(--resize-factor));
-	font-weight:	500;
+	background:			transparent;
+	border-color:		var(--azul);
+	border-radius:		20px;
+	border-style:		solid;
+	border-width:		2px;
+	color:				var(--azul);
+	display:			inline-flex;
+	font-family:		'Montserrat', sans-serif;
+	font-size:			calc(0.9375rem * var(--resize-factor));
+	font-weight:		400;
+	height:				39px;
+	justify-content:	center;
+	outline:			none;
+	padding:			0 40px;
 }
 
 .label3 {
@@ -3687,6 +3698,16 @@ ul {
 	}
 }
 
+#div2 {
+	gap:		16px;
+	opacity:	1;
+	display:	flex;
+	&:has(input:checked) {
+		opacity:	0;
+		display:	none;
+	}
+}
+
 #div3 {
 	display:			flex;
 	justify-content:	flex-end;
@@ -4270,15 +4291,6 @@ ul {
 
 #label2 {}
 #label3 {}
-#label4 {
-	max-width:	1120px;
-	width:		100%;
-	padding:	0 10px;
-	text-align:	center;
-	&:has(input:checked) {
-		display:	none;
-	}
-}
 
 #label5 {
 	left:	;
