@@ -4198,9 +4198,6 @@ ul {
 	&:checked ~ #form2 {
 		height:		224px;
 	}
-	body:has(&:checked) #label4 {
-		rotate:	180deg;
-	}
 }
 
 #input14 {
@@ -4255,7 +4252,15 @@ ul {
 
 #label2 {}
 #label3 {}
-#label4 {}
+#label4 {
+	max-width:	1120px;
+	width:		100%;
+	padding:	0 10px;
+	text-align:	center;
+	&:has(input:checked) {
+		display:	none;
+	}
+}
 
 #label5 {
 	left:	;

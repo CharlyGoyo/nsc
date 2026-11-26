@@ -1,4 +1,4 @@
-#!/usr/bin/env bash
+#!/usr/bin/bash
 
 p=""
 t=""
@@ -33,9 +33,12 @@ fi
 
 jq \
 	--rawfile html "$1" \
-	--arg text "$t" \
+	--rawfile text "$t" \
 	'
-(.TemplateContent) |= (.Html = $html | if $text != "" then .Text = $text else . end)
+	.TemplateContent |= (
+		.Html = ($html | gsub("[\r\n]"; "")) |
+		.Text = $text
+	)
 	' "$p" > "$TMP_JSON"
 
 mv "$TMP_JSON" "$p"
