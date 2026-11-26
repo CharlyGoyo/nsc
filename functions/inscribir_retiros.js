@@ -33,12 +33,12 @@ export async function onRequestPost({ request, env }) {
 	}
 
 	try {
-		const unitAmount = Math.round(donacion * 100);
 		const db_res = await env.DB
 			.prepare("INSERT INTO inscritos_retiros (nombre, apellidos, correo, edad, intolerancia, donacion, habitacion) VALUES (?1, ?2, ?3, ?4, ?5, ?6, ?7)")
 			.bind(nombre, apellidos, correo, edad, intolerancia, donacion, habitacion)
 			.run();
 
+		const unitAmount = Math.round(donacion * 100);
 		const inscritoId = db_res.meta.last_row_id;
 		const expiresAt = Math.floor(Date.now() / 1000) + 3600; 
 
@@ -47,7 +47,7 @@ export async function onRequestPost({ request, env }) {
 			success_url:										`${url}/retiros?success=true`,
 			cancel_url:											`${url}/retiros?success=false`,
 			locale:												'auto',
-			expiresAt:											String(expiresAt),
+			expires_at:											String(expiresAt),
 			'adaptive_pricing[enabled]':						true,
 			"metadata[inscrito_id]": 							String(inscritoId),
 			"metadata[tipo]": 									"retiros",
@@ -66,6 +66,9 @@ export async function onRequestPost({ request, env }) {
 		});
 
 		const session = await stripe_res.json();
+		if (!stripe_res.ok || !session.url) {
+			throw new Error();
+		}
 		console.log(session);
 
 		return Response.json({ url: session.url });

@@ -1,0 +1,14 @@
+{
+	"FromEmailAddress": "carlos@imprentanacher.es",
+	"Destination": {
+		"ToAddresses": [
+			"carlosnacherabeledo@proton.me"
+		]
+	},
+	"Content": {
+		"Template": {
+			"TemplateName": "inscrito_boletin",
+			"TemplateData": "{ \"nombre\":\"Yooooo\"}"
+		}
+	}
+}

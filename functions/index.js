@@ -241,34 +241,41 @@ async function onRequestPost6({ request, env }) {
     return new Response(JSON.stringify({ error: "Selecciona opciones v\xE1lidas en el formulario." }), { status: 400 });
   }
   try {
-    const unitAmount = Math.round(85 + donacion * 100);
+    const db_res = await env.DB.prepare("INSERT INTO inscritos_musicasacra (nombre, apellidos, correo, telefono, edad, sexo, nivel, voz, coro, intolerancia) VALUES (?1, ?2, ?3, ?4, ?5, ?6, ?7, ?8, ?9, ?10)").bind(nombre, apellidos, correo, telefono, edad, sexo, nivel, voz, coro, intolerancia).run();
+    const unitAmount = Math.round(8500 + donacion * 100);
+    const inscritoId = db_res.meta.last_row_id;
+    const expiresAt = Math.floor(Date.now() / 1e3) + 3600;
     const params = new URLSearchParams({
       mode: "payment",
       success_url: `${url}/musicasacra?success=true`,
       cancel_url: `${url}/musicasacra?success=false`,
       locale: "auto",
+      expires_at: String(expiresAt),
       "adaptive_pricing[enabled]": true,
+      "metadata[inscrito_id]": String(inscritoId),
+      "metadata[tipo]": "retiros",
       "line_items[0][quantity]": 1,
       "line_items[0][price_data][currency]": "eur",
       "line_items[0][price_data][unit_amount]": String(unitAmount),
       "line_items[0][price_data][product_data][name]": "Donaci\xF3n"
     });
-    const res = await fetch("https://api.stripe.com/v1/checkout/sessions", {
+    const stripe_res = await fetch("https://api.stripe.com/v1/checkout/sessions", {
       method: "POST",
       headers: {
         "Authorization": `Bearer ${env.STRIPE_API_KEY}`
       },
       body: params
     });
-    const session = await res.json();
-    if (!res.ok || !session.url) {
+    console.log(stripe_res);
+    const session = await stripe_res.json();
+    if (!stripe_res.ok || !session.url) {
       throw new Error();
     }
-    await env.DB.prepare("INSERT INTO inscritos_musicasacra (nombre, apellidos, correo, telefono, edad, sexo, nivel, voz, coro, intolerancia) VALUES (?1, ?2, ?3, ?4, ?5, ?6, ?7, ?8, ?9, ?10)").bind(nombre, apellidos, correo, telefono, edad, sexo, nivel, voz, coro, intolerancia).run();
-    return Response.redirect(session.url, 303);
+    console.log(session);
+    return Response.json({ url: session.url });
   } catch (err) {
     const msg = String(err?.message || "");
-    return new Response(JSON.stringify({ error: "Se ha producido un error." }), { status: 500 });
+    return new Response(JSON.stringify({ error: msg }), { status: 500 });
   }
 }
 __name(onRequestPost6, "onRequestPost");
@@ -306,8 +313,8 @@ async function onRequestPost7({ request, env }) {
     return new Response(JSON.stringify({ error: "Debes confirmar el pago, el check-in y la pol\xEDtica de privacidad." }), { status: 400 });
   }
   try {
-    const unitAmount = Math.round(donacion * 100);
     const db_res = await env.DB.prepare("INSERT INTO inscritos_retiros (nombre, apellidos, correo, edad, intolerancia, donacion, habitacion) VALUES (?1, ?2, ?3, ?4, ?5, ?6, ?7)").bind(nombre, apellidos, correo, edad, intolerancia, donacion, habitacion).run();
+    const unitAmount = Math.round(donacion * 100);
     const inscritoId = db_res.meta.last_row_id;
     const expiresAt = Math.floor(Date.now() / 1e3) + 3600;
     const params = new URLSearchParams({
@@ -315,7 +322,7 @@ async function onRequestPost7({ request, env }) {
       success_url: `${url}/retiros?success=true`,
       cancel_url: `${url}/retiros?success=false`,
       locale: "auto",
-      expiresAt: String(expiresAt),
+      expires_at: String(expiresAt),
       "adaptive_pricing[enabled]": true,
       "metadata[inscrito_id]": String(inscritoId),
       "metadata[tipo]": "retiros",
@@ -332,6 +339,9 @@ async function onRequestPost7({ request, env }) {
       body: params
     });
     const session = await stripe_res.json();
+    if (!stripe_res.ok || !session.url) {
+      throw new Error();
+    }
     console.log(session);
     return Response.json({ url: session.url });
   } catch (err) {
@@ -341,20 +351,390 @@ async function onRequestPost7({ request, env }) {
 }
 __name(onRequestPost7, "onRequestPost");
 
-// stripe_webhook.js
+// ../node_modules/aws4fetch/dist/aws4fetch.esm.mjs
 var encoder = new TextEncoder();
+var HOST_SERVICES = {
+  appstream2: "appstream",
+  cloudhsmv2: "cloudhsm",
+  email: "ses",
+  marketplace: "aws-marketplace",
+  mobile: "AWSMobileHubService",
+  pinpoint: "mobiletargeting",
+  queue: "sqs",
+  "git-codecommit": "codecommit",
+  "mturk-requester-sandbox": "mturk-requester",
+  "personalize-runtime": "personalize"
+};
+var UNSIGNABLE_HEADERS = /* @__PURE__ */ new Set([
+  "authorization",
+  "content-type",
+  "content-length",
+  "user-agent",
+  "presigned-expires",
+  "expect",
+  "x-amzn-trace-id",
+  "range",
+  "connection"
+]);
+var AwsClient = class {
+  static {
+    __name(this, "AwsClient");
+  }
+  constructor({ accessKeyId, secretAccessKey, sessionToken, service, region, cache, retries, initRetryMs }) {
+    if (accessKeyId == null) throw new TypeError("accessKeyId is a required option");
+    if (secretAccessKey == null) throw new TypeError("secretAccessKey is a required option");
+    this.accessKeyId = accessKeyId;
+    this.secretAccessKey = secretAccessKey;
+    this.sessionToken = sessionToken;
+    this.service = service;
+    this.region = region;
+    this.cache = cache || /* @__PURE__ */ new Map();
+    this.retries = retries != null ? retries : 10;
+    this.initRetryMs = initRetryMs || 50;
+  }
+  async sign(input, init) {
+    if (input instanceof Request) {
+      const { method, url, headers, body } = input;
+      init = Object.assign({ method, url, headers }, init);
+      if (init.body == null && headers.has("Content-Type")) {
+        init.body = body != null && headers.has("X-Amz-Content-Sha256") ? body : await input.clone().arrayBuffer();
+      }
+      input = url;
+    }
+    const signer = new AwsV4Signer(Object.assign({ url: input.toString() }, init, this, init && init.aws));
+    const signed = Object.assign({}, init, await signer.sign());
+    delete signed.aws;
+    try {
+      return new Request(signed.url.toString(), signed);
+    } catch (e) {
+      if (e instanceof TypeError) {
+        return new Request(signed.url.toString(), Object.assign({ duplex: "half" }, signed));
+      }
+      throw e;
+    }
+  }
+  async fetch(input, init) {
+    for (let i = 0; i <= this.retries; i++) {
+      const fetched = fetch(await this.sign(input, init));
+      if (i === this.retries) {
+        return fetched;
+      }
+      const res = await fetched;
+      if (res.status < 500 && res.status !== 429) {
+        return res;
+      }
+      await new Promise((resolve) => setTimeout(resolve, Math.random() * this.initRetryMs * Math.pow(2, i)));
+    }
+    throw new Error("An unknown error occurred, ensure retries is not negative");
+  }
+};
+var AwsV4Signer = class {
+  static {
+    __name(this, "AwsV4Signer");
+  }
+  constructor({ method, url, headers, body, accessKeyId, secretAccessKey, sessionToken, service, region, cache, datetime, signQuery, appendSessionToken, allHeaders, singleEncode }) {
+    if (url == null) throw new TypeError("url is a required option");
+    if (accessKeyId == null) throw new TypeError("accessKeyId is a required option");
+    if (secretAccessKey == null) throw new TypeError("secretAccessKey is a required option");
+    this.method = method || (body ? "POST" : "GET");
+    this.url = new URL(url);
+    this.headers = new Headers(headers || {});
+    this.body = body;
+    this.accessKeyId = accessKeyId;
+    this.secretAccessKey = secretAccessKey;
+    this.sessionToken = sessionToken;
+    let guessedService, guessedRegion;
+    if (!service || !region) {
+      [guessedService, guessedRegion] = guessServiceRegion(this.url, this.headers);
+    }
+    this.service = service || guessedService || "";
+    this.region = region || guessedRegion || "us-east-1";
+    this.cache = cache || /* @__PURE__ */ new Map();
+    this.datetime = datetime || (/* @__PURE__ */ new Date()).toISOString().replace(/[:-]|\.\d{3}/g, "");
+    this.signQuery = signQuery;
+    this.appendSessionToken = appendSessionToken || this.service === "iotdevicegateway";
+    this.headers.delete("Host");
+    if (this.service === "s3" && !this.signQuery && !this.headers.has("X-Amz-Content-Sha256")) {
+      this.headers.set("X-Amz-Content-Sha256", "UNSIGNED-PAYLOAD");
+    }
+    const params = this.signQuery ? this.url.searchParams : this.headers;
+    params.set("X-Amz-Date", this.datetime);
+    if (this.sessionToken && !this.appendSessionToken) {
+      params.set("X-Amz-Security-Token", this.sessionToken);
+    }
+    this.signableHeaders = ["host", ...this.headers.keys()].filter((header) => allHeaders || !UNSIGNABLE_HEADERS.has(header)).sort();
+    this.signedHeaders = this.signableHeaders.join(";");
+    this.canonicalHeaders = this.signableHeaders.map((header) => header + ":" + (header === "host" ? this.url.host : (this.headers.get(header) || "").replace(/\s+/g, " "))).join("\n");
+    this.credentialString = [this.datetime.slice(0, 8), this.region, this.service, "aws4_request"].join("/");
+    if (this.signQuery) {
+      if (this.service === "s3" && !params.has("X-Amz-Expires")) {
+        params.set("X-Amz-Expires", "86400");
+      }
+      params.set("X-Amz-Algorithm", "AWS4-HMAC-SHA256");
+      params.set("X-Amz-Credential", this.accessKeyId + "/" + this.credentialString);
+      params.set("X-Amz-SignedHeaders", this.signedHeaders);
+    }
+    if (this.service === "s3") {
+      try {
+        this.encodedPath = decodeURIComponent(this.url.pathname.replace(/\+/g, " "));
+      } catch (e) {
+        this.encodedPath = this.url.pathname;
+      }
+    } else {
+      this.encodedPath = this.url.pathname.replace(/\/+/g, "/");
+    }
+    if (!singleEncode) {
+      this.encodedPath = encodeURIComponent(this.encodedPath).replace(/%2F/g, "/");
+    }
+    this.encodedPath = encodeRfc3986(this.encodedPath);
+    const seenKeys = /* @__PURE__ */ new Set();
+    this.encodedSearch = [...this.url.searchParams].filter(([k]) => {
+      if (!k) return false;
+      if (this.service === "s3") {
+        if (seenKeys.has(k)) return false;
+        seenKeys.add(k);
+      }
+      return true;
+    }).map((pair) => pair.map((p) => encodeRfc3986(encodeURIComponent(p)))).sort(([k1, v1], [k2, v2]) => k1 < k2 ? -1 : k1 > k2 ? 1 : v1 < v2 ? -1 : v1 > v2 ? 1 : 0).map((pair) => pair.join("=")).join("&");
+  }
+  async sign() {
+    if (this.signQuery) {
+      this.url.searchParams.set("X-Amz-Signature", await this.signature());
+      if (this.sessionToken && this.appendSessionToken) {
+        this.url.searchParams.set("X-Amz-Security-Token", this.sessionToken);
+      }
+    } else {
+      this.headers.set("Authorization", await this.authHeader());
+    }
+    return {
+      method: this.method,
+      url: this.url,
+      headers: this.headers,
+      body: this.body
+    };
+  }
+  async authHeader() {
+    return [
+      "AWS4-HMAC-SHA256 Credential=" + this.accessKeyId + "/" + this.credentialString,
+      "SignedHeaders=" + this.signedHeaders,
+      "Signature=" + await this.signature()
+    ].join(", ");
+  }
+  async signature() {
+    const date = this.datetime.slice(0, 8);
+    const cacheKey = [this.secretAccessKey, date, this.region, this.service].join();
+    let kCredentials = this.cache.get(cacheKey);
+    if (!kCredentials) {
+      const kDate = await hmac("AWS4" + this.secretAccessKey, date);
+      const kRegion = await hmac(kDate, this.region);
+      const kService = await hmac(kRegion, this.service);
+      kCredentials = await hmac(kService, "aws4_request");
+      this.cache.set(cacheKey, kCredentials);
+    }
+    return buf2hex(await hmac(kCredentials, await this.stringToSign()));
+  }
+  async stringToSign() {
+    return [
+      "AWS4-HMAC-SHA256",
+      this.datetime,
+      this.credentialString,
+      buf2hex(await hash(await this.canonicalString()))
+    ].join("\n");
+  }
+  async canonicalString() {
+    return [
+      this.method.toUpperCase(),
+      this.encodedPath,
+      this.encodedSearch,
+      this.canonicalHeaders + "\n",
+      this.signedHeaders,
+      await this.hexBodyHash()
+    ].join("\n");
+  }
+  async hexBodyHash() {
+    let hashHeader = this.headers.get("X-Amz-Content-Sha256") || (this.service === "s3" && this.signQuery ? "UNSIGNED-PAYLOAD" : null);
+    if (hashHeader == null) {
+      if (this.body && typeof this.body !== "string" && !("byteLength" in this.body)) {
+        throw new Error("body must be a string, ArrayBuffer or ArrayBufferView, unless you include the X-Amz-Content-Sha256 header");
+      }
+      hashHeader = buf2hex(await hash(this.body || ""));
+    }
+    return hashHeader;
+  }
+};
+async function hmac(key, string) {
+  const cryptoKey = await crypto.subtle.importKey(
+    "raw",
+    typeof key === "string" ? encoder.encode(key) : key,
+    { name: "HMAC", hash: { name: "SHA-256" } },
+    false,
+    ["sign"]
+  );
+  return crypto.subtle.sign("HMAC", cryptoKey, encoder.encode(string));
+}
+__name(hmac, "hmac");
+async function hash(content) {
+  return crypto.subtle.digest("SHA-256", typeof content === "string" ? encoder.encode(content) : content);
+}
+__name(hash, "hash");
+var HEX_CHARS = ["0", "1", "2", "3", "4", "5", "6", "7", "8", "9", "a", "b", "c", "d", "e", "f"];
+function buf2hex(arrayBuffer) {
+  const buffer = new Uint8Array(arrayBuffer);
+  let out = "";
+  for (let idx = 0; idx < buffer.length; idx++) {
+    const n = buffer[idx];
+    out += HEX_CHARS[n >>> 4 & 15];
+    out += HEX_CHARS[n & 15];
+  }
+  return out;
+}
+__name(buf2hex, "buf2hex");
+function encodeRfc3986(urlEncodedStr) {
+  return urlEncodedStr.replace(/[!'()*]/g, (c) => "%" + c.charCodeAt(0).toString(16).toUpperCase());
+}
+__name(encodeRfc3986, "encodeRfc3986");
+function guessServiceRegion(url, headers) {
+  const { hostname, pathname } = url;
+  if (hostname.endsWith(".on.aws")) {
+    const match3 = hostname.match(/^[^.]{1,63}\.lambda-url\.([^.]{1,63})\.on\.aws$/);
+    return match3 != null ? ["lambda", match3[1] || ""] : ["", ""];
+  }
+  if (hostname.endsWith(".r2.cloudflarestorage.com")) {
+    return ["s3", "auto"];
+  }
+  if (hostname.endsWith(".backblazeb2.com")) {
+    const match3 = hostname.match(/^(?:[^.]{1,63}\.)?s3\.([^.]{1,63})\.backblazeb2\.com$/);
+    return match3 != null ? ["s3", match3[1] || ""] : ["", ""];
+  }
+  const match2 = hostname.replace("dualstack.", "").match(/([^.]{1,63})\.(?:([^.]{0,63})\.)?amazonaws\.com(?:\.cn)?$/);
+  let service = match2 && match2[1] || "";
+  let region = match2 && match2[2];
+  if (region === "us-gov") {
+    region = "us-gov-west-1";
+  } else if (region === "s3" || region === "s3-accelerate") {
+    region = "us-east-1";
+    service = "s3";
+  } else if (service === "iot") {
+    if (hostname.startsWith("iot.")) {
+      service = "execute-api";
+    } else if (hostname.startsWith("data.jobs.iot.")) {
+      service = "iot-jobs-data";
+    } else {
+      service = pathname === "/mqtt" ? "iotdevicegateway" : "iotdata";
+    }
+  } else if (service === "autoscaling") {
+    const targetPrefix = (headers.get("X-Amz-Target") || "").split(".")[0];
+    if (targetPrefix === "AnyScaleFrontendService") {
+      service = "application-autoscaling";
+    } else if (targetPrefix === "AnyScaleScalingPlannerFrontendService") {
+      service = "autoscaling-plans";
+    }
+  } else if (region == null && service.startsWith("s3-")) {
+    region = service.slice(3).replace(/^fips-|^external-1/, "");
+    service = "s3";
+  } else if (service.endsWith("-fips")) {
+    service = service.slice(0, -5);
+  } else if (region && /-\d$/.test(service) && !/-\d$/.test(region)) {
+    [service, region] = [region, service];
+  }
+  return [HOST_SERVICES[service] || service, region || ""];
+}
+__name(guessServiceRegion, "guessServiceRegion");
+
+// stripe_webhook.js
+var encoder2 = new TextEncoder();
+var enviarSes = /* @__PURE__ */ __name(async (aws, to, subject, text) => {
+  await aws.fetch(`https://email.${aws.region}.amazonaws.com/v2/email/outbound-emails`, {
+    method: "POST",
+    headers: { "Content-Type": "application/json" },
+    body: JSON.stringify({
+      FromEmailAddress: "carlos@imprentanacher.es",
+      Destination: { ToAddresses: [to] },
+      Content: { Simple: { Subject: { Data: subject }, Body: { Text: { Data: text } } } }
+    })
+  });
+}, "enviarSes");
+var correoAutomatico = /* @__PURE__ */ __name(async (aws, tipo, d) => {
+  switch (tipo) {
+    case "retiros":
+      await enviarSes(
+        aws,
+        d.correo,
+        "Datos de inscripci\xF3n - Retiro NSC-Espa\xF1a",
+        `${d.nombre}
+${d.correo}
+Edad: ${d.edad}
+Sexo: ${d.sexo}
+Tel\xE9fono: ${d.tel}
+Ciudad: ${d.ciudad}
+Intolerancias alimentarias: ${d.intolerancia}
+${d.habitacion}`
+      );
+      await enviarSes(
+        aws,
+        d.correo,
+        "Inscripci\xF3n recibida - Retiro de Adviento NSC-Espa\xF1a",
+        `Estimado/a ${d.nombre}:
+
+Hemos recibido su inscripci\xF3n para el Retiro de Adviento de Nuestra Se\xF1ora de la Cristiandad - Espa\xF1a que tendr\xE1 lugar del 11 al 13 de diciembre. 
+Si todav\xEDa no ha realizado el pago del retiro a la casa de ejercicios, debe hacerlo lo antes posible mediante transferencia, as\xED como el check-in online.
+
+IBAN: ES69 2100 1650 6602 0038 6605
+Titular:  PROVINCIA ESPA\xD1A CONGREGACION RELIGIOSAS SAGRADO CORAZON DE JESUS
+Concepto: Retiro NSC-Espa\xF1a
+Cantidad: 120 \u20AC
+
+Check-in: https://checkin.datahotel.net/casasantamariadehuerta.es/RegistroReserva/5f5c585b-851e-474f-97d8-ca18eed7aa70
+
+Unos d\xEDas previos al Retiro recibir\xE1 un correo con informaci\xF3n pr\xE1ctica.
+
+Reciba un cordial saludo en Cristo,
+Asoc. Nuestra Se\xF1ora de la Cristiandad - Espa\xF1a`
+      );
+      break;
+    case "musicasacra":
+      await enviarSes(
+        aws,
+        d.correo,
+        "Datos de inscripci\xF3n - M\xFAsica Sacra NSC-Espa\xF1a",
+        `${d.nombre}
+${d.correo}
+Edad: ${d.edad}
+Sexo: ${d.sexo}
+Tel\xE9fono: ${d.tel}
+Intolerancias alimentarias: ${d.intolerancia}
+Voz: ${d.voz}
+Experiencia musical: ${d.nivel}
+Ha estado en el coro de NSC: ${d.coro}`
+      );
+      await enviarSes(
+        aws,
+        d.correo,
+        "Inscripci\xF3n recibida - M\xFAsica Sacra NSC-Espa\xF1a",
+        `Estimado/a ${d.nombre}:
+
+Hemos recibido su inscripci\xF3n para el encuentro de M\xFAsica Sacra de Nuestra Se\xF1ora de la Cristiandad - Espa\xF1a que tendr\xE1 lugar del 29 al 31 de enero en Aibar (Navarra).
+Unos d\xEDa antes del encuentro recibir\xE1 informaci\xF3n sobre los horarios y otros detalles pr\xE1cticos.
+
+Reciba un cordial saludo en Cristo,
+Asoc. Nuestra Se\xF1ora de la Cristiandad - Espa\xF1a`
+      );
+      break;
+  }
+}, "correoAutomatico");
 async function onRequestPost8({ request, env }) {
+  console.log("YOOOOOOOOOOOO");
   const rawBody = await request.text();
   const sigHeader = request.headers.get("stripe-signature");
   const parts = Object.fromEntries(sigHeader.split(",").map((kv) => kv.split("=")));
   const key = await crypto.subtle.importKey(
     "raw",
-    encoder.encode(env.STRIPE_WEBHOOK_SECRET),
+    encoder2.encode(env.STRIPE_WEBHOOK_SECRET),
     { name: "HMAC", hash: "SHA-256" },
     false,
     ["sign"]
   );
-  const mac = await crypto.subtle.sign("HMAC", key, encoder.encode(`${parts.t}.${rawBody}`));
+  const mac = await crypto.subtle.sign("HMAC", key, encoder2.encode(`${parts.t}.${rawBody}`));
   const expected = [...new Uint8Array(mac)].map((b) => b.toString(16).padStart(2, "0")).join("");
   if (expected !== parts.v1) {
     return new Response("Firma inv\xE1lida", { status: 400 });
@@ -364,56 +744,52 @@ async function onRequestPost8({ request, env }) {
   if (!session?.metadata) {
     return new Response(JSON.stringify({ received: true }), { status: 200 });
   }
-  console.log(session);
   const inscritoId = Number(session.metadata.inscrito_id);
   const tipo = session.metadata.tipo;
-  if (evento.type === "checkout.session.completed" && session.payment_status === "paid") {
-    console.log("ha pagao yay");
+  const confirmado = evento.type === "checkout.session.completed" && session.payment_status === "paid" || evento.type === "checkout.session.async_payment_succeeded";
+  if (confirmado) {
+    const aws = new AwsClient({
+      accessKeyId: env.AWS_ACCESS_KEY_ID,
+      secretAccessKey: env.AWS_SECRET_ACCESS_KEY,
+		region:	env.AWS_REGION,
+      service: "ses"
+    });
     switch (tipo) {
       case "retiros":
-        console.log("bro est\xE1 inscrito del todo");
         await env.DB.prepare("UPDATE inscritos_retiros SET inscrito = 1 WHERE id = ?1").bind(inscritoId).run();
+        await correoAutomatico(
+          aws,
+          tipo,
+          await env.DB.prepare("SELECT * FROM inscritos_retiros WHERE id = ?1").bind(inscritoId).first()
+        );
         break;
       case "musicasacra":
-        console.log("bro est\xE1 inscrito del todo");
-        await env.DB.prepare("UPDATE inscritos_retiros SET inscrito = 1 WHERE id = ?1").bind(inscritoId).run();
-        break;
-    }
-  }
-  if (evento.type === "checkout.session.async_payment_succeeded") {
-    console.log("ha pagao asincrono yay");
-    switch (tipo) {
-      case "retiros":
-        console.log("bro est\xE1 inscrito del todo");
-        await env.DB.prepare("UPDATE inscritos_retiros SET inscrito = 1 WHERE id = ?1").bind(inscritoId).run();
-        break;
-      case "musicasacra":
-        console.log("bro est\xE1 inscrito del todo");
-        await env.DB.prepare("UPDATE inscritos_retiros SET inscrito = 1 WHERE id = ?1").bind(inscritoId).run();
+        await env.DB.prepare("UPDATE inscritos_musicasacra SET inscrito = 1 WHERE id = ?1").bind(inscritoId).run();
+        await correoAutomatico(
+          aws,
+          tipo,
+          await env.DB.prepare("SELECT * FROM inscritos_musicasacra WHERE id = ?1").bind(inscritoId).first()
+        );
         break;
     }
   }
   if (evento.type === "checkout.session.expired") {
     switch (tipo) {
       case "retiros":
-        console.log("bro se va fuera de la db");
         await env.DB.prepare("DELETE FROM inscritos_retiros WHERE id = ?1 AND inscrito = 0").bind(inscritoId).run();
         break;
       case "musicasacra":
-        console.log("bro se va fuera de la db");
-        await env.DB.prepare("DELETE FROM inscritos_retiros WHERE id = ?1 AND inscrito = 0").bind(inscritoId).run();
+        await env.DB.prepare("DELETE FROM inscritos_musicasacra WHERE id = ?1 AND inscrito = 0").bind(inscritoId).run();
         break;
     }
   }
   if (evento.type === "checkout.session.async_payment_failed") {
     switch (tipo) {
       case "retiros":
-        console.log("bro se va fuera de la db");
         await env.DB.prepare("DELETE FROM inscritos_retiros WHERE id = ?1").bind(inscritoId).run();
         break;
       case "musicasacra":
-        console.log("bro se va fuera de la db");
-        await env.DB.prepare("DELETE FROM inscritos_retiros WHERE id = ?1").bind(inscritoId).run();
+        await env.DB.prepare("DELETE FROM inscritos_musicasacra WHERE id = ?1").bind(inscritoId).run();
         break;
     }
   }
@@ -421,7 +797,7 @@ async function onRequestPost8({ request, env }) {
 }
 __name(onRequestPost8, "onRequestPost");
 
-// ../.wrangler/tmp/pages-yXsXXN/functionsRoutes-0.5898817532223511.mjs
+// ../.wrangler/tmp/pages-3sW7Tg/functionsRoutes-0.031743397530042516.mjs
 var routes = [
   {
     routePath: "/boletin_sub",
@@ -929,3 +1305,11 @@ var cloneResponse = /* @__PURE__ */ __name((response) => (
 export {
   pages_template_worker_default as default
 };
+/*! Bundled license information:
+
+aws4fetch/dist/aws4fetch.esm.mjs:
+  (**
+   * @license MIT <https://opensource.org/licenses/MIT>
+   * @copyright Michael Hart 2024
+   *)
+*/

@@ -13,7 +13,7 @@ while getopts "hp:t:" opt; do
 			
 USO: createtemplate.sh -p PLANTILLA -t TEXTO ARCHIVO.html 
 
-\t-p PLANTILLA: ruta al archivo json de la plantilla (por defecto mail/templates/ARCHIVO.json)
+\t-p PLANTILLA: ruta al archivo json de la plantilla (por defecto mail/json/ARCHIVO.json)
 \t-t TEXTO: versión en texto plano (Text, opcional)
 \t-h muestra este mensaje
 '
@@ -22,10 +22,13 @@ USO: createtemplate.sh -p PLANTILLA -t TEXTO ARCHIVO.html
 	esac
 done
 
+TMP_JSON="$(mktemp)"
+trap 'rm -f "$TMP_JSON"' EXIT
+
 shift $((OPTIND - 1))
 if [[ -z "$p" ]]; then
 	base_name="$(basename "$1")"
-	p="mail/templates/${base_name%.*}.json"
+	p="mail/json/${base_name%.*}.json"
 fi
 
 jq \

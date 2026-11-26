@@ -1,0 +1,8 @@
+{{#if nombre}}¡Gracias, {{nombre}}, por suscribirse al boletín periódico de Nuestra Señora de la Cristiandad - España!{{else}}¡Gracias por suscribirse al boletín periódico de Nuestra Señora de la Cristiandad - España!{{/if}}
+
+A partir de ahora recibirá en su correo electrónico todas las publicaciones y novedades en torno a la Peregrinación. Puede cancelar su suscripción en cualquier momento haciendo click en el enlace que aparece al final de todos los correos.
+
+Ad Iesum per Mariam
+Equipo de NSC-E
+Este email se envió a {{correo}}.
+Recibió este email porque se ha suscrito a nuestro boletín.

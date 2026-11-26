@@ -31,8 +31,8 @@ document.addEventListener('DOMContentLoaded', () => {
 		msg.style.color = 'green';
 		msg.style.display = 'flex';
 		msg.textContent = 'El formulario se ha subido correctamente.';
-		window.scrollto({
-			top: document.documentelement.scrollheight,
+		window.scrollTo({
+			top: document.documentElement.scrollheight,
 			behavior: 'smooth' 
 		});
 		form.reset();
