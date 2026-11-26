@@ -655,21 +655,9 @@ var enviarSes = /* @__PURE__ */ __name(async (aws, to, subject, text) => {
   });
 }, "enviarSes");
 var correoAutomatico = /* @__PURE__ */ __name(async (aws, tipo, d) => {
+  console.log("EYYYYYYYYYYY");
   switch (tipo) {
     case "retiros":
-      await enviarSes(
-        aws,
-        d.correo,
-        "Datos de inscripci\xF3n - Retiro NSC-Espa\xF1a",
-        `${d.nombre}
-${d.correo}
-Edad: ${d.edad}
-Sexo: ${d.sexo}
-Tel\xE9fono: ${d.tel}
-Ciudad: ${d.ciudad}
-Intolerancias alimentarias: ${d.intolerancia}
-${d.habitacion}`
-      );
       await enviarSes(
         aws,
         d.correo,
@@ -696,20 +684,6 @@ Asoc. Nuestra Se\xF1ora de la Cristiandad - Espa\xF1a`
       await enviarSes(
         aws,
         d.correo,
-        "Datos de inscripci\xF3n - M\xFAsica Sacra NSC-Espa\xF1a",
-        `${d.nombre}
-${d.correo}
-Edad: ${d.edad}
-Sexo: ${d.sexo}
-Tel\xE9fono: ${d.tel}
-Intolerancias alimentarias: ${d.intolerancia}
-Voz: ${d.voz}
-Experiencia musical: ${d.nivel}
-Ha estado en el coro de NSC: ${d.coro}`
-      );
-      await enviarSes(
-        aws,
-        d.correo,
         "Inscripci\xF3n recibida - M\xFAsica Sacra NSC-Espa\xF1a",
         `Estimado/a ${d.nombre}:
 
@@ -723,7 +697,6 @@ Asoc. Nuestra Se\xF1ora de la Cristiandad - Espa\xF1a`
   }
 }, "correoAutomatico");
 async function onRequestPost8({ request, env }) {
-  console.log("YOOOOOOOOOOOO");
   const rawBody = await request.text();
   const sigHeader = request.headers.get("stripe-signature");
   const parts = Object.fromEntries(sigHeader.split(",").map((kv) => kv.split("=")));
@@ -751,7 +724,7 @@ async function onRequestPost8({ request, env }) {
     const aws = new AwsClient({
       accessKeyId: env.AWS_ACCESS_KEY_ID,
       secretAccessKey: env.AWS_SECRET_ACCESS_KEY,
-		region:	env.AWS_REGION,
+      region: env.AWS_REGION,
       service: "ses"
     });
     switch (tipo) {
@@ -797,7 +770,7 @@ async function onRequestPost8({ request, env }) {
 }
 __name(onRequestPost8, "onRequestPost");
 
-// ../.wrangler/tmp/pages-3sW7Tg/functionsRoutes-0.031743397530042516.mjs
+// ../.wrangler/tmp/pages-GlZbZN/functionsRoutes-0.2545357674975528.mjs
 var routes = [
   {
     routePath: "/boletin_sub",
