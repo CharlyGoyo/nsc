@@ -2308,6 +2308,11 @@ ul {
 			visibility:	visible;
 			opacity:	1;
 			transition: 0s 0.4s;
+			/* Si quitas esto ul2 empieza con
+			opacity 1 for some reason */
+			@starting-style {
+				opacity: 0;
+			}
 		}
 	}
 }
@@ -2323,6 +2328,11 @@ ul {
 			visibility:	visible;
 			opacity:	1;
 			transition: 0s 0.4s;
+			/* Si quitas esto ul2 empieza con
+			opacity 1 for some reason */
+			@starting-style {
+				opacity: 0;
+			}
 		}
 	}
 }
@@ -3476,7 +3486,7 @@ ul {
 		opacity:	0;
 		position:	absolute;
 		top:		25px;
-		transition:	opacity 0 0, visibility 0 0; /*chapuzaaaaaaaaa -- previously 0.3s 0.5s*/
+		transition:	opacity 0.3s 0.5s, visibility 0.3s 0.5s; 
 		visibility:	hidden; /*activado por li1*/
 		width: 		max-content;
 		& > li:first-child	{
@@ -3497,6 +3507,10 @@ ul {
 		top:		0;
 		overflow:	hidden;
 		transition:	max-height 0.3s;
+		/*nose pero funciona*/
+		@starting-style {
+			max-height:	0;
+		}
 	}
 }
 
@@ -3510,7 +3524,7 @@ ul {
 		position:			absolute;
 		top:				0;
 		transform:			translateY(100%);
-		transition:			0 0; /*chapuzaaaaaaaaa -- previously 0.3s 0.5s*/
+		transition:			0.3s 0.5s; 
 		visibility:			hidden; /*activado por li2*/
 		width: 				max-content;
 	}
@@ -3520,6 +3534,10 @@ ul {
 		top:		0;
 		overflow:	hidden;
 		transition:	max-height 0.3s;
+		/*nose pero funciona*/
+		@starting-style {
+			max-height:	0;
+		}
 	}
 }
 

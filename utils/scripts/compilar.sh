@@ -21,7 +21,7 @@ Este script:
 a partir del nombre del directorio
 
 OPCIONES:
-\t-b: Sólo actualiza /pages/boletín.html. No compila /pages/{*,articulos/*}.cfg
+\t-b: Sólo actualiza /pages/boletín.html. No compila /pages/{*,{articulos,en,fr,pt}/*}.cfg
 \t-B: Evita actualizar /pages/boletin.html. Compila /pages/{*,{articulos,en,fr,pt}/*}.cfg
 \t-h: Muestra este mensaje
 \t-n: Que haya n boletines por cada sección de /pages/boletin.html (por defecto 5). 
