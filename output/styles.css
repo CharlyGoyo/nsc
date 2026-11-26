@@ -372,7 +372,7 @@ header {
 	display:				flex;
 	flex-direction:			column;
 	height:					690px;
-	padding-top: 			192px;
+	padding:				192px 10px 0 10px;
 	position:				relative;
 	/*transition: 			0.3s;*/
 	width: 					100%;
